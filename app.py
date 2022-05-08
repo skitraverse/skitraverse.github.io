@@ -109,7 +109,7 @@ for route in special_content:
 def home():
     route = whoami()
     _ = [x.meta.update({'tags': ''}) for x in pages if 'tags' not in x.meta]
-    info = [page for page in pages if 'info' in page.meta['tags']]
+    info = [page for page in pages if 'tips' in page.meta['tags']]
     wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
     return render_template(
         page_content[route]['template'],
@@ -143,7 +143,6 @@ def cdtpage(path):
     route = whoami()
     # description
     # set title etc. from org-file
-    print('cdtpage')
     page_content[route].update(singlepage.meta)
     # page_content[route]['email_subject'] = \
     #     special_content[route]['email_subject'] % (
