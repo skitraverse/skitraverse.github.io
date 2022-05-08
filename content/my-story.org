@@ -1,5 +1,6 @@
 #+TITLE: My adventures in the snow
 #+AUTHOR: Brian J. Oney
+#+TAGS: info
 #+LANGUAGE: en
 
 * My abreviated story of snowy adventures

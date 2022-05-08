@@ -113,7 +113,6 @@ def home():
     wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
     return render_template(
         page_content[route]['template'],
-        # past_events=past_events,
         # upcoming=upcoming,
         info=info,
         wintercdt = wintercdt,
@@ -138,16 +137,11 @@ def info(path):
 
 @app.route('/winter-cdt/<path:path>/')
 def cdtpage(path):
-    # 'path' is the filename of a page, without the file extension
     singlepage = pages.get_or_404(path)
     route = whoami()
     # description
     # set title etc. from org-file
     page_content[route].update(singlepage.meta)
-    # page_content[route]['email_subject'] = \
-    #     special_content[route]['email_subject'] % (
-    #     singlepage.meta['title'], singlepage.meta['date'].strftime("%F"))
-    # page_content[route]['email_body'] = page_content[route]['email_body']
     # pdb.set_trace()
     return render_template(
         page_content[route]['template'],
