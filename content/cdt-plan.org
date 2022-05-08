@@ -1,0 +1,101 @@
+#+TITLE: Plan for traversing the Continental Divide Trail in winter
+#+AUTHOR: Brian J. Oney
+#+TAGS: wintercdt
+#+LANGUAGE: en
+
+** Path
+November 15th until Christmas, I plan to walk north from the Mexican border
+and stop on December 23rd to go spend Christmas with family. During these down
+days, we need to decide whether we will flip-flop or continue northward. Flip-flop: on
+December 27th, I plan to start driving to the Canadian border and continue
+southwards from there.
+
+Why flip-flop? I have three good reasons. First, I will not walk through
+sketchy avalanche conditions. Persistent weak layers are very common for a
+Colorado snowpack. Southern and central Colorado tend to have a stable
+snowpack sometime in March or April. Faceted weak layers are to be taken dead
+seriously. Walking in the hot New Mexican sun in May doesn't sound very
+appealing either. Very likely, I wouldn't be able to ski much in May, anyways.
+
+Second, I don't want to be dealing with hungry, emaciated critters, possibly
+with young, in Montana in April or May. I would rather deal with the heavy snowfalls in
+January (average 20 days of snowfall) and enjoy the powder while waiting for
+the snow to settle!
+
+Third, and probably most importantly, I don't have a partner yet. The three weeks
+leading up to Christmas will serve as an extended trail date for anyone who
+chooses to join me. We will work out our routines and quirks by Christmas, I
+hope. We can go for an FKT for the New Mexican portion and get our legs and backs
+ready for the hard part up north.
+
+Alternatively, if the snowpacks in Colorado look inviting, we will keep
+heading North. Walking up in the Sun and skiing down the soft north faces is
+the most fun. We could consider skipping over Colorado to Wyoming and coming
+back in Spring.
+** Principles
+1. Safety first.
+   - If we need to wait out a vicious storm cycle in a ski town, we ride
+     powder until the snow settles. I carry a helmet, ice axe, beacon, probe,
+     proper shovel, ski goggles, satellite transceiver, etc. Safety first.
+2. Proper planning.
+   - Food, fuel, weather, and above all time planning are our tools.
+3. Speed is safety.
+   - Weather changes, gear fails, people fall ill. Speed is our
+     friend. Slowness begets slowness. We need to be fast. 2000 vertical feet
+     (600 meters) gain per hour with a load (10kg) and a good track should be possible when needed.
+4. Redundant systems.
+   - Redundancy in navigation, shelter, and sleeping systems is important.
+5. Social coherence trumps fun.
+   - We stick together.
+6. Rest is very important.
+   - We need to ensure we can handle a 10-day traverse in deep snow. Thorough nightly rest is important.
+
+** Systems
+- Light backcountry skis with scaled bases and climbings skins. Scaled bases are necessary for efficient.
+  - I am open to backcountry cross country skis for certain sections. But I
+    trust lightweight touring skis and can comfortably skate with them. 
+- Tent with solid inner. Probably the Tarptent Stratospire Li.
+  - I have tried building a snow cave every night. It is too much work. 
+- Zipperless down sleeping bag (-20°F) with DCF vapor barrier
+  clothing. Timmermade gear serves me very well.
+  - I have tried extending all the 3-season ultralight systems for winter and
+    failed. This is my current trusted system.
+- Melt snow, heat water: MSR reactor with hanging kit. An (additional) option
+  is using a foldable Nalgene cantene between the back and backpack (and
+  combine no cook with cold soak). It is essential to plan in water collection
+  at flowing waters.
+  - I have tried the trail designs fissure alcohol systems for winter
+    traverses. They work well, but are fidgety, slow, and unsafe to use in
+    tent. I think the MSR reactor works better for the weight and is more
+    versatile (cook/hang in tent, fuel-to-snow-melted ratio).
+
+** Finances
+Without the gear investments (about 8k$ upfront!), I would budget
+10k$. Weather-driven stays in town are a variable that may inflate that
+number. I still need to research what permits will be necessary for certain sections.
+
+** People
+Myself: Experienced alpine winter backcountry *tour* guide, splitboarder,
+skier, powder hound, climate activist.  I am 37 years old, a climate scientist
+turned firmware engineer, a little over 6' (184cm), 75kg, and injury-resistant
+and well-conditioned. I was born in New Mexico, and live in Switzerland with
+my wife, with no kids.
+
+I have been out in the snow since 2015 every winter for ski touring >50 days
+each season.  For weight and efficiency reasons, I learned how to ski
+recently, after 9 years of snowboarding and 9 years of splitboarding. Skis
+just make more sense for traverses; therefore, I ski.
+
+I have never walked any of the long trails. I plan to when I am older. I have
+done multiple ski traverses in Switzerland and Bulgaria.  I truly enjoy being
+out in the wild, especially in winter.  My favorite thing to do are ski
+traverses. I view an attempt to walk the CDT in winter as a string of ski
+traverses.
+
+
+You: Experienced winter backcountry *ski* tourer. You should be passionate about
+winter, cold-resistant, have a positive outlook and be full of energy.  
+
+** Next steps
+Let's talk. We should take one of the [[https://UphillAthlete.com][Uphill Athlete]] courses (probably the [[https://uphillathlete.com/grand-traverse-ski-training-plan/][12
+Week Grand Traverse Training Plan]]) together at the very least.
