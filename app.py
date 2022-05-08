@@ -52,29 +52,35 @@ special_content = {
         'template': 'home.html',
         'header_pic': "img/logo.svg",
         'email_subject': 'From Ski Traverse Homepage: ',
-        'email_body': 'Dear Baerfutt,\nI want to learn to run barefoot!'
+        'email_body': 'Dear Brian,\nI want to learn to run barefoot!'
         '\nKind Regards,\nMe!',
     },
-    'event': {
+    # 'event': {
+    #     'template': 'page.html',
+    #     'blurb': 'Event:',
+    #     'email_subject': 'Brian: %s %s',
+    #     'email_body': 'Please give me some information about you.\nName:'
+    #     '\nTelephone Number: \nNormal running distance: ',
+    #     'contact_message': 'Sign me up',
+    #     'feedback_message': 'Give feedback',
+    # },
+    'cdtpage': {
         'template': 'page.html',
-        'blurb': 'Event:',
-        'email_subject': 'Baerfutt: %s %s',
-        'email_body': 'Please give me some information about you.\nName:'
-        '\nTelephone Number: \nNormal running distance: ',
-        'contact_message': 'Sign me up',
-        'feedback_message': 'Give feedback',
+        'email_subject': 'I want more information: ',
+        'email_body': 'Dear Brian,\nI want some more info.'
+        '\nKind Regards,\nMe!',
     },
     'info': {
         'template': 'page.html',
         'email_subject': 'I want more information: ',
-        'email_body': 'Dear Baerfutt,\nI want some more info.'
+        'email_body': 'Dear Brian,\nI want some more info.'
         '\nKind Regards,\nMe!',
     },
     'archive': {
         'template': 'archive.html',
         'title': 'Ski Traverse Event Archive',
         'email_subject': 'From Ski Traverse archive: ',
-        'email_body': 'Dear Baerfutt,\nWhat about this event archive?'
+        'email_body': 'Dear Brian,\nWhat about this event archive?'
         '\nKind Regards,\nMe!',
     },
     'disclaimer': {
@@ -102,29 +108,20 @@ for route in special_content:
 @app.route('/')
 def home():
     route = whoami()
-    info = [page for page in pages if 'date' not in page.meta
-            and 'Impressum' not in page.meta['title']]
-    events = [page for page in pages if 'date' in page.meta]
-    # Sort pages by date
-    sorted_events = sorted(events, reverse=True,
-                           key=lambda event: event.meta['date'])
-    upcoming = [page for page in sorted_events if 'date' in page.meta
-                and page.meta['date'] >= datetime.date.today()]
-    upcoming.reverse()
-    past_events = [event for event in sorted_events if event not in upcoming
-                   and event.meta['date']
-                   >= datetime.date(*time.localtime(time.time()-30*86400)[0:3])]
-    # pdb.set_trace()
+    _ = [x.meta.update({'tags': ''}) for x in pages if 'tags' not in x.meta]
+    info = [page for page in pages if 'info' in page.meta['tags']]
+    wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
     return render_template(
         page_content[route]['template'],
-        past_events=past_events,
-        upcoming=upcoming,
+        # past_events=past_events,
+        # upcoming=upcoming,
         info=info,
+        wintercdt = wintercdt,
         **page_content[route]
     )
 
 
-@app.route('/info/<path:path>/')
+@app.route('/tips/<path:path>/')
 def info(path):
     # 'path' is the filename of a page, without the file extension
     route = whoami()
@@ -139,16 +136,14 @@ def info(path):
     )
 
 
-@app.route('/events/<path:path>/')
-def event(path):
+@app.route('/winter-cdt/<path:path>/')
+def cdtpage(path):
     # 'path' is the filename of a page, without the file extension
     singlepage = pages.get_or_404(path)
     route = whoami()
     # description
-    if 'Baerfutt' not in singlepage.meta['title']:
-        singlepage.meta['title'] = 'Ski Traverse ' + \
-                                   singlepage.meta['title']
     # set title etc. from org-file
+    print('cdtpage')
     page_content[route].update(singlepage.meta)
     # page_content[route]['email_subject'] = \
     #     special_content[route]['email_subject'] % (
@@ -158,28 +153,10 @@ def event(path):
     return render_template(
         page_content[route]['template'],
         page=singlepage,
-        past=singlepage.meta['date'] < datetime.date.today(),
+        # past=singlepage.meta['date'] < datetime.date.today(),
         **page_content[route]
     )
 
-
-@app.route('/archive/')
-def archive():
-    route = whoami()
-    past = [page for page in pages if 'date' in page.meta
-            and page.meta['date']
-            < datetime.date(*time.localtime(time.time()-30*86400)[0:3])]
-    sorted_events = sorted(past, reverse=True,
-                           key=lambda event: event.meta['date'])
-    keywords = set(event.meta['description'] for event in past
-                   if 'description' in event.meta)
-    # pdb.set_trace()
-    return render_template(
-        page_content[route]['template'],
-        events=sorted_events,
-        keywords=keywords,
-        **page_content[route]
-    )
 
 
 @app.route('/disclaimer/')

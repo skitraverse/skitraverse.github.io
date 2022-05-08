@@ -8,19 +8,14 @@
                     <h3>Location</h3>
                     <p>{{ location | safe }}
                         <br>
-                        <a class='btn-primary btn-lg btn-outline' href="{{ url_for('impressum') }}">
-                            Impressum <br>
-                            Disclaimer
-                        </a>
-
                     </p>
                 </div>
                 <div class="footer-col col-md-4">
-                    <h3>Follow us</h3>
+                    <h3>Follow</h3>
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a class="btn-social btn-outline" href="#">
-                                <i class="fa fa-fw fa-facebook"></i>
+                            <a class="btn-social btn-outline" href="https://www.reddit.com/u/baerfutt">
+                                <i class="fa fa-fw fa-reddit"></i>
                             </a>
                         </li>
                         <!-- <li class="list-inline-item">
@@ -28,16 +23,16 @@
                              <i class="fa fa-fw fa-google-plus"></i>
                              </a>
                              </li> -->
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" href="#">
-                                <i class="fa fa-fw fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" href="#">
-                                <i class="fa fa-fw fa-twitter"></i>
-                            </a>
-                        </li>
+                        <!-- <li class="list-inline-item">
+                             <a class="btn-social btn-outline" href="#">
+                             <i class="fa fa-fw fa-instagram"></i>
+                             </a>
+                             </li>
+                             <li class="list-inline-item">
+                             <a class="btn-social btn-outline" href="#">
+                             <i class="fa fa-fw fa-twitter"></i>
+                             </a>
+                             </li> -->
                         <!-- <li class="list-inline-item">
                              <a class="btn-social btn-outline" href="#">
                              <i class="fa fa-fw fa-linkedin"></i>
@@ -53,6 +48,15 @@
                 <div class="footer-col col-md-4">
                     <h3>{{ mission }}</h3>
                     <p>{{ personal_bit | safe }}</p>
+                    <a class='btn-primary btn-lg btn-outline' href="{{ url_for('impressum') }}">
+                        Impressum
+                    </a>
+                    <br>
+                    <br>
+                    <a class='btn-primary btn-lg btn-outline' href="{{ url_for('disclaimer') }}">
+                        Disclaimer
+                    </a>
+
                 </div>
             </div>
         </div>
