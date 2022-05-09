@@ -6,7 +6,11 @@ python app.py freeze
 
 deactivate
 
-git add events/* info/* content/*
+
+newfiles=$(git status -s | sed  '/^??/!d; /conflict/d; / .#/d; s/^?? //g')
+modfiles=$(git status -s | sed  '/^ M/!d; s/^ M //g')
+
+git add $newfiles $modfiles
 
 if [[ $# -eq 0 ]]; then
     msg="uploaded new content $(date -u +%F-%R)"

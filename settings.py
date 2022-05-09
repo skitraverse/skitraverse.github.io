@@ -4,16 +4,11 @@ import os
 
 from flask_flatorgpages import convert_org_to_html
 
-
-def parent_dir(path):
-    '''Return the parent of a directory.'''
-    return os.path.abspath(os.path.join(path, os.pardir))
-
-
 # Assumes the app is located in the same directory where this file resides
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 
-REPO_NAME = os.path.basename(APP_DIR)  # Used for FREEZER_BASE_URL
+# REPO_NAME = os.path.basename(APP_DIR)  # Used for FREEZER_BASE_URL
+REPO_NAME = 'skitraverse.github.io'
 DEBUG = True
 
 PROJECT_ROOT = APP_DIR

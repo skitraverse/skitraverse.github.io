@@ -111,6 +111,7 @@ def home():
     _ = [x.meta.update({'tags': ''}) for x in pages if 'tags' not in x.meta]
     info = [page for page in pages if 'tips' in page.meta['tags']]
     wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
+    print(wintercdt[0])
     return render_template(
         page_content[route]['template'],
         # upcoming=upcoming,
@@ -139,6 +140,7 @@ def info(path):
 def cdtpage(path):
     singlepage = pages.get_or_404(path)
     route = whoami()
+    print(singlepage)
     # description
     # set title etc. from org-file
     page_content[route].update(singlepage.meta)
