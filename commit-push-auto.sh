@@ -18,4 +18,4 @@ else
     msg=$*
 fi
 
-git commit . -m "$msg" && git push origin master
+git commit . -m "$msg" && git push origin main
