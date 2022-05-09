@@ -29,11 +29,7 @@ app = Flask(__name__)
 
 app.config.from_pyfile('settings.py')
 
-# pages = OrgPages(app)
 pages = FlatOrgPages(app)
-
-
-# pdb.set_trace()
 
 default_content = {
     'personal_bit': 'Opening our eyes to the beauty of winter landscape, safely',
@@ -150,8 +146,6 @@ def cdtpage(path):
         **page_content[route]
     )
 
-
-
 @app.route('/disclaimer/')
 def disclaimer():
     singlepage = pages.get_or_404('disclaimer')
@@ -173,7 +167,6 @@ def impressum():
         page=singlepage,
         **page_content[route]
     )
-
 
 if __name__ == '__main__':
     if "freeze" in sys.argv:
