@@ -17,7 +17,7 @@ else
     msg=$*
 fi
 
-if [[ -n $newfiles ]] || [[-n $modfiles ]]; then
+if [[ -n "$newfiles" ]] || [[ -n "$modfiles" ]]; then
     git add $newfiles $modfiles
     git commit . -m "$msg" && git push origin main
 fi
