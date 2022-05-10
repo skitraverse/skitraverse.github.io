@@ -4,13 +4,21 @@
     <div class="footer-above">
         <div class="container">
             <div class="row">
-                <div class="footer-col col-md-4">
-                    <h3>Location</h3>
+                <div class="footer-col col-md-3">
+                    <h3>Skitraverse</h3>
+                    <p>
+                        {% if header_pic %}
+                        <img class="img-fluid" src="{{ url_for("static", filename=header_pic) }}" alt="{{ header_pic_alt if header_pic_alt }}"> 
+                        {% endif %}
+                    </p>
+                </div>
+                <div class="footer-col col-md-3">
+                    <h3>My Location</h3>
                     <p>{{ location | safe }}
                         <br>
                     </p>
                 </div>
-                <div class="footer-col col-md-4">
+                <div class="footer-col col-md-3">
                     <h3>Follow</h3>
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -45,7 +53,7 @@
                              </li> -->
                     </ul>
                 </div>
-                <div class="footer-col col-md-4">
+                <div class="footer-col col-md-3">
                     <h3>{{ mission }}</h3>
                     <p>{{ personal_bit | safe }}</p>
                     <a class='btn-primary btn-lg btn-outline' href="{{ url_for('impressum') }}">

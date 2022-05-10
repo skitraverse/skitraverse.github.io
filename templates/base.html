@@ -84,12 +84,15 @@
 
         <section class="default">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-8 mx-auto">
+                <div class="row text-justify">
+                    <div class="col-lg-10 mx-auto">
                         
                         {# Insert content here #}
                         {% block content %}{% endblock %}
-                        
+                    </div> 
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-8 mx-auto">
                         <hr class="star-primary">
                         <h2>
                             <!-- <script src="{{ url_for("static", filename="js/encrypted_mailto.js") }}"></script>{{ contact_message }}</a> -->
@@ -112,7 +115,7 @@
                             </script>
                             <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
                         </h2>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>

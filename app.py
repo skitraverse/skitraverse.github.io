@@ -20,9 +20,9 @@ from flask import render_template, url_for
 
 from flask_flatorgpages import FlatOrgPages
 
+
 def whoami():
     return inspect.stack()[1][3]
-
 
 # Build the website
 app = Flask(__name__)
@@ -32,7 +32,7 @@ app.config.from_pyfile('settings.py')
 pages = FlatOrgPages(app)
 
 default_content = {
-    'personal_bit': 'Opening our eyes to the beauty of winter landscape, safely',
+    'personal_bit': 'Opening eyes to the beauty of winter landscape, safely',
     'mission': u'Purpose',
     'contact_message': 'Get in touch',
     'copyleft': u'Copyleft &copy; Ski Traverse %i' % time.localtime().tm_year,

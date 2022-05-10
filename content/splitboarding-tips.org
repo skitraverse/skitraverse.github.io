@@ -5,144 +5,144 @@
 
 
 THIS IS AN INCOMPLETE DOCUMENT OF MY ADVICE FOR MY SPLITBOARD APPRENTICES
-** Planning and executing backcountry tours
-   - The Swiss winter backcountry bible, Bergsport Winter, hereafter referred
-     to as die Bibel (said like dee beebel), tells you to plan your hike up by
-     adding a tenth the vertical meters to the horizontal kilometers and then
-     divide that number by four. This will tell you the hours you'll need to
-     get to your goal. Why divide by four? This assumes you need fifteen
-     minutes to walk one kilometer or climb up 100 meters. One can consider
-     these numbers as units, a hiking unit. A horizontal kilometer is a hiking
-     unit; 100 vertical meters is a hiking unit. Needing 15 minutes per hiking
-     unit works pretty well on average, but depends on the conditions.
-     - Good conditions are:
-       - The previous hikers laid a well chosen skin track.
-       - The skin track is packed and grippy.
-       - The temperature allows you to take few breaks i.e. drink little water.
-       - Good physical conditioning of the hikers.
-     - Less optimal conditions are:
-       - You are laying track, possibly in deeper snow.
-       - Track is icy or poorly chosen.
-       - High temperatures or strong sunshine make you sweat and take more breaks, and the snow may stick to your skins.
-       - Strong sun on fresh powder will make snow stick to your skins.
-       - Conditions require ski crampons.
-       - You lose your way.
-       - Breaks take too long.
-       - You or members of your party can not properly regulate climate and are too hot or cold.
-   - Study the weather predictions as if your life depended on it. Accurately
-     predicting weather in mountainous regions is very difficult. Nonetheless,
-     the weather predictions in winter are usually highly accurate and can be
-     accurate up to 3-4 days beforehand. Springtime weather is very difficult
-     to predict, even up to the last minute. Be more cautious in spring; trust the weather predictions less.
-   - Traverses are by far my favorite war to experience the mountains. Every
-     moment in the mountains requires attention, but traverses demand even
-     more presence. When you don't ride down where you walked up, you know less
-     about the conditions that await you. Plan alternate scenarios in case it
-     is too dangerous to carry out your original plan.
-   - It is important to plan and draw out your exact route for the hike up on
-     a high resolution map (1:25000). The more time you put into knowing your
-     route beforehand, the faster you will be and the less chance that you
-     will put yourself or others at risk.
-   - Lastly, some words of wisdom. You carry the responsiblity to manage three
-     resources accurately: time, energy, and morale. Always consider these
-     three as you continuously evaluate the conditions on the mountain.
-** Gear
-*** 2 (elastic) straps for fastening various things
-    - For example: A-frame on backpack, cinch boot heels to Phantom rocket risers, fasten shovel stem to a broken pole.
+* Planning and executing backcountry tours
+  - The Swiss winter backcountry bible, Bergsport Winter, hereafter referred
+    to as die Bibel (said like dee beebel), tells you to plan your hike up by
+    adding a tenth the vertical meters to the horizontal kilometers and then
+    divide that number by four. This will tell you the hours you'll need to
+    get to your goal. Why divide by four? This assumes you need fifteen
+    minutes to walk one kilometer or climb up 100 meters. One can consider
+    these numbers as units, a hiking unit. A horizontal kilometer is a hiking
+    unit; 100 vertical meters is a hiking unit. Needing 15 minutes per hiking
+    unit works pretty well on average, but depends on the conditions.
+    - Good conditions are:
+      - The previous hikers laid a well chosen skin track.
+      - The skin track is packed and grippy.
+      - The temperature allows you to take few breaks i.e. drink little water.
+      - Good physical conditioning of the hikers.
+    - Less optimal conditions are:
+      - You are laying track, possibly in deeper snow.
+      - Track is icy or poorly chosen.
+      - High temperatures or strong sunshine make you sweat and take more breaks, and the snow may stick to your skins.
+      - Strong sun on fresh powder will make snow stick to your skins.
+      - Conditions require ski crampons.
+      - You lose your way.
+      - Breaks take too long.
+      - You or members of your party can not properly regulate climate and are too hot or cold.
+  - Study the weather predictions as if your life depended on it. Accurately
+    predicting weather in mountainous regions is very difficult. Nonetheless,
+    the weather predictions in winter are usually highly accurate and can be
+    accurate up to 3-4 days beforehand. Springtime weather is very difficult
+    to predict, even up to the last minute. Be more cautious in spring; trust the weather predictions less.
+  - Traverses are by far my favorite war to experience the mountains. Every
+    moment in the mountains requires attention, but traverses demand even
+    more presence. When you don't ride down where you walked up, you know less
+    about the conditions that await you. Plan alternate scenarios in case it
+    is too dangerous to carry out your original plan.
+  - It is important to plan and draw out your exact route for the hike up on
+    a high resolution map (1:25000). The more time you put into knowing your
+    route beforehand, the faster you will be and the less chance that you
+    will put yourself or others at risk.
+  - Lastly, some words of wisdom. You carry the responsiblity to manage three
+    resources accurately: time, energy, and morale. Always consider these
+    three as you continuously evaluate the conditions on the mountain.
+* Gear
+** 2 (elastic) straps for fastening various things
+   - For example: A-frame on backpack, cinch boot heels to Phantom rocket risers, fasten shovel stem to a broken pole.
 
-*** Multi-tool with various Torx, Phillips, Hex, and flathead bits
-    - Be a real Hero.
+** Multi-tool with various Torx, Phillips, Hex, and flathead bits
+   - Be a real Hero.
 
-*** Helmet with EN1077 & CE12694 certification
-    - You invest a lot of your effort & time into your head. Why skimp on a helmet? MIPS may also save you a concussion. Ride scared or wear a helmet.
+** Helmet with EN1077 & CE12694 certification
+   - You invest a lot of your effort & time into your head. Why skimp on a helmet? MIPS may also save you a concussion. Ride scared or wear a helmet.
 
-*** Compass
-    - Getting lost is part of backcountry travel. Redundant systems to regain your bearings provide justified peace of mind...
-    - consider models with transparent housing and rulers denoting steepness classes and distances for common high-resolution (1:25000) maps.
+** Compass
+   - Getting lost is part of backcountry travel. Redundant systems to regain your bearings provide justified peace of mind...
+   - consider models with transparent housing and rulers denoting steepness classes and distances for common high-resolution (1:25000) maps.
 
-*** Packable, light insulating jacket
-    - Someone may get cold.
+** Packable, light insulating jacket
+   - Someone may get cold.
 
-*** Various cordage
-    - May come in handy.
-    - 5m of 6mm cordage
-    - 3m of 5mm cordage
+** Various cordage
+   - May come in handy.
+   - 5m of 6mm cordage
+   - 3m of 5mm cordage
 
-*** Emergency sleeping bag for two
-    - Weighs little, could save lives.
+** Emergency sleeping bag for two
+   - Weighs little, could save lives.
 
-*** Rugged smartphone
-    - at least cold-, water- & shock-resistant.
-    - consider your cell phone service coverage when choosing your provider
-    - carry an additional battery on multi-day tours
-    - put your phone in airplane mode, unless absolutely necessary.
+** Rugged smartphone
+   - at least cold-, water- & shock-resistant.
+   - consider your cell phone service coverage when choosing your provider
+   - carry an additional battery on multi-day tours
+   - put your phone in airplane mode, unless absolutely necessary.
 
-*** neck gaiter
-    - It's the most versatile clothing article. Make it into a beanie, keep the wind off your neck, make it into a sweatband
+** neck gaiter
+   - It's the most versatile clothing article. Make it into a beanie, keep the wind off your neck, make it into a sweatband
 
-*** high-resolution (1:25000) map of your target region
-    - consider a transparent, water-proof bag for your map
+** high-resolution (1:25000) map of your target region
+   - consider a transparent, water-proof bag for your map
 
-*** First aid kit
-    - tape, gauze, sewing kit, 2nd skin/blister pads, & pain pills are nice
+** First aid kit
+   - tape, gauze, sewing kit, 2nd skin/blister pads, & pain pills are nice
 
-*** Satellite phone or radio
-    - Do the math what works best for you.
+** Satellite phone or radio
+   - Do the math what works best for you.
 
-*** Insulated flask (thermos)
-    - Make up for the added weight by putting snow in your tea.
-    - Simple screw-caps tend to retain heat better and be more durable. Cleaning is also easier.
+** Insulated flask (thermos)
+   - Make up for the added weight by putting snow in your tea.
+   - Simple screw-caps tend to retain heat better and be more durable. Cleaning is also easier.
 
-*** Avalanche probe
-    - In addition to being good for finding a buried comrade, it is handy for measuring snow depth or marking a location, say if your buddy falls into a crevasse and you have to leave to .
+** Avalanche probe
+   - In addition to being good for finding a buried comrade, it is handy for measuring snow depth or marking a location, say if your buddy falls into a crevasse and you have to leave to .
 
-*** Avalanche shovel with telescopic handle
-     - If it doesn't have a good metal blade and handle, you probably don't have a decent chance to dig someone out alive.
+** Avalanche shovel with telescopic handle
+    - If it doesn't have a good metal blade and handle, you probably don't have a decent chance to dig someone out alive.
 
-*** Ice climbing gloves
-    - Durable gloves for hiking up are not the ones marketed for hiking up. Ice climbing gloves are durable and available in warmer and cooler versions, for example.
+** Ice climbing gloves
+   - Durable gloves for hiking up are not the ones marketed for hiking up. Ice climbing gloves are durable and available in warmer and cooler versions, for example.
 
-*** Tourist hat
-    - the goofier you look, the better it protects you from the sun.  Realize that you are a tourist. It's ok. We are all guests.
+** Tourist hat
+   - the goofier you look, the better it protects you from the sun.  Realize that you are a tourist. It's ok. We are all guests.
 
-*** Ice axe
-    - It can be good to have proper tool with you. There are some very light versions for easier alpine tours. Be wary of shovel-axe combination tools. What happens if you lose your ice axe somehow?
+** Ice axe
+   - It can be good to have proper tool with you. There are some very light versions for easier alpine tours. Be wary of shovel-axe combination tools. What happens if you lose your ice axe somehow?
 
-*** Splitboard
-    - This is a very personal thing. I suggest answering the following questions to help guide you to find the right board for you.
-      + Length: In my opinion this characteristic is overrated. If the
-        conditions are safe for touring, the snow has settled and you don't
-        sink in like you do at the resort on a powder day. What is a length
-        of you powder board? Consider choosing a little shorter or the same
-        length.
-      + Width: The wider the split ski, the less force you can apply on your edges when hiking. The narrower the board the more your toes and heels can dig in when turning. On steep icy slopes, this can be dangerous. Do you ride steep, icy slopes occasionally? Consider choosing a wider board.
-      + Sidecut radius: The smaller the radius, the less stable the board is
-        at higher speeds. Furthermore, when traversing up or down, a board
-        with a sidecut radius less than 10m needs to bend significantly to
-        fully engage the edge. On the way down that means that you can't
-        traverse over to other spots like your skier firends. On the way up,
-        you have less edge hold when on a steeper slope. The only decent
-        argument for a smaller radius is having a more playful board and say
-        being able to navigate dense trees. The latter are also strong arguments,
-        though. What's your style?
-      + Stiffness: Higher lateral stiffness improves edge hold and higher
-        stability at speed. It also makes it harder to transition from edge to
-        edge. Higher longitudinal stiffness makes for better skin tracks and
-        higher stability at speed. Both of these reduce the playfulness of the
-        board and lower speeds. What's your style of riding?
-      + Varia: Topsheets that shed snow, make a board lighter in
-        practice. There is no consensus on the effectiveness of a serrated
-        edge to improve edge hold. However, lateral stiffness and a large
-        sidecut radius improve edge hold. How much edgehold do you need?
-        Lighter boards tend to be thinner and less durable.  How many hundreds
-        of days do you want to ride your board?
+** Splitboard
+   - This is a very personal thing. I suggest answering the following questions to help guide you to find the right board for you.
+     + Length: In my opinion this characteristic is overrated. If the
+       conditions are safe for touring, the snow has settled and you don't
+       sink in like you do at the resort on a powder day. What is a length
+       of you powder board? Consider choosing a little shorter or the same
+       length.
+     + Width: The wider the split ski, the less force you can apply on your edges when hiking. The narrower the board the more your toes and heels can dig in when turning. On steep icy slopes, this can be dangerous. Do you ride steep, icy slopes occasionally? Consider choosing a wider board.
+     + Sidecut radius: The smaller the radius, the less stable the board is
+       at higher speeds. Furthermore, when traversing up or down, a board
+       with a sidecut radius less than 10m needs to bend significantly to
+       fully engage the edge. On the way down that means that you can't
+       traverse over to other spots like your skier firends. On the way up,
+       you have less edge hold when on a steeper slope. The only decent
+       argument for a smaller radius is having a more playful board and say
+       being able to navigate dense trees. The latter are also strong arguments,
+       though. What's your style?
+     + Stiffness: Higher lateral stiffness improves edge hold and higher
+       stability at speed. It also makes it harder to transition from edge to
+       edge. Higher longitudinal stiffness makes for better skin tracks and
+       higher stability at speed. Both of these reduce the playfulness of the
+       board and lower speeds. What's your style of riding?
+     + Varia: Topsheets that shed snow, make a board lighter in
+       practice. There is no consensus on the effectiveness of a serrated
+       edge to improve edge hold. However, lateral stiffness and a large
+       sidecut radius improve edge hold. How much edgehold do you need?
+       Lighter boards tend to be thinner and less durable.  How many hundreds
+       of days do you want to ride your board?
 
-*** Bindings
+** Bindings
 The Phantom splitboard bindings are still the best. I won't get into a
 religious war. Alpine touring boots enable easy movement in the
 backcountry. Snowboarding with these light and flexible boots is awesome
 too. Soft boots on the otherhand are dangerous and heavy.
 
-*** Isolated Flask with hot liquids
-    - Why carry tons of water when you are surrounded by it? The amount of water you can melt with your tea is significant. You also don't have to wait for your tea to cool.
+** Isolated Flask with hot liquids
+   - Why carry tons of water when you are surrounded by it? The amount of water you can melt with your tea is significant. You also don't have to wait for your tea to cool.
 

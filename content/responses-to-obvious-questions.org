@@ -4,37 +4,31 @@
 #+LANGUAGE: en
 
 
-** What if the mother of all storms broadsides us?
-We would track weather with satellite updates. Say if we were somehow impeded,
-and had to hunker down, we would dig into the snow. In a snowcave, we can
-regulate the temperature very well. 
+* How do we handle emergency situations?
+That depends on what happens, and where it happens.  If we can't exit
+immediately, we hunker down in a forest, build a fire, build a snow cave, and
+snuggle until we can get moving out again or are extracted. We alert and
+request with a cell phone or satellite transceiver.
 
-This used to be my preferred shelter, by the way. On a long traverse, it is
-too much work to be sustainable.
+Avalanche: This will likely to result in an injury and lost gear. We exit
+prematurely, and thank our lucky stars. We're unlucky and/or ignorant if this
+happens. We plan on actively minimizing ignorance as we move.
 
-** Why not use cross-country skis?
-That may be a good idea. I guess the gear and capabilities of scale-based,
-touring skis is just more advanced, that is, lightweight and durable. Also,
-the terrain we will be traveling through is too steep for cross-country gear
-(and my abilities). If it's an awesome powder day and we are impeded by
-avalanche danger, I would probably want to go ride some powder.
+Gear failure: We fix it to the best of our abilities and exit if it's critical
+and irrepairable (MSR Reactor overheats, binding rips out, sleeping bag/pad
+explodes).
 
-** I'm taking my splitboard, ok?
-No. It's too inefficient, in my experience. Even with a split-tech system, the
-lightest scale-based board, and world-class condition, you'll be too great of a
-drag.
+Social failure: If we're a pair or a triplet, we stick together no matter
+what, until reasonable departure is reached i.e. a town or someone with
+transportation means. We exit prematurely. If we have a group of 4 or more? If
+both parties are self-sufficient (stove, shelter, navigational material), a
+departure in the backcountry is reasonable.
 
-I was a splitboarder. People on skis were keeping up with me, who should not
-have been able to. The efficiency hit is big. I learned to ski because of
-that. Long ski traverses were more important to me than the ultimate fun on the
-downhill.  On a traverse, the sum of type I-fun is greater with
-skis. Furthermore, the sum of type II-fun is less with skis.
+Injury: There is a huge body of literature and many courses available. Take
+two courses. We'll figure things out given the situation. We prepare ourselves to be
+able to help. 
 
-The less efficient you are, the more food you have to eat, the more food and
-fuel you have to take, the heavier your pack, the slower you are, the less
-efficient you are...
-
-** Why not use a reliable alcohol stove?
+* Why not use a reliable alcohol stove?
 I tried my best with the Trail Designs Ti-Tri System. It works and is very
 dependable, at altitude and in the cold. It's awesome. And canisters are a
 pain in the neck.
@@ -68,35 +62,23 @@ this an easy decision to take the MSR Reactor for winter outings.
 If we're sure we have continued access to water the ti-tri wins out, if we're
 melting snow, the MSR Reactor is my choice.
 
-** How do we handle emergency situations?
-That depends on what happens, and where it happens.  If we can't exit
-immediately, we hunker down in a forest, build a fire, build a snow cave, and
-snuggle until we can get moving out again or are extracted. We alert and
-request with a cell phone or satellite transceiver.
-
-Avalanche: This will likely to result in an injury and lost gear. We exit
-prematurely, and thank our lucky stars. We're unlucky and/or ignorant if this
-happens. We plan on actively minimizing ignorance as we move.
-
-Gear failure: We fix it to the best of our abilities and exit if it's critical
-and irrepairable (MSR Reactor overheats, binding rips out, sleeping bag/pad
-explodes).
-
-Social failure: If we're a pair or a triplet, we stick together no matter
-what, until reasonable departure is reached i.e. a town or someone with
-transportation means. We exit prematurely. If we have a group of 4 or more? If
-both parties are self-sufficient (stove, shelter, navigational material), a
-departure in the backcountry is reasonable.
-
-Injury: There is a huge body of literature and many courses available. Take
-two courses. We'll figure things out given the situation. We prepare ourselves to be
-able to help. 
-
-** How do we resupply?
+* How do we resupply?
 We have a lot of really nice, selfless people support us with food and fuel
 caches. And we send them thanks and best wishes and cards and chocolates etc.
 
-** Do I have to also take scale-based skis?
+* This is an extremely dangerous undertaking. Are you crazy?
+The wintertime traverse of the CDT could be very dangerous. The mountain will
+tell me when to stop. To be able to hear that I have to listen to the
+mountain, and not to those who say it's not possible to traverse the CDT
+safely. 
+
+Ski traverses are my thing. I am past the phase of needing to prove something
+to someone. This idea has gripped me. I will pursue it until it is indeed
+crazy. Then I will wait and try again. Everytime I study a map, the slope
+angle classes, the distances, I feel good. There are usually decent exit
+options, alternate routes, and always the option of turning back. I got this.
+
+* Do I have to also take scale-based skis?
 I think you'd be crazy to take anything else. The minimal downhill
 disadvantage is more than made up for by the reduced need to use climbing
 skins. You glide better when walking, your skis weigh less without skins, far
@@ -111,19 +93,49 @@ safely, and comfortably transition in under a minute, every 10 minutes, with a
 heavy pack, and are sure that this won't frustrate you.  Otherwise, yes, you
 also need to take scale-based skis. They also make narrower ones.
 
-** In how good of physical condition should I be?
-There are two aspects to this. First is the obvious need to be aerobically
-well-conditioned i.e. hike all day every day for months. Considerable strength
-is also necessary to deal with the weight of the heavier pack. You should be
-very injury-resistant. The book 'Training for the Uphill Athlete' is our training manual.
-
-** How well should I be able to ski?
+* How well should I be able to ski?
 You should be a pretty good skier. If skiing powder is a challenge, it
 will be even harder with a heavy pack pulling you into the back seat. Skiing
 breakable crust without proper skill with a heavy pack is injury prone and thus
 dangerous.
 
-** What about mental strength?
+* What if the mother of all storms broadsides us?
+We would track weather with satellite updates. Say if we were somehow impeded,
+and had to hunker down, we would dig into the snow. In a snowcave, we can
+regulate the temperature very well. 
+
+This used to be my preferred shelter, by the way. On a long traverse, it is
+too much work to be sustainable.
+
+* Why not use cross-country skis?
+That may be a good idea. I guess the gear and capabilities of scale-based,
+touring skis is just more advanced, that is, lightweight and durable. Also,
+the terrain we will be traveling through is too steep for cross-country gear
+(and my abilities). If it's an awesome powder day and we are impeded by
+avalanche danger, I would probably want to go ride some powder.
+
+* I'm taking my splitboard, ok?
+No. It's too inefficient, in my experience. Even with a split-tech system, the
+lightest scale-based board, and world-class condition, you'll be too great of a
+drag.
+
+I was a splitboarder. People on skis were keeping up with me, who should not
+have been able to. The efficiency hit is big. I learned to ski because of
+that. Long ski traverses were more important to me than the ultimate fun on the
+downhill.  On a traverse, the sum of type I-fun is greater with
+skis. Furthermore, the sum of type II-fun is less with skis.
+
+The less efficient you are, the more food you have to eat, the more food and
+fuel you have to take, the heavier your pack, the slower you are, the less
+efficient you are...
+
+* In how good of physical condition should I be?
+There are two aspects to this. First is the obvious need to be aerobically
+well-conditioned i.e. hike all day every day for months. Considerable strength
+is also necessary to deal with the weight of the heavier pack. You should be
+very injury-resistant. The book 'Training for the Uphill Athlete' is our training manual.
+
+* What about mental strength?
 You should be in good mental shape. Impediments, harsh weather, deep
 snow, edgy partners and fatigue are all part of the game. They gnaw at your
 mental strength. They can pull you off center. They can disproportionately
@@ -135,8 +147,8 @@ ship, this endeavor will not be fun and may be very dangerous.
 We all have our techniques. Additionally, I strongly recommend Vipassana meditation as
 taught by S.N. Goenka. Ego is a weakness.
 
-** What's your background?
+* What's your background?
 
-It's a longer story. Check out https://skitraverse.com/info/my-story
+It's a longer story. Check out [[../info/my-story][an abbreviated bit]]
 
 Or see https://brianoney.info for more.

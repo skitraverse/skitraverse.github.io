@@ -3,20 +3,24 @@
 #+TAGS: tips info
 #+LANGUAGE: en
 
+* History
 An tour guide apprentice of mine, Remo Schlosser, improved on my method of using a knife blade
 to scratch the ice off the sticky base of ski skins.  "Necessity is the mother
 of all inventions". His approach? He got sick of asking for my knife and used
 his split.
 
-Problem: it's really cold and your skins aren't sticking anymore.
+* Problem 
+It's really cold and your skins aren't sticking anymore.
 
-The Remo Rub: place one end of your ski down in the snow, lean the other on
-your shoulder, with the base facing away. Pull the iced up sticky side of your
-skin over the exposed edges with a fair bit of tension. The ice will scrape
-off and fall off. Also, this roughs up the adhesive as well. Problem fixed, at
-least for an hour or two.
+* The Remo Rub
+1. Place one end of your ski down in the snow, lean the other on your
+   shoulder, with the base facing away.
+2. Pull the iced up sticky side of your skin over the exposed edges with a
+   fair bit of tension. The ice will scrape off and fall off. Also, this
+   roughs up the adhesive as well.
+3. Problem fixed, at least for an hour or two.
 
-Why does this work so well? The problem is usually  not that the adhesive is
+Why does this work so well? The problem is usually not that the adhesive is
 wet or cold. The problem is the layer of ice between your base and your
 skins. Putting your skins in your coat only melts the ice or snow on
 them. This water then freezes when you use your skins, making the problem

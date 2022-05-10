@@ -1,38 +1,65 @@
-#+TITLE: Plan for traversing the Continental Divide Trail in winter
+#+TITLE: Plan for winter Continental Divide Trail
 #+AUTHOR: Brian J. Oney
 #+TAGS: wintercdt
 #+LANGUAGE: en
 
-** Path
-November 15th until Christmas, I plan to walk north from the Mexican border
-and stop on December 23rd to go spend Christmas with family. During these down
-days, we need to decide whether we will flip-flop or continue northward. Flip-flop: on
-December 27th, I plan to start driving to the Canadian border and continue
-southwards from there.
+* Plan
+Sometime between November 15th and December 1st until Christmas, I plan to
+walk north from the Mexican border. I plan to stop on December 23rd to go spend
+Christmas with family. During these down days, we need to decide whether we
+will continue northward, skip ahead and come back either from where we stopped
+for Christmas or north of whereever it makes sense. I would like to start
+gently, to make sure that Christmas time is enough recovery for the next
+steps.
 
-Why flip-flop? I have three good reasons. First, I will not walk through
-sketchy avalanche conditions. Persistent weak layers are very common for a
-Colorado snowpack. Southern and central Colorado tend to have a stable
-snowpack sometime in March or April. Faceted weak layers are to be taken dead
-seriously. Walking in the hot New Mexican sun in May doesn't sound very
-appealing either. Very likely, I wouldn't be able to ski much in May, anyways.
+Why start in the South and why skip around? I have four reasons. First, I will
+not walk through sketchy avalanche conditions. Persistent weak layers are very
+common for a Colorado snowpack. Southern and central Colorado tend to have a
+stable snowpack sometime in March or April. Faceted weak layers are to be
+taken dead seriously. Walking in the hot New Mexican sun in May doesn't sound
+very appealing either. Very likely, I wouldn't be able to ski much in May,
+anyways.
 
 Second, I don't want to be dealing with hungry, emaciated critters, possibly
-with young, in Montana in April or May. I would rather deal with the heavy snowfalls in
-January (average 20 days of snowfall) and enjoy the powder while waiting for
-the snow to settle!
+with young, in Montana (especially Glacier NP) or Wyoming (Yellowstone NP) in
+April or May. I would rather deal with the heavy snowfalls in January (average
+20 days of snowfall) and enjoy the powder while waiting for the snow to
+settle! This problem is overstated. Bears and wolves usually mind their
+business. Habituated, problematic animals are usually caused by careless
+humans. It is something to keep in mind. Startling a bear while skiing down or
+up is possibly a dangerous situation. 
 
-Third, and probably most importantly, I don't have a partner yet. The three weeks
-leading up to Christmas will serve as an extended trail date for anyone who
-chooses to join me. We will work out our routines and quirks by Christmas, I
-hope. We can go for an FKT for the New Mexican portion and get our legs and backs
-ready for the hard part up north.
+Third, it is better to walk up warm, crusty, and usually more stable southern
+faces in the sun, and ski quickly through colder, softer northerly aspects, where weak
+layers lurk and safety distances are easily maintained.
+
+Fourth, and probably most importantly, I don't have a partner yet. The five
+weeks leading up to Christmas will serve as an extended trail date for anyone
+who chooses to join me. We will work out our routines and quirks by Christmas,
+I hope. Also, on the New Mexican portion, we can get our legs and backs ready
+for the fun skiing part up north.
 
 Alternatively, if the snowpacks in Colorado look inviting, we will keep
 heading North. Walking up in the Sun and skiing down the soft north faces is
-the most fun. We could consider skipping over Colorado to Wyoming and coming
-back in Spring.
-** Principles
+the most fun. We will consider skipping over Colorado to Wyoming and coming
+back in Spring, if we have weak layers. If we start on November 15th, it is
+possible that we'll make it to central Colorado by Christmas. Being past the
+San Juans by then would be a relief to me, knowing that the notoriously bad
+snowpack would be behind us. If it's a low snow year, we still may not have
+been able to ski. I hope for plenty of snow and a stable snowpack in Colorado.
+
+* Path and Terrain
+The terrain along the CDT is typically mellow, avoiding the common ski
+objectives which are often a short distance away. I plan on deviating from the
+classical CDT path to avoid avalanche risks and to chase good snow. This will
+depend also on my partners. 
+
+For example, the CDT path through the Wind River range could not be more
+gentle given the surrounding terrain. I guess that by the time we get there,
+we may be itching for more ambitious path. We'll see then and there what makes
+sense.
+
+* Principles
 1. Safety first.
    - If we need to wait out a vicious storm cycle in a ski town, we ride
      powder until the snow settles. I carry a helmet, ice axe, beacon, probe,
@@ -46,35 +73,36 @@ back in Spring.
 4. Redundant systems.
    - Redundancy in navigation, shelter, and sleeping systems is important.
 5. Social coherence trumps fun.
-   - We stick together.
+   - We stick together within reason.
 6. Rest is very important.
-   - We need to ensure we can handle a 10-day traverse in deep snow. Thorough nightly rest is important.
+   - We need to ensure we can handle a 10-day traverse in deep snow. Thorough
+     nightly rest is important.
 
-** Systems
+* Systems
 - Light backcountry skis with scaled bases and climbings skins. Scaled bases are necessary for efficient.
   - I am open to backcountry cross country skis for certain sections. But I
     trust lightweight touring skis and can comfortably skate with them. 
-- Tent with solid inner. Probably the Tarptent Stratospire Li.
-  - I have tried building a snow cave every night. It is too much work. 
-- Zipperless down sleeping bag (-20°F) with DCF vapor barrier
+- Tent.  My choice: HMG UltaMid 2. Candidates: Tarptent Stratospire Li shell, Durston X-mid 2 shell (or Pro gutted)
+  - Also, I have tried digging a snow cave every night. It is too much work. 
+- Zipperless down sleeping bag (-20°F) with DCF vapor barrier 
   clothing. Timmermade gear serves me very well.
   - I have tried extending all the 3-season ultralight systems for winter and
     failed. This is my current trusted system.
-- Melt snow, heat water: MSR reactor with hanging kit. An (additional) option
-  is using a foldable Nalgene cantene between the back and backpack (and
-  combine no cook with cold soak). It is essential to plan in water collection
-  at flowing waters.
+- Melt snow, heat water: MSR reactor. An (additional) option is using a
+  foldable Nalgene cantene between the back and backpack (and combine no cook
+  with cold soak). It is essential to plan in water collection at flowing
+  waters. Otherwise, we carry too much fuel.
   - I have tried the trail designs fissure alcohol systems for winter
-    traverses. They work well, but are fidgety, slow, and unsafe to use in
+    traverses. They work well, but are fidgety, slow, and stink too much to use in a
     tent. I think the MSR reactor works better for the weight and is more
-    versatile (cook/hang in tent, fuel-to-snow-melted ratio).
+    versatile (cook/hang in tent, fuel-to-snow-melted ratio). 50g of fuel per person per day.
 
-** Finances
+* Finances
 Without the gear investments (about 8k$ upfront!), I would budget
 10k$. Weather-driven stays in town are a variable that may inflate that
 number. I still need to research what permits will be necessary for certain sections.
 
-** People
+* People
 Myself: Experienced alpine winter backcountry *tour* guide, splitboarder,
 skier, powder hound, climate activist.  I am 37 years old, a climate scientist
 turned firmware engineer, a little over 6' (184cm), 75kg, and injury-resistant
@@ -88,14 +116,25 @@ just make more sense for traverses; therefore, I ski.
 
 I have never walked any of the long trails. I plan to when I am older. I have
 done multiple ski traverses in Switzerland and Bulgaria.  I truly enjoy being
-out in the wild, especially in winter.  My favorite thing to do are ski
-traverses. I view an attempt to walk the CDT in winter as a string of ski
+out in the wild, especially in winter.  My favorite thing to do is a ski
+traverse. I view an attempt to walk the CDT in winter as a string of ski
 traverses.
 
 
 You: Experienced winter backcountry *ski* tourer. You should be passionate about
 winter, cold-resistant, have a positive outlook and be full of energy.  
 
-** Next steps
-Let's talk. We should take one of the [[https://UphillAthlete.com][Uphill Athlete]] courses (probably the [[https://uphillathlete.com/grand-traverse-ski-training-plan/][12
-Week Grand Traverse Training Plan]]) together at the very least.
+* Fundraiser
+I sure would like to take the opportunity set a fundraiser challenge and have
+people join me in donating money to a cause. My best idea is to find an
+organization the supports less fortunate communities to build out their
+renewable energy mix, with the goal of long-term energy autonomy. I am open to
+ideas. I guess I'd donate a dollar per mile progress.
+
+* Interested in joining me?
+I will only do the CDT in winter if I have a partner. If you are interested,
+please read through [[../responses-to-obvious-questions][responses to obvious questions]], and take time to reflect
+and decide.  Let's talk. We should take one of the [[https://UphillAthlete.com][Uphill Athlete]] courses
+(probably the [[https://uphillathlete.com/grand-traverse-ski-training-plan/][12 Week Grand Traverse Training Plan]]) together at the very
+least.
+

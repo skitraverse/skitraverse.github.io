@@ -1,8 +1,21 @@
 # -*- coding: utf-8 -*-
 
 import os
+import pypandoc
+import re
+from flask_flatpages.utils import pygmented_markdown
 
-from flask_flatorgpages import convert_org_to_html
+
+def custom_convert_org_to_html(text):
+    md = pypandoc.convert_text(text, to="markdown_strict", format='org')
+    output = pygmented_markdown(md)
+
+    if '<table>' in output:
+        output = re.sub('<table>', '<table class="table table-sm table-striped">', output)
+    if 'img alt="" src="' in output:
+        output = re.sub('src="([^"]+)"', lambda x: f'src="{ url_for("static", filename=x.group(1)) }"', output)
+    # print(output)
+    return output
 
 # Assumes the app is located in the same directory where this file resides
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -21,7 +34,7 @@ FREEZER_DESTINATION = APP_DIR
 FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
 FREEZER_REMOVE_EXTRA_FILES = False
 
-FLATPAGES_HTML_RENDERER = convert_org_to_html
+FLATPAGES_HTML_RENDERER = custom_convert_org_to_html
 
 FLATPAGES_MARKDOWN_EXTENSIONS = []
 FLATPAGES_ROOT = os.path.join(APP_DIR, 'content')
