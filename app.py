@@ -105,7 +105,8 @@ for route in special_content:
 def home():
     route = whoami()
     _ = [x.meta.update({'tags': ''}) for x in pages if 'tags' not in x.meta]
-    info = [page for page in pages if 'tips' in page.meta['tags']]
+    info = [page for page in pages if 'tips' in page.meta['tags'] or
+            'info' in page.meta['tags']]
     wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
     return render_template(
         page_content[route]['template'],
@@ -116,7 +117,7 @@ def home():
     )
 
 
-@app.route('/tips/<path:path>/')
+@app.route('/tips-and-info/<path:path>/')
 def info(path):
     # 'path' is the filename of a page, without the file extension
     route = whoami()

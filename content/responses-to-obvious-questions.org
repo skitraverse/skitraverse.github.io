@@ -158,6 +158,6 @@ meditation as taught by S.N. Goenka. Ego is a weakness.
 
 * What's your background?
 
-It's a longer story. Check out [[../info/my-story][an abbreviated bit]]
+It's a longer story. Check out [[../../info/my-story][an abbreviated bit]]
 
 Or see https://brianoney.info for more.
