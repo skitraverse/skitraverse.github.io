@@ -1,5 +1,6 @@
-#+TITLE: Impressum / Datenschutz
+#+TITLE:  Datenschutz / Impressum 
 #+AUTHOR: Brian J. Oney
+#+TAGS: info
 #+LANGUAGE: en
 
 * Impressum

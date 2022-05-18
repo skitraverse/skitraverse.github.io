@@ -1,6 +1,6 @@
 #+TITLE: The Remo Rub
 #+AUTHOR: Brian J. Oney
-#+TAGS: tips info
+#+TAGS: tips
 #+LANGUAGE: en
 
 * History

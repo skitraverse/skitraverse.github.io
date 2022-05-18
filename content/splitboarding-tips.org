@@ -1,6 +1,6 @@
 #+TITLE: Splitboarding Tips
 #+AUTHOR: Brian J. Oney
-#+TAGS: tips info
+#+TAGS: tips
 #+LANGUAGE: en
 
 

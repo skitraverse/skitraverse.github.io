@@ -66,6 +66,12 @@ special_content = {
         'email_body': 'Dear Brian,\nI want some more info.'
         '\nKind Regards,\nMe!',
     },
+    'tips': {
+        'template': 'page.html',
+        'email_subject': 'I want more tips: ',
+        'email_body': 'Dear Brian,\nI want some more tips.'
+        '\nKind Regards,\nMe!',
+    },
     'info': {
         'template': 'page.html',
         'email_subject': 'I want more information: ',
@@ -105,19 +111,36 @@ for route in special_content:
 def home():
     route = whoami()
     _ = [x.meta.update({'tags': ''}) for x in pages if 'tags' not in x.meta]
-    info = [page for page in pages if 'tips' in page.meta['tags'] or
-            'info' in page.meta['tags']]
+    tips = [page for page in pages if 'tips' in page.meta['tags']]
+    info = [page for page in pages if 'info' in page.meta['tags']]
+    tips.sort(key=lambda x: x.meta['title'])
+    info.sort(key=lambda x: x.meta['title'])
     wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
     return render_template(
         page_content[route]['template'],
         # upcoming=upcoming,
         info=info,
+        tips=tips,
         wintercdt = wintercdt,
         **page_content[route]
     )
 
 
-@app.route('/tips-and-info/<path:path>/')
+@app.route('/tips/<path:path>/')
+def tips(path):
+    # 'path' is the filename of a page, without the file extension
+    route = whoami()
+    # set title etc. from org-file
+    singlepage = pages.get_or_404(path)
+    page_content[route].update(singlepage.meta)
+    # pdb.set_trace()
+    return render_template(
+        page_content[route]['template'],
+        page=singlepage,
+        **page_content[route]
+    )
+
+@app.route('/info/<path:path>/')
 def info(path):
     # 'path' is the filename of a page, without the file extension
     route = whoami()
