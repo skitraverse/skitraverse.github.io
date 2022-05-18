@@ -4,18 +4,21 @@
 #+LANGUAGE: en
 
 * Why all the fuss
-Winter needs alot more stuff to deal with the elements. Adding the whole ski touring set up usually doubles the necessary winter weight. Everything I have chosen has been highly scrutinized.
+Winter needs alot more stuff to deal with the elements. Adding the whole ski
+touring set up usually doubles the necessary winter weight. Everything I have
+chosen has been highly scrutinized, but I am not attached to gear. Show me a
+better way, please.
 
 * Remarks
-- Skis: I may go with Voile HyperVector BC skis, but that depends a bit on my partner. Narrow Objective BCs (84mm) for efficiency, mid-fat (96mm) HyperVectors for fun.
+- Skis: I may go with Voile HyperVector BC skis, but that depends a bit on my partner: narrow Objective BCs (84mm) for efficiency, mid-fat (96mm) HyperVectors for fun.
 - Alpine unit: 1km horizontal distance or 100m vertical ascent
 
-* My stuff
+* My current stuff
 | item                                                                      | categ.  |   weight | intended purpose                                           |
 |---------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
 | poles, black crows trios                                                  | ride    |      410 |                                                            |
 | skis, voile hypervector bc 177cm, ski trab titan vario, hyper glide skins | ride    |     3400 | Need the scales for long traverses                         |
-| boots, dynafit tlt 10, size 28                                            | ride    |     2300 | oversized for swelling feet                                |
+| boots, ?                                                                  | ride    |     2300 | oversized for swelling feet                                |
 | helmet, petzl sirocco helmet                                              | ride    |      166 | good enough                                                |
 | beacon, pieps micro BT button                                             | ride    |      150 | light and simple                                           |
 | bag, timmermade winter wren fetal, false bottom, no zipper, -30°c         | sleep   |      988 | ingenious design                                           |
