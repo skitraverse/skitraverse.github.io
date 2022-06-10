@@ -5,93 +5,88 @@
 
 * Timing
 
+Of all things, the timing and sequence is where flexibility will be necessary.
 
-With the goal to maintain a continuous northbound footpath, I intend to start
-sometime between October 15th and November 1st. The finishing goal for this
-initial push is the arrive in Grand Lake, Colorado before a break for
-Christmas. Specifically, I plan to stop on December 23rd to go spend Christmas
-with family.
+Currently, I see two options, and list them in order of my preference. I would
+start northbound mid-November, most likely exiting at Cumbres Pass, Colorado, but
+possibly continuing northward until the avalanche conditions become too
+unpredictable. Another less preferable option, but possibly the only
+reasonable option for a continuous footpath border to border, would be to
+start southbound sometime in January or February, with the goal of being in
+Grand Lake, Colorado by mid-April.
 
-Why Grand Lake specifically? The main priority is to avoid walking through
-steep terrain on a weak snowpack. I will not walk through sketchy avalanche
-conditions (level above 2) and steep terrain (slope angle above
-30⁰). Persistent weak layers are very common for a Colorado snowpack, and
-these weak layers are to be taken dead seriously. The idea to start early
-bases on the lower probability of buried weak layers early on in the season,
-due to the thinner snowpack and hence fewer layers. It is quite possible that
-we will be skiing through a snowpack composed completely of faceted snow. We
-just have to watch out for rocks and sticks. Past Grand Lake, after Ptarmigan
-Point, the CDT begins to mellow, and weak layers ought to be less of an
-issue. The technical crux of the trip will then be behind us, and our focus
-shifts to weathering the winter and making progress for a while.
 
-Why not southbound starting in February? In general, it is better to walk up
-warm, crusty, and usually more stable southern faces in the sun, and ski
-quickly through colder, softer northerly aspects, where weak layers lurk and
-safety distances are easily maintained. Also, after approximately 2.5 months,
-mid-April, I'd be in central Colorado, approximately, and there would be no
-guarantee that the snowpack is stable.
+Why the two options? The technical crux of wintertime CDT is the combination
+of steep terrain of central and southern Colorado and notoriously weak
+snowpack. This area is reserved for the late springtime.  Past Grand Lake and
+the Front Range, the CDT begins to mellow, and the snowpack thickens.
+
+Why is southbound starting mid-Winter my second preference? In general, it is
+better to walk up warm, crusty, and usually more stable southern faces in the
+sun, and ski quickly through colder, softer northerly aspects, where weak
+layers lurk and safety distances are easily maintained.  The disadvantages
+would be missing a considerable amount of powder, hiking in the coldest temps
+on the mountain (only bad when it's frigid), hiking on the most dangerous
+aspects of the mountain (increasing the time of exposure to risk), being less
+able to use a solar charger, possibly hiking up with crampons and skis on my
+back and having to walk down the barren southern slope, and, finally, being in
+New Mexico in June, a hot and windy place at that time of year. None of those
+are deal breakers. Also, after approximately 2.5 months, mid-April or early
+May, I'd be in central Colorado, approximately, which is the time to head
+through the most technical portion of the wintertime CDT.
 
 Probably most importantly, I don't have a partner yet. The three weeks until
 we may hit considerable snow in New Mexico and switch to skis will serve as an
 extended trail date for anyone who chooses to join me. We will work out our
-routines and quirks by Christmas, I hope. Also, on the New Mexican portion, we
-can get our legs and backs ready for the fun skiing part up north.
-
-Alternatively, if the snowpacks in Colorado look terrible already in late
-November and early December, we will consider skipping over Colorado to
-Wyoming and coming back in late Spring. If we start on October 15th, it is
-likely that we'll make it to north-central Colorado by Christmas. Being past
-the San Juans and Collegiate Peaks by then would be a relief to me, knowing
-that the notoriously bad snowpacks would be behind us. If it's a low snow year,
-we still may not have been able to ski. I hope for plenty of snow and a stable
-snowpack in Colorado.
+routines and quirks by Christmas, I expect. Also, on the New Mexican portion, we
+can get our legs and backs ready for the more strenuous but fun skiing portion.
 
 * Path and Terrain
 The terrain along the CDT is typically mellow, avoiding the common ski
 objectives which are often a short distance away. I plan on deviating from the
-classical CDT path to avoid avalanche risks and to chase good snow. This will
+'classical' CDT path to avoid avalanche risks and to chase good snow. This will
 depend also on my partners. 
 
 For example, the CDT path through the Wind River range could not be more
 gentle given the surrounding terrain. I guess that by the time we get there,
-we may be itching for more ambitious path. We'll see then and there what makes
-sense.
+we may be itching for a more ambitious path, although I doubt that. We'll see
+then and there what makes sense.
 
 Above all, I am not loyal to a snow-covered footpath. We must optimize
 according to the following principles.
 
 * Principles
 1. Safety first.
-   - If we need to wait out a vicious storm cycle in a ski town, we ride
-     powder until the snow settles. I carry a helmet, ice axe, beacon, probe,
+   - If we need to wait out a storm cycle, we ride
+     powder or rest until the snow settles. I carry a helmet, ice axe, beacon, probe,
      proper shovel, ski goggles, satellite transceiver, etc. Safety first.
-2. Proper planning.
-   - Food, fuel, weather, and above all time planning are our tools.
+2. Proper planning is safet.
+   - Food, fuel, weather, and above all time planning are our tools to be safe.
 3. Speed is safety.
-   - Weather changes, gear fails, people fall ill. Speed is our
+   - Weather changes, gear fails, people fall ill. Uphill speed is our
      friend. Slowness begets slowness. We need to be fast. 2000 vertical feet
      (600 meters) gain per hour with a load (10-13kg) and a good track should
-     be possible when needed.
-   - Gear is optimized for our speed. Speed during travel, cooking, camping is key.
-4. Redundant systems.
-   - Redundancy in navigation (altimeter and paper maps, compass and map,
-     GPS), shelter (tent, poncho tarp, shovel for snowcave) and sleeping
-     systems (repair materials) is important.
+     be possible when needed. We should be able to sustain 20 to 30 Alpine units (1km distance or 100m vertical) uphill per day.
+   - Gear must be optimized for our speed. Speed during travel, cooking, camping is key.
+4. Redundant systems are necessary.
+   - Redundancy in navigation (altimeter and paper maps, compass and map, cell
+     phone, GPS), shelter (tent, poncho tarp, proper shovel for snowcave) and
+     sleeping systems (repair materials) is necessary.
 5. Social coherence trumps fun.
    - We stick together within reason.
 6. Rest is very important.
-   - We need to ensure we can handle a 10-day traverse in deep snow. Thorough
-     nightly rest is important.
+   - We need to ensure we can handle a 14-day traverse in deep snow. Thorough
+     nightly rest is important to recover.
 
 * Systems
 - Light backcountry skis with scaled bases and climbings skins. Scaled bases are necessary for efficient.
   - I am open to backcountry cross country skis for certain sections. But I
-    trust lightweight touring skis and can comfortably skate with them. 
+    trust lightweight touring skis and can comfortably skate with them.
 - Tent: My choice: Durston X-mid 2 fly (or Pro gutted), Candidates: Durston
   X-mid 2 with solid inner tent, HMG UltaMid 2, Tarptent Stratospire Li with
   solid inner.
-  - Also, I have tried digging a snow cave every night. It is too much work. Good backup shelter.
+  - Note: I have tried digging a snow cave every night. It is too much work
+    and too slow. Good backup shelter.
 - Zipperless down sleeping bag (-20°F) with DCF vapor barrier clothing. Timmermade gear serves me very well.
   - Note: I have tried extending all the 3-season ultralight systems for winter and
     failed. This is my current trusted system.
@@ -100,9 +95,9 @@ according to the following principles.
   with cold-soak). It is essential to plan in water collection at flowing
   waters. Otherwise, we carry too much fuel.
   - Note: I have tried the Trail Designs fissure alcohol systems for winter
-    traverses. They work well, but are fidgety, slow, and stink too much to use in a
+    traverses. They work well and are reliable, but are fidgety, slow, and stink too much to use in a
     tent. I think the MSR reactor works better for the weight and is more
-    versatile (cook/hang in tent, fuel-to-snow-melted ratio). 50g of fuel per person per day.
+    versatile (cook/hang in tent, fuel-to-snow-melted ratio). 
 
 * Finances
 Without the gear investments (about 8k$ upfront!), I would budget
@@ -111,39 +106,40 @@ number. I still need to research what permits will be necessary for certain sect
 
 * People
 Myself: Experienced alpine winter backcountry *tour* guide, splitboarder,
-skier, powder hound, climate activist.  I am 37 years old, a climate scientist
+skier, powderhound, climate activist.  I am 37 years old, a climate scientist
 turned firmware engineer, a little over 6' (184cm), 75kg, and injury-resistant
 and well-conditioned. I was born in New Mexico, and live in Switzerland with
 my wife, with no kids.
 
-I have been out in the snow since 2015 every winter for ski touring >50 days
-each season.  For weight and efficiency reasons, I learned how to ski
-recently, after 9 years of snowboarding and 9 years of splitboarding. Skis
-just make more sense for traverses; therefore, I ski.
+I have been out in the snow since I was little, but since 2015 every season
+ski touring >50 days, with an upward trend.  For weight and efficiency
+reasons, I learned how to ski recently, after 9 years of snowboarding and 9
+years of almost solely splitboarding. Skis just make more sense for traverses;
+therefore, I ski, and I can ski well enough for the CDT. 
 
 I have never walked any of the long trails. I plan to when I am older. I have
 done multiple ski traverses in Switzerland and Bulgaria.  I truly enjoy being
 out in the wild, especially in winter.  My favorite thing to do is a ski
-traverse. I view an attempt to walk the CDT in winter as a string of ski
-traverses.
+traverse. I enjoy 'bad' weather, also in winter. I view an attempt to walk the
+CDT in winter mostly as a string of ski traverses.
 
 
 You: Experienced winter backcountry *ski* tourer. You should be passionate
 about winter, cold-resistant, have a positive outlook and be full of energy.
 Also, I am open to partial companionship. If you have the skills, please join
-me for a certain part!
+me for a certain part, although I am wary of the social aspect. The mental
+toll of winter conditions tests me every time, but I can handle it and still
+have fun. Can you still have fun when Old Man Winter tests you?
 
 * Fundraiser
-I sure would like to take the opportunity set a fundraiser challenge and have
-people join me in donating money to a cause. My best idea is to find an
-organization the supports less fortunate communities to build out their
+This undertaking is very egotistical of me, but will help me grow at the same
+time. I sure would like to take the opportunity set a fundraiser challenge and
+have people join me in donating money to a cause. My best idea yet is to fund
+an organization the supports less fortunate communities to build out their
 renewable energy mix, with the goal of long-term energy autonomy. I am open to
 ideas. I guess I'd donate a dollar per mile progress.
 
 * Interested in joining me?
 I will only do the CDT in winter if I have a partner. If you are interested,
-please read through [[../responses-to-obvious-questions][responses to obvious questions]], and take time to reflect
-and decide.  Let's talk. We should take one of the [[https://UphillAthlete.com][Uphill Athlete]] courses
-(probably the [[https://uphillathlete.com/grand-traverse-ski-training-plan/][12 Week Grand Traverse Training Plan]]) together at the very
-least.
-
+please read through [[../skills-and-training][Skills and abilities for this attempt]], and take time to reflect
+and decide.  Let's talk. 
