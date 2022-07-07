@@ -17,7 +17,7 @@ better way, please.
 - Ski bindings: Ski Trabs are the best. It would be handy to carry an extra toe and/or heel, but I'd leave them at home.
   
 
-* TODO My current stuff
+* My current stuff
 | item                                                                        | categ.  |   weight | intended purpose                                           |
 |-----------------------------------------------------------------------------+---------+----------+------------------------------------------------------------+
 | poles, dynafit speed vario lower half, 2, with 1 basket                     | ride    |      200 |                                                            |
