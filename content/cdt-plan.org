@@ -99,23 +99,25 @@ according to the following principles.
     tent. I think the MSR reactor works better for the weight and is more
     versatile (cook/hang in tent, fuel-to-snow-melted ratio). 
 
+Please read about my [[../on-style-and-approach][approach to ski traverses]], 
 * Finances
 Without the gear investments (about 8k$ upfront!), I would budget
 10k$. Weather-driven stays in town are a variable that may inflate that
 number. I still need to research what permits will be necessary for certain sections.
 
 * People
-Myself: Experienced alpine winter backcountry *tour* guide, splitboarder,
+Myself: Experienced alpine winter backcountry tour guide, splitboarder,
 skier, powderhound, climate activist.  I am 37 years old, a climate scientist
 turned firmware engineer, a little over 6' (184cm), 75kg, and injury-resistant
 and well-conditioned. I was born in New Mexico, and live in Switzerland with
 my wife, with no kids.
 
 I have been out in the snow since I was little, but since 2015 every season
-ski touring >50 days, with an upward trend.  For weight and efficiency
-reasons, I learned how to ski recently, after 9 years of snowboarding and 9
-years of almost solely splitboarding. Skis just make more sense for traverses;
-therefore, I ski, and I can ski well enough for the CDT. 
+touring >50 days, with an upward trend.  For weight and efficiency reasons, I
+learned how to ski recently, after 9 years of snowboarding and 9 years of
+almost solely splitboarding. Skis just make more sense for traverses;
+therefore, I ski, and I could ski well enough for my traverse in Bulgaria, and
+I can ski well enough for this traverse of the Continental Divide.
 
 I have never walked any of the long trails. I plan to when I am older. I have
 done multiple ski traverses in Switzerland and Bulgaria.  I truly enjoy being
@@ -140,6 +142,7 @@ renewable energy mix, with the goal of long-term energy autonomy. I am open to
 ideas. I guess I'd donate a dollar per mile progress.
 
 * Interested in joining me?
-I will only do the CDT in winter if I have a partner. If you are interested,
-please read through [[../skills-and-training][Skills and abilities for this attempt]], and take time to reflect
-and decide.  Let's talk. 
+I will only traverse the Continental Divide in winter if I have a partner for
+the more critical sections. If you are interested, please read about my
+[[../on-style-and-approach][approach to ski traverses]], please read through [[../skills-and-training][skills and abilities for this
+attempt]], and take time to reflect and decide.  Let's talk.
