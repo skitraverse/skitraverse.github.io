@@ -90,16 +90,15 @@ according to the following principles.
 - Zipperless down sleeping bag (-20°F) with DCF vapor barrier clothing. Timmermade gear serves me very well.
   - Note: I have tried extending all the 3-season ultralight systems for winter and
     failed. This is my current trusted system.
-- Melt snow, heat water: MSR reactor. An (additional) option is using a
+- Melt snow, heat water: fire first, XGK second. An (additional) option is using a
   foldable Nalgene cantene between the back and backpack (and combine no-cook
   with cold-soak). It is essential to plan in water collection at flowing
   waters. Otherwise, we carry too much fuel.
   - Note: I have tried the Trail Designs fissure alcohol systems for winter
     traverses. They work well and are reliable, but are fidgety, slow, and stink too much to use in a
-    tent. I think the MSR reactor works better for the weight and is more
-    versatile (cook/hang in tent, fuel-to-snow-melted ratio). 
+    tent. 
 
-Please read about my [[../on-style-and-approach][approach to ski traverses]], 
+Please read about my [[../on-style-and-approach][approach to ski traverses]].
 * Finances
 Without the gear investments (about 8k$ upfront!), I would budget
 10k$. Weather-driven stays in town are a variable that may inflate that
