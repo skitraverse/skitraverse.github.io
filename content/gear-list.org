@@ -2,9 +2,10 @@
 #+AUTHOR: Brian J. Oney
 #+TAGS: wintercdt
 #+LANGUAGE: en
+#+ORDER: 10
 
 * Why all the fuss
-Winter needs alot more stuff to deal with the elements. Adding the whole ski
+Winter needs more stuff to deal with the elements. Adding the whole ski
 touring set up usually doubles the necessary winter weight. Everything I have
 chosen has been highly scrutinized, but I am not attached to gear. Show me a
 better way, please.
@@ -13,8 +14,11 @@ better way, please.
 - Skis: I may go with Voile HyperVector BC skis, but that depends a bit on my partner: lean Objective BCs (84mm) for efficiency, mid-fat (96mm) HyperVectors for fun or rotten snow.
 - Alpine unit: 1km horizontal distance or 100m vertical ascent, usually takes 15 minutes to travel.
 - Sleeping bag: I am open to sharing a sleeping bag, as long as we are on the same page regarding vapor barrier clothing. I have a Spoonbill UL from Feathered Friends to offer.
-- Tent: Sharing a tent would help reduce weight. I can offer a Hyperlite Mountain Gear Ultamid 2, and a Durston X-mid 2 with a solid inner. I would say the X-mid would require the least work in the evening and will perform the best in wind. Without the inner, we can fit 3 people.
-- Ski bindings: Ski Trabs are the simplest and most featured binding, while being light enough. It would be good to carry an extra toe and/or heel.
+- Tent: Sharing a tent would help reduce weight. I can offer a Hyperlite
+  Mountain Gear Ultamid 2, and a Durston X-mid 2 with a solid inner. I would
+  say the X-mid would require the least work in the evening and will perform
+  the best in wind. Without the inner, we can fit 3 people.
+- Ski bindings: Ski Trabs are the simplest and most featured binding, while being light enough. I will carry an extra toe and will be able to remount a torn-out binding.
   
 
 * My current stuff
@@ -102,10 +106,12 @@ better way, please.
 |                                                                          |         |          |                                                            |
 |                                                                          |         |          |                                                            |
 |                                                                          |         |        g | lbs                                                        |
+|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
 | base weight, carried                                                     |         |     7710 | 17                                                         |
 | base weight total                                                        |         |    15457 | 34                                                         |
 | base weight worn                                                         |         |     7747 | 17                                                         |
 |                                                                          |         |          |                                                            |
+|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
 | base weights                                                             | ride    |     6320 | 13.9                                                       |
 |                                                                          | shelter |      919 | 2                                                          |
 |                                                                          | sleep   |     2021 | 4.4                                                        |
@@ -115,11 +121,13 @@ better way, please.
 |                                                                          | clothe  |     2141 | 4.7                                                        |
 |                                                                          |         |          |                                                            |
 | anticipated weights                                                      | #       |  g, each | note                                                       |
+|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
 | gas per day, g                                                           | 66      |       66 | melt snow every day for 2 liters of boiled water           |
 | food per day, kcal                                                       | 3600    |      720 | Assuming 5.5kcal/g food plus 10% water                     |
 |                                                                          |         |          |                                                            |
 |                                                                          |         |          |                                                            |
 | section                                                                  | nights  | Cons., g | total starting carried weight, g                           |
+|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
 | 15 days                                                                  | 14      |    11004 | 18714                                                      |
 | 8 days                                                                   | 7       |     5502 | 13212                                                      |
 |                                                                          |         |          |                                                            |

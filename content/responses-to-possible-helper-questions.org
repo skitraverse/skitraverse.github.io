@@ -1,12 +1,13 @@
-#+TITLE: Responses to possible helper questions
+#+TITLE: Responses to helper questions
 #+AUTHOR: Brian J. Oney
 #+TAGS: wintercdt
 #+LANGUAGE: en
 
 
-* You'll be passing through my zone and I'd like to come out for a tour and/or bring you your resupply at X pass!
+* You'll be passing through my zone.
+  *... and I'd like to come out for a tour or bring you your resupply at X pass!*
 Cool! Yes, I'd surely appreciate the support and most certainly the company!
-Please be considerate of our style of travel.  Send me an e-mail for now. I'll
+  Send me an e-mail for now, and I'll
 follow-up with more info.
 
 * I'd like to come along for part of the traverse
@@ -15,6 +16,7 @@ of travel. Please read about my [[../on-style-and-approach][approach to ski trav
 obvious questions]], and assess whether your style fits with ours.  Send me an
 e-mail for now. I'll follow-up with more info.
 
-* I am a trail angel, but will not be able to help directly. Here are a few things you should know.
+* I am a trail angel...
+*... but will not be able to help directly. Here are a few things you should know.*
 
 Send me an e-mail please. Thanks for the heads up!  

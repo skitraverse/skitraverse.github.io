@@ -1,6 +1,7 @@
-#+TITLE: Plan for winter Continental Divide Trail
+#+TITLE: Winter traversal of Continental Divide
 #+AUTHOR: Brian J. Oney
 #+TAGS: wintercdt
+#+ORDER: 3
 #+LANGUAGE: en
 
 * Timing
@@ -60,7 +61,7 @@ according to the following principles.
    - If we need to wait out a storm cycle, we ride
      powder or rest until the snow settles. I carry a helmet, ice axe, beacon, probe,
      proper shovel, ski goggles, satellite transceiver, etc. Safety first.
-2. Proper planning is safet.
+2. Proper planning is safety.
    - Food, fuel, weather, and above all time planning are our tools to be safe.
 3. Speed is safety.
    - Weather changes, gear fails, people fall ill. Uphill speed is our
@@ -74,7 +75,7 @@ according to the following principles.
      sleeping systems (repair materials) is necessary.
 5. Social coherence trumps fun.
    - We stick together within reason.
-6. Rest is very important.
+6. Rest and recovery is very important.
    - We need to ensure we can handle a 14-day traverse in deep snow. Thorough
      nightly rest is important to recover.
 
@@ -86,37 +87,38 @@ according to the following principles.
   X-mid 2 with solid inner tent, HMG UltaMid 2, Tarptent Stratospire Li with
   solid inner.
   - Note: I have tried digging a snow cave every night. It is too much work
-    and too slow. Good backup shelter.
+    and too slow, but is a good backup shelter.
 - Zipperless down sleeping bag (-20°F) with DCF vapor barrier clothing. Timmermade gear serves me very well.
   - Note: I have tried extending all the 3-season ultralight systems for winter and
     failed. This is my current trusted system.
 - Melt snow, heat water: fire first, XGK second. An (additional) option is using a
   foldable Nalgene cantene between the back and backpack (and combine no-cook
   with cold-soak). It is essential to plan in water collection at flowing
-  waters. Otherwise, we carry too much fuel.
+  water. Otherwise, we'll carry too much fuel.
   - Note: I have tried the Trail Designs fissure alcohol systems for winter
     traverses. They work well and are reliable, but are fidgety, slow, and stink too much to use in a
     tent. 
 
-Please read about my [[../on-style-and-approach][approach to ski traverses]].
+Why no sled? Please read about my [[../on-style-and-approach][approach to ski traverses]].
 * Finances
 Without the gear investments (about 8k$ upfront!), I would budget
-10k$. Weather-driven stays in town are a variable that may inflate that
+at least 10k$. Weather-driven stays in town are a variable that may inflate that
 number. I still need to research what permits will be necessary for certain sections.
 
 * People
-Myself: Experienced alpine winter backcountry tour guide, splitboarder,
-skier, powderhound, climate activist.  I am 37 years old, a climate scientist
+Myself: Experienced alpine winter backcountry tour guide, splitboard and
+ski mountaineer, powderhound, climate activist.  I am 37 years old, a climate scientist
 turned firmware engineer, a little over 6' (184cm), 75kg, and injury-resistant
 and well-conditioned. I was born in New Mexico, and live in Switzerland with
 my wife, with no kids.
 
-I have been out in the snow since I was little, but since 2015 every season
-touring >50 days, with an upward trend.  For weight and efficiency reasons, I
+I have been out in the snow since I was little, but since 2012 every season
+>80 days touring, with an upward trend.  For weight and efficiency reasons, I
 learned how to ski recently, after 9 years of snowboarding and 9 years of
 almost solely splitboarding. Skis just make more sense for traverses;
-therefore, I ski, and I could ski well enough for my traverse in Bulgaria, and
-I can ski well enough for this traverse of the Continental Divide.
+therefore, I ski, and I skied well enough for my traverse in Bulgaria, with
+plenty of terrible snow, and I can ski well enough for this traverse of the
+Continental Divide.
 
 I have never walked any of the long trails. I plan to when I am older. I have
 done multiple ski traverses in Switzerland and Bulgaria.  I truly enjoy being
@@ -124,13 +126,16 @@ out in the wild, especially in winter.  My favorite thing to do is a ski
 traverse. I enjoy 'bad' weather, also in winter. I view an attempt to walk the
 CDT in winter mostly as a string of ski traverses.
 
+Lukas S.: Experienced ski mountaineer, firmware engineer, longtime tour
+partner of Brian, living in Zurich, Switzerland.
 
 You: Experienced winter backcountry *ski* tourer. You should be passionate
 about winter, cold-resistant, have a positive outlook and be full of energy.
-Also, I am open to partial companionship. If you have the skills, please join
-me for a certain part, although I am wary of the social aspect. The mental
-toll of winter conditions tests me every time, but I can handle it and still
-have fun. Can you still have fun when Old Man Winter tests you?
+Also, I am open to partial companionship. If you have the skills, with some
+vetting you are welcome to joing me for certain parts, although I am wary of
+the social aspect. The mental toll of winter conditions tests me every time,
+but I can handle it and still have fun. Can you still have fun when Old Man
+Winter tests you?
 
 * Fundraiser
 This undertaking is very egotistical of me, but will help me grow at the same

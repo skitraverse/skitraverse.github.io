@@ -1,0 +1,59 @@
+#+TITLE: Skiing the Pirin and Rila Mountains
+#+AUTHOR: Brian J. Oney
+#+TAGS: report tips
+#+ORDER: 6
+#+LANGUAGE: en
+
+* Summary
+- sun is strong.
+- snowline can be high 1000-1800.
+- wind is constantly blowing.
+- good conditions in the Alpine are rare when terrain is gentle.
+- Most terrain is gentle.
+- treeline is high. Pinus mura can be found up to 2500m, but is stunted at this elevation, due to wind.
+- Forests grow thick, large wild rose bushes are common, and fallen branches are everywhere. Bushwhacking is common, and care is needed when skiing in the forest.
+- Map data is readilly available and can be high quality.
+- The hut infrastructure is great. 
+- No helicopter rescue is available as of 2022. Due to the uncertainty and difficulty of a rescue, a conservative approach to these mountains is advised.
+- Wildlife sticks to lower elevations.
+- Snow tends to be a little wet 
+
+* Infrastructure
+It is often unclear if a certain hut has a warden at a certain
+time. Unserviced huts, which are easily accessible e.g. without special
+equipment such as those close to ski resorts (Banderitsa Hut) are often
+locked. Unserviced alpine huts almost always are unlocked and have a room with
+many beds, blankets, and a wood stove, with plenty of wood. Good practice is
+to leave the facilities more orderly than found, and slip some money under the
+reception door.
+
+* Wildlife
+Wolves have cohabitated Bulgaria with humans since the beginning of our
+time. Wolves fear and avoid humans. Likewise, humans fear and avoid
+wolves. Mind your manners, and you may have a problem with a dog, but not a
+wolf.
+
+I may have seen one wolf, which was interested in a dog, which was following
+me and had a limp.
+
+* Map Data
+Maps of steepness classes can be inaccurate, maybe due to the lack of ground
+truth but are sufficient. I used Gaia GPS for this reason. CalTopo has better
+slope class angles in the Pirin and Rila Mountains as of writing this in
+late 2022.
+
+Iskar Tour maps are the best printed option. However, they are very delicate
+for use en route, and require forethought how to stow and access them
+practically. They can be difficult to obtain outside of Bulgaria.
+
+The website bgmountains.org has routinely updated map tiles for offline use
+with a mapping app such as OruxMaps. These are the most detailed electronic
+maps for navigating routes in Bulgaria. The download is free, a donation is
+cool. They also offer a map tiling service: 
+#+begin_src 
+https://bgmtile.kade.si/{Z}/{X}/{Y}.png 
+#+end_src
+
+The best combination for mapping data, as of writing this in late 2022, would
+be to add this tiling service to CalTopo and combine CalTopo's most
+accurate slope angle class. 

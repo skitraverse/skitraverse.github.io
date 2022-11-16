@@ -110,17 +110,24 @@ for route in special_content:
 @app.route('/')
 def home():
     route = whoami()
+    # [print(x) for x in pages]
+    # [print(x.meta) for x in pages]
     _ = [x.meta.update({'tags': ''}) for x in pages if 'tags' not in x.meta]
+    _ = [x.meta.update({'order': 999}) for x in pages if 'order' not in x.meta]
     tips = [page for page in pages if 'tips' in page.meta['tags']]
     info = [page for page in pages if 'info' in page.meta['tags']]
-    tips.sort(key=lambda x: x.meta['title'])
-    info.sort(key=lambda x: x.meta['title'])
+    # reports = [page for page in pages if 'report' in page.meta['tags']]
     wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
+    tips.sort(key=lambda x: x.meta['order'])
+    info.sort(key=lambda x: x.meta['order'])
+    reports.sort(key=lambda x: x.meta['order'])
+    wintercdt.sort(key=lambda x: x.meta['order'])
     return render_template(
         page_content[route]['template'],
         # upcoming=upcoming,
         info=info,
         tips=tips,
+        # reports=reports,
         wintercdt = wintercdt,
         **page_content[route]
     )
@@ -128,6 +135,20 @@ def home():
 
 @app.route('/tips/<path:path>/')
 def tips(path):
+    # 'path' is the filename of a page, without the file extension
+    route = whoami()
+    # set title etc. from org-file
+    singlepage = pages.get_or_404(path)
+    page_content[route].update(singlepage.meta)
+    # pdb.set_trace()
+    return render_template(
+        page_content[route]['template'],
+        page=singlepage,
+        **page_content[route]
+    )
+
+@app.route('/reports/<path:path>/')
+def reports(path):
     # 'path' is the filename of a page, without the file extension
     route = whoami()
     # set title etc. from org-file
