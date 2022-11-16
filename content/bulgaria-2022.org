@@ -1,4 +1,4 @@
-#+TITLE: Skiing the Pirin and Rila Mountains
+#+TITLE: Report: Skiing the Pirin and Rila Mountains
 #+AUTHOR: Brian J. Oney
 #+TAGS: report tips
 #+ORDER: 6
@@ -55,5 +55,5 @@ https://bgmtile.kade.si/{Z}/{X}/{Y}.png
 #+end_src
 
 The best combination for mapping data, as of writing this in late 2022, would
-be to add this tiling service to CalTopo and combine CalTopo's most
+be to add this tiling service to  your CalTopo layers and combine that with CalTopo's most
 accurate slope angle class. 

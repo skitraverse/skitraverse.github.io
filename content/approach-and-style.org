@@ -1,6 +1,6 @@
 #+TITLE: Approach to and style of ski traverses
 #+AUTHOR: Brian J. Oney
-#+ORDER: 6
+#+ORDER: 3
 #+TAGS: tips
 #+LANGUAGE: en
 

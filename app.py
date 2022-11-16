@@ -120,7 +120,7 @@ def home():
     wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
     tips.sort(key=lambda x: x.meta['order'])
     info.sort(key=lambda x: x.meta['order'])
-    reports.sort(key=lambda x: x.meta['order'])
+    # reports.sort(key=lambda x: x.meta['order'])
     wintercdt.sort(key=lambda x: x.meta['order'])
     return render_template(
         page_content[route]['template'],
