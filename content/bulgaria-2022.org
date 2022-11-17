@@ -1,22 +1,22 @@
-#+TITLE: Report: Skiing the Pirin and Rila Mountains
+#+TITLE: Skiing the Pirin and Rila Mountains
 #+AUTHOR: Brian J. Oney
 #+TAGS: report tips
 #+ORDER: 6
 #+LANGUAGE: en
 
-* Summary
-- sun is strong.
-- snowline can be high 1000-1800.
-- wind is constantly blowing.
-- good conditions in the Alpine are rare when terrain is gentle.
-- Most terrain is gentle.
-- treeline is high. Pinus mura can be found up to 2500m, but is stunted at this elevation, due to wind.
-- Forests grow thick, large wild rose bushes are common, and fallen branches are everywhere. Bushwhacking is common, and care is needed when skiing in the forest.
-- Map data is readilly available and can be high quality.
-- The hut infrastructure is great. 
-- No helicopter rescue is available as of 2022. Due to the uncertainty and difficulty of a rescue, a conservative approach to these mountains is advised.
-- Wildlife sticks to lower elevations.
-- Snow tends to be a little wet 
+* Summary from 2022 Trip
+  - Sun is strong.
+  - Snowline can be high 1000-1800.
+  - Wind is constantly blowing.
+  - Good conditions in the Alpine are rare when terrain is gentle.
+  - Most terrain is gentle.
+  - Treeline is high. Pinus mura can be found up to 2500m, but is stunted at this elevation, due to wind.
+  - Forests grow thick, large wild rose bushes are common, and fallen branches are everywhere. Bushwhacking is common, and care is needed when skiing in the forest.
+  - Map data is readilly available and can be high quality.
+  - The hut infrastructure is great. 
+  - No helicopter rescue is available as of 2022. 
+  - Wildlife sticks to lower elevations.
+  - Snow tends to be a little wet 
 
 * Infrastructure
 It is often unclear if a certain hut has a warden at a certain
@@ -27,6 +27,9 @@ many beds, blankets, and a wood stove, with plenty of wood. Good practice is
 to leave the facilities more orderly than found, and slip some money under the
 reception door.
 
+Due to the uncertainty and difficulty of a rescue, a conservative approach to
+these mountains is advised.
+
 * Wildlife
 Wolves have cohabitated Bulgaria with humans since the beginning of our
 time. Wolves fear and avoid humans. Likewise, humans fear and avoid
@@ -34,13 +37,15 @@ wolves. Mind your manners, and you may have a problem with a dog, but not a
 wolf.
 
 I may have seen one wolf, which was interested in a dog, which was following
-me and had a limp.
+me and had a limp. The wolf was not interested in me.
+
+I saw a few chamois. Otherwise, I saw many tracks of boar, deer, wolves, but no bear tracks.
 
 * Map Data
-Maps of steepness classes can be inaccurate, maybe due to the lack of ground
-truth but are sufficient. I used Gaia GPS for this reason. CalTopo has better
-slope class angles in the Pirin and Rila Mountains as of writing this in
-late 2022.
+Maps of slope angle classes can be inaccurate, maybe due to the lack of ground
+truth but are sufficient. I used Gaia GPS, but would not use it here
+again. CalTopo has better slope class angles in the Pirin and Rila Mountains
+as of writing this in late 2022.
 
 Iskar Tour maps are the best printed option. However, they are very delicate
 for use en route, and require forethought how to stow and access them

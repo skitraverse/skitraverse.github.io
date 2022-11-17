@@ -147,19 +147,19 @@ def tips(path):
         **page_content[route]
     )
 
-@app.route('/reports/<path:path>/')
-def reports(path):
-    # 'path' is the filename of a page, without the file extension
-    route = whoami()
-    # set title etc. from org-file
-    singlepage = pages.get_or_404(path)
-    page_content[route].update(singlepage.meta)
-    # pdb.set_trace()
-    return render_template(
-        page_content[route]['template'],
-        page=singlepage,
-        **page_content[route]
-    )
+# @app.route('/reports/<path:path>/')
+# def reports(path):
+#     # 'path' is the filename of a page, without the file extension
+#     route = whoami()
+#     # set title etc. from org-file
+#     singlepage = pages.get_or_404(path)
+#     page_content[route].update(singlepage.meta)
+#     # pdb.set_trace()
+#     return render_template(
+#         page_content[route]['template'],
+#         page=singlepage,
+#         **page_content[route]
+#     )
 
 @app.route('/info/<path:path>/')
 def info(path):
