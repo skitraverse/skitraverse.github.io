@@ -80,7 +80,7 @@ according to the following principles.
      nightly rest is important to recover.
 
 * Systems
-- Light backcountry skis with scaled bases and climbings skins. Scaled bases are necessary for efficient.
+- Light backcountry skis with scaled bases and climbings skins. Scaled bases are helpful for efficiency. A normal pair of skis with kicker skins are also an option.
   - I am open to backcountry cross country skis for certain sections. But I
     trust lightweight touring skis and can comfortably skate with them.
 - Tent: My choice: Durston X-mid 2 fly (or Pro gutted), Candidates: Durston
@@ -88,10 +88,10 @@ according to the following principles.
   solid inner.
   - Note: I have tried digging a snow cave every night. It is too much work
     and too slow, but is a good backup shelter.
-- Zipperless down sleeping bag (-20°F) with DCF vapor barrier clothing. Timmermade gear serves me very well.
+- Zipperless down sleeping bag (-20°F) with DCF vapor barrier clothing and overquilt. Timmermade gear serves me very well.
   - Note: I have tried extending all the 3-season ultralight systems for winter and
     failed. This is my current trusted system.
-- Melt snow, heat water: fire first, XGK second. An (additional) option is using a
+- Melt snow, heat water: fire first, MSR XGK-EX second. An (additional) option is using a
   foldable Nalgene cantene between the back and backpack (and combine no-cook
   with cold-soak). It is essential to plan in water collection at flowing
   water. Otherwise, we'll carry too much fuel.
