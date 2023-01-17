@@ -1,0 +1,13 @@
+#+TITLE: Skiing the CDT in New Mexico
+#+AUTHOR: Brian J. Oney
+#+TAGS: report tips
+#+ORDER: 6
+#+LANGUAGE: en
+
+* Summary
+
+* Infrastructure
+
+* Wildlife
+
+* Map Data
