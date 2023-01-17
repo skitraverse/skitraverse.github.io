@@ -7,17 +7,21 @@
 #+OPTIONS: ^:nil
 
 * Introduction
+
 I list a rough time plan for my northbound ski traverse alond the
 Continental Divide of the western USA. I will attempt to update my progress
 and have it reflected here, when possible.
 
-* Route choice 
+* Route choice
+
 I aim to plan a route that will go 95% of the time given the likelihood that
 the snowpack will be weak and instable. I rely on accurate slope angle
 classes. I am routinely trying to optimize these routes to have better and
 safer skiing. Of course, I am planning bail routes. If the bail routes aren't
 there yet, they are either very obvious, or I haven't planned them yet.
+
 * Alpine units used here
+
 I define an alpine unit as 1km horizontal distance or 100m vertical
 ascent, which usually takes 15 minutes to travel. For the total units, for a
 given distance, I count only the hard ones. That is, I count the distance and
@@ -26,8 +30,10 @@ traveled down, when skiing, are dreamy and easy. I calibrated these numbers
 based on my past trips. I use these as a basis, even though I am in much
 better shape, my kit is lighter, my skis are better, and my route planning
 more exact. I expect these estimates to be accurate. 
-  
+
 * My current plans
+
+Update 2023-01-16: *2 days behind*
 | Caltopo Link           | Appr. Start |                                       Appr. End | Stretch                               | Alpine units | Days | Rest days | Notes                                              | Town stop             | Comrades |
 |------------------------+-------------+-------------------------------------------------+---------------------------------------+--------------+------+-----------+----------------------------------------------------+-----------------------+----------|
 | [[https://caltopo.com/m/U6110][U6110]]                  |  2022-11-21 |                                      2022-12-23 | Mexican border to Cumbres Pass        |         1521 |   32 |         5 | Follow CDT, skis after Ghost Ranch, 50 units a day |                       |          |
@@ -69,7 +75,4 @@ more exact. I expect these estimates to be accurate.
 | units/day winter       |          32 | ← Counting vertical gain and distance, not down |                                       |              |      |           |                                                    |                       |          |
 | units/day spring       |          42 |                ← Approximately after March 15th |                                       |              |      |           |                                                    |                       |          |
 | rest and length buffer |         0.2 |                                                 |                                       |              |      |           |                                                    |                       |          |
- 
-  
- 
-  
+
