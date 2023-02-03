@@ -34,6 +34,8 @@ more exact. I expect these estimates to be accurate.
 * My current plans
 
 Update 2023-01-16: *2 days behind*
+Update 2023-02-03: *7 days behind, but postponing northern Wind River Traverse until early April, so two days behind until Canada, and 7 days behind Colorado restart date*
+
 | Caltopo Link           | Appr. Start |                                       Appr. End | Stretch                               | Alpine units | Days | Rest days | Notes                                              | Town stop             | Comrades |
 |------------------------+-------------+-------------------------------------------------+---------------------------------------+--------------+------+-----------+----------------------------------------------------+-----------------------+----------|
 | [[https://caltopo.com/m/U6110][U6110]]                  |  2022-11-21 |                                      2022-12-23 | Mexican border to Cumbres Pass, CO      |         1521 |   32 |         5 | Follow CDT, skis after Ghost Ranch, 50 units a day |                       |          |
