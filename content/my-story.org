@@ -5,6 +5,7 @@
 #+LANGUAGE: en
 
 * My abbreviated story of snowy adventures
+
   - Starts as a little kid sledding off the carport roof
   - Cross-country skied once with the Boy Scouts
   - Snowboarded once 1995, 2003, and then a whole lot in college, then on the Weber State University Snowboard team
@@ -15,9 +16,9 @@
   - 2021 Completed alpine Ski Guide Certification (Tourenleiter II)
   - 2021 Stopped snowboarding, started skiing
   - 2022 February and March traversed the Pirin and Rila Mountains of Bulgaria, solo, in multiple directions, on skis
+  - 2022 & 2023 Skied from Ghost Ranch, NM to Cumbres Pass, CO, skied from Fraser, CO to White Pine ski resort near Pinedale, WY. Still skiing northwards. See
 
-   
-*  My story...
+* My story...
 
 ... is still being written.
 
