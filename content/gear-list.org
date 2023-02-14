@@ -5,12 +5,14 @@
 #+ORDER: 10
 
 * Why all the fuss
+
 Winter needs more stuff to deal with the elements. Adding the whole ski
 touring set up usually doubles the necessary winter weight. Everything I have
 chosen has been highly scrutinized, but I am not attached to gear. Show me a
 better way, please.
 
 * Remarks
+
 - Skis: I may go with Voile HyperVector BC skis, but that depends a bit on my partner: lean Objective BCs (84mm) for efficiency, mid-fat (96mm) HyperVectors for fun or rotten snow.
 - Alpine unit: 1km horizontal distance or 100m vertical ascent, usually takes 15 minutes to travel.
 - Sleeping bag: I am open to sharing a sleeping bag, as long as we are on the same page regarding vapor barrier clothing. I have a Spoonbill UL from Feathered Friends to offer.
@@ -19,22 +21,20 @@ better way, please.
   say the X-mid would require the least work in the evening and will perform
   the best in wind. Without the inner, we can fit 3 people.
 - Ski bindings: Ski Trabs are the simplest and most featured binding, while being light enough. I will carry an extra toe and will be able to remount a torn-out binding.
-  
 
 * My current stuff
 
 | item                                                                     | categ.  |   weight | intended purpose                                           |
 |--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
 | poles, skitrab magico                                                    | ride    |      452 |                                                            |
-| skis, voile hypervector bc 177cm, skitrab titan vario, hyperglide skins  | ride    |     3400 | scales for the win                                         |
+| skis | skitrab ortles 90 171cm, skitrab titan gara, skimo race skins and full width skins  | ride    |     3400 | fun, light and efficient                                         |
 | boots, tecnica zero g peak, size 28, w/o powerstrap w/ sf green insoles  | ride    |     2190 | oversized for swelling feet                                |
 | helmet, petzl sirocco helmet                                             | ride    |      166 | good enough                                                |
-| beacon, pieps micro bt button                                            | ride    |      150 | light and simple                                           |
+| beacon, pieps micro bt button                                            | ride    |      150 | light and simple, carry only with partner                                           |
 |                                                                          |         |          |                                                            |
-| bag, timmermade winter wren fetal, false bottom, no zipper, -28°c limit  | sleep   |      988 | comfort -23°c                                              |
+| bag, timmermade winter wren fetal, false bottom, no zipper, -28°c limit  | sleep   |      988 | comfort -23°c, taken to -30⁰C                                              |
 | pad, neoair xtherm rw, w/ bag+repair kit                                 | sleep   |      580 | light, warm, and packable                                  |
-| balaclava, timmermade, down, -24°c                                       | sleep   |       73 | doubles for -30°c storm walking                            |
-| pillow, marmot stratos                                                   | sleep   |       43 |                                                            |
+| balaclava, timmermade, down, -24°c                                       | sleep   |       73 |                           |
 | quilt, gramxpert elite, wide-long, apex 67, 10°c                         | sleep   |      337 | overbag, add 6°c warmth, useful in storm                   |
 |                                                                          |         |          |                                                            |
 | guy lines cordage, hmg, 80’                                              | shelter |       53 | handy                                                      |
@@ -45,9 +45,9 @@ better way, please.
 |                                                                          |         |          |                                                            |
 | matches, uco stormproof                                                  | nourish |       30 |                                                            |
 | pot, msr big titan 2l                                                    | nourish |      183 | winter pot for fire and water                              |
-| fuel bottle, primus 300ml                                                | nourish |      107 |                                                            |
+| fuel bottle, msr 300ml                                                | nourish |      107 |                                                            |
 | fuel bottle, og white gas pet 0.94l                                      | nourish |       42 |                                                            |
-| stove, primus omnilite ti w/ pump                                        | nourish |      321 |                                                            |
+| stove, msr xgk-ex, drilled out and pared down w/ pump                                        | nourish |      321 |                                                            |
 | lighter, bic, disposable                                                 | nourish |       22 |                                                            |
 | bottle, nalgene canteen 2l, foldable                                     | nourish |       64 | melt water between back and backpack                       |
 | bottle, nalgene hdpe 1000ml                                              | nourish |      108 | cold-soaking pot, water bottle                             |
@@ -60,10 +60,7 @@ better way, please.
 | hip pocket, swd zipperless                                               | pack    |       29 | inreach and snacks                                         |
 | shoulder pocket, swd, lycra                                              | pack    |       17 | helmet and puffy                                           |
 | front pocket, swd, ultra                                                 | pack    |       65 | just big enough for 1l nalgene                             |
-| bottle holder, gramxpert, l                                              | pack    |       19 | ditty                                                      |
-| stuff sack, hmg roll-top, s                                              | pack    |       23 | perfect for -6°c sleeping bag                              |
-| stuff sack, hmg roll-top, m                                              | pack    |       33 | food                                                       |
-| stuff sack, hmg roll-top, l                                              | pack    |       46 | perfect for -30°c sleeping bag                             |
+| stuff sack, hmg roll-top, m                                              | pack    |       33 | white gas bottle bag                                                       |
 | stuff sack, swd lunch box 16.5l                                          | pack    |       42 |                                                            |
 |                                                                          |         |          |                                                            |
 | samsplint                                                                | misc    |      121 |                                                            |
@@ -96,7 +93,7 @@ better way, please.
 | buff, patagonia, sun hat                                                 | clothe  |       39 | works nicely                                               |
 | gloves, showa work, rubberized                                           | clothe  |       58 | sturdy, waterproof and non-breathable at fingers           |
 | socks, freezer bags, 2-pair, 6l 31x46cm                                  | clothe  |       40 | vbl goes between thin socks                                |
-| gloves, ee 2oz ap mitts, large                                           | clothe  |       45 | warm, quick-drying overglove, reinforced                   |
+| gloves, skitrab gara overglove plus, medium                                           | clothe  |       45 | dialed, warm, quick-drying overglove     |
 | shirt, long-sleeved patagonia capilene air crew, m                       | clothe  |      184 |                                                            |
 | thermal underpants, icebreaker merino boot-length                        | clothe  |      118 |                                                            |
 | socks, smartwool, ultrathin, black                                       | clothe  |       66 |                                                            |
@@ -131,3 +128,4 @@ better way, please.
 | 15 days                                                                  | 14      |    11004 | 18714                                                      |
 | 8 days                                                                   | 7       |     5502 | 13212                                                      |
 |                                                                          |         |          |                                                            |
+
