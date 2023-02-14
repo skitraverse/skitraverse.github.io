@@ -27,7 +27,7 @@ better way, please.
 | item                                                                     | categ.  |   weight | intended purpose                                           |
 |--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
 | poles, skitrab magico                                                    | ride    |      452 |                                                            |
-| skis | skitrab ortles 90 171cm, skitrab titan gara, skimo race skins and full width skins  | ride    |     3400 | fun, light and efficient                                         |
+| skis | skitrab ortles 90 171cm, skitrab titan gara, skimo race skins and full width skins  | ride    |     3400 | fun, light and efficient powder skis with the best, minimal binding on the market.                                        |
 | boots, tecnica zero g peak, size 28, w/o powerstrap w/ sf green insoles  | ride    |     2190 | oversized for swelling feet                                |
 | helmet, petzl sirocco helmet                                             | ride    |      166 | good enough                                                |
 | beacon, pieps micro bt button                                            | ride    |      150 | light and simple, carry only with partner                                           |
@@ -40,7 +40,6 @@ better way, please.
 | guy lines cordage, hmg, 80’                                              | shelter |       53 | handy                                                      |
 | groundsheet, zpacks poncho                                               | shelter |      163 | measure                                                    |
 | tent, durston gear x-mid 1 solid, fly, w/ bag                            | shelter |      522 | measure                                                    |
-| bivouac, timmermade, 1-person fetal                                      | shelter |      181 |                                                            |
 |                                                                          |         |          |                                                            |
 |                                                                          |         |          |                                                            |
 | matches, uco stormproof                                                  | nourish |       30 |                                                            |
@@ -62,8 +61,7 @@ better way, please.
 | front pocket, swd, ultra                                                 | pack    |       65 | just big enough for 1l nalgene                             |
 | stuff sack, hmg roll-top, m                                              | pack    |       33 | white gas bottle bag                                                       |
 | stuff sack, swd lunch box 16.5l                                          | pack    |       42 |                                                            |
-|                                                                          |         |          |                                                            |
-| samsplint                                                                | misc    |      121 |                                                            |
+|                                                                          |         |          |                                                            |  
 | repair kit, seamgrip, tape, thread+needle                                | misc    |       66 |                                                            |
 | watch, garmin instinct 2 solar                                           | misc    |       49 | altimeter, thermometer, gps, health meter                  |
 | shovel, arva plume                                                       | misc    |      380 | lightweight, capable and simple                            |
@@ -87,7 +85,7 @@ better way, please.
 | jacket, patagonia das light hoody, m                                     | clothe  |      326 |                                                            |
 | pants, timmermade dcf                                                    | clothe  |       58 | vbl and rain pants, insulation layer, part of sleep system |
 | jacket, timmermade dcf, m                                                | clothe  |      102 | vbl and rain jacket, part of sleep system                  |
-| pants, arc’teryx                                                         | clothe  |      518 |                                                            |
+| pants, montbell dynamo, m                                                        | clothe  |      90   |                                                            |
 | jacket, timmermade sul 1.5, down                                         | clothe  |      213 | warm outer, adds 6°c to sleep system                       |
 | hat, patagonia duck bill trucker                                         | clothe  |       63 |                                                            |
 | buff, patagonia, sun hat                                                 | clothe  |       39 | works nicely                                               |
