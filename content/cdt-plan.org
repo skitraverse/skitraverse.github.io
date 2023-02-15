@@ -83,18 +83,18 @@ according to the following principles.
 
 * Systems
 
-- Light backcountry skis with scaled bases and climbings skins. Scaled bases are helpful for efficiency. A normal pair of skis with kicker skins are also an option.
+- Light backcountry skis with kicker skins (e.g. skimo race skins) or scaled bases and climbing skins. Scaled bases are helpful for efficiency, but ice up. A normal pair of skis with kicker skins is a better option in my opinion.
   - I am open to backcountry cross country skis for certain sections. But I
     trust lightweight touring skis and can comfortably skate with them.
-- Tent: My choice: Durston X-mid 2 fly (or Pro gutted), Candidates: Durston
-  X-mid 2 with solid inner tent, HMG UltaMid 2, Tarptent Stratospire Li with
+- Tent: My *current* choice: Seek Outside Silex and medium u-turn wood stove, Candidates: Seek Outside Cimarron or Redcliff, Durston
+  X-mid 2 with solid inner tent, HMG UltaMid 4, Tarptent Stratospire Li with
   solid inner.
   - Note: I have tried digging a snow cave every night. It is too much work
     and too slow, but is a good backup shelter.
-- Zipperless down sleeping bag (-20°F) with DCF vapor barrier clothing and overquilt. Timmermade gear serves me very well.
+- Zipperless down sleeping bag (-20°F) and, if using the XGK-EX, DCF vapor barrier clothing and overquilt. Timmermade gear serves me very well.
   - Note: I have tried extending all the 3-season ultralight systems for winter and
     failed. This is my current trusted system.
-- Melt snow, heat water: fire first, MSR XGK-EX second. An (additional) option is using a
+- Melt snow, heat water: wood stove first, MSR XGK-EX second. An (additional) option is using a
   foldable Nalgene cantene between the back and backpack (and combine no-cook
   with cold-soak). It is essential to plan in water collection at flowing
   water. Otherwise, we'll carry too much fuel.
@@ -102,7 +102,7 @@ according to the following principles.
     traverses. They work well and are reliable, but are fidgety, slow, and stink too much to use in a
     tent. 
 
-Why no sled? Please read about my [[../on-style-and-approach][approach to ski traverses]].
+Why no sled? Please read about my [[../on-style-and-approach][approach to ski traverses]]. 
 
 * Finances
 
