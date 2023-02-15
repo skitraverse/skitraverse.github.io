@@ -1,7 +1,7 @@
-#+TITLE: Winter traversal of Continental Divide
+#+TITLE: A ski traverse of Continental Divide
 #+AUTHOR: Brian J. Oney
 #+TAGS: wintercdt
-#+ORDER: 3
+#+ORDER: 8
 #+LANGUAGE: en
 
 * Timing

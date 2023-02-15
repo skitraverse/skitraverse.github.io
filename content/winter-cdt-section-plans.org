@@ -2,7 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+TAGS: wintercdt
 #+LANGUAGE: en
-#+ORDER: 7
+#+ORDER: 3
 
 #+OPTIONS: ^:nil
 
@@ -34,7 +34,7 @@ more exact. I expect these estimates to be accurate.
 * My current plans
 
 Update 2023-01-16: *2 days behind*
-Update 2023-02-03: *7 days behind, but postponing northern Wind River Traverse until early April, so two days behind until Canada, and 7 days behind Colorado restart date*
+Update 2023-02-15: *6 days behind, but postponing northern Wind River Traverse until early April, so two days behind until Canada, and 6 days behind Colorado restart date*
 
 | Caltopo Link           | Appr. Start |                                       Appr. End | Stretch                               | Alpine units | Days | Rest days | Notes                                              | Town stop             | Comrades |
 |------------------------+-------------+-------------------------------------------------+---------------------------------------+--------------+------+-----------+----------------------------------------------------+-----------------------+----------|
