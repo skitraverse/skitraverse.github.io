@@ -9,6 +9,7 @@ deactivate
 
 newfiles=$(git status -s | sed  '/^??/!d; /conflict/d; / .#/d; s/^?? //g')
 modfiles=$(git status -s | sed  '/^ M/!d; s/^ M //g')
+echo $newfiles AND $modfiles
 
 
 if [[ $# -eq 0 ]]; then
