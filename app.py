@@ -40,7 +40,7 @@ default_content = {
     'location': 'Rüschlikon, Switzerland<br>8803',
     'page_title': 'Ski Traverse',
     'description': 'Ski traverse stuff',
-    'slogan': 'Come out and play in the snow'
+    'slogan': 'Come out and play, in the snow'
 }
 
 special_content = {
