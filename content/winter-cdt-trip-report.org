@@ -17,69 +17,12 @@ until late spring. I finished at the Devil's Thumb Trailhead, near Fraser,
 Colorado, on June 3rd, 2023, in the evening after 1900MST.
 * Route choice
 
-I aim to plan a route that will go 95% of the time given the likelihood that
-the snowpack will be weak and instable. I rely on accurate slope angle
-classes. I am routinely trying to optimize these routes to have better and
-safer skiing. Of course, I am planning bail routes. If the bail routes aren't
-there yet, they are either very obvious, or I haven't planned them yet.
+Although inspired by the Continental Divide Trail (CDT), I strayed often from
+the CDT to optimize safety, travel speed, and fun. Downhill skiing the CDT is
+not much fun, unless there are otherwise too many fallen trees or other
+vegetation.  In a few cases, I also took snowmobile trails for faster travel
+and, oftentimes, better scenery.
 
-* Alpine units used here
+* My travel
 
-I define an alpine unit as 1km horizontal distance or 100m vertical
-ascent, which usually takes 15 minutes to travel. For the total units, for a
-given distance, I count only the hard ones. That is, I count the distance and
-the units uphill. This is a conservative approach; ideally the distances
-traveled down, when skiing, are dreamy and easy. I calibrated these numbers
-based on my past trips. I use these as a basis, even though I am in much
-better shape, my kit is lighter, my skis are better, and my route planning
-more exact. I expect these estimates to be accurate. 
-
-* My plans
-
-Update 2023-01-16: *2 days behind*
-Update 2023-02-15: *6 days behind, but postponing northern Wind River Traverse until early April, so two days behind until Canada, and 6 days behind Colorado restart date*
-Update 2023-05-01: *Starting the final Colorado section today*
-Update 2023-06-03: *Finished!*
-
-| Caltopo Link           | Appr. Start |                                       Appr. End | Stretch                               | Alpine units | Days | Rest days | Notes                                              | Town stop             | Comrades |
-|------------------------+-------------+-------------------------------------------------+---------------------------------------+--------------+------+-----------+----------------------------------------------------+-----------------------+----------|
-| [[https://caltopo.com/m/U6110][U6110]]                  |  2022-11-21 |                                      2022-12-23 | Mexican border to Cumbres Pass, CO      |         1521 |   32 |         5 | Follow CDT, skis after Ghost Ranch, 50 units a day |                       |          |
-|                        |             |                                                 |                                       |              |      |           |                                                    |                       |          |
-|------------------------+-------------+-------------------------------------------------+---------------------------------------+--------------+------+-----------+----------------------------------------------------+-----------------------+----------|
-| [[https://caltopo.com/m/1DRC3][1DRC3]]                  |  2022-12-28 |                                      2022-12-30 | fraser_grand-lake.gpx                 |           69 |    2 |         0 |                                                    | Grand Lake, CO        |          |
-| [[https://caltopo.com/m/LEMN2][LEMN2]]                  |  2022-12-30 |                                      2023-01-04 | grand-lake_buffalo-pass.gpx           |          169 |    5 |         1 |                                                    | Steamboat Springs, CO |          |
-| [[https://caltopo.com/m/11AF0][11AF0]]                  |  2023-01-05 |                                      2023-01-13 | buffalo-pass_rawlins.gpx              |          244 |    8 |         2 |                                                    | Rawlins, WY           |          |
-| [[https://caltopo.com/m/NLSRN][NLSRN]]                  |  2023-01-15 |                                      2023-01-20 | rawlins_south-pass.gpx                |          219 |    5 |         1 | Probably no skis.                                  | Atlantic City, WY     | Boss     |
-| [[https://caltopo.com/m/CNRFF][CNRFF]]                  |  2023-01-21 |                                      2023-01-26 | south-pass_pinedale.gpx               |          192 |    5 |         1 |                                                    | Pinedale, WY          |          |
-| [[https://caltopo.com/m/GB1MC][GB1MC]]                  |  2023-01-27 |                                      2023-02-01 | pinedale_togwotee-pass.gpx            |          169 |    5 |         1 | May skip and do later.                             | Dubois, WY            |          |
-| [[https://caltopo.com/m/FGJ8K][FGJ8K]]                  |  2023-02-02 |                                      2023-02-10 | togwotee-pass_west-yellowstone.gpx    |          261 |    8 |         2 |                                                    | West Yellowstone      |          |
-| [[https://caltopo.com/m/N0PCC][N0PCC]]                  |  2023-02-12 |                                      2023-02-18 | west-yellowstone_monida.gpx           |          194 |    6 |         1 |                                                    | Lima, MT              | CK?      |
-| [[https://caltopo.com/m/0MD5H][0MD5H]]                  |  2023-02-19 |                                      2023-02-26 | monida_leadore.gpx                    |          235 |    7 |         1 |                                                    | Leadore, ID           | FM?      |
-| [[https://caltopo.com/m/C000J][C000J]]                  |  2023-02-27 |                                      2023-03-07 | leadore_chief-joseph-pass.gpx         |          252 |    8 |         2 | Bannock Pass                                       | North Fork, ID        | CK?      |
-| [[https://caltopo.com/m/53H4R][53H4R]]                  |  2023-03-09 |                                      2023-03-14 | chief-joseph-pass_twin-lakes.gpx      |          156 |    5 |         1 | Lost trail ski resort!                             | Butte, MT             |          |
-| [[https://caltopo.com/m/53H4R][53H4R]]                  |  2023-03-15 |                                      2023-03-15 | twin-lakes-butte.gpx                  |            0 |    0 |         0 | 203 Units; take northern Ley Alternate             | Butte, MT             |          |
-| [[https://caltopo.com/m/53H4R][53H4R]]                  |  2023-03-15 |                                      2023-03-16 | twin-lakes-anaconda.gpx               |           27 |    1 |         0 | Ley Alternate                                      | Anaconda, MT          |          |
-|                        |             |                                                 |                                       |              |      |           |                                                    |                       |          |
-|------------------------+-------------+-------------------------------------------------+---------------------------------------+--------------+------+-----------+----------------------------------------------------+-----------------------+----------|
-| [[https://caltopo.com/m/1GU1H][1GU1H]]                  |  2023-03-17 |                                      2023-03-20 | butte_macdonald-pass.gpx              |          112 |    3 |         1 |                                                    | Helena, MT            | LS       |
-| [[https://caltopo.com/m/QQT14][QQT14]]                  |  2023-03-21 |                                      2023-03-26 | macdonald-pass_rogers-pass.gpx        |          189 |    5 |         1 |                                                    | Browning, MT          | LS       |
-| [[https://caltopo.com/m/R8F63][R8F63]]                  |  2023-03-27 |                                      2023-04-04 | rogers-pass_marias-pass.gpx           |          315 |    8 |         2 | Bob Marshall Wilderness                            | East Glacier, MT      | LS       |
-| [[https://caltopo.com/m/62M05][62M05]]                  |  2023-04-06 |                                      2023-04-11 | marias-pass_waterton-canada.gpx       |          197 |    5 |         1 | Glacier NP                                         | Waterton Lakes, CA?   | LS       |
-|                        |             |                                                 |                                       |              |      |           |                                                    |                       |          |
-|------------------------+-------------+-------------------------------------------------+---------------------------------------+--------------+------+-----------+----------------------------------------------------+-----------------------+----------|
-| [[https://caltopo.com/m/VBEB2][VBEB2]]                  |  2023-04-12 |                                      2023-04-15 | cumbres-pass_wolf-creek-pass.gpx      |          138 |    3 |         1 |                                                    | Pagosa Springs, CO    | TS, DV? |
-| [[https://caltopo.com/m/849FR][849FR]]                  |  2023-04-16 |                                      2023-04-24 | wolf-creek-pass_spring-creek-pass.gpx |          260 |    8 |         2 |                                                    | Lake City, CO         | TS, DV? |
-| [[https://caltopo.com/m/FU8S0][FU8S0]]                  |  2023-04-26 |                                      2023-05-03 | spring-creek-pass_monarch-pass.gpx    |          219 |    7 |         1 |                                                    | Salida, CO            | TS, DV? |
-| [[https://caltopo.com/m/TPLM7][TPLM7]]                  |  2023-05-04 |                                      2023-05-11 | monarch-pass_leadville.gpx            |          226 |    7 |         1 |                                                    | Leadville, CO         | TS, DV? |
-| [[https://caltopo.com/m/TFD6S][TFD6S]]                  |  2023-05-12 |                                      2023-05-20 | leadville_fraser.gpx                  |          252 |    8 |         2 |                                                    | Fraser, CO            | TS, DV? |
-|                        |             |                                                 |                                       |              |      |           |                                                    |                       |          |
-|                        |             |                                                 |                                       |              |      |           |                                                    |                       |          |
-|------------------------+-------------+-------------------------------------------------+---------------------------------------+--------------+------+-----------+----------------------------------------------------+-----------------------+----------|
-|                        |             |                                                 | *Totals:*                             |         5616 |  144 |        28 |                                                    |                       |          |
-|                        |             |                                                 | averages                              |            8 |  5.4 |       1.1 |                                                    |                       |          |
-|                        |             |                                                 |                                       |              |      |           |                                                    |                       |          |
-| *Assumptions:*         |             |                                                 |                                       |              |      |           |                                                    |                       |          |
-| units/day winter       |          32 | ← Counting vertical gain and distance, not down |                                       |              |      |           |                                                    |                       |          |
-| units/day spring       |          42 |                ← Approximately after March 15th |                                       |              |      |           |                                                    |                       |          |
-| rest and length buffer |         0.2 |                                                 |                                       |              |      |           |                                                    |                       |          |
 
