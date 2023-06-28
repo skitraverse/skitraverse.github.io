@@ -11,13 +11,15 @@
 I completed the first traverse during wintertime of the Continental Divide of
 the continental USA. I started hiking from Crazy Cook Monument on November
 21st, 2022, a little after noon. I reached the Canadian border on April 15th,
-around 1330MST, with my partner Lukas S. But, I was not done. I postponed the
-heart of the Colorado Rockies and the northern part of the Wind River Range
-until late spring. I finished at the Devil's Thumb Trailhead, near Fraser,
-Colorado, on June 3rd, 2023, in the evening around 1930MST.
+around 1330MST, with my partner Lukas S. But, I was not done. 
+
+I postponed the heart of the Colorado Rockies and the northern part of the
+Wind River Range until late spring. First, I headed to the Winds, and
+afterwards to Colorado.  I finished at the Devil's Thumb Trailhead, near
+Fraser, Colorado, on June 3rd, 2023, in the evening around 1930MST.
 * Route choice
 
-Although inspired by the Continental Divide Trail (CDT), I strayed often from
+Although inspired by the Continental Divide Trail (CDT), I deviated often from
 the CDT to optimize safety, travel speed, and fun. Downhill skiing the CDT is
 not much fun, unless there are otherwise too many fallen trees or other
 vegetation.  In a few cases, I also took snowmobile trails for faster travel
@@ -44,7 +46,8 @@ Due to avalanche danger, my unwillingness to walk on the side of a road, my unwi
 - *Road walk, US 2*: I skipped about 30 units. Excuse: There was not enough time.
 - *Road walk, , north of Pie Town*: I skipped about 20 units. Excuse: I don't like dangerous road walks, especially when I have a sprained ankle.
 
-An overview can be found at https://caltopo.com/m/E0UE6, which contains an import of my GPS-tracks (red), and the portions that I skipped (blue).
+An overview can be found at https://caltopo.com/m/E0UE6, which contains an import of my GPS-tracks (red), and routes of the portions that I skipped (blue).
+This map contains an import of my GPS-tracks in red, and routes of the portions that I skipped in blue.
   
 There are many reasons people have at most attempted only parts of the CDT in wintertime, the most common reason being personal safety. I am the first person to attempt to traverse the entire CDT in wintertime. My example sets the tone for future attempts.
 
