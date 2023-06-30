@@ -26,7 +26,7 @@ My Garmin Mapshare page is: https://share.garmin.com/skitraverse
 
 
 * My travel
-| Caltopo Link           |      Start |                                             End | Stretch                              | Alpine units | Days | Rest nights | Units/day | Notes                                                                                                                                      | Town stop                   | Comrades |
+| Caltopo Link           | Start date |                                        End date | Stretch                              | Alpine units | Days | Rest nights | Units/day | Notes                                                                                                                                      | Town stop                   | Comrades |
 |------------------------+------------+-------------------------------------------------+--------------------------------------+--------------+------+-------------+-----------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+----------|
 | [[https://caltopo.com/m/U6110][U6110]]                  | 2022-11-21 |                                      2022-12-19 | Mexican border to Ghost Ranch        |         1329 |   29 |           0 |        46 |                                                                                                                                            | Cliff, Pie Town, & Cuba, NM |          |
 | [[https://caltopo.com/m/LEJSH][LEJSH]]                  | 2022-12-19 |                                      2022-12-23 | Ghost Ranch to Cumbres Pass          |          192 |    5 |           5 |        38 | Skied! Storm Elliott kept it cool.                                                                                                         |                             |          |
@@ -56,30 +56,9 @@ My Garmin Mapshare page is: https://share.garmin.com/skitraverse
 |                        |            |                                                 | averages                             |        206.7 |  6.5 |         2.5 |        32 |                                                                                                                                            |                             |          |
 |                        |            |                                                 |                                      |              |      |             |           |                                                                                                                                            |                             |          |
 |------------------------+------------+-------------------------------------------------+--------------------------------------+--------------+------+-------------+-----------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+----------|
-| *Speed:*               |            |                                                 |                                      |              |      |             |           |                                                                                                                                            |                             |          |
+| *Speed:*               |  *Average* |                                                 |                                      |              |      |             |           |                                                                                                                                            |                             |          |
 | units/day winter       |         29 | ← Counting vertical gain and distance, not down |                                      |              |      |             |           |                                                                                                                                            |                             |          |
 | units/day spring       |         34 |                 ← Approximately after March 1st |                                      |              |      |             |           |                                                                                                                                            |                             |          |
 | rest and length buffer |        0.2 |                                                 |                                      |              |      |             |           |                                                                                                                                            |                             |          |
 
 
-
-* Skipped portions
-
-Going over a mountain versus maintaining elevation and traversing around usually requires the same amount of effort. I rerouted often, but also skipped portions entirely.  
-Due to avalanche danger, my unwillingness to walk on the side of a road, my unwillingness to walk a wind-scoured ridge to a pass as opposed to skiing off the ridge, or my need to make a up time, I skipped some of the parts typically considered part of the CDT. I list them in chronological order.
-
-- *Road walk, US-180, turn off to Silver City*: I skipped about 22 units. Excuse: I don't like dangerous road walks, especially when I have CoViD-19.
-- *Road walk, County road A083, north of Pie Town*: I skipped about 20 units. Excuse: I don't like road walks, especially when I have a sprained ankle.
-- *Road walk, Zuni Canyon Road, south of Grants*: I skipped about 8 units. Excuse: I don't like road walks, especially when I have a sprained ankle.
-- *Road walk, NM 197, south of Cuba*: I skipped about 4 units. Excuse: I don't like dangerous road walks, especially when I have a sprained ankle.
-- *Road walk, CO 14 and US 40 to Rabbit Ears Pass*: I skipped about 17 units. Excuse: I don't like dangerous road walks, especially at night.
-- *Road walk, WY HWY 71*: I skipped about 22 units. Excuse: I don't like dangerous road walks.
-- *Ridge walk, east of North Fork, ID*: I skipped about 60 units. Excuse: Avalanche danger going through the north and south forks of Sheep Creek. 
-- *Skiing, northern part of the Pintlars*: I skipped about (105-41) 64 units of good skiing. Excuse: Avalanche danger! I saw a natural avalanche on the north face East Pintler, with a crown of about 20 feet.
-- *Skiing, Anaconda Cutoff*: I skipped about 207 units of skiing. Excuse: Insufficient time and little faith in the snowpack of the mountains surrounding Butte helped make this decision.
-- *Trail walk, US 2*: I skipped about 30 units. Excuse: There was not enough time and the avalanche danger was supposedly high. Originally, I intended on going over the saddle southwest of Calf Robe Mountain, but the conditions forced us to stay lower.
-
-An overview can be found at https://caltopo.com/m/E0UE6, which contains an import of my GPS-tracks (red), and routes of the portions that I skipped (blue).
-This map contains an import of my GPS-tracks in red, and routes of the portions that I skipped in blue.
-  
-There are many reasons people have at most attempted only parts of the CDT in wintertime, the most common reason being personal safety. I am the first person to attempt to traverse the entire CDT in wintertime. My example sets the tone for future attempts.
