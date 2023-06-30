@@ -8,11 +8,11 @@
 
 * Summary
 
-I completed the first traverse during wintertime of the Continental Divide of
-the continental USA. I started hiking from Crazy Cook Monument on November
-21st, 2022, a little after noon. I started skiing December 20th, north of
-Ghost Ranch, NM. I reached the Canadian border on April 15th, around 1330MST,
-with my partner Lukas S.
+I completed the first traversal during wintertime of the Continental Divide of
+the continental USA. I started hiking on the Continental Divide Trail from
+Crazy Cook Monument on November 21st, 2022, a little after noon. I started
+skiing December 20th, north of Ghost Ranch, NM. I reached the Canadian border
+on April 15th, around 1330MST, with my partner Lukas S.
 
 I was not yet done. I had postponed the heart of the Colorado Rockies and the
 northern part of the Wind River Range until late spring, due to typically
@@ -20,17 +20,30 @@ unpredictable avalanche danger. First, I headed to the Winds, and afterwards
 to Cumbres Pass, Colorado.  I finished at the Devil's Thumb Trailhead, near
 Fraser, Colorado, on June 3rd, 2023, in the evening around 1930MST. 
 
-That makes my endeavor 194 days long, 26 days of hiking, about 123 days of
-ski-touring, about 3500 kilometers (2200 miles) traveled on skis. On an average
-day I walkd 10-12 hours, covered 20-25km (12-15 miles) distance, and climbing
-1500-2000m (5000-6500ft) vertical.
+That makes my endeavor 194 days long, with 25 days of hiking, about 123 days
+of ski-touring, about 3500 kilometers (2200 miles) traveled on skis. On an
+average ski-touring day I walked 10-12 hours, covered 20-25km (12-15 miles)
+distance, and climbing 1500-2000m (5000-6500ft) vertical.
+
+I carried all of my food, shelter, and fuel for each section.  In a typical
+week, I would walk 5 days, and rest 2 days. I took about 1.1kg of food per
+day. At the beginning of a typical 5-day ski traverse, my backpack would weigh
+about 14kg (30lbs).
+
+I suffered no frostbite injuries, no major traumas, and was not caught in an
+avalanche.  The coldest times were when I was in the southern Wind River Range
+in late January 2023 and when an arctic front blew into the Centennial
+Mountains in mid-February 2023. I do not know how cold it was. Some reports
+say -25°F (-30°C) with winds of 30mph (50kmh). It was cold.
 
 An epic ski traverse it was. But just as epic was the winter for much of the
-Rocky Mountain West! The winter of 2022-2023 was one of the snowiest and
-coldest on record for most of the Rocky Mountain West. I was thankful that I
-had plenty of snow to ski on, but getting snowed on often and skinning through
-fresh snow slowed me considerably. I carried all of my food, shelter, and fuel
-for each section
+Rocky Mountain West! The winter of 2022-2023, a transition season from La Niña
+to El Niño, was one of the snowiest and coldest on record for most of the
+Rocky Mountain West. I was thankful that I had plenty of snow to ski on, but
+getting snowed on often and skinning through fresh snow slowed me
+considerably.
+
+I skied a lot of powder.
 
 * Route choice
 
@@ -44,8 +57,8 @@ and, oftentimes, better scenery.
 I used the Garmin Inreach Messenger. It worked satisfactorily and the
 integration with my Garmin Instinct Solar 2 and the Garmin Messenger Android
 app was not excellent, but satisfactory. The Garmin Inreach Messenger does not
-record tracks, but merely sends a tracking point to Garmin's satellites. These
-tracking points are all I have for verification.
+record tracks, but merely sends a tracking point to Garmin's satellites at a preset (10-minute) interval. These
+10-minute tracking points are all I have for formal verification.
   
 My Garmin Mapshare page is: https://share.garmin.com/skitraverse
 
@@ -57,13 +70,13 @@ My Garmin Mapshare page is: https://share.garmin.com/skitraverse
 | [[https://caltopo.com/m/U6110][U6110]]        | 2022-11-21 12:30 | 2022-12-19 13:30                                | Mexican border to Ghost Ranch        |         1329 |    28 |         0 |            47 |                                                                                                                                            | Cliff, Pie Town, & Cuba, NM |      |
 | [[https://caltopo.com/m/LEJSH][LEJSH]]        | 2022-12-19 13:30 | 2022-12-23 18:30                                | Ghost Ranch to Cumbres Pass          |          192 |   4.2 |       4.6 |            46 | Skied! Storm Elliott kept it cool.                                                                                                         |                             |      |
 | [[https://caltopo.com/m/1DRC3][1DRC3]]        | 2022-12-28 08:54 | 2022-12-30 11:54                                | Fraser to Grand Lake                 |           69 |   2.1 |       0.1 |            33 |                                                                                                                                            | Grand Lake, CO              |      |
-| [[https://caltopo.com/m/LEMN2][LEMN2]]        | 2022-12-30 14:18 | 2023-01-05 17:18                                | Grand Lake to Buffalo Pass           |          169 |   6.1 |         2 |            28 | Hitched on CO 14.                                                                                                                          | Steamboat Springs, CO       |      |
+| [[https://caltopo.com/m/LEMN2][LEMN2]]        | 2022-12-30 14:18 | 2023-01-05 17:18                                | Grand Lake to Buffalo Pass           |          169 |   6.1 |         2 |            28 | Pineapple Express snowstorm. I hitched on CO 14.                                                                                           | Steamboat Springs, CO       |      |
 | [[https://caltopo.com/m/11AF0][11AF0]]        | 2023-01-07 17:18 | 2023-01-14 17:18                                | Buffalo Pass to Rawlins              |          244 |     7 |       2.9 |            35 | Hitched last 12 miles to Rawlins                                                                                                           | Rawlins, WY                 |      |
 | [[https://caltopo.com/m/NLSRN][NLSRN]]        | 2023-01-17 14:54 | 2023-01-22 12:54                                | Rawlins to South Pass City           |          219 |   4.9 |       1.9 |            45 | 1 false start, with wife. Two feet of snow in Rawlins, more at South Pass.                                                                 | South Pass City, WY         | Wife |
 | [[https://caltopo.com/m/CNRFF][CNRFF]]        | 2023-01-24 10:30 | 2023-02-02 17:30                                | South Pass City to White Pine Resort |          192 |   9.3 |       4.9 |            21 | Bad decision to attempt.                                                                                                                   | Pinedale, WY                |      |
 | [[https://caltopo.com/m/FGJ8K][FGJ8K]]        | 2023-02-07 15:06 | 2023-02-16 15:06                                | Togwotee Pass to Reas Pass           |          261 |     9 |       1.9 |            29 | 2 nights at Old Faithful Snow Lodge.                                                                                                       | West Yellowstone            |      |
 | [[https://caltopo.com/m/N0PCC][N0PCC]]        | 2023-02-18 12:42 | 2023-02-24 16:42                                | West Yellowstone to Monida Pass      |          194 |   6.2 |      1.75 |            31 | Hitching on I-15 is difficult.                                                                                                             | Lima, MT                    |      |
-| [[https://caltopo.com/m/0MD5H][0MD5H]]        | 2023-02-26 10:42 | 2023-03-03 19:42                                | Monida Pass to Bannock Pass          |          235 |   5.4 |       1.6 |            44 | Skied off of Horse Prairie.                                                                                                                | Leadore, ID                 |      |
+| [[https://caltopo.com/m/0MD5H][0MD5H]]        | 2023-02-26 10:42 | 2023-03-03 19:42                                | Monida Pass to Bannock Pass          |          235 |   5.4 |       1.6 |            44 | I skied off of Horse Prairie.                                                                                                              | Leadore, ID                 |      |
 | [[https://caltopo.com/m/C000J][C000J]]        | 2023-03-05 10:06 | 2023-03-11 11:06                                | Bannock Pass to North Fork           |          252 |     6 |      1.05 |            42 | Avalanche situation was too dangerous past Fourth of July creek headwaters.                                                                | North Fork, ID              |      |
 | [[https://caltopo.com/m/53H4R][53H4R]]        | 2023-03-12 12:18 | 2023-03-16 13:18                                | Lost Trail Pass to Georgetown Lake   |          156 |     4 |         2 |            39 | Avalanche situation was too dangerous past Pintlar Pass.                                                                                   | Anaconda, MT                |      |
 | [[https://caltopo.com/m/1GU1H][1GU1H]]        | 2023-03-18 13:18 | 2023-03-21 19:18                                | Anaconda to MacDonald Pass           |          112 |   3.3 |       0.8 |            34 | Anaconda Cutoff taken.                                                                                                                     | Helena, MT                  | LS   |
