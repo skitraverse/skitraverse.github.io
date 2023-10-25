@@ -23,106 +23,100 @@ better way, please.
 
 * My current stuff
 
-| item                                                                     | categ.  |   weight | intended purpose                                           |
-|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
-| poles, skitrab magico                                                    | ride    |      452 |                                                            |
-| skis | skitrab ortles 90 171cm, skitrab titan gara, skimo race skins and full width skins  | ride    |     3400 | fun, light and efficient powder skis with the best, minimal binding on the market.                                        |
-| boots, tecnica zero g peak, size 28, w/o powerstrap w/ sf green insoles  | ride    |     2190 | oversized for swelling feet                                |
-| helmet, petzl sirocco helmet                                             | ride    |      166 | good enough                                                |
-| beacon, pieps micro bt button                                            | ride    |      150 | light and simple, carry only with partner                                           |
-|                                                                          |         |          |                                                            |
-| bag, timmermade winter wren fetal, false bottom, no zipper, -28°c limit  | sleep   |      988 | comfort -23°c, taken to -30⁰C                                              |
-| pad, neoair xtherm rw, w/ bag+repair kit                                 | sleep   |      580 | light, warm, and packable                                  |
-| balaclava, timmermade, down, -24°c                                       | sleep   |       73 |                           |
-| quilt, gramxpert elite, wide-long, apex 67, 10°c                         | sleep   |      337 | overbag, add 6°c warmth, useful in storm                   |
-|                                                                          |         |          |                                                            |
-| guy lines cordage, hmg, 80’                                              | shelter |       53 | handy                                                      |
-| groundsheet, zpacks poncho                                               | shelter |      163 | measure                                                    |
-| tent, durston gear x-mid 1 solid, fly, w/ bag                            | shelter |      522 | measure                                                    |
-|                                                                          |         |          |                                                            |
-|                                                                          |         |          |                                                            |
-| matches, uco stormproof                                                  | nourish |       30 |                                                            |
-| pot, msr big titan 2l                                                    | nourish |      183 | winter pot for fire and water                              |
-| fuel bottle, msr 300ml                                                | nourish |      107 |                                                            |
-| fuel bottle, og white gas pet 0.94l                                      | nourish |       42 |                                                            |
-| stove, msr xgk-ex, drilled out and pared down w/ pump                                        | nourish |      321 |                                                            |
-| lighter, bic, disposable                                                 | nourish |       22 |                                                            |
-| bottle, nalgene canteen 2l, foldable                                     | nourish |       64 | melt water between back and backpack                       |
-| bottle, nalgene hdpe 1000ml                                              | nourish |      108 | cold-soaking pot, water bottle                             |
-| spoon, long-handle, toaks                                                | nourish |       15 | squarish head serves as pot scraper                        |
-| firesteel, friendly swede                                                | nourish |       49 | dependable                                                 |
-| bowl, dutchware bowl bag                                                 | nourish |       18 |                                                            |
-|                                                                          |         |          |                                                            |
-| backpack, swd rugged big wild 70l, m                                     | pack    |     1042 | carry heavy comfortably                                    |
-| hip pocket, swd zipperless                                               | pack    |       29 | snacks                                                     |
-| hip pocket, swd zipperless                                               | pack    |       29 | inreach and snacks                                         |
-| shoulder pocket, swd, lycra                                              | pack    |       17 | helmet and puffy                                           |
-| front pocket, swd, ultra                                                 | pack    |       65 | just big enough for 1l nalgene                             |
-| stuff sack, hmg roll-top, m                                              | pack    |       33 | white gas bottle bag                                                       |
-| stuff sack, swd lunch box 16.5l                                          | pack    |       42 |                                                            |
-|                                                                          |         |          |                                                            |  
-| repair kit, seamgrip, tape, thread+needle                                | misc    |       66 |                                                            |
-| watch, garmin instinct 2 solar                                           | misc    |       49 | altimeter, thermometer, gps, health meter                  |
-| shovel, arva plume                                                       | misc    |      380 | lightweight, capable and simple                            |
-| straps, voile, 3                                                         | misc    |       72 |                                                            |
-| goggles, julbo aerospace, band replaced with elastic cord                | misc    |      151 | full backup of sunglasses                                  |
-| first aid, leukotape, bandages, pain pills                               | misc    |       59 |                                                            |
-| compass                                                                  | misc    |       77 |                                                            |
-| satellite transceiver, inreach mini 2                                    | misc    |       99 |                                                            |
-| multitool, gerber dime, stripped                                         | misc    |       45 | works for nails, needs proper bit holder                   |
-| power bank, nb10000 10000mah                                             | misc    |      153 |                                                            |
-| bits full, multitool, torx, philips, flathead                            | misc    |       46 |                                                            |
-| headlamp, petzl bindi                                                    | misc    |       34 |                                                            |
-| sunscreen 50spf                                                          | misc    |       70 |                                                            |
-| smartphone, samsung s22 ultra w/ case                                    | misc    |      266 | decent battery life, good camera                           |
-| charger, microusb + usb-c adapter                                        | misc    |       34 |                                                            |
-| pole repair kit                                                          | misc    |       30 |                                                            |
-| tech toe piece, skitrab                                                  | misc    |       66 | Get off the mountain with just a toe                       |
-|                                                                          |         |          |                                                            |
-|                                                                          |         |          |                                                            |
-| windshirt, patagonia houdini, l                                          | clothe  |      111 | back up jacket, warming layer                              |
-| jacket, patagonia das light hoody, m                                     | clothe  |      326 |                                                            |
-| pants, timmermade dcf                                                    | clothe  |       58 | vbl and rain pants, insulation layer, part of sleep system |
-| jacket, timmermade dcf, m                                                | clothe  |      102 | vbl and rain jacket, part of sleep system                  |
-| pants, montbell dynamo, m                                                        | clothe  |      90   |                                                            |
-| jacket, timmermade sul 1.5, down                                         | clothe  |      213 | warm outer, adds 6°c to sleep system                       |
-| hat, patagonia duck bill trucker                                         | clothe  |       63 |                                                            |
-| buff, patagonia, sun hat                                                 | clothe  |       39 | works nicely                                               |
-| gloves, showa work, rubberized                                           | clothe  |       58 | sturdy, waterproof and non-breathable at fingers           |
-| socks, freezer bags, 2-pair, 6l 31x46cm                                  | clothe  |       40 | vbl goes between thin socks                                |
-| gloves, skitrab gara overglove plus, medium                                           | clothe  |       45 | dialed, warm, quick-drying overglove     |
-| shirt, long-sleeved patagonia capilene air crew, m                       | clothe  |      184 |                                                            |
-| thermal underpants, icebreaker merino boot-length                        | clothe  |      118 |                                                            |
-| socks, smartwool, ultrathin, black                                       | clothe  |       66 |                                                            |
-| socks, smartwool, ultrathin, blue                                        | clothe  |       63 |                                                            |
-| gloves, showa best 282 atlas temres insulated gloves                     | clothe  |      125 |                                                            |
-| nose-cheek cover, bekogear cheeko l                                      | clothe  |       12 | works to keep the nose from freezing                       |
-|                                                                          |         |          |                                                            |
-|                                                                          |         |          |                                                            |
-|                                                                          |         |        g | lbs                                                        |
-|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
-| base weight, carried                                                     |         |     7710 | 17                                                         |
-| base weight total                                                        |         |    15457 | 34                                                         |
-| base weight worn                                                         |         |     7747 | 17                                                         |
-|                                                                          |         |          |                                                            |
-|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
-| base weights                                                             | ride    |     6320 | 13.9                                                       |
-|                                                                          | shelter |      919 | 2                                                          |
-|                                                                          | sleep   |     2021 | 4.4                                                        |
-|                                                                          | nourish |      959 | 2.1                                                        |
-|                                                                          | misc    |     1752 | 3.9                                                        |
-|                                                                          | pack    |     1345 | 3                                                          |
-|                                                                          | clothe  |     2141 | 4.7                                                        |
-|                                                                          |         |          |                                                            |
-| anticipated weights                                                      | #       |  g, each | note                                                       |
-|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
-| gas per day, g                                                           | 66      |       66 | melt snow every day for 2 liters of boiled water           |
-| food per day, kcal                                                       | 3600    |      720 | Assuming 5.5kcal/g food plus 10% water                     |
-|                                                                          |         |          |                                                            |
-|                                                                          |         |          |                                                            |
-| section                                                                  | nights  | Cons., g | total starting carried weight, g                           |
-|--------------------------------------------------------------------------+---------+----------+------------------------------------------------------------|
-| 15 days                                                                  | 14      |    11004 | 18714                                                      |
-| 8 days                                                                   | 7       |     5502 | 13212                                                      |
-|                                                                          |         |          |                                                            |
+| item                                                                                    | categ.  |   weight | Review                                                                             |
+|-----------------------------------------------------------------------------------------+---------+----------+------------------------------------------------------------------------------------|
+| poles, skitrab magico                                                                   | ride    |      422 | Tough, except for the baskets                                                      |
+| skis skitrab ortles 90 171cm, skitrab titan gara, skimo race skins and full width skins | ride    |     3400 | fun, light and efficient powder skis with the best, minimal binding on the market. |
+| boots, tecnica zero g peak, size 28, w/o powerstrap w/ sf green insoles                 | ride    |     2190 | Oversized for swelling feet, plenty stiff.                                         |
+| helmet, petzl sirocco helmet                                                            | ride    |      166 | Good enough, kept head cool.                                                       |
+| beacon, pieps micro bt button                                                           | ride    |      150 | light and simple, carried only with partner                                        |
+|                                                                                         |         |          |                                                                                    |
+| bag, timmermade winter wren fetal, false bottom, no zipper, -30°c                       | sleep   |      988 | comfort -30°c, taken to -40⁰C with synthetic overbag                               |
+| pad, neoair xtherm rw, w/ bag+repair kit                                                | sleep   |      580 | Light, warm, and packable                                                          |
+| balaclava, timmermade, down, -24°c                                                      | sleep   |       73 | Works well. Condensing water vapor can run back down onto face.                    |
+| quilt, gramxpert elite, wide-long, apex 67, 10°c                                        | sleep   |      337 | Overbag, add 6°c warmth, useful in storm                                           |
+|                                                                                         |         |          |                                                                                    |
+| cordage, lawsons ironwire 2.7mm                                                         | shelter |       53 | Guyline replacement                                                                |
+| groundsheet, zpacks poncho                                                              | shelter |      163 | Worked very well when it was dumping.                                              |
+| tent, durston gear x-mid 1 solid, fly, w/ bag                                           | shelter |      522 | Good enough. 2p fly is luxurious for 2 people in winter.                           |
+|                                                                                         |         |          |                                                                                    |
+|                                                                                         |         |          |                                                                                    |
+| pot, msr big titan 2l, with trail designs fissure cone                                  | nourish |      183 | Pot for melting snow. Dialed for melting snow in bad weather.                      |
+| fuel bottle, msr 300ml                                                                  | nourish |      107 |                                                                                    |
+| fuel bottle, og white gas pet 0.94l                                                     | nourish |       42 |                                                                                    |
+| stove, msr xgk-ex, drilled out and pared down w/ pump                                   | nourish |      321 | Perfect.                                                                           |
+| bottle, nalgene canteen 2l, foldable                                                    | nourish |       64 | melt water between back and backpack                                               |
+| spoon, long-handle, toaks                                                               | nourish |       15 | squarish head serves as pot scraper                                                |
+| firesteel, friendly swede                                                               | nourish |       49 | dependable                                                                         |
+| jar, litesmith 400ml                                                                    | nourish |       42 |                                                                                    |
+|                                                                                         |         |          |                                                                                    |
+| backpack, swd rugged big wild 70l, m                                                    | pack    |     1042 | Carried heavy comfortably, bomber.                                                 |
+| hip pocket, swd zipperless                                                              | pack    |       29 | Snacks                                                                             |
+| hip pocket, swd zipperless                                                              | pack    |       29 | Common ditty, sunscreen, wallet, scissors                                          |
+| shoulder pocket, swd, lycra                                                             | pack    |       17 | Poncho, other gloves, jar, puffy, white gas bottle, saw                            |
+| front pocket, swd, ultra                                                                | pack    |       65 | Phone, sunglasses                                                                  |
+| stuff sack, swd lunch box 16.5l                                                         | pack    |       42 | Food bag, bear hang bag.                                                           |
+|                                                                                         |         |          |                                                                                    |
+| repair kit, seamgrip, tape, thread+needle                                               | misc    |       66 |                                                                                    |
+| watch, garmin instinct 2 solar                                                          | misc    |       49 | Battery ok, altimeter, thermometer, health meter                                   |
+| shovel, arva plume                                                                      | misc    |      380 | lightweight, capable and simple.                                                   |
+| straps, voile, 3                                                                        | misc    |       72 | Rarely used.                                                                       |
+| goggles, julbo aerospace, band replaced with elastic cord                               | misc    |      151 | Full backup of sunglasses, great for stormy conditions.                            |
+| first aid, leukotape, bandages, pain pills                                              | misc    |       59 | Barely touched                                                                     |
+| satellite transceiver, inreach mini 2                                                   | misc    |       99 |                                                                                    |
+| power bank, nb10000 10000mah                                                            | misc    |      153 |                                                                                    |
+| bits full, multitool, torx, philips, flathead                                           | misc    |       46 |                                                                                    |
+| headlamp, petzl bindi                                                                   | misc    |       34 |                                                                                    |
+| sunscreen 50spf                                                                         | misc    |       70 |                                                                                    |
+| smartphone, samsung s22 ultra w/ case                                                   | misc    |      266 | decent battery life, good camera                                                   |
+| charger, microusb + usb-c adapter                                                       | misc    |       34 |                                                                                    |
+| pole repair kit                                                                         | misc    |       30 |                                                                                    |
+| tech toe piece, skitrab                                                                 | misc    |       66 | Get off the mountain with just a toe                                               |
+|                                                                                         |         |          |                                                                                    |
+|                                                                                         |         |          |                                                                                    |
+| windshirt, patagonia houdini, l                                                         | clothe  |      111 | back up jacket, warming layer                                                      |
+| jacket, patagonia das light hoody, m                                                    | clothe  |      326 |                                                                                    |
+| pants, timmermade dcf                                                                   | clothe  |       58 | vbl and rain pants, insulation layer, part of sleep system                         |
+| jacket, timmermade dcf, m                                                               | clothe  |      102 | vbl and rain jacket, part of sleep system                                          |
+| pants, montbell dynamo, m                                                               | clothe  |       90 |                                                                                    |
+| jacket, timmermade sul 1.5, down                                                        | clothe  |      213 | warm outer, adds 6°c to sleep system                                               |
+| hat, patagonia duck bill trucker                                                        | clothe  |       63 |                                                                                    |
+| buff, patagonia, sun hat                                                                | clothe  |       39 | works nicely                                                                       |
+| gloves, showa work, rubberized                                                          | clothe  |       58 | sturdy, waterproof and non-breathable at fingers                                   |
+| socks, freezer bags, 2-pair, 6l 31x46cm                                                 | clothe  |       40 | vbl goes between thin socks                                                        |
+| gloves, skitrab gara overglove plus, medium                                             | clothe  |       45 | dialed, warm, quick-drying overglove                                               |
+| shirt, long-sleeved patagonia capilene air crew, m                                      | clothe  |      184 |                                                                                    |
+| thermal underpants, icebreaker merino boot-length                                       | clothe  |      118 |                                                                                    |
+| socks, smartwool, ultrathin, black                                                      | clothe  |       66 |                                                                                    |
+| socks, smartwool, ultrathin, blue                                                       | clothe  |       63 |                                                                                    |
+| gloves, showa best 282 atlas temres insulated gloves                                    | clothe  |      125 |                                                                                    |
+| nose-cheek cover, bekogear cheeko l                                                     | clothe  |       12 | works to keep the nose from freezing                                               |
+|                                                                                         |         |          |                                                                                    |
+|                                                                                         |         |          |                                                                                    |
+|                                                                                         |         |        g | lbs                                                                                |
+|-----------------------------------------------------------------------------------------+---------+----------+------------------------------------------------------------------------------------|
+| base weight, carried                                                                    |         |     7710 | 17                                                                                 |
+| base weight total                                                                       |         |    15457 | 34                                                                                 |
+| base weight worn                                                                        |         |     7747 | 17                                                                                 |
+|                                                                                         |         |          |                                                                                    |
+|-----------------------------------------------------------------------------------------+---------+----------+------------------------------------------------------------------------------------|
+| base weights                                                                            | ride    |     6320 | 13.9                                                                               |
+|                                                                                         | shelter |      919 | 2                                                                                  |
+|                                                                                         | sleep   |     2021 | 4.4                                                                                |
+|                                                                                         | nourish |      959 | 2.1                                                                                |
+|                                                                                         | misc    |     1752 | 3.9                                                                                |
+|                                                                                         | pack    |     1345 | 3                                                                                  |
+|                                                                                         | clothe  |     2141 | 4.7                                                                                |
+|                                                                                         |         |          |                                                                                    |
+| anticipated weights                                                                     | #       |  g, each | note                                                                               |
+|-----------------------------------------------------------------------------------------+---------+----------+------------------------------------------------------------------------------------|
+| gas per day, g                                                                          | 66      |       66 | melt snow every day for 2 liters of boiled water                                   |
+| food per day, kcal                                                                      | 3600    |      720 | Assuming 5.5kcal/g food plus 10% water                                             |
+|                                                                                         |         |          |                                                                                    |
+|                                                                                         |         |          |                                                                                    |
+| section                                                                                 | nights  | Cons., g | total starting carried weight, g                                                   |
+|-----------------------------------------------------------------------------------------+---------+----------+------------------------------------------------------------------------------------|
+| 15 days                                                                                 | 14      |    11004 | 18714                                                                              |
+| 8 days                                                                                  | 7       |     5502 | 13212                                                                              |
+|                                                                                         |         |          |                                                                                    |
 
