@@ -41,9 +41,9 @@
 | fuel bottle, og white gas pet 0.94l                                                     | nourish |       42 | Imported PET bottle from Germany.                                                       |
 | stove, msr xgk-ex, drilled out and pared down w/ pump                                   | nourish |      321 | Perfect.                                                                                |
 | pump oil, msr                                                                           | nourish |       20 | I needed to service pump in field, and oiled the dried out pump cup regularly.          |
-| bottle, nalgene canteen 2l, foldable                                                    | nourish |       64 | melt water between back and backpack                                                    |
-| spoon, long-handle, toaks                                                               | nourish |       15 | squarish head serves as pot scraper                                                     |
-| firesteel, friendly swede                                                               | nourish |       49 | dependable                                                                              |
+| bottle, nalgene canteen 2l, foldable                                                    | nourish |       64 | Melt water between back and backpack                                                    |
+| spoon, long-handle, toaks                                                               | nourish |       15 | Squarish head serves as pot scraper                                                     |
+| firesteel, friendly swede                                                               | nourish |       49 | Dependable                                                                              |
 | jar, litesmith 400ml                                                                    | nourish |       42 |                                                                                         |
 |                                                                                         |         |          |                                                                                         |
 | backpack, swd rugged big wild 70l, m                                                    | pack    |     1042 | Carried heavy comfortably, bomber.                                                      |
@@ -87,31 +87,5 @@
 | nose-cheek cover, bekogear cheeko l                                                     | clothe  |       12 | It worked to keep the nose from freezing. Cycle between this and Cheekito on cold days. |
 | nose-cheek cover, bekogear cheekito l                                                   | clothe  |        9 | It worked to keep the nose from freezing. Quicker to deploy than Cheeko.                |
 |                                                                                         |         |          |                                                                                         |
-|                                                                                         |         |          |                                                                                         |
-|                                                                                         |         |        g | lbs                                                                                     |
-|-----------------------------------------------------------------------------------------+---------+----------+-----------------------------------------------------------------------------------------|
-| base weight, carried                                                                    |         |     7710 | 17                                                                                      |
-| base weight total                                                                       |         |    15457 | 34                                                                                      |
-| base weight worn                                                                        |         |     7747 | 17                                                                                      |
-|                                                                                         |         |          |                                                                                         |
-|-----------------------------------------------------------------------------------------+---------+----------+-----------------------------------------------------------------------------------------|
-| base weights                                                                            | ride    |     6320 | 13.9                                                                                    |
-|                                                                                         | shelter |      919 | 2                                                                                       |
-|                                                                                         | sleep   |     2021 | 4.4                                                                                     |
-|                                                                                         | nourish |      959 | 2.1                                                                                     |
-|                                                                                         | misc    |     1752 | 3.9                                                                                     |
-|                                                                                         | pack    |     1345 | 3                                                                                       |
-|                                                                                         | clothe  |     2141 | 4.7                                                                                     |
-|                                                                                         |         |          |                                                                                         |
-| anticipated weights                                                                     | #       |  g, each | note                                                                                    |
-|-----------------------------------------------------------------------------------------+---------+----------+-----------------------------------------------------------------------------------------|
-| gas per day, g                                                                          | 66      |       66 | melt snow every day for 2 liters of boiled water                                        |
-| food per day, kcal                                                                      | 3600    |      720 | Assuming 5.5kcal/g food plus 10% water                                                  |
-|                                                                                         |         |          |                                                                                         |
-|                                                                                         |         |          |                                                                                         |
-| section                                                                                 | nights  | Cons., g | total starting carried weight, g                                                        |
-|-----------------------------------------------------------------------------------------+---------+----------+-----------------------------------------------------------------------------------------|
-| 15 days                                                                                 | 14      |    11004 | 18714                                                                                   |
-| 8 days                                                                                  | 7       |     5502 | 13212                                                                                   |
 |                                                                                         |         |          |                                                                                         |
 
