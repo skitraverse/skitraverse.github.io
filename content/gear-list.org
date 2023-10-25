@@ -5,8 +5,9 @@
 #+ORDER: 10
 
 
-* Remarks
+* The big 6
 
+- Ski boots: I used the Tecnica Zero G peak. They may not walk the best, but they are very stiff for their weight.
 - Skis: I used the SkiTrab Ortles 90 for winter and SkiTrab Maestro.2 for spring. 
 - Ski bindings: Ski Trabs are the simplest and most featured binding, while being light enough. I used the Gara and Vario.2 binding. I was able to remount a torn-out binding, but never did.
 - Sleeping bag: I used the Timmermade Winter Wren -20⁰F with a GramXpert 50⁰F synthetic overbag for the coldest periods. I shared a Spoonbill UL from Feathered Friends to sleeping bag with a friend for the upper half of Montana's CD.
@@ -15,7 +16,7 @@
 
 
 
-* My current stuff
+* My stuff
 
 | item                                                                                    | categ.  |   weight | Review                                                                                  |
 |-----------------------------------------------------------------------------------------+---------+----------+-----------------------------------------------------------------------------------------|
