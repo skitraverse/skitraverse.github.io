@@ -4,16 +4,28 @@
 #+LANGUAGE: en
 #+ORDER: 4
 
+* Gear is the least important
 
-* The big 6
 
-- Ski boots: I used the Tecnica Zero G peak. They may not walk the best, but they are very stiff for their weight.
-- Skis: I used the SkiTrab Ortles 90 for winter and SkiTrab Maestro.2 for spring. 
-- Ski bindings: Ski Trabs are the simplest and most featured binding, while being light enough. I used the Gara and Vario.2 binding. I was able to remount a torn-out binding, but never did.
-- Sleeping bag: I used the Timmermade Winter Wren -20⁰F with a GramXpert 50⁰F synthetic overbag for the coldest periods. I shared a Spoonbill UL from Feathered Friends to sleeping bag with a friend for the upper half of Montana's CD.
-- Tent: I used the fly of a Durston X-mid 1 or, with my friend Durston X-mid 2. I also used the Seek Outside Silex hot tent alone and the Seek Outside Guardian with my friend. Procuring wood and burning it to melt water was too slow, so we reverted bag to the white gas stove.
-- Backpack: I used the Superior Wilderness Designs Big Wild backpack. It carried well and with the hanging hip belt skied very well with a heavy load.
 
+* My 6 winter systems
+
+** Ski setup
+I used the Tecnica Zero G peak. They may not walk the best, but they are very stiff for their weight.
+I used the SkiTrab Ortles 90 for winter and SkiTrab Maestro.2 for spring.  SkiTrab makes the simplest and most featured pin binding, while being light enough. I used the Gara and Vario.2 binding. I was able to remount a torn-out binding, but never did.
+** Sleeping bag
+I used the Timmermade Winter Wren -20⁰F with a GramXpert 50⁰F synthetic overbag for the coldest periods. I shared a Spoonbill UL from Feathered Friends to sleeping bag with a friend for the upper half of Montana's CD. Timmermade vapor barrier clothing helped me on cold nights.
+** Tent
+I used the fly of a Durston X-mid 1 or, with my friend Durston X-mid 2. I also used the Seek Outside Silex hot tent alone and the Seek Outside Guardian with my friend. Procuring wood and burning it to melt water was too slow, so we reverted bag to the white gas stove.
+** Backpack
+I used the Superior Wilderness Designs Big Wild backpack. It carried well and with the hanging hip belt skied very well with a heavy load.
+** Stove
+I used the MSR XGK-EX with a modified Trail Designs Fissure
+windscreen-potstand combination. I burned bio-white gas. I also used a Seek
+Outside Medium U-Turn, but that requires too much time for cross country
+travel.
+** Clothing
+From inside out top: Patagonia Capilene Air hoody, Patagonia Houdini, Patagonia DAS light jacket, and, with significant precipitation, the Zpacks Poncho Groundsheet, or, at camp a Timmermade SUL 1.5 down sweater.
 
 
 * My stuff
