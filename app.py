@@ -48,8 +48,8 @@ special_content = {
         'template': 'home.html',
         'header_pic': "img/logo.svg",
         'email_subject': 'From Ski Traverse Homepage: ',
-        'email_body': 'Dear Brian,\nI want to learn to run barefoot!'
-        '\nKind Regards,\nMe!',
+        'email_body': 'Dear Brian,\nI want to know more about skitraverses!'
+        '\nKind Regards,',
     },
     # 'event': {
     #     'template': 'page.html',
@@ -70,26 +70,26 @@ special_content = {
         'template': 'page.html',
         'email_subject': 'I want more information: ',
         'email_body': 'Dear Brian,\nI want some more info.'
-        '\nKind Regards,\nMe!',
+        '\nKind Regards,',
     },
     'tips': {
         'template': 'page.html',
         'email_subject': 'I want more tips: ',
         'email_body': 'Dear Brian,\nI want some more tips.'
-        '\nKind Regards,\nMe!',
+        '\nKind Regards,',
     },
     'info': {
         'template': 'page.html',
         'email_subject': 'I want more information: ',
         'email_body': 'Dear Brian,\nI want some more info.'
-        '\nKind Regards,\nMe!',
+        '\nKind Regards,',
     },
     'archive': {
         'template': 'archive.html',
         'title': 'Ski Traverse Event Archive',
         'email_subject': 'From Ski Traverse archive: ',
         'email_body': 'Dear Brian,\nWhat about this event archive?'
-        '\nKind Regards,\nMe!',
+        '\nKind Regards,',
     },
     'disclaimer': {
         'template': 'page.html',

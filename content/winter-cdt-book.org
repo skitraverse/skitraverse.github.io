@@ -7,8 +7,25 @@
 #+OPTIONS: ^:nil
 
 
-* Summary
+* Why a book?
 
+I write this book for those that helped me along the way, and for my family
+and friends. I also add some tidbits for those that enjoy ski traverses, or
+may even attempt to do some similarly epic ski traverse. Also, for those
+adventurers that like a good story and appreciate an example of someone going ahead
+with their crazy idea and succeeding.
+
+For all of you, I am working on a book. It will have prose interlaced with
+photos of people and remote places of the US Rocky Mountains. I will do my
+absolute best to not disappoint you.
+
+Though very partial, my wife likes my writing style, and, while reading some of the
+book, warns me that I won't be going on any such adventures any more, or even
+leaving the house.
+
+
+* Staying up to date
+The below form will subscribe you to a mailing list that I manage with Mailchimp. Write me an e-mail from the link "Get in touch" if you wish that I just email you directly.
 
 #+BEGIN_EXPORT html
 <div id="mc_embed_shell">
