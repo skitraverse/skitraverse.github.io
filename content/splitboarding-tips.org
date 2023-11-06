@@ -5,7 +5,7 @@
 #+LANGUAGE: en
 
 
-THIS IS AN INCOMPLETE DOCUMENT OF MY ADVICE FOR MY SPLITBOARD APPRENTICES
+THIS IS AN INCOMPLETE DOCUMENT OF MY ADVICE FOR MY SPLITBOARD GUIDE ASPIRANTS
 * Planning and executing backcountry tours
   - The Swiss winter backcountry bible, Bergsport Winter, hereafter referred
     to as die Bibel (said like dee beebel), tells you to plan your hike up by
@@ -48,68 +48,68 @@ THIS IS AN INCOMPLETE DOCUMENT OF MY ADVICE FOR MY SPLITBOARD APPRENTICES
     resources accurately: time, energy, and morale. Always consider these
     three as you continuously evaluate the conditions on the mountain.
 * Gear
-** 2 (elastic) straps for fastening various things
+*** 2 (elastic) straps for fastening various things
    - For example: A-frame on backpack, cinch boot heels to Phantom rocket risers, fasten shovel stem to a broken pole.
 
-** Multi-tool with various Torx, Phillips, Hex, and flathead bits
+*** Multi-tool with various Torx, Phillips, Hex, and flathead bits
    - Be a real Hero.
 
-** Helmet with EN1077 & CE12694 certification
+*** Helmet with EN1077 & CE12694 certification
    - You invest a lot of your effort & time into your head. Why skimp on a helmet? MIPS may also save you a concussion. Ride scared or wear a helmet.
 
-** Compass
+*** Compass
    - Getting lost is part of backcountry travel. Redundant systems to regain your bearings provide justified peace of mind...
    - consider models with transparent housing and rulers denoting steepness classes and distances for common high-resolution (1:25000) maps.
 
-** Packable, light insulating jacket
+*** Packable, light insulating jacket
    - Someone may get cold.
 
-** Various cordage
+*** Various cordage
    - May come in handy.
    - 5m of 6mm cordage
    - 3m of 5mm cordage
 
-** Emergency sleeping bag for two
+*** Emergency sleeping bag for two
    - Weighs little, could save lives.
 
-** Rugged smartphone
+*** Rugged smartphone
    - at least cold-, water- & shock-resistant.
    - consider your cell phone service coverage when choosing your provider
    - carry an additional battery on multi-day tours
    - put your phone in airplane mode, unless absolutely necessary.
 
-** neck gaiter
+*** neck gaiter
    - It's the most versatile clothing article. Make it into a beanie, keep the wind off your neck, make it into a sweatband
 
-** high-resolution (1:25000) map of your target region
+*** high-resolution (1:25000) map of your target region
    - consider a transparent, water-proof bag for your map
 
-** First aid kit
+*** First aid kit
    - tape, gauze, sewing kit, 2nd skin/blister pads, & pain pills are nice
 
-** Satellite phone or radio
+*** Satellite phone or radio
    - Do the math what works best for you.
 
-** Insulated flask (thermos)
+*** Insulated flask (thermos)
    - Make up for the added weight by putting snow in your tea.
    - Simple screw-caps tend to retain heat better and be more durable. Cleaning is also easier.
 
-** Avalanche probe
+*** Avalanche probe
    - In addition to being good for finding a buried comrade, it is handy for measuring snow depth or marking a location, say if your buddy falls into a crevasse and you have to leave to .
 
-** Avalanche shovel with telescopic handle
+*** Avalanche shovel with telescopic handle
     - If it doesn't have a good metal blade and handle, you probably don't have a decent chance to dig someone out alive.
 
-** Ice climbing gloves
+*** Ice climbing gloves
    - Durable gloves for hiking up are not the ones marketed for hiking up. Ice climbing gloves are durable and available in warmer and cooler versions, for example.
 
-** Tourist hat
+*** Tourist hat
    - the goofier you look, the better it protects you from the sun.  Realize that you are a tourist. It's ok. We are all guests.
 
-** Ice axe
+*** Ice axe
    - It can be good to have proper tool with you. There are some very light versions for easier alpine tours. Be wary of shovel-axe combination tools. What happens if you lose your ice axe somehow?
 
-** Splitboard
+*** Splitboard
    - This is a very personal thing. I suggest answering the following questions to help guide you to find the right board for you.
      + Length: In my opinion this characteristic is overrated. If the
        conditions are safe for touring, the snow has settled and you don't
@@ -138,12 +138,12 @@ THIS IS AN INCOMPLETE DOCUMENT OF MY ADVICE FOR MY SPLITBOARD APPRENTICES
        Lighter boards tend to be thinner and less durable.  How many hundreds
        of days do you want to ride your board?
 
-** Bindings
+*** Bindings
 The Phantom splitboard bindings are still the best. I won't get into a
 religious war. Alpine touring boots enable easy movement in the
 backcountry. Snowboarding with these light and flexible boots is awesome
 too. Soft boots on the otherhand are dangerous and heavy.
 
-** Isolated Flask with hot liquids
+*** Isolated Flask with hot liquids
    - Why carry tons of water when you are surrounded by it? The amount of water you can melt with your tea is significant. You also don't have to wait for your tea to cool.
 

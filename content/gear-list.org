@@ -2,7 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+TAGS: wintercdt
 #+LANGUAGE: en
-#+ORDER: 4
+#+ORDER: 2
 
 * Gear is the least important pillar
 Most important of all come the mental, i.e. emotional, technical, and reasoning, capabilities. Think emotional, technical, and reasoning courses, mentoring, and personal experience.
@@ -13,25 +13,27 @@ For more, please read through [[../skills-and-training][skills and abilities for
 
 Once those two are clearly established, only then should one consider optimizing gear systems. Personal experience and online forums on the state-of-the-art prove helpful.
 
+If you want more of this, I am writing a book. It's appendix will go more into how I exactly did things. See the [[../winter-cdt-book][page where I justify why yet another book]] to subscribe for updates.
+
 * My 6 winter systems
 
-** Ski setup
+*** Ski setup
 I used the Tecnica Zero G peak. They may not walk the best, but they are very stiff for their weight.
 I used the SkiTrab Ortles 90 for winter and SkiTrab Maestro.2 for spring.  SkiTrab makes the simplest and most featured pin binding, while being light enough. I used the Gara and Vario.2 binding. I was able to remount a torn-out binding, but never did.
 
-** Sleeping
+*** Sleeping
 I used the Timmermade Winter Wren -20⁰F with a GramXpert 50⁰F synthetic overbag for the coldest periods on a Therm-a-rest Xtherm. I shared a Spoonbill UL sleeping bag from Feathered Friends with a friend for the upper half of Montana's CD on and Exped double sleeping pad. Timmermade vapor barrier clothing helped me on cold nights.
 
-** Tent
+*** Tent
 I used the fly of a Durston X-mid 1 or, with my friend the Durston X-mid 2. I also used the Seek Outside Silex hot tent alone and the Seek Outside Guardian with my friend. Procuring wood and burning it to melt water was too slow, so we reverted bag to the white gas stove.
 
-** Backpack
+*** Backpack
 I used the Superior Wilderness Designs Big Wild backpack. It carried well and, with the hanging hip belt, skied very well with a heavy load.
 
-** Stove
+*** Stove
 I used the MSR XGK-EX with a modified Trail Designs Fissure windscreen-potstand combination to hold an MSR Big Titan. I burned bio-white gas. I also used a Seek Outside Medium U-Turn, but that requires too much time for cross country travel.
 
-** Clothing
+*** Clothing
 From inside out top: SkiTrab Overglove Plus or Showa Temres 282 gloves, Patagonia Capilene Air hoody, Patagonia Houdini, Patagonia DAS light jacket, and, with significant precipitation, the Zpacks Poncho Groundsheet, or, at camp a Timmermade SUL 1.5 down sweater.
 From inside out bottom: Pantyhose leggings, Mtntools Vapor Barrier Socks, 2 pair ultrathin ski socks, boot-length thermal underwear, Montbell Dynamo wind pants, Patagonia DAS light pants.
 
