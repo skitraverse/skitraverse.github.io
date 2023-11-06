@@ -60,6 +60,12 @@ special_content = {
     #     'contact_message': 'Sign me up',
     #     'feedback_message': 'Give feedback',
     # },
+    'book': {
+        'template': 'page.html',
+        'email_subject': 'Please tell me more about this book.',
+        'email_body': 'Dear Brian,\nI want some more info on this book.'
+        '\nKind Regards,',
+    },
     'cdtpage': {
         'template': 'page.html',
         'email_subject': 'I want more information: ',
