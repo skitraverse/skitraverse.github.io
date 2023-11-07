@@ -51,15 +51,6 @@ special_content = {
         'email_body': 'Dear Brian,\nI want to know more about skitraverses!'
         '\nKind Regards,',
     },
-    # 'event': {
-    #     'template': 'page.html',
-    #     'blurb': 'Event:',
-    #     'email_subject': 'Brian: %s %s',
-    #     'email_body': 'Please give me some information about you.\nName:'
-    #     '\nTelephone Number: \nNormal running distance: ',
-    #     'contact_message': 'Sign me up',
-    #     'feedback_message': 'Give feedback',
-    # },
     'book': {
         'template': 'page.html',
         'email_subject': 'Please tell me more about this book.',
@@ -116,8 +107,6 @@ for route in special_content:
 @app.route('/')
 def home():
     route = whoami()
-    # [print(x) for x in pages]
-    # [print(x.meta) for x in pages]
     _ = [x.meta.update({'tags': ''}) for x in pages if 'tags' not in x.meta]
     _ = [x.meta.update({'order': 999}) for x in pages if 'order' not in x.meta]
     tips = [page for page in pages if 'tips' in page.meta['tags']]
@@ -126,7 +115,6 @@ def home():
     wintercdt = [page for page in pages if 'wintercdt' in page.meta['tags']]
     tips.sort(key=lambda x: x.meta['order'])
     info.sort(key=lambda x: x.meta['order'])
-    # reports.sort(key=lambda x: x.meta['order'])
     wintercdt.sort(key=lambda x: x.meta['order'])
     return render_template(
         page_content[route]['template'],
