@@ -1,6 +1,7 @@
 #+TITLE: My adventures in the snow
 #+AUTHOR: Brian J. Oney
-#+TAGS: info
+#+CATEGORY: info
+#+CATEGORY: info
 #+ORDER: 3
 #+LANGUAGE: en
 

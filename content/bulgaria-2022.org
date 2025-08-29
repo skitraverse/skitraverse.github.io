@@ -1,6 +1,6 @@
 #+TITLE: Skiing the Pirin and Rila Mountains
 #+AUTHOR: Brian J. Oney
-#+TAGS: report tips
+#+CATEGORY: tips
 #+ORDER: 6
 #+LANGUAGE: en
 

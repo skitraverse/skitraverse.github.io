@@ -1,155 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{% block page_title %}{{ page_title }}{% endblock %}</title>
-        <meta name="description" content="{{ description }}">
-        <meta name="author" content="{{ author }}">
-        
-        <!-- Bootstrap core CSS -->
-        <link href="{{ url_for("static", filename="vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
-        <!-- Custom fonts for this template -->
-        <link href="{{ url_for("static", filename="vendor/font-awesome/css/font-awesome.min.css") }}" rel="stylesheet" type="text/css">
-        <!-- Custom styles for this template -->
-        <link href="{{ url_for("static", filename="css/freelancer.min.css") }}" rel="stylesheet">
-        <link rel='shortcut icon' href="{{ url_for("static", filename='img/logo.ico') }}" type='image/x-icon'/>
-        <!-- <link rel='shortcut icon' type='image/x-icon' href='/logo.ico'/>
-        -->
-    </head>
-
-    <body id="page-top">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="{{ url_for('home') }}">{{ name }}</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        {# some day maybe... #}
-                        <!-- {% for item in structure %}
-                             <li class="nav-item">
-                             <a class="nav-link js-scroll-trigger" href="#{{ item }}">item</a>
-                             </li>
-                             <br>
-                             {% endfor %} -->
-                        <br>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="{{ url_for('home') }}">Home</a>
-                        </li>
-                        <br>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="{{ url_for('cdtpage', path="winter-cdt-book" ) }}">Winter CD(T) Book</a>
-                        </li>
-                        <br>
-                        <li class="nav-item">
-                            <script> 
-                             coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                             key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                             shift=coded.length
-                             link=""
-                             for (i=0; i<coded.length; i++) {
-                                 if (key.indexOf(coded.charAt(i))==-1) {
-                                     ltr = coded.charAt(i)
-                                     link += (ltr)
-                                 }
-                                 else {     
-                                     ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                                     link += (key.charAt(ltr))
-                                 }
-                             }
-                             document.write("<a class='nav-link js-scroll-trigger' href='mailto:"+link+"?subject={{ 'RE: ' ~ title if title is defined else page_title | urlencode }}&body={{ email_body | urlencode }}'>{{ feedback_message if past is defined and past else contact_message }}</a>")
-                            </script>
-                            <noscript><a class="nav-link js-scroll-trigger">Please enable Javascript to write an e-mail</a></noscript>
-                        </li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ DESCRIPTION }}">
+    <meta name="author" content="{{ AUTHOR }}">
+    <title>{{ page.title if page else SITENAME }}</title>
+    <!-- Font Awesome Icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/freelancer.min.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" rel="stylesheet">
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                Menu <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/tips/">Tips</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/info/">Info</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/winter-cdt/">Winter CDT</a></li>
+                </ul>
             </div>
-        </nav>
-
-        <header class="masthead">
-            <div class="container">
-                {% if header_pic %}
-                <img class="img-fluid" src="{{ url_for("static", filename=header_pic) }}" alt="{{ header_pic_alt if header_pic_alt }}"> 
-                {% endif %}
-                <div class="name">
-                    <h1>{{ date ~ ':' if date}} {{ title if title is defined else page_title }}</h1>
-                    <hr class="star-light">
-                </div>
-            </div>
-        </header>
-
-
-        <section class="default">
-            <div class="container">
-                <div class="row text-justify">
-                    <div class="col-lg-10 mx-auto">
-                        
-                        {# Insert content here #}
-                        {% block content %}{% endblock %}
-                    </div> 
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-8 mx-auto">
-                        <hr class="star-primary">
-                        <h2>
-                            <!-- <script src="{{ url_for("static", filename="js/encrypted_mailto.js") }}"></script>{{ contact_message }}</a> -->
-                            <script> 
-                             coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                             key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                             shift=coded.length
-                             link=""
-                             for (i=0; i<coded.length; i++) {
-                                 if (key.indexOf(coded.charAt(i))==-1) {
-                                     ltr = coded.charAt(i)
-                                     link += (ltr)
-                                 }
-                                 else {     
-                                     ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                                     link += (key.charAt(ltr))
-                                 }
-                             }
-                             document.write("<a class='btn-primary btn-lg btn-outline' href='mailto:"+link+"?subject={{ 'RE: ' ~ title if title is defined else page_title | urlencode }}&body={{ email_body | urlencode }}'>{{ feedback_message if past is defined and past else contact_message }}</a>")
-                            </script>
-                            <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-        <div class="scroll-top d-lg-none">
-            <a class="btn btn-primary js-scroll-trigger" href="#page-top">
-                <i class="fa fa-chevron-up"></i>
-            </a>
         </div>
+    </nav>
 
-        {# footer #}
-        {% include "footer.html" %}
+    <!-- Masthead -->
+    {% if not page %}
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Heading -->
+            <h1 class="masthead-heading text-uppercase mb-0">{{ SITENAME }}</h1>
+            <!-- Icon Divider -->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading -->
+            <p class="masthead-subheading font-weight-light mb-0">{{ SLOGAN }}</p>
+        </div>
+    </header>
+    {% endif %}
 
-        <!-- <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
-        <!-- Bootstrap core JavaScript -->
-        <script src="{{ url_for("static", filename="vendor/jquery/jquery.min.js") }}"></script>
-        <script src="{{ url_for("static", filename="vendor/popper/popper.min.js") }}"></script>
-        <script src="{{ url_for("static", filename="vendor/bootstrap/js/bootstrap.min.js") }}"></script>
+    <!-- Content -->
+    <section class="page-section {% if page %}portfolio{% endif %}" id="{% if page %}page{% else %}home{% endif %}">
+        <div class="container">
+            {% if page %}
+            <!-- Page Heading -->
+            <div class="text-center">
+                <h2 class="page-section-heading text-secondary text-uppercase mb-0">{{ page.title }}</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+            {% endif %}
+            
+            {% block content %}{% endblock %}
+        </div>
+    </section>
 
-        <!-- Plugin JavaScript -->
-        <script src="{{ url_for("static", filename="vendor/jquery-easing/jquery.easing.min.js") }}"></script>
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">{{ LOCATION | safe }}</p>
+                </div>
+                <!-- Footer Social Icons -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    {% if LINKS %}
+                    {% for name, link in LINKS %}
+                    <a class="btn btn-outline-light btn-social mx-1" href="{{ link }}">
+                        <i class="fab fa-fw {% if 'instagram' in name.lower() %}fa-instagram{% elif 'facebook' in name.lower() %}fa-facebook-f{% elif 'twitter' in name.lower() %}fa-twitter{% elif 'linkedin' in name.lower() %}fa-linkedin-in{% else %}fa-globe{% endif %}"></i>
+                    </a>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                <!-- Footer About Text -->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Get in Touch</h4>
+                    <p class="lead mb-0">
+                        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/encrypted_mailto.js"></script>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <!-- Contact Form JavaScript -->
-        <script src="{{ url_for("static", filename="js/jqBootstrapValidation.js") }}"></script>
-        <!-- <script src="{{ url_for("static", filename="js/contact_me.js") }}"></script>
-        -->
-        <!-- Custom scripts for this template -->
-        <script src="{{ url_for("static", filename="js/freelancer.min.js") }}"></script>
-    </body>
+    <!-- Copyright Section -->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; {{ AUTHOR }} 2025</small></div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
+    
+    <!-- Plugin JavaScript -->
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.easing.min.js"></script>
+    
+    <!-- Contact Form JavaScript -->
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jqBootstrapValidation.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/contact_me.js"></script>
+    
+    <!-- Custom scripts for this template -->
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/freelancer.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>{% block page_title %}{{ page_title }}{% endblock %}</title>
+      <meta name="description" content="{{ description }}">
+      <meta name="author" content="{{ author }}">
+
+      <!-- Bootstrap core CSS -->
+      <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom fonts for this template -->
+      <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <!-- Custom styles for this template -->
+      <!-- <link href="{{ url_for("static", filename="css/freelancer.min.css") }}" rel="stylesheet"> -->
+      <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/freelancer.css" rel="stylesheet">
+      <!-- <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' /> -->
+      <link rel='shortcut icon' href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.ico" type='image/x-icon'/>
+      <!-- <link rel='shortcut icon' type='image/x-icon' href='/logo.ico'/> -->
+      
+  </head>
+
+  <body id="page-top">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+          <div class="container">
+              <a class="navbar-brand js-scroll-trigger" href="#page-top">{{ name }}</a>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                  <i class="fa fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                      <!-- <li class="nav-item"> -->
+                      <!-- <a class="nav-link js-scroll-trigger" href="#portfolio">Accomplishments</a> -->
+                      <!-- </li> -->
+                      <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="#wintercdt">Winter CD(T)</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="{{ SITEURL }}/pages/winter-cdt-book.html">Book</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                           <a class="nav-link js-scroll-trigger" href="#recent">Recent</a>
+                           </li> -->
+                      <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="#tips">Tips</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="#about">Info</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <!-- Header -->
+      <header class="masthead">
+          <div class="container">
+              <div class="intro-text">
+                  <span class="name">{{ name }}</span>
+                  <hr class="star-light">
+                  <span class="skills">{{ slogan }}</span>
+              </div>
+          </div>
+      </header>
+
+      <!-- Placeholder for {{ cards }} js stuff -->
+
+      <section class="success" id="wintercdt">
+          <div class="container">
+              <h2 class="text-center">Winter CDT</h2>
+              <hr class="star-light">
+              <div class="row text-center">
+                  <div class="col-lg mx-auto">
+                      {% for item in wintercdt %}
+                      <a class="btn btn-lg btn-outline" href="{{ SITEURL }}/pages/{{ item.slug }}.html">
+                          {{ item.meta.title }}
+                      </a>
+                      <br>
+                      {% endfor %}
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      
+      <!-- About Section -->
+      <section class="success" id="tips">
+          <div class="container">
+              <h2 class="text-center">Tips</h2>
+              <hr class="star-light">
+              <div class="text-center">
+                  <div class="row text-center">
+                      <div class="col-lg mx-auto">
+                          {% for page in tips %}
+                          <a class="btn btn-lg btn-outline" href="{{ SITEURL }}/pages/{{ page.slug }}.html">
+                              {{ page.meta.title }}
+                          </a>
+                          <br>
+                          {% endfor %}
+                          <br>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="success" id="about">
+          <div class="container">
+              <h2 class="text-center">Info</h2>
+              <hr class="star-light">
+              <div class="text-center">
+                  <div class="row text-center">
+                      <div class="col-lg mx-auto">
+                          {% for page in info %}
+                          <a class="btn btn-lg btn-outline" href="{{ SITEURL }}/pages/{{ page.slug }}.html">
+                              {{ page.meta.title }}
+                          </a>
+                          <br>
+                          {% endfor %}
+                          <br>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+          <div class="container">
+              <h2 class="text-center">
+                  <!-- <script src="{{ url_for("static", filename="js/encrypted_mailto.js") }}"></script>{{ contact_message }}</a> -->
+                  <script> 
+                   coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                   key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                   shift=coded.length
+                   link=""
+                   for (i=0; i<coded.length; i++) {
+                       if (key.indexOf(coded.charAt(i))==-1) {
+                           ltr = coded.charAt(i)
+                           link += (ltr)
+                       }
+                       else {     
+                           ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                           link += (key.charAt(ltr))
+                       }
+                   }
+                   document.write("<a class='btn-primary btn-lg btn-outline' href='mailto:"+link+"?subject={{ email_subject | urlencode }}&body={{ email_body | urlencode }}'>{{ contact_message }}</a>")
+                   /* document.write("<a href='mailto:"+link+"?subject="+encodeURIComponent("{{ email_subject }}")+ "&body=" + */
+                   /* encodeURIComponent("{{ email_body }}")+"'>{{ contact_message }}</a>") */
+                  </script>
+              <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
+              </h2>
+              <!-- <hr class="star-primary"> -->
+          </div>
+      </section>
+
+      <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+      <div class="scroll-top d-lg-none">
+          <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+              <i class="fa fa-chevron-up"></i>
+          </a>
+      </div>
+
+      {# footer #}
+      {% include "footer.html" %}
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/jquery/jquery.min.js"></script>
+      <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/popper/popper.min.js"></script>
+      <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+      <!-- Plugin JavaScript -->
+      <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Contact Form JavaScript -->
+      <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jqBootstrapValidation.js"></script>
+      <!-- <script src="{{ url_for("static", filename="js/contact_me.js") }}"></script>
+      -->
+      <!-- Custom scripts for this template -->
+      <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/freelancer.min.js"></script>
+
+  </body>
+
+</html>

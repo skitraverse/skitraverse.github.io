@@ -1,7 +1,7 @@
 #+title: Book Reading Schedule
 
 #+AUTHOR: Brian J. Oney
-#+TAGS: wintercdt
+#+CATEGORY: winter-cdt
 #+LANGUAGE: en
 #+ORDER: 0
 
