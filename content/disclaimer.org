@@ -1,6 +1,7 @@
 #+TITLE: Disclaimer / Data Protection
 #+AUTHOR: Brian J. Oney
-#+TAGS: info
+#+CATEGORY: info
+#+CATEGORY: info
 #+ORDER: 999
 #+LANGUAGE: en
 

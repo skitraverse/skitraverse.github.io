@@ -8,7 +8,7 @@
                     <h3>Skitraverse</h3>
                     <p>
                         {% if header_pic %}
-                        <img class="img-fluid" src="{{ url_for("static", filename=header_pic) }}" alt="{{ header_pic_alt if header_pic_alt }}"> 
+                        <img class="img-fluid" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.svg" alt="{{ header_pic_alt if header_pic_alt }}"> 
                         {% endif %}
                     </p>
                 </div>
@@ -56,12 +56,12 @@
                 <div class="footer-col col-md-3">
                     <h3>{{ mission }}</h3>
                     <p>{{ personal_bit | safe }}</p>
-                    <a class='btn-primary btn-lg btn-outline' href="{{ url_for('impressum') }}">
+                    <a class='btn-primary btn-lg btn-outline' href="{{ SITEURL }}/pages/impressum.html">
                         Impressum
                     </a>
                     <br>
                     <br>
-                    <a class='btn-primary btn-lg btn-outline' href="{{ url_for('disclaimer') }}">
+                    <a class='btn-primary btn-lg btn-outline' href="{{ SITEURL }}/pages/disclaimer.html">
                         Disclaimer
                     </a>
 

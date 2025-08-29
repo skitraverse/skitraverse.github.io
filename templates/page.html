@@ -1,4 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-{{ page }}
+<div class="row">
+    <div class="col-lg-8 mx-auto text-center">
+        <div class="page-content">
+            {{ page.content }}
+        </div>
+    </div>
+</div>
 {% endblock %}

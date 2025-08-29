@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 {% for event in events %}
-<a class="btn-primary btn-lg btn-outline" href="{{ url_for('event', path=event.path) }}">
+<a class="btn-primary btn-lg btn-outline" href="{{ SITEURL }}/pages/{{ event.slug }}.html">
     {{ event.meta.date }}
     {{ event.meta.title }}
 </a>

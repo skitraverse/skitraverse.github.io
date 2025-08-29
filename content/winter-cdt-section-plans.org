@@ -1,6 +1,6 @@
 #+TITLE: Winter CDT Section Plans
 #+AUTHOR: Brian J. Oney
-#+TAGS: wintercdt
+#+CATEGORY: winter-cdt
 #+LANGUAGE: en
 #+ORDER: 3
 

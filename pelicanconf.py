@@ -3,6 +3,10 @@ SITENAME = 'Skitraverse'
 SITEURL = "https://skitraverse.com"
 
 PATH = "content"
+# Keep content as pages but customize URLs  
+PAGE_PATHS = [""]
+ARTICLE_PATHS = []
+DISPLAY_PAGES_ON_MENU = False
 
 TIMEZONE = 'Europe/Rome'
 
@@ -26,19 +30,63 @@ SOCIAL = (
     ("Another social link", "#"),
 )
 
-DEFAULT_PAGINATION = 1
+DEFAULT_PAGINATION = False
+DEFAULT_DATE_FORMAT = '%Y-%m-%d'
+DEFAULT_METADATA = {
+    'date': '2023-01-01',
+}
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["org_reader"]  # or: PLUGINS = ["pandoc_reader"]
+PLUGIN_PATHS = ["pelican-plugins", "."]
+PLUGINS = ["org_reader"]
+
+# Force all content to be articles by default
+DEFAULT_METADATA = {
+    'template': 'article',
+}
 
 MARKUP = ("org")
 # Org metadata mapping (these are defaults; keep for clarity)
 ORG_READER_SETTINGS = {
-    "function": "read_org",  # leave as-is
-    # Optional: pass extra args to emacs if you need custom init files
-    # "emacs_binary": "/usr/bin/emacs",
-    # "emacs_args": ["-Q"],  # quick emacs w/o init
+    "function": "read_org",
+    "extra_export_excludes": ["DATE"],
 }
+ORG_READER_EMACS_LOCATION = "/usr/bin/emacs"
+
+# Use filesystem dates for files without explicit dates
+DEFAULT_DATE = 'fs'
+
+# Override metadata processors to handle empty dates
+from pelican.utils import get_date as pelican_get_date
+from datetime import datetime
+
+def custom_get_date(date_str, settings=None):
+    if not date_str or date_str.strip() == '':
+        return pelican_get_date('2023-01-01')  # Return default date
+    return pelican_get_date(date_str.replace("_", " "))
+
+# Override processors
+import pelican.readers
+pelican.readers.METADATA_PROCESSORS['date'] = custom_get_date
+
+# Use existing templates directory as theme path  
+THEME = "."
+THEME_STATIC_DIR = "static"
+
+# Site variables
+DESCRIPTION = "Ski traverse stuff" 
+SLOGAN = "Come out and play, in the snow"
+LOCATION = "Rüschlikon, Switzerland<br>8803"
+
+# Custom URL structure using tags as routing
+# Map first tag to directory structure
+PAGE_URL = '{category}/{slug}.html'
+PAGE_SAVE_AS = '{category}/{slug}.html'
+
+# Category-based URLs for articles  
+ARTICLE_URL = '{category}/{slug}.html'
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
+CATEGORY_URL = '{slug}/'
+CATEGORY_SAVE_AS = '{slug}/index.html'

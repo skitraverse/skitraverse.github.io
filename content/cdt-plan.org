@@ -1,6 +1,6 @@
 #+TITLE: Skitraverse the US Continental Divide
 #+AUTHOR: Brian J. Oney
-#+TAGS: wintercdt
+#+CATEGORY: winter-cdt
 #+ORDER: 8
 #+LANGUAGE: en
 

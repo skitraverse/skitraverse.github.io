@@ -1,6 +1,6 @@
 #+TITLE: Skills for ski traversal of CDT 
 #+AUTHOR: Brian J. Oney
-#+TAGS: wintercdt
+#+CATEGORY: winter-cdt
 #+ORDER: 9
 #+LANGUAGE: en
 

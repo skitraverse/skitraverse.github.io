@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to {{ SITENAME }}</h1>
+    <p>{{ DESCRIPTION }}</p>
+    
+    <h2>Pages</h2>
+    <ul>
+    {% for page in pages %}
+        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}
