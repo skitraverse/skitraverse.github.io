@@ -50,8 +50,11 @@ DEFAULT_METADATA = {
 MARKUP = ("org")
 # Org metadata mapping (these are defaults; keep for clarity)
 ORG_READER_SETTINGS = {
-    "function": "read_org",
+    "function": "read_org", 
     "extra_export_excludes": ["DATE"],
+    "emacs_settings": {
+        "org-export-with-toc": "nil",
+    }
 }
 ORG_READER_EMACS_LOCATION = "/usr/bin/emacs"
 
@@ -71,7 +74,7 @@ def custom_get_date(date_str, settings=None):
 import pelican.readers
 pelican.readers.METADATA_PROCESSORS['date'] = custom_get_date
 
-# Use existing templates directory as theme path  
+# Use our working templates directory
 THEME = "."
 THEME_STATIC_DIR = "static"
 
@@ -79,6 +82,20 @@ THEME_STATIC_DIR = "static"
 DESCRIPTION = "Ski traverse stuff" 
 SLOGAN = "Come out and play, in the snow"
 LOCATION = "Rüschlikon, Switzerland<br>8803"
+
+# Custom template variables
+
+# Contact form variables
+EMAIL_SUBJECT = "RE: Skitraverse"
+EMAIL_BODY = "Dear Brian,\\nI want some more info.\\nKind Regards,"
+CONTACT_MESSAGE = "Contact"
+
+# Header image
+HEADER_PIC = "img/logo.jpg"
+HEADER_PIC_ALT = "Skitraverse Logo"
+
+# Make all these available to templates
+TEMPLATE_DEBUG = True
 
 # Custom URL structure using tags as routing
 # Map first tag to directory structure
