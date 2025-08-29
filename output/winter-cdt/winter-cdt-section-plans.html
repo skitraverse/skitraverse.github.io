@@ -6,91 +6,63 @@
     <meta name="description" content="Ski traverse stuff">
     <meta name="author" content="Brian J. Oney">
     <title>Winter CDT Section Plans</title>
-    <!-- Bootstrap core CSS -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template -->
-    <link href="../static/css/freelancer.css" rel="stylesheet">
-    <link href="../static/css/style.css" rel="stylesheet">
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="../static/css/site.css">
     <link rel="icon" type="image/x-icon" href="../static/img/logo.ico">
 </head>
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav>
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="../">
-                <img src="../static/img/logo.svg" alt="Skitraverse" height="30" class="d-inline-block align-top me-2">
-                Skitraverse
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../winter-cdt/">Winter CDT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../tips/">Tips</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../info/">Info</a></li>
-                    <li class="nav-item">
-                        <script> 
-                            coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                            shift=coded.length
-                            link=""
-                            for (i=0; i<coded.length; i++) {
-                                if (key.indexOf(coded.charAt(i))==-1) {
-                                    ltr = coded.charAt(i)
-                                    link += (ltr)
-                                }
-                                else {     
-                                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                                    link += (key.charAt(ltr))
-                                }
+            <ul>
+                <li><strong><a href="../">Skitraverse</a></strong></li>
+                <li><a href="../#wintercdt">Winter CDT</a></li>
+                <li><a href="../#tips">Tips</a></li>
+                <li><a href="../#about">Info</a></li>
+                <li>
+                    <script> 
+                        coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                        key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                        shift=coded.length
+                        link=""
+                        for (i=0; i<coded.length; i++) {
+                            if (key.indexOf(coded.charAt(i))==-1) {
+                                ltr = coded.charAt(i)
+                                link += (ltr)
                             }
-                            document.write("<a class='nav-link' href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear%20Brian%2C%5CnI%20want%20some%20more%20info.%5CnKind%20Regards%2C'>Contact</a>")
-                        </script>
-                        <noscript><a class="nav-link">Contact (JS required)</a></noscript>
-                    </li>
-                </ul>
-            </div>
+                            else {     
+                                ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                                link += (key.charAt(ltr))
+                            }
+                        }
+                        document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>")
+                    </script>
+                    <noscript><a>Contact</a></noscript>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <h1 class="masthead-heading text-uppercase mb-0">Winter CDT Section Plans</h1>
-            <!-- Icon Divider -->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fa fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
+    <header>
+        <div class="container">
+            <h1>Winter CDT Section Plans</h1>
+            <div style="margin: 2rem 0; border-top: 3px solid white; width: 60px; margin-left: auto; margin-right: auto; position: relative;">
+                <span style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #18bc9c; padding: 0 15px; color: white; font-size: 2rem;">❄</span>
             </div>
         </div>
     </header>
 
     <!-- Content -->
-    <section class="page-section portfolio" id="content">
+    <main>
         <div class="container">
 <div class="row justify-content-center">
     <div class="col-lg-8">
         <div class="page-content">
-            <div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#org65473cb">1. Introduction</a></li>
-<li><a href="#orgfff099a">2. Route choice</a></li>
-<li><a href="#org5156530">3. Alpine units used here</a></li>
-<li><a href="#orge6ae3fd">4. My plans</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org65473cb" class="outline-2">
-<h2 id="org65473cb"><span class="section-number-2">1.</span> Introduction</h2>
+            <div id="outline-container-org1f458a5" class="outline-2">
+<h2 id="org1f458a5"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 I list a rough time plan for my northbound ski traverse alond the
@@ -99,8 +71,8 @@ and have it reflected here, when possible.
 </p>
 </div>
 </div>
-<div id="outline-container-orgfff099a" class="outline-2">
-<h2 id="orgfff099a"><span class="section-number-2">2.</span> Route choice</h2>
+<div id="outline-container-org8826c76" class="outline-2">
+<h2 id="org8826c76"><span class="section-number-2">2.</span> Route choice</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 I aim to plan a route that will go 95% of the time given the likelihood that
@@ -111,8 +83,8 @@ there yet, they are either very obvious, or I haven't planned them yet.
 </p>
 </div>
 </div>
-<div id="outline-container-org5156530" class="outline-2">
-<h2 id="org5156530"><span class="section-number-2">3.</span> Alpine units used here</h2>
+<div id="outline-container-org4130d85" class="outline-2">
+<h2 id="org4130d85"><span class="section-number-2">3.</span> Alpine units used here</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 I define an alpine unit as 1km horizontal distance or 100m vertical
@@ -126,8 +98,8 @@ more exact. I expect these estimates to be accurate.
 </p>
 </div>
 </div>
-<div id="outline-container-orge6ae3fd" class="outline-2">
-<h2 id="orge6ae3fd"><span class="section-number-2">4.</span> My plans</h2>
+<div id="outline-container-org55739e1" class="outline-2">
+<h2 id="org55739e1"><span class="section-number-2">4.</span> My plans</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Update 2023-01-16: <b>2 days behind</b>
@@ -652,35 +624,51 @@ Update 2023-06-03: <b>Finished!</b>
     </div>
 </div>
         </div>
-    </section>
+        
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="star-divider">
+            <span class="star">❄</span>
+        </div>
+        <script> 
+            coded = "zSwy3.Z.v3tk@mBywT.NvB"
+            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+            shift=coded.length
+            link=""
+            for (i=0; i<coded.length; i++) {
+                if (key.indexOf(coded.charAt(i))==-1) {
+                    ltr = coded.charAt(i)
+                    link += (ltr)
+                }
+                else {     
+                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                    link += (key.charAt(ltr))
+                }
+            }
+            document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Contact</a>")
+        </script>
+        <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
+    </div>
+</section>    </main>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-4 mt-5 border-top">
+    <footer>
         <div class="container">
-            <p class="text-muted mb-2">Opening eyes to the beauty of winter landscape, safely</p>
-            <div class="mb-3">
-                <a href="https://instagram.com/skitraverse" class="text-decoration-none me-3">Instagram</a>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="../static/img/logo.svg" alt="Skitraverse" style="max-width: 120px; margin-bottom: 1rem;">
+                <h3>Skitraverse</h3>
+                <p><small>Rüschlikon, Switzerland<br>8803</small></p>
             </div>
-            <p class="small text-muted mb-0">
-                Copyright &copy; Brian J. Oney 2025 | 
-                <a href="../info/impressum.html" class="text-muted">Impressum</a> | 
-                <a href="../info/disclaimer.html" class="text-muted">Disclaimer</a>
+            <p>Opening eyes to the beauty of winter landscape, safely</p>
+            <p>
+                <a href="https://instagram.com/skitraverse">Instagram</a> | 
+                <a href="../info/impressum.html">Impressum</a> | 
+                <a href="../info/disclaimer.html">Disclaimer</a>
             </p>
+            <p><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button -->
-    <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Scripts -->
-    <script src="../static/vendor/jquery/jquery.min.js"></script>
-    <script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="../static/js/freelancer.min.js"></script>
-    <script src="../static/js/encrypted_mailto.js"></script>
 </body>
 </html>

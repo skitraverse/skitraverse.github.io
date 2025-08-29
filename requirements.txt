@@ -1,15 +1,5 @@
-click
-Flask
-Flask-FlatPages
-Frozen-Flask
-importlib-metadata
-itsdangerous
-Jinja2
-Markdown
-MarkupSafe
-pypandoc
-PyYAML
-six
-Werkzeug
-zipp
-git+https://github.com/oneyb/flask_flatorgpages@main#egg=flask_flatorgpages
+# Pelican static site generator
+pelican[markdown]
+
+# For org-mode support 
+# Note: Requires Emacs to be installed on system

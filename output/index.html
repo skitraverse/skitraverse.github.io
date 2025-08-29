@@ -6,252 +6,149 @@
     <meta name="description" content="Ski traverse stuff">
     <meta name="author" content="Brian J. Oney">
     <title>Skitraverse</title>
-    <!-- Bootstrap core CSS -->
-    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <link href="./static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template -->
-    <link href="./static/css/freelancer.css" rel="stylesheet">
-    <link href="./static/css/style.css" rel="stylesheet">
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="./static/css/site.css">
     <link rel="icon" type="image/x-icon" href="./static/img/logo.ico">
 </head>
 <body id="page-top">
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav>
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img src="./static/img/logo.svg" alt="Skitraverse" height="30" class="d-inline-block align-top me-2">
-                Skitraverse
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#wintercdt">Winter CDT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="./winter-cdt/winter-cdt-book.html">Book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#tips">Tips</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li><strong><a href="./">Skitraverse</a></strong></li>
+                <li><a href="./#wintercdt">Winter CDT</a></li>
+                <li><a href="./#tips">Tips</a></li>
+                <li><a href="./#about">Info</a></li>
+                <li>
+                    <script> 
+                        coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                        key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                        shift=coded.length
+                        link=""
+                        for (i=0; i<coded.length; i++) {
+                            if (key.indexOf(coded.charAt(i))==-1) {
+                                ltr = coded.charAt(i)
+                                link += (ltr)
+                            }
+                            else {     
+                                ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                                link += (key.charAt(ltr))
+                            }
+                        }
+                        document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>")
+                    </script>
+                    <noscript><a>Contact</a></noscript>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Logo -->
-            <img src="./static/img/logo.svg" alt="Skitraverse" class="masthead-avatar mb-5" style="max-width: 200px;">
-            <!-- Masthead Heading -->
-            <h1 class="masthead-heading text-uppercase mb-0">Skitraverse</h1>
-            <!-- Icon Divider -->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fa fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Masthead Subheading -->
-            <p class="masthead-subheading font-weight-light mb-0">Come out and play, in the snow</p>
-            <p class="text-white-50 mb-0">Rüschlikon, Switzerland<br>8803</p>
-        </div>
-    </header>
+    <!-- Page Header -->
 
-    <!-- Winter CDT Section -->
-    <section class="success" id="wintercdt">
+    <!-- Content -->
+    <main>
         <div class="container">
-            <h2 class="text-center">Winter CDT</h2>
-            <hr class="star-light">
-            <div class="row text-center">
-                <div class="col-lg mx-auto">
-                    <a class="btn btn-lg btn-outline" href="./winter-cdt/book-reading-schedule.html">
-                        Book Reading Schedule
-                    </a>
-                    <br>
-                    <a class="btn btn-lg btn-outline" href="./winter-cdt/cdt-plan.html">
-                        Skitraverse the US Continental Divide
-                    </a>
-                    <br>
-                    <a class="btn btn-lg btn-outline" href="./winter-cdt/gear-list.html">
-                        Gear list
-                    </a>
-                    <br>
-                    <a class="btn btn-lg btn-outline" href="./winter-cdt/skills-and-training.html">
-                        Skills for ski traversal of CDT
-                    </a>
-                    <br>
-                    <a class="btn btn-lg btn-outline" href="./winter-cdt/winter-cdt-book.html">
-                        Winter CDT Book
-                    </a>
-                    <br>
-                    <a class="btn btn-lg btn-outline" href="./winter-cdt/winter-cdt-section-plans.html">
-                        Winter CDT Section Plans
-                    </a>
-                    <br>
-                    <a class="btn btn-lg btn-outline" href="./winter-cdt/winter-cdt-trip-report.html">
-                        Winter CDT Report
-                    </a>
-                    <br>
-                </div>
-            </div>
+<!-- Hero Section -->
+<section class="masthead">
+    <div class="container">
+        <h1>Skitraverse</h1>
+        <div class="star-divider">
+            <span class="star">❄</span>
         </div>
-    </section>
-    
-    <!-- Tips Section -->
-    <section class="success" id="tips">
-        <div class="container">
-            <h2 class="text-center">Tips</h2>
-            <hr class="star-light">
-            <div class="text-center">
-                <div class="row text-center">
-                    <div class="col-lg mx-auto">
-                        <a class="btn btn-lg btn-outline" href="./tips/approach-and-style.html">
-                            Approach to and style of ski traverses
-                        </a>
-                        <br>
-                        <a class="btn btn-lg btn-outline" href="./tips/bulgaria-2022.html">
-                            Skiing the Pirin and Rila Mountains
-                        </a>
-                        <br>
-                        <a class="btn btn-lg btn-outline" href="./tips/the-remo-rub.html">
-                            The Remo Rub
-                        </a>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <p>Come out and play, in the snow</p>
+    </div>
+</section>
 
-    <!-- Info Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <h2 class="text-center">Info</h2>
-            <hr class="star-light">
-            <div class="text-center">
-                <div class="row text-center">
-                    <div class="col-lg mx-auto">
-                        <a class="btn btn-lg btn-outline" href="./info/disclaimer.html">
-                            Disclaimer / Data Protection
-                        </a>
-                        <br>
-                        <a class="btn btn-lg btn-outline" href="./info/impressum.html">
-                            Datenschutz / Impressum
-                        </a>
-                        <br>
-                        <a class="btn btn-lg btn-outline" href="./info/my-story.html">
-                            My adventures in the snow
-                        </a>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
+<!-- Winter CDT Section -->
+<section id="wintercdt">
+    <div class="container">
+        <h2>Winter CDT</h2>
+        <div class="star-divider">
+            <span class="star">❄</span>
         </div>
-    </section>
+        <a href="./winter-cdt/book-reading-schedule.html" role="button">September 2025 Book Reading Schedule</a>
+        <a href="./winter-cdt/cdt-plan.html" role="button">Skitraverse the US Continental Divide</a>
+        <a href="./winter-cdt/gear-list.html" role="button">Gear list</a>
+        <a href="./winter-cdt/skills-and-training.html" role="button">Skills for ski traversal of CDT</a>
+        <a href="./winter-cdt/winter-cdt-book.html" role="button">Winter CDT Book</a>
+        <a href="./winter-cdt/winter-cdt-section-plans.html" role="button">Winter CDT Section Plans</a>
+        <a href="./winter-cdt/winter-cdt-trip-report.html" role="button">Winter CDT Report</a>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-center">
-                <script> 
-                    coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                    key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                    shift=coded.length
-                    link=""
-                    for (i=0; i<coded.length; i++) {
-                        if (key.indexOf(coded.charAt(i))==-1) {
-                            ltr = coded.charAt(i)
-                            link += (ltr)
-                        }
-                        else {     
-                            ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                            link += (key.charAt(ltr))
-                        }
-                    }
-                    document.write("<a class='btn-primary btn-lg btn-outline' href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear%20Brian%2C%5CnI%20want%20some%20more%20info.%5CnKind%20Regards%2C'>Contact</a>")
-                </script>
-                <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
-            </h2>
+<!-- Tips Section -->
+<section id="tips">
+    <div class="container">
+        <h2>Tips</h2>
+        <div class="star-divider">
+            <span class="star">❄</span>
         </div>
-    </section>
+        <a href="./tips/approach-and-style.html" role="button">Approach to and style of ski traverses</a>
+        <a href="./tips/bulgaria-2022.html" role="button">Skiing the Pirin and Rila Mountains</a>
+        <a href="./tips/the-remo-rub.html" role="button">The Remo Rub</a>
+    </div>
+</section>
+
+<!-- Info Section -->
+<section id="about">
+    <div class="container">
+        <h2>Info</h2>
+        <div class="star-divider">
+            <span class="star">❄</span>
+        </div>
+        <a href="./info/disclaimer.html" role="button">Disclaimer / Data Protection</a>
+        <a href="./info/impressum.html" role="button">Datenschutz / Impressum</a>
+        <a href="./info/my-story.html" role="button">My adventures in the snow</a>
+    </div>
+</section>
+        </div>
+        
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="star-divider">
+            <span class="star">❄</span>
+        </div>
+        <script> 
+            coded = "zSwy3.Z.v3tk@mBywT.NvB"
+            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+            shift=coded.length
+            link=""
+            for (i=0; i<coded.length; i++) {
+                if (key.indexOf(coded.charAt(i))==-1) {
+                    ltr = coded.charAt(i)
+                    link += (ltr)
+                }
+                else {     
+                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                    link += (key.charAt(ltr))
+                }
+            }
+            document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Contact</a>")
+        </script>
+        <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
+    </div>
+</section>    </main>
 
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-3">
-                        <h3>Skitraverse</h3>
-                        <p>
-                            <img class="img-fluid" src="./static/img/logo.svg" alt="Skitraverse Logo"> 
-                        </p>
-                    </div>
-                    <div class="footer-col col-md-3">
-                        <h3>My Location</h3>
-                        <p>Rüschlikon, Switzerland<br>8803</p>
-                    </div>
-                    <div class="footer-col col-md-3">
-                        <h3>Follow</h3>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn-social btn-outline" href="https://instagram.com/skitraverse">
-                                    <i class="fa fa-fw fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-3">
-                        <h3>Purpose</h3>
-                        <p>Opening eyes to the beauty of winter landscape, safely</p>
-                        <a class='btn-primary btn-lg btn-outline' href="./info/impressum.html">
-                            Impressum
-                        </a>
-                        <br><br>
-                        <a class='btn-primary btn-lg btn-outline' href="./info/disclaimer.html">
-                            Disclaimer
-                        </a>
-                    </div>
-                </div>
+    <footer>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="./static/img/logo.svg" alt="Skitraverse" style="max-width: 120px; margin-bottom: 1rem;">
+                <h3>Skitraverse</h3>
+                <p><small>Rüschlikon, Switzerland<br>8803</small></p>
             </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyleft &copy; Ski Traverse 2025 
-                    </div>
-                </div>
-            </div>
+            <p>Opening eyes to the beauty of winter landscape, safely</p>
+            <p>
+                <a href="https://instagram.com/skitraverse">Instagram</a> | 
+                <a href="./info/impressum.html">Impressum</a> | 
+                <a href="./info/disclaimer.html">Disclaimer</a>
+            </p>
+            <p><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button -->
-    <div class="scroll-top d-lg-none">
-        <a class="btn btn-primary js-scroll-trigger" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Scripts -->
-    <script src="./static/vendor/jquery/jquery.min.js"></script>
-    <script src="./static/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./static/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="./static/js/freelancer.min.js"></script>
-    <script src="./static/js/encrypted_mailto.js"></script>
 </body>
 </html>
