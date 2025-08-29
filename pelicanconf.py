@@ -52,16 +52,27 @@ MARKUP = ("org")
 ORG_READER_SETTINGS = {
     "function": "read_org", 
     "extra_export_excludes": ["DATE"],
+    "extra_export_includes": ["SCHEDULED"],
     "emacs_settings": {
         "org-export-with-toc": "nil",
-    }
+        "org-html-with-latex": "nil",
+        "org-export-with-timestamps": "active",
+        "org-export-with-planning": "t",
+    },
+    "emacs_eval": [
+        "(setq org-export-with-toc nil)",
+        "(setq org-html-with-latex nil)",
+        "(setq org-export-with-section-numbers nil)",
+        "(setq org-export-with-timestamps 'active)",
+        "(setq org-export-with-planning t)"
+    ]
 }
 ORG_READER_EMACS_LOCATION = "/usr/bin/emacs"
 
 # Use filesystem dates for files without explicit dates
 DEFAULT_DATE = 'fs'
 
-# Override metadata processors to handle empty dates
+# Override metadata processors to handle empty dates and SCHEDULED
 from pelican.utils import get_date as pelican_get_date
 from datetime import datetime
 
@@ -70,9 +81,21 @@ def custom_get_date(date_str, settings=None):
         return pelican_get_date('2023-01-01')  # Return default date
     return pelican_get_date(date_str.replace("_", " "))
 
+def process_scheduled(scheduled_str, settings=None):
+    """Process SCHEDULED property from org-mode"""
+    if not scheduled_str or scheduled_str.strip() == '':
+        return None
+    # Parse org-mode timestamp format: <2025-01-01 Wed>
+    import re
+    match = re.search(r'<(\d{4}-\d{2}-\d{2})', scheduled_str)
+    if match:
+        return pelican_get_date(match.group(1))
+    return scheduled_str
+
 # Override processors
 import pelican.readers
 pelican.readers.METADATA_PROCESSORS['date'] = custom_get_date
+pelican.readers.METADATA_PROCESSORS['scheduled'] = process_scheduled
 
 # Use our working templates directory
 THEME = "."
@@ -87,7 +110,7 @@ LOCATION = "Rüschlikon, Switzerland<br>8803"
 
 # Contact form variables
 EMAIL_SUBJECT = "RE: Skitraverse"
-EMAIL_BODY = "Dear Brian,\\nI want some more info.\\nKind Regards,"
+EMAIL_BODY = "Dear Brian,%0AI want some more info.%0AKind Regards,"
 CONTACT_MESSAGE = "Contact"
 
 # Header image

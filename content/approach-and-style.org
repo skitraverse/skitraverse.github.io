@@ -2,8 +2,10 @@
 #+AUTHOR: Brian J. Oney
 #+DATE: 2023-01-01
 #+CATEGORY: tips
+#+OPTIONS: toc:nil
 #+ORDER: 3
 #+CATEGORY: tips
+#+OPTIONS: toc:nil
 #+LANGUAGE: en
 
 

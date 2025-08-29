@@ -1,6 +1,7 @@
 #+TITLE: Gear list
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
+#+OPTIONS: toc:nil
 #+LANGUAGE: en
 #+ORDER: 2
 

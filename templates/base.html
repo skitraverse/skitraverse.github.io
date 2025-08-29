@@ -6,112 +6,86 @@
     <meta name="description" content="{{ DESCRIPTION }}">
     <meta name="author" content="{{ AUTHOR }}">
     <title>{{ page.title if page else SITENAME }}</title>
-    <!-- Bootstrap core CSS -->
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template -->
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/freelancer.css" rel="stylesheet">
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css" rel="stylesheet">
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/site.css">
     <link rel="icon" type="image/x-icon" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.ico">
 </head>
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav>
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="{{ SITEURL }}/">
-                <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.svg" alt="{{ SITENAME }}" height="30" class="d-inline-block align-top me-2">
-                {{ SITENAME }}
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ SITEURL }}/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ SITEURL }}/winter-cdt/">Winter CDT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ SITEURL }}/tips/">Tips</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ SITEURL }}/info/">Info</a></li>
-                    <li class="nav-item">
-                        <script> 
-                            coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                            shift=coded.length
-                            link=""
-                            for (i=0; i<coded.length; i++) {
-                                if (key.indexOf(coded.charAt(i))==-1) {
-                                    ltr = coded.charAt(i)
-                                    link += (ltr)
-                                }
-                                else {     
-                                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                                    link += (key.charAt(ltr))
-                                }
+            <ul>
+                <li><strong><a href="{{ SITEURL }}/">{{ SITENAME }}</a></strong></li>
+                <li><a href="{{ SITEURL }}/#wintercdt">Winter CDT</a></li>
+                <li><a href="{{ SITEURL }}/#tips">Tips</a></li>
+                <li><a href="{{ SITEURL }}/#about">Info</a></li>
+                <li>
+                    <script> 
+                        coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                        key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                        shift=coded.length
+                        link=""
+                        for (i=0; i<coded.length; i++) {
+                            if (key.indexOf(coded.charAt(i))==-1) {
+                                ltr = coded.charAt(i)
+                                link += (ltr)
                             }
-                            document.write("<a class='nav-link' href='mailto:"+link+"?subject={{ EMAIL_SUBJECT | urlencode }}&body={{ EMAIL_BODY | urlencode }}'>Contact</a>")
-                        </script>
-                        <noscript><a class="nav-link">Contact (JS required)</a></noscript>
-                    </li>
-                </ul>
-            </div>
+                            else {     
+                                ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                                link += (key.charAt(ltr))
+                            }
+                        }
+                        document.write("<a href='mailto:"+link+"?subject={{ EMAIL_SUBJECT | urlencode }}&body={{ EMAIL_BODY }}'>Contact</a>")
+                    </script>
+                    <noscript><a>Contact</a></noscript>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Page Header -->
     {% if page %}
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <h1 class="masthead-heading text-uppercase mb-0">{{ page.title }}</h1>
-            <!-- Icon Divider -->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fa fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
+    <header>
+        <div class="container">
+            <h1>{{ page.title }}</h1>
+            <div style="margin: 2rem 0; border-top: 3px solid white; width: 60px; margin-left: auto; margin-right: auto; position: relative;">
+                <span style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #18bc9c; padding: 0 15px; color: white; font-size: 2rem;">❄</span>
             </div>
         </div>
     </header>
     {% endif %}
 
     <!-- Content -->
-    <section class="page-section portfolio" id="content">
+    <main>
         <div class="container">
             {% block content %}{% endblock %}
         </div>
-    </section>
+        
+        {% include 'contact.html' %}
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-4 mt-5 border-top">
+    <footer>
         <div class="container">
-            <p class="text-muted mb-2">Opening eyes to the beauty of winter landscape, safely</p>
-            {% if LINKS %}
-            <div class="mb-3">
-                {% for name, link in LINKS %}
-                <a href="{{ link }}" class="text-decoration-none me-3">{{ name }}</a>
-                {% endfor %}
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.svg" alt="{{ SITENAME }}" style="max-width: 120px; margin-bottom: 1rem;">
+                <h3>{{ SITENAME }}</h3>
+                <p><small>{{ LOCATION | safe }}</small></p>
             </div>
-            {% endif %}
-            <p class="small text-muted mb-0">
-                Copyright &copy; {{ AUTHOR }} 2025 | 
-                <a href="{{ SITEURL }}/info/impressum.html" class="text-muted">Impressum</a> | 
-                <a href="{{ SITEURL }}/info/disclaimer.html" class="text-muted">Disclaimer</a>
+            <p>Opening eyes to the beauty of winter landscape, safely</p>
+            <p>
+                {% if LINKS %}
+                {% for name, link in LINKS %}
+                <a href="{{ link }}">{{ name }}</a> | 
+                {% endfor %}
+                {% endif %}
+                <a href="{{ SITEURL }}/info/impressum.html">Impressum</a> | 
+                <a href="{{ SITEURL }}/info/disclaimer.html">Disclaimer</a>
             </p>
+            <p><small>Copyright &copy; {{ AUTHOR }} 2025</small></p>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button -->
-    <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Scripts -->
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/jquery/jquery.min.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/freelancer.min.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/encrypted_mailto.js"></script>
 </body>
 </html>
