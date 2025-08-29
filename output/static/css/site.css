@@ -1,0 +1,161 @@
+/* Navigation styling */
+nav { 
+    background: #18bc9c; 
+    padding: 1rem 0;
+    margin-bottom: 0;
+}
+nav ul { 
+    margin-bottom: 0; 
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+nav li {
+    display: inline-block !important;
+    margin-right: 1rem !important;
+}
+nav a { color: white; font-weight: bold; }
+nav a:hover { color: #18bc9c; background: white; }
+
+/* Page header styling */
+header {
+    background: #18bc9c !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 4rem 0 !important;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    position: relative;
+}
+header h1 { 
+    color: white !important; 
+    text-transform: uppercase !important; 
+    font-size: 2.5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Masthead styling for homepage */
+.masthead {
+    background: #18bc9c !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 6rem 0 !important;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    position: relative;
+}
+.masthead h1 { 
+    color: white !important; 
+    text-transform: uppercase !important; 
+    font-size: 3rem !important;
+    margin-bottom: 2rem !important;
+}
+.masthead p { color: white !important; font-size: 1.2rem !important; }
+
+/* Section styling */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+section:nth-of-type(odd) { background: #18bc9c; color: white; }
+section:nth-of-type(even) { background: white; color: #333; }
+.masthead + section:nth-of-type(odd) { background: #18bc9c; color: white; }
+section h2 { 
+    color: inherit; 
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Star divider styling */
+.star-divider {
+    margin: 2rem 0; 
+    border-top: 3px solid currentColor; 
+    width: 60px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: relative;
+}
+.star {
+    position: absolute; 
+    top: -15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background: inherit; 
+    padding: 0 15px; 
+    color: inherit; 
+    font-size: 2rem;
+}
+section:nth-of-type(even) .star { background: white; }
+
+/* Button styling */
+[role="button"] {
+    background: transparent;
+    border: 2px solid currentColor;
+    color: inherit;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+[role="button"]:hover {
+    background: currentColor;
+    color: white;
+}
+section:nth-of-type(even) [role="button"]:hover {
+    background: #333;
+    color: white;
+}
+
+/* Content styling */
+main { padding: 0; }
+
+/* Footer styling */
+footer {
+    background: #2c3e50 !important;
+    color: #ffffff !important;
+    padding: 4rem 0 !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    clear: both;
+    position: relative;
+    z-index: 1;
+    width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+}
+footer * {
+    color: #ffffff !important;
+}
+footer a { 
+    color: #ffffff !important; 
+    text-decoration: underline !important;
+}
+footer a:hover { 
+    color: #18bc9c !important; 
+    text-decoration: none !important;
+}
+footer h3 {
+    color: #ffffff !important;
+    margin-bottom: 1rem !important;
+}
+footer p {
+    margin-bottom: 1rem !important;
+    color: #ffffff !important;
+}
+footer small {
+    opacity: 0.8 !important;
+    color: #ffffff !important;
+}
