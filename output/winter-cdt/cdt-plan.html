@@ -2,74 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ski traverse stuff">
     <meta name="author" content="Brian J. Oney">
     <title>Skitraverse the US Continental Divide</title>
-    <!-- Font Awesome Icons -->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- Core theme CSS (includes Bootstrap) -->
+    <!-- Bootstrap core CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/css/freelancer.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="../static/css/freelancer.css" rel="stylesheet">
     <link href="../static/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../static/img/logo.ico">
 </head>
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="../">Skitraverse</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-                Menu <i class="fas fa-bars"></i>
+            <a class="navbar-brand js-scroll-trigger" href="../">
+                <img src="../static/img/logo.svg" alt="Skitraverse" height="30" class="d-inline-block align-top me-2">
+                Skitraverse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/tips/">Tips</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/info/">Info</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/winter-cdt/">Winter CDT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../winter-cdt/">Winter CDT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../tips/">Tips</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../info/">Info</a></li>
+                    <li class="nav-item">
+                        <script> 
+                            coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                            shift=coded.length
+                            link=""
+                            for (i=0; i<coded.length; i++) {
+                                if (key.indexOf(coded.charAt(i))==-1) {
+                                    ltr = coded.charAt(i)
+                                    link += (ltr)
+                                }
+                                else {     
+                                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                                    link += (key.charAt(ltr))
+                                }
+                            }
+                            document.write("<a class='nav-link' href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear%20Brian%2C%5CnI%20want%20some%20more%20info.%5CnKind%20Regards%2C'>Contact</a>")
+                        </script>
+                        <noscript><a class="nav-link">Contact (JS required)</a></noscript>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Masthead -->
+    <!-- Page Header -->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <h1 class="masthead-heading text-uppercase mb-0">Skitraverse the US Continental Divide</h1>
+            <!-- Icon Divider -->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+        </div>
+    </header>
 
     <!-- Content -->
-    <section class="page-section portfolio" id="page">
+    <section class="page-section portfolio" id="content">
         <div class="container">
-            <!-- Page Heading -->
-            <div class="text-center">
-                <h2 class="page-section-heading text-secondary text-uppercase mb-0">Skitraverse the US Continental Divide</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-            </div>
-            
-<div class="row">
-    <div class="col-lg-8 mx-auto text-center">
+<div class="row justify-content-center">
+    <div class="col-lg-8">
         <div class="page-content">
             <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org288f2bb">1. Timing</a></li>
-<li><a href="#org9b2ce5d">2. Path and Terrain</a></li>
-<li><a href="#org7402726">3. Principles</a></li>
-<li><a href="#org708d965">4. Systems</a></li>
-<li><a href="#org4b0657b">5. Finances</a></li>
-<li><a href="#org61bd353">6. People</a></li>
-<li><a href="#orgabfbbe1">7. Fundraiser</a></li>
-<li><a href="#org78617bc">8. Interested in joining me?</a></li>
+<li><a href="#org042607e">1. Timing</a></li>
+<li><a href="#orgf1f501e">2. Path and Terrain</a></li>
+<li><a href="#orgcf1bd07">3. Principles</a></li>
+<li><a href="#orgab8d895">4. Systems</a></li>
+<li><a href="#orga380b75">5. Finances</a></li>
+<li><a href="#org5ad51ef">6. People</a></li>
+<li><a href="#org89afc6d">7. Fundraiser</a></li>
+<li><a href="#orgf91d1db">8. Interested in joining me?</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org288f2bb" class="outline-2">
-<h2 id="org288f2bb"><span class="section-number-2">1.</span> Timing</h2>
+<div id="outline-container-org042607e" class="outline-2">
+<h2 id="org042607e"><span class="section-number-2">1.</span> Timing</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Of all things, the timing and sequence is where flexibility will be necessary.
@@ -118,8 +143,8 @@ can get our legs and backs ready for the more strenuous but fun skiing portion.
 </p>
 </div>
 </div>
-<div id="outline-container-org9b2ce5d" class="outline-2">
-<h2 id="org9b2ce5d"><span class="section-number-2">2.</span> Path and Terrain</h2>
+<div id="outline-container-orgf1f501e" class="outline-2">
+<h2 id="orgf1f501e"><span class="section-number-2">2.</span> Path and Terrain</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 The terrain along the CDT is typically mellow, avoiding the common ski
@@ -141,8 +166,8 @@ according to the following principles.
 </p>
 </div>
 </div>
-<div id="outline-container-org7402726" class="outline-2">
-<h2 id="org7402726"><span class="section-number-2">3.</span> Principles</h2>
+<div id="outline-container-orgcf1bd07" class="outline-2">
+<h2 id="orgcf1bd07"><span class="section-number-2">3.</span> Principles</h2>
 <div class="outline-text-2" id="text-3">
 <ol class="org-ol">
 <li>Safety first.
@@ -181,8 +206,8 @@ nightly rest is important to recover.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org708d965" class="outline-2">
-<h2 id="org708d965"><span class="section-number-2">4.</span> Systems</h2>
+<div id="outline-container-orgab8d895" class="outline-2">
+<h2 id="orgab8d895"><span class="section-number-2">4.</span> Systems</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>Light backcountry skis with kicker skins (e.g. skimo race skins) or scaled bases and climbing skins. Scaled bases are helpful for efficiency, but ice up. A normal pair of skis with kicker skins is a better option in my opinion.
@@ -218,8 +243,8 @@ Why no sled? Please read about my <a href="../on-style-and-approach">approach to
 </p>
 </div>
 </div>
-<div id="outline-container-org4b0657b" class="outline-2">
-<h2 id="org4b0657b"><span class="section-number-2">5.</span> Finances</h2>
+<div id="outline-container-orga380b75" class="outline-2">
+<h2 id="orga380b75"><span class="section-number-2">5.</span> Finances</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Without the gear investments (about 8k$ upfront!), I would budget
@@ -228,8 +253,8 @@ number. I still need to research what permits will be necessary for certain sect
 </p>
 </div>
 </div>
-<div id="outline-container-org61bd353" class="outline-2">
-<h2 id="org61bd353"><span class="section-number-2">6.</span> People</h2>
+<div id="outline-container-org5ad51ef" class="outline-2">
+<h2 id="org5ad51ef"><span class="section-number-2">6.</span> People</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Myself: Experienced alpine winter backcountry tour guide, splitboard and
@@ -273,8 +298,8 @@ Winter tests you?
 </p>
 </div>
 </div>
-<div id="outline-container-orgabfbbe1" class="outline-2">
-<h2 id="orgabfbbe1"><span class="section-number-2">7.</span> Fundraiser</h2>
+<div id="outline-container-org89afc6d" class="outline-2">
+<h2 id="org89afc6d"><span class="section-number-2">7.</span> Fundraiser</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 This undertaking is very egotistical of me, but will help me grow at the same
@@ -286,8 +311,8 @@ ideas. I guess I'd donate a dollar per mile progress.
 </p>
 </div>
 </div>
-<div id="outline-container-org78617bc" class="outline-2">
-<h2 id="org78617bc"><span class="section-number-2">8.</span> Interested in joining me?</h2>
+<div id="outline-container-orgf91d1db" class="outline-2">
+<h2 id="orgf91d1db"><span class="section-number-2">8.</span> Interested in joining me?</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 I will only traverse the Continental Divide in winter if I have a partner for
@@ -305,56 +330,32 @@ attempt</a>, and take time to reflect and decide.  Let's talk.
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="bg-light text-center py-4 mt-5 border-top">
         <div class="container">
-            <div class="row">
-                <!-- Footer Location -->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">Rüschlikon, Switzerland<br>8803</p>
-                </div>
-                <!-- Footer Social Icons -->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://instagram.com/skitraverse">
-                        <i class="fab fa-fw fa-instagram"></i>
-                    </a>
-                </div>
-                <!-- Footer About Text -->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">Get in Touch</h4>
-                    <p class="lead mb-0">
-                        <script src="../static/js/encrypted_mailto.js"></script>
-                    </p>
-                </div>
+            <p class="text-muted mb-2">Opening eyes to the beauty of winter landscape, safely</p>
+            <div class="mb-3">
+                <a href="https://instagram.com/skitraverse" class="text-decoration-none me-3">Instagram</a>
             </div>
+            <p class="small text-muted mb-0">
+                Copyright &copy; Brian J. Oney 2025 | 
+                <a href="../info/impressum.html" class="text-muted">Impressum</a> | 
+                <a href="../info/disclaimer.html" class="text-muted">Disclaimer</a>
+            </p>
         </div>
     </footer>
 
-    <!-- Copyright Section -->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; Brian J. Oney 2025</small></div>
-    </div>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <!-- Scroll to Top Button -->
     <div class="scroll-to-top d-lg-none position-fixed">
         <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="../static/js/jquery.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
-    
-    <!-- Plugin JavaScript -->
-    <script src="../static/js/jquery.easing.min.js"></script>
-    
-    <!-- Contact Form JavaScript -->
-    <script src="../static/js/jqBootstrapValidation.js"></script>
-    <script src="../static/js/contact_me.js"></script>
-    
-    <!-- Custom scripts for this template -->
+    <!-- Scripts -->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="../static/js/freelancer.min.js"></script>
+    <script src="../static/js/encrypted_mailto.js"></script>
 </body>
 </html>
