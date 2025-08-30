@@ -2,8 +2,7 @@
 #+AUTHOR: Brian J. Oney  
 #+DATE: 2023-01-01
 #+CATEGORY: winter-cdt
-#+CATEGORY: winter-cdt
-#+URL: winter-cdt/winter-cdt-book.html
+#+PROPERTY: TAGS book, guide, featured
 #+LANGUAGE: en
 #+ORDER: 0
 

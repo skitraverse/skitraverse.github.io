@@ -1,6 +1,7 @@
 #+TITLE: Winter CDT Report
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
+#+PROPERTY: TAGS report, experience, featured
 #+LANGUAGE: en
 #+ORDER: 1
 

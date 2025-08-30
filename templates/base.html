@@ -29,10 +29,10 @@
     </nav>
 
     <!-- Page Header -->
-    {% if page %}
+    {% if page or article %}
     <header>
         <div class="container">
-            <h1>{{ page.title }}</h1>
+            <h1>{{ page.title if page else article.title }}</h1>
             <div class="star-divider">
                 <span class="star">❄</span>
             </div>
@@ -56,6 +56,23 @@
                     <span class="star">❄</span>
                 </div>
                 <div id="search" style="max-width: 600px; margin: 0 auto;"></div>
+                
+                <div style="margin-top: 2rem; text-align: center;">
+                    <h3>Browse by topic</h3>
+                    {% set all_tags = [] %}
+                    {% for article in articles %}
+                        {% if article.tags %}
+                            {% for tag in article.tags %}
+                                {% if tag not in all_tags %}
+                                    {% set _ = all_tags.append(tag) %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                    {% for tag in all_tags|sort %}
+                        <a href="{{ SITEURL }}/tag/{{ tag|lower|replace(' ', '-') }}/" role="button" style="margin: 0.25rem;">{{ tag }}</a>
+                    {% endfor %}
+                </div>
             </div>
         </section>
     </main>

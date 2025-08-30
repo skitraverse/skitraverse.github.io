@@ -1,6 +1,7 @@
 #+TITLE: The Remo Rub
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: tips
+#+PROPERTY: TAGS techniques, gear-tips
 #+OPTIONS: toc:nil
 #+ORDER: 9
 #+LANGUAGE: en

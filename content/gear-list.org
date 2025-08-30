@@ -1,6 +1,7 @@
 #+TITLE: Gear list
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
+#+PROPERTY: TAGS gear, equipment, alpine-style
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 #+ORDER: 2

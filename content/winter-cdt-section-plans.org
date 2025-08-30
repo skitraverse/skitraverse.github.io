@@ -1,6 +1,7 @@
 #+TITLE: Winter CDT Section Plans
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
+#+PROPERTY: TAGS planning, sections, route
 #+LANGUAGE: en
 #+ORDER: 3
 

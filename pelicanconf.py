@@ -3,9 +3,6 @@ SITENAME = 'Skitraverse'
 SITEURL = "https://skitraverse.com"
 
 PATH = "content"
-# Keep content as pages but customize URLs  
-PAGE_PATHS = [""]
-ARTICLE_PATHS = []
 DISPLAY_PAGES_ON_MENU = False
 
 TIMEZONE = 'Europe/Rome'
@@ -42,7 +39,9 @@ RELATIVE_URLS = True
 PLUGIN_PATHS = ["pelican-plugins", "."]
 PLUGINS = ["org_reader"]
 
-# Force all content to be articles by default
+# Force all content to be articles (not pages) to enable tag processing
+ARTICLE_PATHS = [""]
+PAGE_PATHS = []
 DEFAULT_METADATA = {
     'template': 'article',
 }
@@ -120,13 +119,14 @@ HEADER_PIC_ALT = "Skitraverse Logo"
 # Make all these available to templates
 TEMPLATE_DEBUG = True
 
-# Custom URL structure using tags as routing
-# Map first tag to directory structure
-PAGE_URL = '{category}/{slug}/'
-PAGE_SAVE_AS = '{category}/{slug}/index.html'
-
-# Category-based URLs for articles  
+# Custom URL structure using category as routing
 ARTICLE_URL = '{category}/{slug}/'
 ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
+
+# Tag page generation
+TAG_URL = 'tag/{slug}/'
+TAG_SAVE_AS = 'tag/{slug}/index.html'
+TAGS_URL = 'tags/'
+TAGS_SAVE_AS = 'tags/index.html'
