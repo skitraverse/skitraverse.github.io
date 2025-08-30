@@ -2,6 +2,7 @@
 
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
+#+PROPERTY: TAGS events, schedule, featured
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 #+ORDER: 0

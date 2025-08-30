@@ -19,8 +19,8 @@
             <span class="star">❄</span>
         </div>
         <h2>Winter CDT</h2>
-        {% for page in pages if page.category == 'winter-cdt' %}
-        <a href="{{ SITEURL }}/{{ page.url }}" role="button">{{ page.title }}</a>
+        {% for article in articles if article.category == 'winter-cdt' %}
+        <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
         {% endfor %}
     </div>
 </section>
@@ -32,8 +32,8 @@
             <span class="star">❄</span>
         </div>
         <h2>Tips</h2>
-        {% for page in pages if page.category == 'tips' %}
-        <a href="{{ SITEURL }}/{{ page.url }}" role="button">{{ page.title }}</a>
+        {% for article in articles if article.category == 'tips' %}
+        <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
         {% endfor %}
     </div>
 </section>
@@ -45,8 +45,8 @@
             <span class="star">❄</span>
         </div>
         <h2>Info</h2>
-        {% for page in pages if page.category == 'info' %}
-        <a href="{{ SITEURL }}/{{ page.url }}" role="button">{{ page.title }}</a>
+        {% for article in articles if article.category == 'info' %}
+        <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
         {% endfor %}
     </div>
 </section>
