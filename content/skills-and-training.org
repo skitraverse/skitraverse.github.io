@@ -1,19 +1,17 @@
-#+TITLE: Skills for ski traversal of CDT 
+#+TITLE: Skills for ski traversal
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
-#+PROPERTY: TAGS training, safety, requirements
+#+PROPERTY: TAGS safety, skills
 #+OPTIONS: toc:nil
-#+ORDER: 9
 #+LANGUAGE: en
 
 * Requirements
 *** Wilderness First Responder
- Many areas of the CDT are very remote, and more so during Winter. We need to
- be able to take care of one another.  I have the WFR-certification,
- completing a NOLS WFR course this fall.  Swiss tour guides only need a first
- aid course, oddly, but that is likely because medical assistance here in
- Switzerland arrives 8-12 minutes(!) after being alerted, if the weather
- allows.
+ Many areas of the CDT are very remote, and more so during Winter. We need to be
+ able to take care of one another. I have the WFR-certification. Swiss tour
+ guides only need a first aid course, oddly, but that is likely because medical
+ assistance here in Switzerland arrives 8-12 minutes(!) after being alerted, if
+ the weather allows.
 *** Advanced Downhill Skier
  We will see all snow types. We will be tired and carry heavy packs. We will
  need to be able to safely circumnavigate objective hazards. We need to ski at
@@ -32,7 +30,7 @@
  experience mentoring successful tour guide aspirants, I feel I can help you
  apply your training, but you need the fundamentals and experience first.
 *** Mental Strength Training
- Winter is cold, windy and snowy. I love it but it still can get to
+ Winter is cold, windy and snowy. I love it, but it still can get to
  me. Getting my butt kicked is part of the adventure. I can center myself with
  meditation. I can forgive harshness, moodiness, etc. and go back to being a
  relaxed provider of bad jokes. Centering oneself is a skill. You need to
@@ -43,6 +41,4 @@
  or of a ski injury due to fatigue is high. Carrying a heavy pack through deep
  snow is hard work. Furthermore, we need to be similarly fast. Social tension
  due to differing fitness is a problem. We should complete one of the [[https://UphillAthlete.com][Uphill
- Athlete]] courses (probably the Intro to Skimo)
- *together*, at the very least.
-
+ Athlete]] or [[https://evokeendurance.com][Evoke Endurance]] courses *together*, at the very least.

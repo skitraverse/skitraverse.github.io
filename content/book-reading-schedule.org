@@ -2,10 +2,9 @@
 
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
-#+PROPERTY: TAGS events, schedule, featured
+#+PROPERTY: TAGS events, featured
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
-#+ORDER: 0
 
 
 * Confirmed dates and places

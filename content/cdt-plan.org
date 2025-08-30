@@ -1,22 +1,21 @@
-#+TITLE: Skitraverse the US Continental Divide
+#+TITLE: A ski traverse of the US Continental Divide
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
-#+PROPERTY: TAGS planning, route, featured
+#+PROPERTY: TAGS planning, CDT
 #+OPTIONS: toc:nil
-#+ORDER: 8
 #+LANGUAGE: en
 
 * Timing
 
-Of all things, the timing and sequence is where flexibility will be necessary.
+Of all things, the timing and sequence of a ski traverse of the US Continental Divide is where flexibility will be necessary.
 
 Currently, I see two options, and list them in order of my preference. I would
-start northbound mid-November, most likely exiting at Cumbres Pass, Colorado, but
-possibly continuing northward until the avalanche conditions become too
-unpredictable. Another less preferable option, but possibly the only
-reasonable option for a continuous footpath border to border, would be to
-start southbound sometime in January or February, with the goal of being in
-Grand Lake, Colorado by mid-April.
+start northbound mid-November, most likely exiting at Cumbres Pass, Colorado,
+but possibly continuing northward until the avalanche conditions become too
+unpredictable. Another less preferable option, but possibly the only reasonable
+option for a continuous footpath border to border, would be to start southbound
+sometime in January or February, with the goal of being in Grand Lake, Colorado
+by early April.
 
 
 Why the two options? The technical crux of wintertime CDT is the combination
@@ -24,40 +23,28 @@ of steep terrain of central and southern Colorado and notoriously weak
 snowpack. This area is reserved for the late springtime.  Past Grand Lake and
 the Front Range, the CDT begins to mellow, and the snowpack thickens.
 
-Why is southbound starting mid-Winter my second preference? In general, it is
+Why is starting southbound mid-Winter my second preference? In general, it is
 better to walk up warm, crusty, and usually more stable southern faces in the
-sun, and ski quickly through colder, softer northerly aspects, where weak
-layers lurk and safety distances are easily maintained.  Thus, the disadvantages
-would be missing a considerable amount of powder, hiking in the coldest temps
-on the mountain (only bad when it's frigid), hiking on the most dangerous
-aspects of the mountain (increasing the time of exposure to risk), being less
-able to use a solar charger, possibly hiking up with crampons and skis on my
-back and having to walk down the barren southern slope, and, finally, being in
-New Mexico in June, a hot and windy place at that time of year. None of those
-are deal breakers. Also, after approximately 2.5 months, mid-April or early
-May, I'd be in central Colorado, approximately, which is the time to head
-through the most technical portion of the wintertime CDT.
+sun, and ski quickly through colder, softer northerly aspects, where weak layers
+lurk and safety distances are easily maintained. Thus, the disadvantages would
+be missing a considerable amount of powder, hiking in the coldest temps on the
+mountain (only bad when it's frigid), hiking on the most dangerous aspects of
+the mountain (increasing the time of exposure to risk), possibly hiking up with
+crampons and skis on my back and having to walk down the barren southern slope,
+and, finally, being in New Mexico in June, a hot and windy place at that time of
+year. None of those are dealbreakers.
 
-Probably most importantly, I don't have a partner yet. The three weeks until
-we may hit considerable snow in New Mexico and switch to skis will serve as an
-extended trail date for anyone who chooses to join me. We will work out our
-routines and quirks by Christmas, I expect. Also, on the New Mexican portion, we
-can get our legs and backs ready for the more strenuous but fun skiing portion.
 
 * Path and Terrain
 
-The terrain along the CDT is typically mellow, avoiding the common ski
-objectives which are often a short distance away. I plan on deviating from the
-'classical' CDT path to avoid avalanche risks and to chase good snow. This will
-depend also on my partners. 
+The terrain along the CDT is typically mellow, and avoids the common ski
+objectives that are often a short distance away. For example, the CDT path
+through the Wind River range could not be more gentle given the surrounding
+terrain. Plan on deviating from the snow-covered CDT to avoid avalanche risks
+and to chase good snow. This way the fun remains.
 
-For example, the CDT path through the Wind River range could not be more
-gentle given the surrounding terrain. I guess that by the time we get there,
-we may be itching for a more ambitious path, although I doubt that. We'll see
-then and there what makes sense.
-
-Above all, I am not loyal to a snow-covered footpath. We must optimize
-according to the following principles.
+Above all, being loyal to a snow-covered footpath brings danger and unnecessary toil.
+The following principles keep it fun and safer.
 
 * Principles
 
@@ -75,7 +62,7 @@ according to the following principles.
    - Gear must be optimized for our speed. Speed during travel, cooking, camping is key.
 4. Redundant systems are necessary.
    - Redundancy in navigation (altimeter and paper maps, compass and map, cell
-     phone, GPS), shelter (tent, poncho tarp, proper shovel for snowcave) and
+     phone, GPS), shelter (tent, poncho tarp, proper shovel for snow cave) and
      sleeping systems (repair materials) is necessary.
 5. Social coherence trumps fun.
    - We stick together within reason.
@@ -88,23 +75,20 @@ according to the following principles.
 - Light backcountry skis with kicker skins (e.g. skimo race skins) or scaled bases and climbing skins. Scaled bases are helpful for efficiency, but ice up. A normal pair of skis with kicker skins is a better option in my opinion.
   - I am open to backcountry cross country skis for certain sections. But I
     trust lightweight touring skis and can comfortably skate with them.
-- Tent: My *current* choice: Seek Outside Silex and medium u-turn wood stove, Candidates: Seek Outside Cimarron or Redcliff, Durston
-  X-mid 2 with solid inner tent, HMG UltaMid 4, Tarptent Stratospire Li with
-  solid inner.
-  - Note: I have tried digging a snow cave every night. It is too much work
-    and too slow, but is a good backup shelter.
-- Zipperless down sleeping bag (-20°F) and, if using the XGK-EX, DCF vapor barrier clothing and overquilt. Timmermade gear serves me very well.
-  - Note: I have tried extending all the 3-season ultralight systems for winter and
-    failed. This is my current trusted system.
-- Melt snow, heat water: wood stove first, MSR XGK-EX second. An (additional) option is using a
-  foldable Nalgene cantene between the back and backpack (and combine no-cook
-  with cold-soak). It is essential to plan in water collection at flowing
-  water. Otherwise, we'll carry too much fuel.
+- Tent: Assuming shelter can be found in the forest, my *current* choice: Seek Outside hot-tent and medium u-turn wood stove or Durston X-mid 2, fly only.
+  - Note: I have tried digging a snow cave every night. It is too much work and too slow, but is a good backup shelter.
+- If using a gas stove, a zipperless down sleeping bag (-20°F) and a synthetic overquilt. Timmermade gear serves me very well.
+- If using a gas stove, a zipperless down sleeping bag (-20°F) and a synthetic overquilt. Timmermade gear serves me very well.
+- If using a packable woodstove, zipperless down sleeping bag (-20°F) without overquilt.
+  - Note: I have tried extending all the 3-season ultralight systems for winter and failed. This is my current trusted system.
+- Melt snow, heat water: gas stove for speed first, wood stove second. An
+  (additional) option is using a foldable Nalgene cantene between the back and
+  backpack (and combine no-cook with cold-soak). It is essential to plan in
+  water collection at flowing water.
   - Note: I have tried the Trail Designs fissure alcohol systems for winter
-    traverses. They work well and are reliable, but are fidgety, slow, and stink too much to use in a
-    tent. 
+    traverses. They work well and are reliable, but are fidgety, slow, and stink too much to use in a tent.
 
-Why no sled? Please read about my [[../on-style-and-approach][approach to ski traverses]]. 
+Why no sled? Please read about my [[./approach-and-style.org][approach to ski traverses]].
 
 * Finances
 
@@ -115,10 +99,10 @@ number. I still need to research what permits will be necessary for certain sect
 * People
 
 Myself: Experienced alpine winter backcountry tour guide, splitboard and
-ski mountaineer, powderhound, climate activist.  I am 37 years old, a climate scientist
+ski mountaineer, powderhound, climate activist.  I am a climate scientist
 turned firmware engineer, a little over 6' (184cm), 75kg, and injury-resistant
 and well-conditioned. I was born in New Mexico, and live in Switzerland with
-my wife, with no kids.
+my wife.
 
 I have been out in the snow since I was little, but since 2012 every season
 >80 days touring, with an upward trend.  For weight and efficiency reasons, I
@@ -128,36 +112,18 @@ therefore, I ski, and I skied well enough for my traverse in Bulgaria, with
 plenty of terrible snow, and I can ski well enough for this traverse of the
 Continental Divide.
 
-I have never walked any of the long trails. I plan to when I am older. I have
-done multiple ski traverses in Switzerland and Bulgaria.  I truly enjoy being
-out in the wild, especially in winter.  My favorite thing to do is a ski
+I have never walked any of the long trails in summer. I plan to when I am older.
+I have done multiple ski traverses in Switzerland and Bulgaria. I truly enjoy
+being out in the wild, especially in winter. My favorite thing to do is a ski
 traverse. I enjoy 'bad' weather, also in winter. I view an attempt to walk the
-CDT in winter mostly as a string of ski traverses.
+CDT in winter, as a string of ski traverses.
 
 Lukas S.: Experienced ski mountaineer, firmware engineer, long-time tour
-partner of Brian, living in Zurich, Switzerland.
+partner of Brian, living in Switzerland.
 
-You: Experienced winter backcountry *ski* tourer. You should be passionate
-about winter, cold-resistant, have a positive outlook and be full of energy.
-Also, I am open to partial companionship. If you have the skills, with some
-vetting you are welcome to joing me for certain parts, although I am wary of
-the social aspect. The mental toll of winter conditions tests me every time,
-but I can handle it and still have fun. Can you still have fun when Old Man
-Winter tests you?
 
-* Fundraiser
+* Considering a wager?
 
-This undertaking is very egotistical of me, but will help me grow at the same
-time. I sure would like to take the opportunity set a fundraiser challenge and
-have people join me in donating money to a cause. My best idea yet is to fund
-an organization the supports less fortunate communities to build out their
-renewable energy mix, with the goal of long-term energy autonomy. I am open to
-ideas. I guess I'd donate a dollar per mile progress.
-
-* Interested in joining me?
-
-I will only traverse the Continental Divide in winter if I have a partner for
-the more critical sections. If you are interested, please read about my
-[[../on-style-and-approach][approach to ski traverses]], please read through [[../skills-and-training][skills and abilities for this
-attempt]], and take time to reflect and decide.  Let's talk.
-
+If you are interested, please read about my [[./approach-and-style.org][approach to ski traverses]], read
+through [[./skills-and-training.org][skills and abilities for an attempt]], and take time to reflect and
+decide.

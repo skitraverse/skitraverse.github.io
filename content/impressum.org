@@ -1,10 +1,9 @@
 #+TITLE:  Datenschutz / Impressum 
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: info
-#+PROPERTY: TAGS legal, german
+#+PROPERTY: TAGS legal, privacy
 #+OPTIONS: toc:nil
-#+ORDER: 9999
-#+LANGUAGE: en
+#+LANGUAGE: de
 
 * Impressum
 Der Inhalt dieser Webseite wurde von Brian J. Oney mit grösster Sorgfalt erstellt. 
@@ -13,7 +12,7 @@ Der Inhalt dieser Webseite wurde von Brian J. Oney mit grösster Sorgfalt erstel
 * Definitionen
   - Der Autor ist Brian J. Oney.
   - Wissen, Hinweise, Vorschläge dienen Weiterbildung der Leser mit Absicht der Anwendung im Wintersport
-  - Die Organisation nennt sich Snowy Experiments.
+  - Die Organisation nennt sich Skitraverse.
   - Das männliche Geschlecht im folgenden Text gilt für alle Geschlechter.
   - Ein Nutzer ist eine Person die von dieser Webseite Information holt.
   
@@ -28,7 +27,7 @@ Nutzer. Versicherung ist Sache des Teilnehmers.
 
 Die Inhalte unserer Seiten wurden mit grösster Sorgfalt erstellt. Für die
 Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch
-keine Gewähr übernehmen.  Verpflichtungen zur Entfernung oder Sperrung der
+keine Gewähr übernehmen. Verpflichtungen zur Entfernung oder Sperrung der
 Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon
 unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
 Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von
