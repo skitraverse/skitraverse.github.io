@@ -1,15 +1,13 @@
 #+TITLE: Winter CDT Section Plans
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
-#+PROPERTY: TAGS planning, sections, route
+#+PROPERTY: TAGS planning, CDT
 #+LANGUAGE: en
-#+ORDER: 3
-
 #+OPTIONS: ^:nil toc:nil
 
 * Introduction
 
-I list a rough time plan for my northbound ski traverse alond the
+I list a rough time plan for my northbound ski traverse along the
 Continental Divide of the western USA. I will attempt to update my progress
 and have it reflected here, when possible.
 
@@ -30,7 +28,7 @@ the units uphill. This is a conservative approach; ideally the distances
 traveled down, when skiing, are dreamy and easy. I calibrated these numbers
 based on my past trips. I use these as a basis, even though I am in much
 better shape, my kit is lighter, my skis are better, and my route planning
-more exact. I expect these estimates to be accurate. 
+more exact. I expect these estimates to be accurate.
 
 * My plans
 

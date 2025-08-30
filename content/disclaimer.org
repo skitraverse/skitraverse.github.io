@@ -3,14 +3,13 @@
 #+CATEGORY: info
 #+PROPERTY: TAGS legal, privacy
 #+OPTIONS: toc:nil
-#+ORDER: 999
 #+LANGUAGE: en
 
 * Disclaimer
 The contents of this website were carefully created by Brian J. Oney.
 
 * Definitions
-  - The author ist Brian J. Oney.
+  - The author is Brian J. Oney.
   - Knowledge, hints, suggestions are used for the further education of the readers with the intention of using them in winter sports.
   - The organization is called Snowy Experiments.
   - The male gender in the following text applies to all genders.
@@ -29,7 +28,7 @@ arising out of negligence. Insurance is the responsibility of the user.
 
 Our content contains links to external websites of third parties, and we have
 no influence on their contents. Therefore, we can also not be held responsible
-for this third-party content and we assume no liability. For the contents of
+for this third-party content, and we assume no liability. For the contents of
 the linked pages the respective providers or operators of the pages are always
 responsible.
 
@@ -44,7 +43,7 @@ non-commercial use permitted. As far as the content on this page
 were not created by the operator, the copyrights of third parties
 observed. In particular, third-party content is treated as such
 marked. If you still notice a copyright infringement
-If you become aware of this, we ask that you inform us accordingly. at
+If you become aware of this, we ask that you inform us accordingly.
 As soon as we become aware of legal violations, we will remove such content immediately
 remove.
 

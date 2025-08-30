@@ -1,24 +1,24 @@
 #+TITLE: Skiing the Pirin and Rila Mountains
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: tips
-#+PROPERTY: TAGS international, mountains, trip-report
+#+PROPERTY: TAGS international, report
 #+OPTIONS: toc:nil
-#+ORDER: 6
 #+LANGUAGE: en
 
 * Summary from 2022 Trip
+  - Mid-February to mid-March
   - Sun is strong.
-  - Snowline can be high 1000-1800.
+  - Snowline can be high 1000m--1800m.
   - Wind is constantly blowing.
-  - Good conditions in the Alpine are rare when terrain is gentle.
+  - Due to the wind, Good conditions in the Alpine are rare.
   - Most terrain is gentle.
-  - Treeline is high. Pinus mura can be found up to 2500m, but is stunted at this elevation, due to wind.
-  - Forests grow thick, large wild rose bushes are common, and fallen branches are everywhere. Bushwhacking is common, and care is needed when skiing in the forest.
-  - Map data is readilly available and can be high quality.
-  - The hut infrastructure is great. 
+  - Treeline is high. /Pinus mura/ can be found up to 2500m, but is stunted at this elevation.
+  - Forests grow thick. Large wild rose bushes are common. Fallen branches are everywhere. Bushwhacking is common, and care is needed when skiing in the forest.
+  - Map data is readily available and can be high quality.
+  - The hut infrastructure and culture is great, often better than that of the Alps.
   - No helicopter rescue is available as of 2022. 
   - Wildlife sticks to lower elevations.
-  - Snow tends to be a little wet 
+  - Snow tends to be a little wet.
 
 * Infrastructure
 It is often unclear if a certain hut has a warden at a certain
@@ -27,10 +27,10 @@ equipment such as those close to ski resorts (Banderitsa Hut) are often
 locked. Unserviced alpine huts almost always are unlocked and have a room with
 many beds, blankets, and a wood stove, with plenty of wood. Good practice is
 to leave the facilities more orderly than found, and slip some money under the
-reception door.
+locked door of the warden.
 
 Due to the uncertainty and difficulty of a rescue, a conservative approach to
-these mountains is advised.
+these mountains is advised. No helicopter rescue is available as of 2022.
 
 * Wildlife
 Wolves have cohabitated Bulgaria with humans since the beginning of our
@@ -45,18 +45,16 @@ I saw a few chamois. Otherwise, I saw many tracks of boar, deer, wolves, but no 
 
 * Map Data
 Maps of slope angle classes can be inaccurate, maybe due to the lack of ground
-truth but are sufficient. I used Gaia GPS, but would not use it here
-again. CalTopo has better slope class angles in the Pirin and Rila Mountains
-as of writing this in late 2022.
+truth data, but are sufficient. I recommend CalTopo because it has better slope class angles in the Pirin and Rila Mountains than competing offers, as of writing this in late 2022.
 
 Iskar Tour maps are the best printed option. However, they are very delicate
 for use en route, and require forethought how to stow and access them
 practically. They can be difficult to obtain outside of Bulgaria.
 
 The website bgmountains.org has routinely updated map tiles for offline use
-with a mapping app such as OruxMaps. These are the most detailed electronic
+with a mapping app such as CalTopo. These are the most detailed electronic
 maps for navigating routes in Bulgaria. The download is free, a donation is
-cool. They also offer a map tiling service: 
+recommended. They also offer a map tiling service at https://kade.si:
 #+begin_src 
 https://bgmtile.kade.si/{Z}/{X}/{Y}.png 
 #+end_src

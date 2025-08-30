@@ -1,30 +1,30 @@
 #+TITLE: The Remo Rub
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: tips
-#+PROPERTY: TAGS techniques, gear-tips
+#+PROPERTY: TAGS skills
 #+OPTIONS: toc:nil
-#+ORDER: 9
 #+LANGUAGE: en
 
 * Problem 
-It's cold and your skins aren't sticking to the base any more.
+It's cold, and your skins aren't sticking to the base any more. Maybe you stored them in your jacket. Maybe your walked on sunny, but then shaded aspects. Maybe your skins partly loosened, for whatever reason, then accumulated snow, which transformed to ice.
 
 * The Remo Rub
 1. Place one end of your ski down in the snow, lean the other on your
    shoulder, with the base facing away.
 2. Pull the iced up sticky side of your skin over the exposed edges with a
    fair bit of tension. The ice will scrape off and fall off. Also, this
-   roughens up the adhesive as well.
+   roughens up the adhesive as well, so it adheres better.
 3. Problem fixed, at least for an hour or two.
 
 Why does this work so well? The problem is usually not that the adhesive is
 wet or cold. The problem is the layer of ice between your base and your
 skins. Putting your skins in your coat only melts the ice or snow on
 them. Some of this water then freezes onto the sticky surface when you reapply
-your skins, creating or making the problem worse.
+your skins, causing or worsening the problem.
 
 * History
-An tour guide apprentice of mine, Remo Schlosser, improved on my method of using a knife blade
-to scratch the ice off the sticky base of ski skins.  "Necessity is the mother
-of all inventions". His approach? He got sick of asking for my knife and used
-his split.
+
+An tour guide apprentice of mine, Remo S., improved on my old method of using a knife blade
+to scratch the ice off the sticky base of climbing skins.  "Necessity is the mother
+of all inventions." His approach? He got sick of asking for my knife and used
+his splitboard's edge.
