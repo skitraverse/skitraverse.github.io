@@ -15,7 +15,7 @@
 - [2024-12-01 Sun] 3rd draft complete.
 - [2024-12-08 Sun] Cover art finished.
 - [2025-09-03 Wed] Supporter Edition ready for printing.
-- [2025-09-12 Tue]-- [2025-09-30 Tue] Book promotion tour, see [[../book-reading-schedule][Schedule September 2025]]
+- [2025-09-12 Tue]-- [2025-09-30 Tue] Book promotion tour, see [[./book-reading-schedule.org][Schedule September 2025]]
 - [2025-11-26 Wed] Books ready for print
 - [2025-12-12 Fri] Books begin shipping
 
