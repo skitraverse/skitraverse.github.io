@@ -190,17 +190,18 @@ footer small {
     justify-items: stretch !important;
 }
 .pagefind-ui__results * {
-    color: white !important;
+    color: #333 !important;
 }
 .pagefind-ui__result {
-    background: rgba(255,255,255,0.1) !important;
-    border: 1px solid rgba(255,255,255,0.2) !important;
+    background: white !important;
+    border: 1px solid #ddd !important;
     padding: 1rem !important;
     border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
 .pagefind-ui__result-title {
-    color: white !important;
+    color: #333 !important;
 }
 .pagefind-ui__result-excerpt {
-    color: #e0e0e0 !important;
+    color: #666 !important;
 }
