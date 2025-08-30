@@ -3,26 +3,23 @@
 #+DATE: 2023-01-01
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS book, CDT, featured
+#+PROPERTY: ORDER 1
 #+LANGUAGE: en
 #+OPTIONS: ^:nil toc:nil
 #+SCHEDULED: <2025-12-12 Fri>
 
-* Timeline
-- [2024-06-30 Sun] 1st draft scribbled.
-- [2024-12-01 Sun] 3rd draft complete.
-- [2024-12-08 Sun] Cover art finished.
-- [2025-09-03 Wed] Supporter Edition ready for printing.
-- [2025-09-12 Tue]-- [2025-09-30 Tue] Book promotion tour, see [[./book-reading-schedule.org][Schedule September 2025]]
-- [2025-11-26 Wed] Books ready for print
-- [2025-12-12 Fri] Books begin shipping
+
+* The Book
+
+[[pelican:img/book-cover.jpg]]
 
 * Staying up to date
-The below form will subscribe you to the mailing list that I manage with Mailchimp. Write me if you wish that I just write you directly. Finally, just return to this page for updates
+The below form will subscribe you to the mailing list that I manage with Mailchimp. Write me if you wish that I just write you directly. Finally, just return to this page for updates.
 
 #+BEGIN_EXPORT html
 <div id="mc_embed_shell">
   <style type="text/css">
-        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; max-width: 600px; width: 100%;}
 </style>
 <div id="mc_embed_signup">
     <form action="https://skitraverse.us21.list-manage.com/subscribe/post?u=44892d7b308264ad62d66094e&amp;id=efc0949fda&amp;f_id=00e4efe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
@@ -45,10 +42,18 @@ The below form will subscribe you to the mailing list that I manage with Mailchi
 </form>
 </div>
 </div>
-<br>
 #+END_EXPORT
 
-* Why a book?
+* When?
+|               2024-06-30 | 1st draft scribbled.                             |
+|               2024-12-01 | 3rd draft complete.                              |
+|               2024-12-08 | Cover art finished.                              |
+|               2025-09-03 | Supporter Edition ready for printing.            |
+| 2025-09-12 -- 2025-09-30 | Book promotion tour, see [[pelican:book-reading-schedule.org][schedule September 2025]] |
+|               2025-11-26 | Books ready for print                            |
+|               2025-12-12 | Books begin arriving                             |
+
+* But why a book?
 
 I have written this book for those who helped me along the way, and for my
 family and friends. I also write it for lovers of the wilderness, who do not

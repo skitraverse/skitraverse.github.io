@@ -1,53 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Hero Section -->
-<section class="masthead">
+<!-- Book: A Wild Calling Section -->
+<section id="book" style="background: white; color: #333;">
     <div class="container">
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <h1>{{ SITENAME }}</h1>
-        <p>{{ SLOGAN }}</p>
-    </div>
-</section>
-
-<!-- Winter CDT Section -->
-<section id="wintercdt">
-    <div class="container">
-        <div class="star-divider">
-            <span class="star">❄</span>
-        </div>
-        <h2>Winter CDT</h2>
-        {% for article in articles if article.category == 'winter-cdt' %}
+        <h2>Book: A Wild Calling</h2>
+        {% set featured_articles = [] %}
+        {% for article in articles %}
+            {% if article.tags and 'featured' in article.tags %}
+                {% set _ = featured_articles.append(article) %}
+            {% endif %}
+        {% endfor %}
+        {% for article in featured_articles|sort(attribute='order') %}
         <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
         {% endfor %}
     </div>
 </section>
 
-<!-- Tips Section -->
-<section id="tips">
+<!-- Search Section -->
+<section style="background: #f8f9fa; color: #333; padding: 2rem 0;">
     <div class="container">
+        <h2>Search</h2>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <h2>Tips</h2>
-        {% for article in articles if article.category == 'tips' %}
-        <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
-        {% endfor %}
-    </div>
-</section>
-
-<!-- Info Section -->
-<section id="about">
-    <div class="container">
-        <div class="star-divider">
-            <span class="star">❄</span>
+        <div id="search" style="max-width: 600px; margin: 0 auto;"></div>
+        
+        <div style="margin-top: 2rem; text-align: center;">
+            <h3>Browse by category</h3>
+            <a href="{{ SITEURL }}/winter-cdt/" role="button" style="margin: 0.25rem;">Winter CDT</a>
+            <a href="{{ SITEURL }}/tips/" role="button" style="margin: 0.25rem;">Tips</a>
+            <a href="{{ SITEURL }}/info/" role="button" style="margin: 0.25rem;">Info</a>
         </div>
-        <h2>Info</h2>
-        {% for article in articles if article.category == 'info' %}
-        <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
-        {% endfor %}
     </div>
 </section>
 {% endblock %}

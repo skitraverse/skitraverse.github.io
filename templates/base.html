@@ -18,12 +18,12 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <ul>
-                <li><strong><a href="{{ SITEURL }}/">{{ SITENAME }}</a></strong></li>
-                <li><a href="{{ SITEURL }}/#wintercdt">Winter CDT</a></li>
-                <li><a href="{{ SITEURL }}/#tips">Tips</a></li>
-                <li><a href="{{ SITEURL }}/#about">Info</a></li>
-                <li>{% include "email_button.html" %}</li>
+            <ul style="justify-content: space-between; align-items: center;">
+                <li><strong><a href="{{ SITEURL }}/" role="button">Skitraverse</a></strong></li>
+                <li style="display: flex; gap: 1rem;">
+                    <a href="{{ SITEURL }}/#book" role="button">Book: A Wild Calling</a>
+                    <a href="{{ SITEURL }}/#contact" role="button">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -48,33 +48,6 @@
         
         {% include 'contact.html' %}
 
-        <!-- Search Section -->
-        <section style="background: #f8f9fa; color: #333; padding: 2rem 0;">
-            <div class="container">
-                <h2>Search</h2>
-                <div class="star-divider">
-                    <span class="star">❄</span>
-                </div>
-                <div id="search" style="max-width: 600px; margin: 0 auto;"></div>
-                
-                <div style="margin-top: 2rem; text-align: center;">
-                    <h3>Browse by topic</h3>
-                    {% set all_tags = [] %}
-                    {% for article in articles %}
-                        {% if article.tags %}
-                            {% for tag in article.tags %}
-                                {% if tag not in all_tags %}
-                                    {% set _ = all_tags.append(tag) %}
-                                {% endif %}
-                            {% endfor %}
-                        {% endif %}
-                    {% endfor %}
-                    {% for tag in all_tags|sort %}
-                        <a href="{{ SITEURL }}/tag/{{ tag|lower|replace(' ', '-') }}/" role="button" style="margin: 0.25rem;">{{ tag }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -89,11 +62,12 @@
             <p>
                 {% if LINKS %}
                 {% for name, link in LINKS %}
-                <a href="{{ link }}">{{ name }}</a> | 
+                <a href="{{ link }}">{{ name }}</a>{% if not loop.last %} | {% endif %}
                 {% endfor %}
+                {% if LINKS %} | {% endif %}
                 {% endif %}
-                <a href="{{ SITEURL }}/info/impressum.html">Impressum</a> | 
-                <a href="{{ SITEURL }}/info/disclaimer.html">Disclaimer</a>
+                <a href="{{ SITEURL }}/info/impressum/">Impressum</a> | 
+                <a href="{{ SITEURL }}/info/disclaimer/">Disclaimer</a>
             </p>
             <p><small>Copyright &copy; {{ AUTHOR }} 2025</small></p>
         </div>
