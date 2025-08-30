@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
     <link rel="stylesheet" href="../static/css/site.css">
+    <!-- Pagefind CSS -->
+    <link href="../pagefind/pagefind-ui.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../static/img/logo.ico">
 </head>
 <body id="page-top">
@@ -21,26 +23,25 @@
                 <li><a href="../#wintercdt">Winter CDT</a></li>
                 <li><a href="../#tips">Tips</a></li>
                 <li><a href="../#about">Info</a></li>
-                <li>
-                    <script> 
-                        coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                        key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                        shift=coded.length
-                        link=""
-                        for (i=0; i<coded.length; i++) {
-                            if (key.indexOf(coded.charAt(i))==-1) {
-                                ltr = coded.charAt(i)
-                                link += (ltr)
-                            }
-                            else {     
-                                ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                                link += (key.charAt(ltr))
-                            }
-                        }
-                        document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>")
-                    </script>
-                    <noscript><a>Contact</a></noscript>
-                </li>
+                <li><span id="email-button-nav"></span>
+<script> 
+    coded = "zSwy3.Z.v3tk@mBywT.NvB"
+    key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+    shift=coded.length
+    link=""
+    for (i=0; i<coded.length; i++) {
+        if (key.indexOf(coded.charAt(i))==-1) {
+            ltr = coded.charAt(i)
+            link += (ltr)
+        }
+        else {     
+            ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+            link += (key.charAt(ltr))
+        }
+    }
+    document.getElementById('email-button-nav').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>"
+</script></li>
+                <li><div id="search" style="min-width: 200px;"></div></li>
             </ul>
         </div>
     </nav>
@@ -49,8 +50,8 @@
     <header>
         <div class="container">
             <h1>Winter CDT Section Plans</h1>
-            <div style="margin: 2rem 0; border-top: 3px solid white; width: 60px; margin-left: auto; margin-right: auto; position: relative;">
-                <span style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #18bc9c; padding: 0 15px; color: white; font-size: 2rem;">❄</span>
+            <div class="star-divider">
+                <span class="star">❄</span>
             </div>
         </div>
     </header>
@@ -61,8 +62,8 @@
 <div class="row justify-content-center">
     <div class="col-lg-8">
         <div class="page-content">
-            <div id="outline-container-org1d4019a" class="outline-2">
-<h2 id="org1d4019a"><span class="section-number-2">1.</span> Introduction</h2>
+            <div id="outline-container-org38d7a0b" class="outline-2">
+<h2 id="org38d7a0b"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 I list a rough time plan for my northbound ski traverse alond the
@@ -71,8 +72,8 @@ and have it reflected here, when possible.
 </p>
 </div>
 </div>
-<div id="outline-container-org90b79d2" class="outline-2">
-<h2 id="org90b79d2"><span class="section-number-2">2.</span> Route choice</h2>
+<div id="outline-container-orgc0a7ba9" class="outline-2">
+<h2 id="orgc0a7ba9"><span class="section-number-2">2.</span> Route choice</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 I aim to plan a route that will go 95% of the time given the likelihood that
@@ -83,8 +84,8 @@ there yet, they are either very obvious, or I haven't planned them yet.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb1920f1" class="outline-2">
-<h2 id="orgb1920f1"><span class="section-number-2">3.</span> Alpine units used here</h2>
+<div id="outline-container-org95d6f0d" class="outline-2">
+<h2 id="org95d6f0d"><span class="section-number-2">3.</span> Alpine units used here</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 I define an alpine unit as 1km horizontal distance or 100m vertical
@@ -98,8 +99,8 @@ more exact. I expect these estimates to be accurate.
 </p>
 </div>
 </div>
-<div id="outline-container-orgfcb85cf" class="outline-2">
-<h2 id="orgfcb85cf"><span class="section-number-2">4.</span> My plans</h2>
+<div id="outline-container-org9dbf4eb" class="outline-2">
+<h2 id="org9dbf4eb"><span class="section-number-2">4.</span> My plans</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Update 2023-01-16: <b>2 days behind</b>
@@ -628,28 +629,31 @@ Update 2023-06-03: <b>Finished!</b>
 <!-- Contact Section -->
 <section id="contact">
     <div class="container">
-        <h2>Contact</h2>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <script> 
-            coded = "zSwy3.Z.v3tk@mBywT.NvB"
-            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-            shift=coded.length
-            link=""
-            for (i=0; i<coded.length; i++) {
-                if (key.indexOf(coded.charAt(i))==-1) {
-                    ltr = coded.charAt(i)
-                    link += (ltr)
+        <h2>Contact</h2>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <span id="email-button-contact"></span>
+            <script> 
+                coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                shift=coded.length
+                link=""
+                for (i=0; i<coded.length; i++) {
+                    if (key.indexOf(coded.charAt(i))==-1) {
+                        ltr = coded.charAt(i)
+                        link += (ltr)
+                    }
+                    else {     
+                        ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                        link += (key.charAt(ltr))
+                    }
                 }
-                else {     
-                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                    link += (key.charAt(ltr))
-                }
-            }
-            document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Contact</a>")
-        </script>
-        <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
+                document.getElementById('email-button-contact').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Email</a>"
+            </script>
+            <a href="https://instagram.com/skitraverse" role="button">Instagram</a>
+        </div>
     </div>
 </section>    </main>
 
@@ -670,5 +674,13 @@ Update 2023-06-03: <b>Finished!</b>
             <p><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
+
+    <!-- Pagefind JS -->
+    <script src="../pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
 </body>
 </html>

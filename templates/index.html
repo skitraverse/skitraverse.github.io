@@ -4,10 +4,10 @@
 <!-- Hero Section -->
 <section class="masthead">
     <div class="container">
-        <h1>{{ SITENAME }}</h1>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
+        <h1>{{ SITENAME }}</h1>
         <p>{{ SLOGAN }}</p>
     </div>
 </section>
@@ -15,10 +15,10 @@
 <!-- Winter CDT Section -->
 <section id="wintercdt">
     <div class="container">
-        <h2>Winter CDT</h2>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
+        <h2>Winter CDT</h2>
         {% for page in pages if page.category == 'winter-cdt' %}
         <a href="{{ SITEURL }}/{{ page.url }}" role="button">{{ page.title }}</a>
         {% endfor %}
@@ -28,10 +28,10 @@
 <!-- Tips Section -->
 <section id="tips">
     <div class="container">
-        <h2>Tips</h2>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
+        <h2>Tips</h2>
         {% for page in pages if page.category == 'tips' %}
         <a href="{{ SITEURL }}/{{ page.url }}" role="button">{{ page.title }}</a>
         {% endfor %}
@@ -41,10 +41,10 @@
 <!-- Info Section -->
 <section id="about">
     <div class="container">
-        <h2>Info</h2>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
+        <h2>Info</h2>
         {% for page in pages if page.category == 'info' %}
         <a href="{{ SITEURL }}/{{ page.url }}" role="button">{{ page.title }}</a>
         {% endfor %}
