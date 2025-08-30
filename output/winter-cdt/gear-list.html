@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
     <link rel="stylesheet" href="../static/css/site.css">
+    <!-- Pagefind CSS -->
+    <link href="../pagefind/pagefind-ui.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../static/img/logo.ico">
 </head>
 <body id="page-top">
@@ -21,26 +23,25 @@
                 <li><a href="../#wintercdt">Winter CDT</a></li>
                 <li><a href="../#tips">Tips</a></li>
                 <li><a href="../#about">Info</a></li>
-                <li>
-                    <script> 
-                        coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                        key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                        shift=coded.length
-                        link=""
-                        for (i=0; i<coded.length; i++) {
-                            if (key.indexOf(coded.charAt(i))==-1) {
-                                ltr = coded.charAt(i)
-                                link += (ltr)
-                            }
-                            else {     
-                                ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                                link += (key.charAt(ltr))
-                            }
-                        }
-                        document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>")
-                    </script>
-                    <noscript><a>Contact</a></noscript>
-                </li>
+                <li><span id="email-button-nav"></span>
+<script> 
+    coded = "zSwy3.Z.v3tk@mBywT.NvB"
+    key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+    shift=coded.length
+    link=""
+    for (i=0; i<coded.length; i++) {
+        if (key.indexOf(coded.charAt(i))==-1) {
+            ltr = coded.charAt(i)
+            link += (ltr)
+        }
+        else {     
+            ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+            link += (key.charAt(ltr))
+        }
+    }
+    document.getElementById('email-button-nav').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>"
+</script></li>
+                <li><div id="search" style="min-width: 200px;"></div></li>
             </ul>
         </div>
     </nav>
@@ -49,8 +50,8 @@
     <header>
         <div class="container">
             <h1>Gear list</h1>
-            <div style="margin: 2rem 0; border-top: 3px solid white; width: 60px; margin-left: auto; margin-right: auto; position: relative;">
-                <span style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #18bc9c; padding: 0 15px; color: white; font-size: 2rem;">❄</span>
+            <div class="star-divider">
+                <span class="star">❄</span>
             </div>
         </div>
     </header>
@@ -61,8 +62,8 @@
 <div class="row justify-content-center">
     <div class="col-lg-8">
         <div class="page-content">
-            <div id="outline-container-org6eca0ae" class="outline-2">
-<h2 id="org6eca0ae"><span class="section-number-2">1.</span> Gear is the least important pillar</h2>
+            <div id="outline-container-org9082d92" class="outline-2">
+<h2 id="org9082d92"><span class="section-number-2">1.</span> Gear is the least important pillar</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Most important of all come the mental, i.e. emotional, technical, and reasoning, capabilities. Think emotional, technical, and reasoning courses, mentoring, and personal experience.
@@ -85,12 +86,12 @@ If you want more of this, I am writing a book. It's appendix will go more into h
 </p>
 </div>
 </div>
-<div id="outline-container-orgde07169" class="outline-2">
-<h2 id="orgde07169"><span class="section-number-2">2.</span> My 6 winter systems</h2>
+<div id="outline-container-org505cd8b" class="outline-2">
+<h2 id="org505cd8b"><span class="section-number-2">2.</span> My 6 winter systems</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org394d39d" class="outline-4">
-<h4 id="org394d39d"><span class="section-number-4">2.0.1.</span> Ski setup</h4>
+<div id="outline-container-orgb53a4a6" class="outline-4">
+<h4 id="orgb53a4a6"><span class="section-number-4">2.0.1.</span> Ski setup</h4>
 <div class="outline-text-4" id="text-2-0-1">
 <p>
 I used the Tecnica Zero G peak. They may not walk the best, but they are very stiff for their weight.
@@ -98,40 +99,40 @@ I used the SkiTrab Ortles 90 for winter and SkiTrab Maestro.2 for spring.  SkiTr
 </p>
 </div>
 </div>
-<div id="outline-container-org2955e05" class="outline-4">
-<h4 id="org2955e05"><span class="section-number-4">2.0.2.</span> Sleeping</h4>
+<div id="outline-container-org74601be" class="outline-4">
+<h4 id="org74601be"><span class="section-number-4">2.0.2.</span> Sleeping</h4>
 <div class="outline-text-4" id="text-2-0-2">
 <p>
 I used the Timmermade Winter Wren -20⁰F with a GramXpert 50⁰F synthetic overbag for the coldest periods on a Therm-a-rest Xtherm. I shared a Spoonbill UL sleeping bag from Feathered Friends with a friend for the upper half of Montana's CD on and Exped double sleeping pad. Timmermade vapor barrier clothing helped me on cold nights.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb08ea3d" class="outline-4">
-<h4 id="orgb08ea3d"><span class="section-number-4">2.0.3.</span> Tent</h4>
+<div id="outline-container-orgb6698ee" class="outline-4">
+<h4 id="orgb6698ee"><span class="section-number-4">2.0.3.</span> Tent</h4>
 <div class="outline-text-4" id="text-2-0-3">
 <p>
 I used the fly of a Durston X-mid 1 or, with my friend the Durston X-mid 2. I also used the Seek Outside Silex hot tent alone and the Seek Outside Guardian with my friend. Procuring wood and burning it to melt water was too slow, so we reverted bag to the white gas stove.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbd35390" class="outline-4">
-<h4 id="orgbd35390"><span class="section-number-4">2.0.4.</span> Backpack</h4>
+<div id="outline-container-orgb7e507f" class="outline-4">
+<h4 id="orgb7e507f"><span class="section-number-4">2.0.4.</span> Backpack</h4>
 <div class="outline-text-4" id="text-2-0-4">
 <p>
 I used the Superior Wilderness Designs Big Wild backpack. It carried well and, with the hanging hip belt, skied very well with a heavy load.
 </p>
 </div>
 </div>
-<div id="outline-container-org52a976b" class="outline-4">
-<h4 id="org52a976b"><span class="section-number-4">2.0.5.</span> Stove</h4>
+<div id="outline-container-org468eeef" class="outline-4">
+<h4 id="org468eeef"><span class="section-number-4">2.0.5.</span> Stove</h4>
 <div class="outline-text-4" id="text-2-0-5">
 <p>
 I used the MSR XGK-EX with a modified Trail Designs Fissure windscreen-potstand combination to hold an MSR Big Titan. I burned bio-white gas. I also used a Seek Outside Medium U-Turn, but that requires too much time for cross country travel.
 </p>
 </div>
 </div>
-<div id="outline-container-org33739ac" class="outline-4">
-<h4 id="org33739ac"><span class="section-number-4">2.0.6.</span> Clothing</h4>
+<div id="outline-container-orgd16bb15" class="outline-4">
+<h4 id="orgd16bb15"><span class="section-number-4">2.0.6.</span> Clothing</h4>
 <div class="outline-text-4" id="text-2-0-6">
 <p>
 From inside out top: SkiTrab Overglove Plus or Showa Temres 282 gloves, Patagonia Capilene Air hoody, Patagonia Houdini, Patagonia DAS light jacket, and, with significant precipitation, the Zpacks Poncho Groundsheet, or, at camp a Timmermade SUL 1.5 down sweater.
@@ -140,8 +141,8 @@ From inside out bottom: Pantyhose leggings, Mtntools Vapor Barrier Socks, 2 pair
 </div>
 </div>
 </div>
-<div id="outline-container-org2b309a2" class="outline-2">
-<h2 id="org2b309a2"><span class="section-number-2">3.</span> My stuff</h2>
+<div id="outline-container-orgead0428" class="outline-2">
+<h2 id="orgead0428"><span class="section-number-2">3.</span> My stuff</h2>
 <div class="outline-text-2" id="text-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -659,28 +660,31 @@ From inside out bottom: Pantyhose leggings, Mtntools Vapor Barrier Socks, 2 pair
 <!-- Contact Section -->
 <section id="contact">
     <div class="container">
-        <h2>Contact</h2>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <script> 
-            coded = "zSwy3.Z.v3tk@mBywT.NvB"
-            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-            shift=coded.length
-            link=""
-            for (i=0; i<coded.length; i++) {
-                if (key.indexOf(coded.charAt(i))==-1) {
-                    ltr = coded.charAt(i)
-                    link += (ltr)
+        <h2>Contact</h2>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <span id="email-button-contact"></span>
+            <script> 
+                coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                shift=coded.length
+                link=""
+                for (i=0; i<coded.length; i++) {
+                    if (key.indexOf(coded.charAt(i))==-1) {
+                        ltr = coded.charAt(i)
+                        link += (ltr)
+                    }
+                    else {     
+                        ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                        link += (key.charAt(ltr))
+                    }
                 }
-                else {     
-                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                    link += (key.charAt(ltr))
-                }
-            }
-            document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Contact</a>")
-        </script>
-        <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
+                document.getElementById('email-button-contact').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Email</a>"
+            </script>
+            <a href="https://instagram.com/skitraverse" role="button">Instagram</a>
+        </div>
     </div>
 </section>    </main>
 
@@ -701,5 +705,13 @@ From inside out bottom: Pantyhose leggings, Mtntools Vapor Barrier Socks, 2 pair
             <p><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
+
+    <!-- Pagefind JS -->
+    <script src="../pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
 </body>
 </html>

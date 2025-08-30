@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
     <link rel="stylesheet" href="../static/css/site.css">
+    <!-- Pagefind CSS -->
+    <link href="../pagefind/pagefind-ui.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../static/img/logo.ico">
 </head>
 <body id="page-top">
@@ -21,26 +23,25 @@
                 <li><a href="../#wintercdt">Winter CDT</a></li>
                 <li><a href="../#tips">Tips</a></li>
                 <li><a href="../#about">Info</a></li>
-                <li>
-                    <script> 
-                        coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                        key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                        shift=coded.length
-                        link=""
-                        for (i=0; i<coded.length; i++) {
-                            if (key.indexOf(coded.charAt(i))==-1) {
-                                ltr = coded.charAt(i)
-                                link += (ltr)
-                            }
-                            else {     
-                                ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                                link += (key.charAt(ltr))
-                            }
-                        }
-                        document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>")
-                    </script>
-                    <noscript><a>Contact</a></noscript>
-                </li>
+                <li><span id="email-button-nav"></span>
+<script> 
+    coded = "zSwy3.Z.v3tk@mBywT.NvB"
+    key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+    shift=coded.length
+    link=""
+    for (i=0; i<coded.length; i++) {
+        if (key.indexOf(coded.charAt(i))==-1) {
+            ltr = coded.charAt(i)
+            link += (ltr)
+        }
+        else {     
+            ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+            link += (key.charAt(ltr))
+        }
+    }
+    document.getElementById('email-button-nav').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>"
+</script></li>
+                <li><div id="search" style="min-width: 200px;"></div></li>
             </ul>
         </div>
     </nav>
@@ -49,8 +50,8 @@
     <header>
         <div class="container">
             <h1>Skills for ski traversal of CDT</h1>
-            <div style="margin: 2rem 0; border-top: 3px solid white; width: 60px; margin-left: auto; margin-right: auto; position: relative;">
-                <span style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #18bc9c; padding: 0 15px; color: white; font-size: 2rem;">❄</span>
+            <div class="star-divider">
+                <span class="star">❄</span>
             </div>
         </div>
     </header>
@@ -61,12 +62,12 @@
 <div class="row justify-content-center">
     <div class="col-lg-8">
         <div class="page-content">
-            <div id="outline-container-orgaabe508" class="outline-2">
-<h2 id="orgaabe508"><span class="section-number-2">1.</span> Requirements</h2>
+            <div id="outline-container-org4014f0c" class="outline-2">
+<h2 id="org4014f0c"><span class="section-number-2">1.</span> Requirements</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org42f67e4" class="outline-4">
-<h4 id="org42f67e4"><span class="section-number-4">1.0.1.</span> Wilderness First Responder</h4>
+<div id="outline-container-orge27d90c" class="outline-4">
+<h4 id="orge27d90c"><span class="section-number-4">1.0.1.</span> Wilderness First Responder</h4>
 <div class="outline-text-4" id="text-1-0-1">
 <p>
 Many areas of the CDT are very remote, and more so during Winter. We need to
@@ -78,8 +79,8 @@ allows.
 </p>
 </div>
 </div>
-<div id="outline-container-org77dea2a" class="outline-4">
-<h4 id="org77dea2a"><span class="section-number-4">1.0.2.</span> Advanced Downhill Skier</h4>
+<div id="outline-container-org2af4b4a" class="outline-4">
+<h4 id="org2af4b4a"><span class="section-number-4">1.0.2.</span> Advanced Downhill Skier</h4>
 <div class="outline-text-4" id="text-1-0-2">
 <p>
 We will see all snow types. We will be tired and carry heavy packs. We will
@@ -88,8 +89,8 @@ an advanced level.
 </p>
 </div>
 </div>
-<div id="outline-container-orga31ee00" class="outline-4">
-<h4 id="orga31ee00"><span class="section-number-4">1.0.3.</span> Experienced Winter Camper</h4>
+<div id="outline-container-orgf7bacc2" class="outline-4">
+<h4 id="orgf7bacc2"><span class="section-number-4">1.0.3.</span> Experienced Winter Camper</h4>
 <div class="outline-text-4" id="text-1-0-3">
 <p>
 Building a snow cave, choosing a safe campsite, having a dialed winter
@@ -98,12 +99,12 @@ sleeping system (down to about -30°C [-23°F]) are necessary skills.
 </div>
 </div>
 </div>
-<div id="outline-container-orgab9de2c" class="outline-2">
-<h2 id="orgab9de2c"><span class="section-number-2">2.</span> Desirables</h2>
+<div id="outline-container-orgc424dc1" class="outline-2">
+<h2 id="orgc424dc1"><span class="section-number-2">2.</span> Desirables</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgd293ca8" class="outline-4">
-<h4 id="orgd293ca8"><span class="section-number-4">2.0.1.</span> Avalanche Training</h4>
+<div id="outline-container-org8a78ed4" class="outline-4">
+<h4 id="org8a78ed4"><span class="section-number-4">2.0.1.</span> Avalanche Training</h4>
 <div class="outline-text-4" id="text-2-0-1">
 <p>
 I guide groups in all avalanche conditions, adjusting to safe terrain,
@@ -117,8 +118,8 @@ apply your training, but you need the fundamentals and experience first.
 </p>
 </div>
 </div>
-<div id="outline-container-orged61f38" class="outline-4">
-<h4 id="orged61f38"><span class="section-number-4">2.0.2.</span> Mental Strength Training</h4>
+<div id="outline-container-org9cd7a94" class="outline-4">
+<h4 id="org9cd7a94"><span class="section-number-4">2.0.2.</span> Mental Strength Training</h4>
 <div class="outline-text-4" id="text-2-0-2">
 <p>
 Winter is cold, windy and snowy. I love it but it still can get to
@@ -130,8 +131,8 @@ open. Mental resilience is key when we get our butts kicked.
 </p>
 </div>
 </div>
-<div id="outline-container-org5498340" class="outline-4">
-<h4 id="org5498340"><span class="section-number-4">2.0.3.</span> Physical conditioning</h4>
+<div id="outline-container-org4170f2c" class="outline-4">
+<h4 id="org4170f2c"><span class="section-number-4">2.0.3.</span> Physical conditioning</h4>
 <div class="outline-text-4" id="text-2-0-3">
 <p>
 We need to be consistently fast. The risk of an overuse injury, overtraining,
@@ -153,28 +154,31 @@ Athlete</a> courses (probably the Intro to Skimo)
 <!-- Contact Section -->
 <section id="contact">
     <div class="container">
-        <h2>Contact</h2>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <script> 
-            coded = "zSwy3.Z.v3tk@mBywT.NvB"
-            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-            shift=coded.length
-            link=""
-            for (i=0; i<coded.length; i++) {
-                if (key.indexOf(coded.charAt(i))==-1) {
-                    ltr = coded.charAt(i)
-                    link += (ltr)
+        <h2>Contact</h2>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <span id="email-button-contact"></span>
+            <script> 
+                coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                shift=coded.length
+                link=""
+                for (i=0; i<coded.length; i++) {
+                    if (key.indexOf(coded.charAt(i))==-1) {
+                        ltr = coded.charAt(i)
+                        link += (ltr)
+                    }
+                    else {     
+                        ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                        link += (key.charAt(ltr))
+                    }
                 }
-                else {     
-                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                    link += (key.charAt(ltr))
-                }
-            }
-            document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Contact</a>")
-        </script>
-        <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
+                document.getElementById('email-button-contact').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Email</a>"
+            </script>
+            <a href="https://instagram.com/skitraverse" role="button">Instagram</a>
+        </div>
     </div>
 </section>    </main>
 
@@ -195,5 +199,13 @@ Athlete</a> courses (probably the Intro to Skimo)
             <p><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
+
+    <!-- Pagefind JS -->
+    <script src="../pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
 </body>
 </html>

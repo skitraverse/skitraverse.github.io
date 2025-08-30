@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
     <link rel="stylesheet" href="../static/css/site.css">
+    <!-- Pagefind CSS -->
+    <link href="../pagefind/pagefind-ui.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../static/img/logo.ico">
 </head>
 <body id="page-top">
@@ -21,26 +23,25 @@
                 <li><a href="../#wintercdt">Winter CDT</a></li>
                 <li><a href="../#tips">Tips</a></li>
                 <li><a href="../#about">Info</a></li>
-                <li>
-                    <script> 
-                        coded = "zSwy3.Z.v3tk@mBywT.NvB"
-                        key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-                        shift=coded.length
-                        link=""
-                        for (i=0; i<coded.length; i++) {
-                            if (key.indexOf(coded.charAt(i))==-1) {
-                                ltr = coded.charAt(i)
-                                link += (ltr)
-                            }
-                            else {     
-                                ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                                link += (key.charAt(ltr))
-                            }
-                        }
-                        document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>")
-                    </script>
-                    <noscript><a>Contact</a></noscript>
-                </li>
+                <li><span id="email-button-nav"></span>
+<script> 
+    coded = "zSwy3.Z.v3tk@mBywT.NvB"
+    key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+    shift=coded.length
+    link=""
+    for (i=0; i<coded.length; i++) {
+        if (key.indexOf(coded.charAt(i))==-1) {
+            ltr = coded.charAt(i)
+            link += (ltr)
+        }
+        else {     
+            ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+            link += (key.charAt(ltr))
+        }
+    }
+    document.getElementById('email-button-nav').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,'>Contact</a>"
+</script></li>
+                <li><div id="search" style="min-width: 200px;"></div></li>
             </ul>
         </div>
     </nav>
@@ -49,8 +50,8 @@
     <header>
         <div class="container">
             <h1>Skitraverse the US Continental Divide</h1>
-            <div style="margin: 2rem 0; border-top: 3px solid white; width: 60px; margin-left: auto; margin-right: auto; position: relative;">
-                <span style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #18bc9c; padding: 0 15px; color: white; font-size: 2rem;">❄</span>
+            <div class="star-divider">
+                <span class="star">❄</span>
             </div>
         </div>
     </header>
@@ -61,8 +62,8 @@
 <div class="row justify-content-center">
     <div class="col-lg-8">
         <div class="page-content">
-            <div id="outline-container-orgfb07448" class="outline-2">
-<h2 id="orgfb07448"><span class="section-number-2">1.</span> Timing</h2>
+            <div id="outline-container-orgccce8e6" class="outline-2">
+<h2 id="orgccce8e6"><span class="section-number-2">1.</span> Timing</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Of all things, the timing and sequence is where flexibility will be necessary.
@@ -111,8 +112,8 @@ can get our legs and backs ready for the more strenuous but fun skiing portion.
 </p>
 </div>
 </div>
-<div id="outline-container-org058470e" class="outline-2">
-<h2 id="org058470e"><span class="section-number-2">2.</span> Path and Terrain</h2>
+<div id="outline-container-org4c642a1" class="outline-2">
+<h2 id="org4c642a1"><span class="section-number-2">2.</span> Path and Terrain</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 The terrain along the CDT is typically mellow, avoiding the common ski
@@ -134,8 +135,8 @@ according to the following principles.
 </p>
 </div>
 </div>
-<div id="outline-container-orgcca6330" class="outline-2">
-<h2 id="orgcca6330"><span class="section-number-2">3.</span> Principles</h2>
+<div id="outline-container-org5d104c9" class="outline-2">
+<h2 id="org5d104c9"><span class="section-number-2">3.</span> Principles</h2>
 <div class="outline-text-2" id="text-3">
 <ol class="org-ol">
 <li>Safety first.
@@ -174,8 +175,8 @@ nightly rest is important to recover.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org846eb66" class="outline-2">
-<h2 id="org846eb66"><span class="section-number-2">4.</span> Systems</h2>
+<div id="outline-container-orgeb1e634" class="outline-2">
+<h2 id="orgeb1e634"><span class="section-number-2">4.</span> Systems</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>Light backcountry skis with kicker skins (e.g. skimo race skins) or scaled bases and climbing skins. Scaled bases are helpful for efficiency, but ice up. A normal pair of skis with kicker skins is a better option in my opinion.
@@ -211,8 +212,8 @@ Why no sled? Please read about my <a href="../on-style-and-approach">approach to
 </p>
 </div>
 </div>
-<div id="outline-container-orgfc7681d" class="outline-2">
-<h2 id="orgfc7681d"><span class="section-number-2">5.</span> Finances</h2>
+<div id="outline-container-org1f7a60d" class="outline-2">
+<h2 id="org1f7a60d"><span class="section-number-2">5.</span> Finances</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Without the gear investments (about 8k$ upfront!), I would budget
@@ -221,8 +222,8 @@ number. I still need to research what permits will be necessary for certain sect
 </p>
 </div>
 </div>
-<div id="outline-container-orgfaf0ba7" class="outline-2">
-<h2 id="orgfaf0ba7"><span class="section-number-2">6.</span> People</h2>
+<div id="outline-container-org18de25b" class="outline-2">
+<h2 id="org18de25b"><span class="section-number-2">6.</span> People</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Myself: Experienced alpine winter backcountry tour guide, splitboard and
@@ -266,8 +267,8 @@ Winter tests you?
 </p>
 </div>
 </div>
-<div id="outline-container-orgb996755" class="outline-2">
-<h2 id="orgb996755"><span class="section-number-2">7.</span> Fundraiser</h2>
+<div id="outline-container-org5594046" class="outline-2">
+<h2 id="org5594046"><span class="section-number-2">7.</span> Fundraiser</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 This undertaking is very egotistical of me, but will help me grow at the same
@@ -279,8 +280,8 @@ ideas. I guess I'd donate a dollar per mile progress.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc85947d" class="outline-2">
-<h2 id="orgc85947d"><span class="section-number-2">8.</span> Interested in joining me?</h2>
+<div id="outline-container-org76a5b78" class="outline-2">
+<h2 id="org76a5b78"><span class="section-number-2">8.</span> Interested in joining me?</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 I will only traverse the Continental Divide in winter if I have a partner for
@@ -299,28 +300,31 @@ attempt</a>, and take time to reflect and decide.  Let's talk.
 <!-- Contact Section -->
 <section id="contact">
     <div class="container">
-        <h2>Contact</h2>
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <script> 
-            coded = "zSwy3.Z.v3tk@mBywT.NvB"
-            key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
-            shift=coded.length
-            link=""
-            for (i=0; i<coded.length; i++) {
-                if (key.indexOf(coded.charAt(i))==-1) {
-                    ltr = coded.charAt(i)
-                    link += (ltr)
+        <h2>Contact</h2>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <span id="email-button-contact"></span>
+            <script> 
+                coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                shift=coded.length
+                link=""
+                for (i=0; i<coded.length; i++) {
+                    if (key.indexOf(coded.charAt(i))==-1) {
+                        ltr = coded.charAt(i)
+                        link += (ltr)
+                    }
+                    else {     
+                        ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                        link += (key.charAt(ltr))
+                    }
                 }
-                else {     
-                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                    link += (key.charAt(ltr))
-                }
-            }
-            document.write("<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Contact</a>")
-        </script>
-        <noscript>Sorry, you need to have Javascript enabled to write an e-mail.</noscript>
+                document.getElementById('email-button-contact').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Email</a>"
+            </script>
+            <a href="https://instagram.com/skitraverse" role="button">Instagram</a>
+        </div>
     </div>
 </section>    </main>
 
@@ -341,5 +345,13 @@ attempt</a>, and take time to reflect and decide.  Let's talk.
             <p><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
+
+    <!-- Pagefind JS -->
+    <script src="../pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
 </body>
 </html>

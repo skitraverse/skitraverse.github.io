@@ -122,11 +122,11 @@ TEMPLATE_DEBUG = True
 
 # Custom URL structure using tags as routing
 # Map first tag to directory structure
-PAGE_URL = '{category}/{slug}.html'
-PAGE_SAVE_AS = '{category}/{slug}.html'
+PAGE_URL = '{category}/{slug}/'
+PAGE_SAVE_AS = '{category}/{slug}/index.html'
 
 # Category-based URLs for articles  
-ARTICLE_URL = '{category}/{slug}.html'
-ARTICLE_SAVE_AS = '{category}/{slug}.html'
+ARTICLE_URL = '{category}/{slug}/'
+ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
