@@ -1,7 +1,7 @@
 #+TITLE: My adventures in the snow
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: info
-#+PROPERTY: TAGS biography
+#+PROPERTY: TAGS personal
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 

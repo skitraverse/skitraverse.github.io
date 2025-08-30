@@ -51,7 +51,7 @@ MARKUP = ("org")
 ORG_READER_SETTINGS = {
     "function": "read_org", 
     "extra_export_excludes": ["DATE"],
-    "extra_export_includes": ["SCHEDULED"],
+    "extra_export_includes": ["SCHEDULED", "ORDER"],
     "emacs_settings": {
         "org-export-with-toc": "nil",
         "org-html-with-latex": "nil",
@@ -91,10 +91,20 @@ def process_scheduled(scheduled_str, settings=None):
         return pelican_get_date(match.group(1))
     return scheduled_str
 
+def process_order(order_str, settings=None):
+    """Process ORDER property from org-mode"""
+    if not order_str or order_str.strip() == '':
+        return 999  # Default high number for unordered items
+    try:
+        return int(order_str.strip())
+    except ValueError:
+        return 999
+
 # Override processors
 import pelican.readers
 pelican.readers.METADATA_PROCESSORS['date'] = custom_get_date
 pelican.readers.METADATA_PROCESSORS['scheduled'] = process_scheduled
+pelican.readers.METADATA_PROCESSORS['order'] = process_order
 
 # Use our working templates directory
 THEME = "."

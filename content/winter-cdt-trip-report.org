@@ -1,7 +1,8 @@
 #+TITLE: Winter CDT Report
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
-#+PROPERTY: TAGS report, CDT, featured
+#+PROPERTY: TAGS report, CDT
+#+PROPERTY: ORDER 3
 #+LANGUAGE: en
 
 #+OPTIONS: ^:nil toc:nil
@@ -9,11 +10,12 @@
 
 * Summary
 
-I completed the first traversal during wintertime of the Continental Divide of
-the continental USA. I started hiking on the Continental Divide Trail from
-Crazy Cook Monument on November 21st, 2022, a little after noon. I started
-skiing December 20th, north of Ghost Ranch, NM. I reached the Canadian border
-on April 15th, around 13:30MST, with my partner Lukas S.
+I completed the first winter traversal of the Continental Divide of the
+Continental USA from November 21st, 2022 to June 3rd, 2023. I started hiking on
+the Continental Divide Trail from Crazy Cook Monument on November 21st, 2022, a
+little after noon. I started skiing December 20th, north of Ghost Ranch, NM. I
+reached the Canadian border on April 15th, around 13:30MST, with my partner
+Lukas S.
 
 I was not yet done. I had postponed the heart of the Colorado Rockies and the
 northern part of the Wind River Range until late spring, due to typically
