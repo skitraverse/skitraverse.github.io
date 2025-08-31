@@ -7,7 +7,7 @@ nav {
 }
 nav .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 nav .sitename {
@@ -16,6 +16,19 @@ nav .sitename {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+}
+nav .nav-contact {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+nav .nav-contact:hover {
+    background: white;
+    color: #2c3e50;
 }
 
 /* Page header styling */
