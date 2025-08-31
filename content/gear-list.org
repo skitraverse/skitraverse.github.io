@@ -3,7 +3,6 @@
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS equipment, skills, techniques
 #+OPTIONS: toc:nil
-#+PROPERTY: ORDER 2
 #+LANGUAGE: en
 
 * Gear is the least important pillar
