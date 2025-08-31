@@ -13,7 +13,7 @@
                 {% set _ = featured_articles.append(article) %}
             {% endif %}
         {% endfor %}
-        {% for article in featured_articles|sort(attribute='order') %}
+        {% for article in featured_articles|sort(attribute='metadata.order')|sort(attribute='order') %}
         <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
         {% endfor %}
     </div>

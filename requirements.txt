@@ -1,5 +1,7 @@
-# Pelican static site generator
-pelican[markdown]
+pelican==4.11.0
+pagefind==1.3.0
+pagefind_bin_extended==1.3.0
 
 # For org-mode support 
 # Note: Requires Emacs to be installed on system
+# Note: pelican-plugins is managed as a git submodule
