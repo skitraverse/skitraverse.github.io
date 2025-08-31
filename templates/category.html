@@ -9,10 +9,9 @@
         <div style="max-width: 800px; margin: 0 auto; text-align: left;">
             <h2>{{ category.name|title }} Articles</h2>
             
-            {% for article in articles|sort(attribute='metadata.order')|sort(attribute='order') %}
+            {% for article in articles|reverse %}
                 <article style="margin: 2rem 0; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
                     <h3><a href="{{ SITEURL }}/{{ article.url }}" style="text-decoration: none;">{{ article.title }}</a></h3>
-                    <small style="color: #666;">DEBUG: order={{ article.order }}, metadata.order={{ article.metadata.order }}</small>
                     {% if article.summary %}
                         <p>{{ article.summary }}</p>
                     {% endif %}

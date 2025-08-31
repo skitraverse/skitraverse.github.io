@@ -19,11 +19,6 @@
     <nav>
         <div class="container">
             <a href="./" class="sitename">Skitraverse</a>
-            <div class="nav-links">
-                <a href="./#book">Book: A Wild Calling</a>
-                <a href="./#contact">Contact</a>
-            </div>
-            <button class="mobile-toggle" style="display: none;">☰</button>
         </div>
     </nav>
 
@@ -38,7 +33,7 @@
             <dt>2023-01-01</dt>
             <dd><a href="./tips/approach-and-style/">My approach to and style of ski traverses</a></dd>
             <dt>2023-01-01</dt>
-            <dd><a href="./winter-cdt/book-reading-schedule/">Book Tour: September 2025 Schedule</a></dd>
+            <dd><a href="./winter-cdt-book/book-reading-schedule/">Book Tour: September 2025 Schedule</a></dd>
             <dt>2023-01-01</dt>
             <dd><a href="./tips/bulgaria-2022/">Ski traverses in Bulgaria</a></dd>
             <dt>2023-01-01</dt>
@@ -46,17 +41,17 @@
             <dt>2023-01-01</dt>
             <dd><a href="./info/disclaimer/">Disclaimer / Data Protection</a></dd>
             <dt>2023-01-01</dt>
-            <dd><a href="./winter-cdt/gear-list/">Gear list</a></dd>
+            <dd><a href="./winter-cdt/gear-list/">Gear List</a></dd>
             <dt>2023-01-01</dt>
             <dd><a href="./info/impressum/">Datenschutz / Impressum</a></dd>
             <dt>2023-01-01</dt>
             <dd><a href="./info/my-story/">My adventures in the snow</a></dd>
             <dt>2023-01-01</dt>
-            <dd><a href="./winter-cdt/skills-and-training/">Skills for ski traversal</a></dd>
+            <dd><a href="./tips/skills-and-training/">Skills for ski traversal</a></dd>
             <dt>2023-01-01</dt>
             <dd><a href="./tips/the-remo-rub/">The Remo Rub</a></dd>
             <dt>2023-01-01</dt>
-            <dd><a href="./winter-cdt/winter-cdt-book/">Winter CDT Book</a></dd>
+            <dd><a href="./winter-cdt-book/winter-cdt-book/">Winter CDT Book</a></dd>
             <dt>2023-01-01</dt>
             <dd><a href="./winter-cdt/winter-cdt-section-plans/">Winter CDT Section Plans</a></dd>
             <dt>2023-01-01</dt>
@@ -119,15 +114,6 @@
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Mobile menu toggle
-            const toggle = document.querySelector('.mobile-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            
-            if (toggle && navLinks) {
-                toggle.addEventListener('click', () => {
-                    navLinks.classList.toggle('show');
-                });
-            }
         });
     </script>
 </body>

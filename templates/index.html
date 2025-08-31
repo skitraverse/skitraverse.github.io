@@ -8,16 +8,18 @@
         </div>
         <h2>Book: A Wild Calling</h2>
         <h3>A firsthand account of the first ski traverse of the US Continental Divide</h3>
-        <h4>by Brian Oney</h3>
+        <h4>by Brian J. Oney</h3>
         {% set featured_articles = [] %}
         {% for article in articles %}
             {% if article.tags and 'featured' in article.tags %}
                 {% set _ = featured_articles.append(article) %}
             {% endif %}
         {% endfor %}
-        {% for article in featured_articles|sort(attribute='metadata.order')|sort(attribute='order') %}
-        <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
-        {% endfor %}
+        <div class="featured-buttons">
+            {% for article in featured_articles|reverse %}
+            <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
+            {% endfor %}
+        </div>
         <div style="text-align: center; margin: 2rem 0;">
             <img src="{{ SITEURL }}/img/landing-page.jpg" alt="Mountain landscape" style="max-width: 100%; height: auto; border-radius: 8px;">
             <p style="margin-top: 1rem; font-style: italic; color: #666;">Anyone up for climbing Parkview Mountain?</p>
@@ -32,7 +34,7 @@
         </div>
         <h2>Browse site</h2>
         <div class="category-buttons">
-            {% for category, articles in categories %}
+            {% for category, articles in categories|reverse %}
             <a href="{{ SITEURL }}/{{ category.url }}" role="button">{{ category }}</a>
             {% endfor %}
         </div>

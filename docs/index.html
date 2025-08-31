@@ -19,11 +19,6 @@
     <nav>
         <div class="container">
             <a href="./" class="sitename">Skitraverse</a>
-            <div class="nav-links">
-                <a href="./#book">Book: A Wild Calling</a>
-                <a href="./#contact">Contact</a>
-            </div>
-            <button class="mobile-toggle" style="display: none;">☰</button>
         </div>
     </nav>
 
@@ -39,9 +34,11 @@
         </div>
         <h2>Book: A Wild Calling</h2>
         <h3>A firsthand account of the first ski traverse of the US Continental Divide</h3>
-        <h4>by Brian Oney</h3>
-        <a href="./winter-cdt/book-reading-schedule/" role="button">Book Tour: September 2025 Schedule</a>
-        <a href="./winter-cdt/winter-cdt-book/" role="button">Winter CDT Book</a>
+        <h4>by Brian J. Oney</h3>
+        <div class="featured-buttons">
+            <a href="./winter-cdt-book/winter-cdt-book/" role="button">Winter CDT Book</a>
+            <a href="./winter-cdt-book/book-reading-schedule/" role="button">Book Tour: September 2025 Schedule</a>
+        </div>
         <div style="text-align: center; margin: 2rem 0;">
             <img src="./img/landing-page.jpg" alt="Mountain landscape" style="max-width: 100%; height: auto; border-radius: 8px;">
             <p style="margin-top: 1rem; font-style: italic; color: #666;">Anyone up for climbing Parkview Mountain?</p>
@@ -54,14 +51,15 @@
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <div style="margin-top: 2rem; text-align: center;">
-            <h2>Search site</h2>
-            <a href="./info/" role="button" style="margin: 0.25rem;">info</a>
-            <a href="./tips/" role="button" style="margin: 0.25rem;">tips</a>
-            <a href="./winter-cdt/" role="button" style="margin: 0.25rem;">winter-cdt</a>
+        <h2>Browse site</h2>
+        <div class="category-buttons">
+            <a href="./winter-cdt-book/" role="button">winter-cdt-book</a>
+            <a href="./winter-cdt/" role="button">winter-cdt</a>
+            <a href="./tips/" role="button">tips</a>
+            <a href="./info/" role="button">info</a>
         </div>
-        <h3>Find something else</h3>
-        <div id="search-widget" style="max-width: 600px; margin: 0 auto;"></div>
+        <h3>Search site</h3>
+        <div id="search-widget"></div>
     </div>
 </section>
         </div>
@@ -121,15 +119,6 @@
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Mobile menu toggle
-            const toggle = document.querySelector('.mobile-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            
-            if (toggle && navLinks) {
-                toggle.addEventListener('click', () => {
-                    navLinks.classList.toggle('show');
-                });
-            }
         });
     </script>
 </body>

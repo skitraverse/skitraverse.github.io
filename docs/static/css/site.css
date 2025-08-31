@@ -7,7 +7,7 @@ nav {
 }
 nav .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 nav .sitename {
@@ -16,29 +16,6 @@ nav .sitename {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-}
-nav .nav-links {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-nav .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid white;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-nav .nav-links a:hover {
-    background: white;
-    color: #2c3e50;
-}
-
-/* Hide mobile toggle on desktop */
-.mobile-toggle {
-    display: none;
 }
 
 /* Page header styling */
@@ -80,7 +57,7 @@ header h1 {
 }
 .masthead p { color: white !important; font-size: 1.2rem !important; }
 
-/* Section styling */
+/* Section styling with logical spacing */
 section {
     padding: var(--pico-spacing) 0;
     text-align: center;
@@ -89,6 +66,48 @@ section {
     margin-right: calc(-50vw + 50%);
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 3vw, 2rem);
+    align-items: center;
+}
+
+/* Book section button container */
+#book .container > a[role="button"] {
+    align-self: center;
+}
+
+/* Allow multiple buttons side by side if space allows */
+#book .container {
+    align-items: stretch;
+}
+
+#book .featured-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Category buttons layout */
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Search widget styling */
+#search-widget {
+    max-width: 600px;
+    margin: 0 auto;
 }
 /* Specific section coloring: masthead(dark) -> book(light) -> search(dark) -> contact(light) */
 #book { background: white; color: #333; }
@@ -491,30 +510,4 @@ table tr:hover {
         font-size: 1.4rem !important;
     }
     
-    nav .nav-links {
-        display: none !important;
-    }
-    
-    nav .mobile-toggle {
-        display: block !important;
-        color: white !important;
-        font-size: 1.2rem !important;
-        cursor: pointer !important;
-        background: none !important;
-        border: none !important;
-    }
-    
-    nav .nav-links.show {
-        display: flex !important;
-        flex-direction: column !important;
-        position: absolute !important;
-        top: 100% !important;
-        right: 1rem !important;
-        background: #2c3e50 !important;
-        border: 1px solid white !important;
-        border-radius: 4px !important;
-        padding: 0.5rem !important;
-        z-index: 1000 !important;
-        gap: 0.5rem !important;
-    }
 }
