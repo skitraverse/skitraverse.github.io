@@ -138,3 +138,10 @@ CATEGORY_SAVE_AS = '{slug}/index.html'
 # Disable tag page generation to avoid duplicates
 TAG_SAVE_AS = ''
 TAGS_SAVE_AS = ''
+
+# Copy static files needed for GitHub Pages  
+STATIC_PATHS = ['static', 'CNAME', '.nojekyll']
+EXTRA_PATH_METADATA = {
+    'CNAME': {'path': 'CNAME'},
+    '.nojekyll': {'path': '.nojekyll'},
+}
