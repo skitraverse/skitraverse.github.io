@@ -31,7 +31,7 @@ An intimate reading in the heart of Montana's Continental Divide region. Locatio
 ** Salt Lake City, UT: [[https://skimo.co/][Skimo Co]] reading  
 Tuesday, September 30, 2025
 
-Join the Skimo Co community for an evening focused on backcountry skiing techniques, gear selection, and winter safety principles drawn from the CDT experience.
+Join the Skimo Co community for an evening focused on backcountry skiing techniques, gear selection, and winter safety principles drawn from experience.
 
 #+BEGIN_EXPORT html
 <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//Skitraverse//Book Tour 2025//EN%0ACALSCALE:GREGORIAN%0AMETHOD:PUBLISH%0ABEGIN:VEVENT%0AUID:saltlake-2025-09-30@skitraverse.com%0ADTSTART:20250930T180000Z%0ADTEND:20250930T200000Z%0ADTSTAMP:20250830T210000Z%0ASUMMARY:A Wild Calling Book Reading - Salt Lake City, UT%0ADESCRIPTION:Join the Skimo Co community for an evening focused on backcountry skiing techniques.%0ALOCATION:Salt Lake City, UT%0AURL:https://skimo.co/%0AEND:VEVENT%0AEND:VCALENDAR" download="saltlake-book-reading.ics" role="button" style="font-size: 0.8rem; padding: 0.25rem 0.5rem;">📅 Add to Calendar</a>

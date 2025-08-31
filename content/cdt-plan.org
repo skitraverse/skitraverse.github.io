@@ -1,4 +1,4 @@
-#+TITLE: A ski traverse of the US Continental Divide
+#+TITLE: Planning a ski traverse of the US Continental Divide
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS planning, CDT
@@ -33,7 +33,6 @@ the mountain (increasing the time of exposure to risk), possibly hiking up with
 crampons and skis on my back and having to walk down the barren southern slope,
 and, finally, being in New Mexico in June, a hot and windy place at that time of
 year. None of those are dealbreakers.
-
 
 * Path and Terrain
 
@@ -121,9 +120,9 @@ CDT in winter, as a string of ski traverses.
 Lukas S.: Experienced ski mountaineer, firmware engineer, long-time tour
 partner of Brian, living in Switzerland.
 
-
 * Considering a wager?
 
 If you are interested, please read about my [[./approach-and-style.org][approach to ski traverses]], read
 through [[./skills-and-training.org][skills and abilities for an attempt]], and take time to reflect and
 decide.
+
