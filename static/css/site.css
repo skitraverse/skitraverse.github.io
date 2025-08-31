@@ -80,7 +80,7 @@ header h1 {
 }
 .masthead p { color: white !important; font-size: 1.2rem !important; }
 
-/* Section styling */
+/* Section styling with logical spacing */
 section {
     padding: var(--pico-spacing) 0;
     text-align: center;
@@ -89,6 +89,29 @@ section {
     margin-right: calc(-50vw + 50%);
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 3vw, 2rem);
+}
+
+/* Category buttons layout */
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Search widget styling */
+#search-widget {
+    max-width: 600px;
+    margin: 0 auto;
 }
 /* Specific section coloring: masthead(dark) -> book(light) -> search(dark) -> contact(light) */
 #book { background: white; color: #333; }

@@ -3,6 +3,7 @@
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS planning, CDT
 #+OPTIONS: toc:nil
+#+PROPERTY: ORDER 3
 #+LANGUAGE: en
 
 * Timing

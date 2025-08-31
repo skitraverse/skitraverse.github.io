@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS planning, CDT
+#+PROPERTY: ORDER 4
 #+LANGUAGE: en
 #+OPTIONS: ^:nil toc:nil
 

@@ -1,6 +1,6 @@
 #+TITLE: Winter CDT Book
 #+AUTHOR: Brian J. Oney  
-#+CATEGORY: winter-cdt
+#+CATEGORY: winter-cdt-book
 #+PROPERTY: TAGS book, CDT, featured
 #+PROPERTY: ORDER 1
 #+LANGUAGE: en

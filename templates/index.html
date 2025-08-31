@@ -30,14 +30,14 @@
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <div style="margin-top: 2rem; text-align: center;">
-            <h2>Search site</h2>
+        <h2>Browse site</h2>
+        <div class="category-buttons">
             {% for category, articles in categories %}
-            <a href="{{ SITEURL }}/{{ category.url }}" role="button" style="margin: 0.25rem;">{{ category }}</a>
+            <a href="{{ SITEURL }}/{{ category.url }}" role="button">{{ category }}</a>
             {% endfor %}
         </div>
-        <h3>Find something else</h3>
-        <div id="search-widget" style="max-width: 600px; margin: 0 auto;"></div>
+        <h3>Search site</h3>
+        <div id="search-widget"></div>
     </div>
 </section>
 {% endblock %}

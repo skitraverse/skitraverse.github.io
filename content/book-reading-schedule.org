@@ -1,7 +1,7 @@
 #+title: Book Tour: September 2025 Schedule
 
 #+AUTHOR: Brian J. Oney
-#+CATEGORY: winter-cdt
+#+CATEGORY: winter-cdt-book
 #+PROPERTY: TAGS events, featured
 #+PROPERTY: ORDER 2
 #+OPTIONS: toc:nil
