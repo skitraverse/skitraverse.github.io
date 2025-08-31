@@ -19,7 +19,7 @@
 - Want a peek? Come to a reading. See [[pelican:book-reading-schedule.org][schedule September 2025]]
 
 * Staying up to date
-The below form will subscribe you to the mailing list that I manage with Mailchimp. Write me if you wish that I just write you directly. Finally, just return to this page for updates.
+The below form will subscribe you to the mailing list that I manage with Mailchimp. Write me if you wish that I just write you directly. Otherwise, return to this page for updates.
 
 #+BEGIN_EXPORT html
 <div id="mc_embed_shell">
