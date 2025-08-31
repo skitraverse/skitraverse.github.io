@@ -6,7 +6,6 @@
 #+PROPERTY: ORDER 1
 #+LANGUAGE: en
 #+OPTIONS: ^:nil toc:nil
-#+SCHEDULED: <2025-12-12 Fri>
 
 
 * The Book
@@ -17,7 +16,7 @@
 - ~200 color photographs
 - ~20 color maps
 - Arriving before Christmas 2025
-- Want a peek? See [[pelican:book-reading-schedule.org][schedule September 2025]]
+- Want a peek? Come to a reading. See [[pelican:book-reading-schedule.org][schedule September 2025]]
 
 * Staying up to date
 The below form will subscribe you to the mailing list that I manage with Mailchimp. Write me if you wish that I just write you directly. Finally, just return to this page for updates.
