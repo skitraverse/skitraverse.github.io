@@ -3,7 +3,6 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt-book
 #+PROPERTY: TAGS events, featured
-#+PROPERTY: ORDER 2
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 
@@ -11,6 +10,7 @@ Join me for readings and discussions about "A Wild Calling" - my book about the 
 
 * Confirmed dates and places
 ** Leadville, CO: [[https://cdtcoalition.org/event/cdt-sobo-trail-daze-2025/][2025 SoBo Trail Daze]]
+
 Friday, September 12, 2025
 
 The Continental Divide Trail Coalition's annual gathering celebrates southbound hikers. I'll share stories from the winter traverse and discuss the unique challenges of ski touring the CDT.
@@ -20,6 +20,7 @@ The Continental Divide Trail Coalition's annual gathering celebrates southbound 
 #+END_EXPORT
 
 ** Dillon or Lima, MT: Book reading
+
 Saturday, September 27, 2025
 
 An intimate reading in the heart of Montana's Continental Divide region. Location to be confirmed - check back for updates.
@@ -28,7 +29,8 @@ An intimate reading in the heart of Montana's Continental Divide region. Locatio
 <a href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0APRODID:-//Skitraverse//Book Tour 2025//EN%0ACALSCALE:GREGORIAN%0AMETHOD:PUBLISH%0ABEGIN:VEVENT%0AUID:dillon-2025-09-27@skitraverse.com%0ADTSTART:20250927T180000Z%0ADTEND:20250927T200000Z%0ADTSTAMP:20250830T210000Z%0ASUMMARY:A Wild Calling Book Reading - Dillon or Lima, MT%0ADESCRIPTION:An intimate reading in the heart of Montana's Continental Divide region.%0ALOCATION:Dillon or Lima, MT%0AEND:VEVENT%0AEND:VCALENDAR" download="dillon-book-reading.ics" role="button" style="font-size: 0.8rem; padding: 0.25rem 0.5rem;">📅 Add to Calendar</a>
 #+END_EXPORT
 
-** Salt Lake City, UT: [[https://skimo.co/][Skimo Co]] reading  
+** Salt Lake City, UT: [[https://skimo.co/][Skimo Co]] reading
+
 Tuesday, September 30, 2025
 
 Join the Skimo Co community for an evening focused on backcountry skiing techniques, gear selection, and winter safety principles drawn from experience.
@@ -39,6 +41,7 @@ Join the Skimo Co community for an evening focused on backcountry skiing techniq
 
 * Tentative dates and places
 ** Jackson, WY: [[https://www.tetonbackcountryalliance.org/][Teton Backcountry Alliance]]
+
 Saturday, September 20, 2025
 
 Pending confirmation with the Teton Backcountry Alliance. This event would focus on avalanche safety and decision-making in complex terrain.
@@ -48,6 +51,7 @@ Pending confirmation with the Teton Backcountry Alliance. This event would focus
 #+END_EXPORT
 
 ** Kalispell, MT: [[https://www.rockymountainoutfitter.com][Rocky Mountain Outfitter]] Reading
+
 Friday, September 26, 2025
 
 A gear-focused discussion at this respected outfitter, covering equipment choices and gear systems for extended winter expeditions.
@@ -57,6 +61,7 @@ A gear-focused discussion at this respected outfitter, covering equipment choice
 #+END_EXPORT
 
 * Further dates
+
 Would you like to offer your community an evening of gripping tales and measured discussion? I'm available for additional readings, workshops, or speaking engagements. Contact me to discuss bringing this presentation to your group, outdoor club, or community.
 
 #+BEGIN_EXPORT html
@@ -64,3 +69,4 @@ Would you like to offer your community an evening of gripping tales and measured
 <a href="../../static/book-tour-2025.ics" download="book-tour-2025.ics" role="button">📅 Download Full Calendar</a>
 </div>
 #+END_EXPORT
+
