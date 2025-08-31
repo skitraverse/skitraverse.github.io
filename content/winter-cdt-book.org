@@ -47,7 +47,7 @@ The below form will subscribe you to the mailing list that I manage with Mailchi
 </div>
 #+END_EXPORT
 
-* Book timelind
+* Book timeline
 |      2024-06-30 | 1st draft scribbled.        |
 |      2024-12-01 | 3rd draft complete.         |
 |      2025-09-03 | Supporter Edition printing. |
