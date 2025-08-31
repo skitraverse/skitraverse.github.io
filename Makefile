@@ -1,6 +1,7 @@
-PY?=
+PY?=python3
 PELICAN?=pelican
 PELICANOPTS=
+VENV_DIR=venv
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
@@ -9,7 +10,7 @@ CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 GITHUB_PAGES_BRANCH=main
-GITHUB_PAGES_COMMIT_MESSAGE=Generate Pelican site
+GITHUB_PAGES_COMMIT_MESSAGE=Generate Skitraverse site
 
 
 DEBUG ?= 0
@@ -30,10 +31,22 @@ ifneq ($(PORT), 0)
 endif
 
 
+venv:
+	@if [ ! -d "$(VENV_DIR)" ]; then \
+		echo "Creating virtual environment..."; \
+		$(PY) -m venv $(VENV_DIR); \
+		$(VENV_DIR)/bin/pip install -r requirements.txt; \
+	fi
+	# TODO when pelican org stuff is in pelican-plugins @git submodule update --init --recursive
+
+# Helper to activate venv only if not already active
+ACTIVATE_VENV = if [ -z "$$VIRTUAL_ENV" ]; then . $(VENV_DIR)/bin/activate; fi &&
+
 help:
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo '                                                                          '
 	@echo 'Usage:                                                                    '
+	@echo '   make venv                           create python virtual environment  '
 	@echo '   make html                           (re)generate the web site          '
 	@echo '   make clean                          remove the generated files         '
 	@echo '   make regenerate                     regenerate files upon modification '
@@ -48,35 +61,36 @@ help:
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
 
-html:
-	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
-	python3 -m pagefind --site "$(OUTPUTDIR)"
+html: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+	$(ACTIVATE_VENV) python3 -m pagefind --site "$(OUTPUTDIR)"
 
 clean:
 	[ ! -d "$(OUTPUTDIR)" ] || rm -rf "$(OUTPUTDIR)"
 
-regenerate:
-	"$(PELICAN)" -r "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+regenerate: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" -r "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-serve:
-	"$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+serve: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-serve-global:
-	"$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b $(SERVER)
+serve-global: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b $(SERVER)
 
-devserver:
-	"$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+devserver: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
-devserver-global:
-	"$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b 0.0.0.0
+devserver-global: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b 0.0.0.0
 
-publish:
-	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
-	python3 -m pagefind --site "$(OUTPUTDIR)"
+publish: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
+	$(ACTIVATE_VENV) python3 -m pagefind --site "$(OUTPUTDIR)"
 
 github: publish
-	ghp-import -m "$(GITHUB_PAGES_COMMIT_MESSAGE)" -b $(GITHUB_PAGES_BRANCH) "$(OUTPUTDIR)" --no-jekyll
+	git add "$(OUTPUTDIR)"
+	git commit -m "$(GITHUB_PAGES_COMMIT_MESSAGE)"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 
-.PHONY: html help clean regenerate serve serve-global devserver devserver-global publish github
+.PHONY: venv html help clean regenerate serve serve-global devserver devserver-global publish github
