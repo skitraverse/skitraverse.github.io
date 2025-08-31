@@ -2,7 +2,6 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS report, CDT
-#+PROPERTY: ORDER 1
 #+LANGUAGE: en
 
 #+OPTIONS: ^:nil toc:nil
