@@ -19,11 +19,6 @@
     <nav>
         <div class="container">
             <a href="{{ SITEURL }}/" class="sitename">Skitraverse</a>
-            <div class="nav-links">
-                <a href="{{ SITEURL }}/#book">Book: A Wild Calling</a>
-                <a href="{{ SITEURL }}/#contact">Contact</a>
-            </div>
-            <button class="mobile-toggle" style="display: none;">☰</button>
         </div>
     </nav>
 
@@ -78,15 +73,6 @@
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Mobile menu toggle
-            const toggle = document.querySelector('.mobile-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            
-            if (toggle && navLinks) {
-                toggle.addEventListener('click', () => {
-                    navLinks.classList.toggle('show');
-                });
-            }
         });
     </script>
 </body>

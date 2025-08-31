@@ -2,7 +2,6 @@
 #+AUTHOR: Brian J. Oney  
 #+CATEGORY: winter-cdt-book
 #+PROPERTY: TAGS book, CDT, featured
-#+PROPERTY: ORDER 1
 #+LANGUAGE: en
 #+OPTIONS: ^:nil toc:nil
 
