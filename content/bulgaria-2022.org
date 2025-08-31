@@ -1,4 +1,4 @@
-#+TITLE: Skiing the Pirin and Rila Mountains
+#+TITLE: Ski traverses in Bulgaria
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: tips
 #+PROPERTY: TAGS international, report, planning
@@ -7,6 +7,7 @@
 
 * Summary from 2022 Trip
   - Mid-February to mid-March
+  - The Pirin and Rila mountains offer the best terrain.
   - Sun is strong.
   - Snowline can be high 1000m--1800m.
   - Wind is constantly blowing.
@@ -19,6 +20,9 @@
   - No helicopter rescue is available as of 2022. 
   - Wildlife sticks to lower elevations.
   - Snow tends to be a little wet.
+  - The book [[https://www.skiingthebalkans.com/][Skiing the Balkans]] by Dimitar Dimitrov is very useful as an introduction to backcountry skiing in Bulgaria.
+  - Buses, trains, and hitchhiking (if you speak Bulgarian) work well.
+
 
 * Infrastructure
 It is often unclear if a certain hut has a warden at a certain
@@ -27,21 +31,10 @@ equipment such as those close to ski resorts (Banderitsa Hut) are often
 locked. Unserviced alpine huts almost always are unlocked and have a room with
 many beds, blankets, and a wood stove, with plenty of wood. Good practice is
 to leave the facilities more orderly than found, and slip some money under the
-locked door of the warden.
+locked door of the warden's office.
 
 Due to the uncertainty and difficulty of a rescue, a conservative approach to
 these mountains is advised. No helicopter rescue is available as of 2022.
-
-* Wildlife
-Wolves have cohabitated Bulgaria with humans since the beginning of our
-time. Wolves fear and avoid humans. Likewise, humans fear and avoid
-wolves. Mind your manners, and you may have a problem with a dog, but not a
-wolf.
-
-I may have seen one wolf, which was interested in a dog, which was following
-me and had a limp. The wolf was not interested in me.
-
-I saw a few chamois. Otherwise, I saw many tracks of boar, deer, wolves, but no bear tracks.
 
 * Map Data
 Maps of slope angle classes can be inaccurate, maybe due to the lack of ground
@@ -53,12 +46,27 @@ practically. They can be difficult to obtain outside of Bulgaria.
 
 The website bgmountains.org has routinely updated map tiles for offline use
 with a mapping app such as CalTopo. These are the most detailed electronic
-maps for navigating routes in Bulgaria. The download is free, a donation is
+maps for navigating routes in Bulgaria. The download is free, so a donation is
 recommended. They also offer a map tiling service at https://kade.si:
 #+begin_src 
 https://bgmtile.kade.si/{Z}/{X}/{Y}.png 
 #+end_src
 
-The best combination for mapping data, as of writing this in late 2022, would
-be to add this tiling service to  your CalTopo layers and combine that with CalTopo's most
-accurate slope angle class. 
+The best combination for mapping data, as of writing this in late 2022, would be
+to add this tiling service to your CalTopo layers and combine that with
+CalTopo's most accurate slope angle class. A wiser me takes PDF printouts of my
+CalTopo custom maps, when CalTopo or my phone fails to work.
+
+For example, my notes help me to hit the ground running, as well as [[https://caltopo.com/m/6JPNRK1][share]] them with you.
+https://caltopo.com/m/6JPNRK1
+
+* Wildlife
+Wolves have cohabitated Bulgaria with humans since the beginning of our
+time. Wolves fear and avoid humans. Likewise, humans fear and avoid
+wolves. Mind your manners, and you may have a problem with a dog, but not a
+wolf.
+
+I may have seen one wolf, which was interested in a dog, which was following
+me and had a limp. The wolf was not interested in me.
+
+I saw a few chamois. Otherwise, I saw many tracks of boar, deer, wolves, but no bear tracks.
