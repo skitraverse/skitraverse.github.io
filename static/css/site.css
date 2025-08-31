@@ -1,31 +1,44 @@
-/* Navigation styling */
+/* New header design with sitename left, links right */
 nav { 
     background: #2c3e50; 
     padding: 1rem 0;
     margin-bottom: 0;
+    position: relative;
 }
-nav ul { 
-    margin-bottom: 0; 
-    display: flex !important;
-    flex-wrap: wrap !important;
-    width: 100%;
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav li {
-    display: inline-block !important;
-    margin-right: 1rem !important;
-}
-nav li:first-child {
-    margin-right: auto !important;
-}
-/* Navigation buttons inherit from [role="button"] styling */
-nav [role="button"] {
+nav .sitename {
+    font-size: 1.8rem;
+    font-weight: bold;
     color: white;
-    border-color: white;
+    text-decoration: none;
+    text-transform: uppercase;
 }
-nav [role="button"]:hover {
-    background: white !important;
-    color: #2c3e50 !important;
-    border-color: white !important;
+nav .nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+nav .nav-links a:hover {
+    background: white;
+    color: #2c3e50;
+}
+
+/* Hide mobile toggle on desktop */
+.mobile-toggle {
+    display: none;
 }
 
 /* Page header styling */
@@ -33,7 +46,7 @@ header {
     background: #2c3e50 !important;
     color: white !important;
     text-align: center !important;
-    padding: 4rem 0 !important;
+    padding: 2rem 0 !important;
     width: 100vw !important;
     margin-left: calc(-50vw + 50%) !important;
     margin-right: calc(-50vw + 50%) !important;
@@ -43,8 +56,8 @@ header {
 header h1 { 
     color: white !important; 
     text-transform: uppercase !important; 
-    font-size: 2.5rem !important;
-    margin-bottom: 2rem !important;
+    font-size: 1.75rem !important;
+    margin-bottom: 1rem !important;
 }
 
 /* Masthead styling for homepage */
@@ -52,7 +65,7 @@ header h1 {
     background: #2c3e50 !important;
     color: white !important;
     text-align: center !important;
-    padding: 6rem 0 !important;
+    padding: 3rem 0 !important;
     width: 100vw !important;
     margin-left: calc(-50vw + 50%) !important;
     margin-right: calc(-50vw + 50%) !important;
@@ -62,8 +75,8 @@ header h1 {
 .masthead h1 { 
     color: white !important; 
     text-transform: uppercase !important; 
-    font-size: 3rem !important;
-    margin-bottom: 2rem !important;
+    font-size: 2rem !important;
+    margin-bottom: 1rem !important;
 }
 .masthead p { color: white !important; font-size: 1.2rem !important; }
 
@@ -77,9 +90,38 @@ section {
     margin-top: 0;
     margin-bottom: 0;
 }
-section:nth-of-type(odd) { background: #2c3e50; color: white; }
-section:nth-of-type(even) { background: white; color: #333; }
-.masthead + section:nth-of-type(odd) { background: #2c3e50; color: white; }
+/* Specific section coloring: masthead(dark) -> book(light) -> search(dark) -> contact(light) */
+#book { background: white; color: #333; }
+#search { background: #2c3e50; color: white; }
+#contact { background: white; color: #333; }
+
+/* Button styling for specific sections */
+/* Light sections (#book, #contact) need dark buttons */
+#book [role="button"], #contact [role="button"] {
+    color: #333 !important;
+    border-color: #333 !important;
+}
+#book [role="button"]:hover, #contact [role="button"]:hover {
+    background: #333 !important;
+    color: white !important;
+    border-color: #333 !important;
+}
+
+/* Dark sections (#search) need light buttons */
+#search [role="button"] {
+    color: white !important;
+    border-color: white !important;
+}
+#search [role="button"]:hover {
+    background: white !important;
+    color: #2c3e50 !important;
+    border-color: white !important;
+}
+
+/* Fix specific text color in search section */
+#search h3 {
+    color: white !important;
+}
 section h2 { 
     color: inherit; 
     text-transform: uppercase;
@@ -119,6 +161,17 @@ section h2 {
     transition: all 0.3s ease;
 }
 
+/* Default button styling for article pages */
+main [role="button"] {
+    color: #333 !important;
+    border-color: #333 !important;
+}
+main [role="button"]:hover {
+    background: #333 !important;
+    color: white !important;
+    border-color: #333 !important;
+}
+
 /* Dark sections (odd) - white text on dark background */
 section:nth-of-type(odd) [role="button"] {
     color: white;
@@ -145,27 +198,6 @@ section:nth-of-type(even) [role="button"]:hover {
     transform: translateY(-2px);
 }
 
-/* Contact section (dark background) */
-section#contact [role="button"] {
-    color: white;
-    border-color: white;
-}
-section#contact [role="button"]:hover {
-    background: white !important;
-    color: #2c3e50 !important;
-    border-color: white !important;
-}
-
-/* Book section (light background) */
-section#book [role="button"] {
-    color: #333 !important;
-    border-color: #333 !important;
-}
-section#book [role="button"]:hover {
-    background: #333 !important;
-    color: white !important;
-    border-color: #333 !important;
-}
 
 /* Content styling */
 main { padding: 0; }
@@ -231,28 +263,60 @@ footer small {
     color: #ffffff !important;
 }
 
-/* Pagefind search results styling */
-.pagefind-ui__results {
+/* Pagefind search styling for dark section */
+#search .pagefind-ui__form input {
+    background: white !important;
+    color: #333 !important;
+    border: 1px solid white !important;
+    border-radius: 8px !important;
+}
+#search .pagefind-ui__form {
+    border-radius: 8px !important;
+}
+#search .pagefind-ui__search-input {
+    border-radius: 8px !important;
+}
+#search .pagefind-ui__results {
     display: grid !important;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
     gap: 1rem !important;
     align-items: stretch !important;
     justify-items: stretch !important;
 }
-.pagefind-ui__results * {
+#search .pagefind-ui__results * {
     color: #333 !important;
 }
-.pagefind-ui__result {
+#search .pagefind-ui__message {
+    color: white !important;
+}
+#search .pagefind-ui__search-clear {
+    color: #333 !important;
+}
+#search .pagefind-ui__drawer {
+    background: rgba(44, 62, 80, 0.95) !important;
+    border: 1px solid white !important;
+}
+#search .pagefind-ui__summary {
+    color: white !important;
+}
+#search .pagefind-ui__message {
+    color: white !important;
+    background: rgba(255,255,255,0.1) !important;
+    padding: 1rem !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+}
+#search .pagefind-ui__result {
     background: white !important;
     border: 1px solid #ddd !important;
     padding: 1rem !important;
     border-radius: 8px !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
-.pagefind-ui__result-title {
+#search .pagefind-ui__result-title {
     color: #333 !important;
 }
-.pagefind-ui__result-excerpt {
+#search .pagefind-ui__result-excerpt {
     color: #666 !important;
 }
 
@@ -351,6 +415,31 @@ table tr:hover {
         box-sizing: border-box !important;
     }
     
+    /* Reduce header padding on mobile */
+    header {
+        padding: 0.75rem 0 !important;
+    }
+    
+    .masthead {
+        padding: 1.5rem 0 !important;
+    }
+    
+    /* Smaller header text on mobile */
+    header h1 {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .masthead h1 {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    /* Hide star divider on mobile for compactness */
+    header .star-divider {
+        display: none;
+    }
+    
     /* Container fixes for mobile */
     .container {
         max-width: 100% !important;
@@ -393,34 +482,39 @@ table tr:hover {
         font-size: 1.5rem;
     }
     
-    /* Mobile navigation improvements */
-    nav ul {
-        flex-direction: column !important;
-        gap: 1rem !important;
-        align-items: center !important;
+    /* Mobile navigation - collapse links */
+    nav {
+        padding: 0.5rem 0 !important;
     }
     
-    nav li {
-        margin-right: 0 !important;
-        text-align: center !important;
-        width: 100% !important;
+    nav .sitename {
+        font-size: 1.4rem !important;
     }
     
-    nav li:first-child {
-        margin-right: 0 !important;
-        margin-bottom: 1rem !important;
+    nav .nav-links {
+        display: none !important;
     }
     
-    nav li:not(:first-child) {
+    nav .mobile-toggle {
+        display: block !important;
+        color: white !important;
+        font-size: 1.2rem !important;
+        cursor: pointer !important;
+        background: none !important;
+        border: none !important;
+    }
+    
+    nav .nav-links.show {
         display: flex !important;
-        justify-content: center !important;
-        gap: 1rem !important;
-    }
-    
-    nav [role="button"] {
-        min-width: 120px !important;
-        text-align: center !important;
-        font-size: 0.9rem !important;
-        padding: 0.75rem 1rem !important;
+        flex-direction: column !important;
+        position: absolute !important;
+        top: 100% !important;
+        right: 1rem !important;
+        background: #2c3e50 !important;
+        border: 1px solid white !important;
+        border-radius: 4px !important;
+        padding: 0.5rem !important;
+        z-index: 1000 !important;
+        gap: 0.5rem !important;
     }
 }

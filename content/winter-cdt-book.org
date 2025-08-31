@@ -13,6 +13,12 @@
 
 [[pelican:img/book-cover.jpg]]
 
+- ~300 pages
+- ~200 color photographs
+- ~20 color maps
+- Arriving before Christmas 2025
+- Want a peek? See [[pelican:book-reading-schedule.org][schedule September 2025]]
+
 * Staying up to date
 The below form will subscribe you to the mailing list that I manage with Mailchimp. Write me if you wish that I just write you directly. Finally, just return to this page for updates.
 
@@ -45,13 +51,13 @@ The below form will subscribe you to the mailing list that I manage with Mailchi
 #+END_EXPORT
 
 * When?
-|               2024-06-30 | 1st draft scribbled.                             |
-|               2024-12-01 | 3rd draft complete.                              |
-|               2024-12-08 | Cover art finished.                              |
-|               2025-09-03 | Supporter Edition ready for printing.            |
-| 2025-09-12 -- 2025-09-30 | Book promotion tour, see [[pelican:book-reading-schedule.org][schedule September 2025]] |
-|               2025-11-26 | Books ready for print                            |
-|               2025-12-12 | Books begin arriving                             |
+|      2024-06-30 | 1st draft scribbled.        |
+|      2024-12-01 | 3rd draft complete.         |
+|      2024-12-08 | Cover art finished.         |
+|      2025-09-03 | Supporter Edition printing. |
+| 2025-09-12---30 | Book promotion tour         |
+|      2025-11-26 | Books ready for print       |
+|      2025-12-12 | Books begin arriving        |
 
 * But why a book?
 

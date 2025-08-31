@@ -135,8 +135,6 @@ ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
 
-# Tag page generation
-TAG_URL = 'tag/{slug}/'
-TAG_SAVE_AS = 'tag/{slug}/index.html'
-TAGS_URL = 'tags/'
-TAGS_SAVE_AS = 'tags/index.html'
+# Disable tag page generation to avoid duplicates
+TAG_SAVE_AS = ''
+TAGS_SAVE_AS = ''
