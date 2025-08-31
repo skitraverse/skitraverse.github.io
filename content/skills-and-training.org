@@ -1,25 +1,25 @@
 #+TITLE: Skills for ski traversal
 #+AUTHOR: Brian J. Oney
-#+CATEGORY: winter-cdt
+#+CATEGORY: tips
 #+PROPERTY: TAGS safety, skills
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 
 * Requirements
 *** Wilderness First Responder
- Many areas of the CDT are very remote, and more so during Winter. We need to be
- able to take care of one another. I have the WFR-certification. Swiss tour
+ Many backcountry areas are very remote, and more so during Winter. We need to be
+ able to take care of one another. That means having the WFR-certification. Swiss tour
  guides only need a first aid course, oddly, but that is likely because medical
  assistance here in Switzerland arrives 8-12 minutes(!) after being alerted, if
  the weather allows.
 *** Advanced Downhill Skier
- We will see all snow types. We will be tired and carry heavy packs. We will
+ We will see all snow types. We will may be tired and carry heavy packs. We will
  need to be able to safely circumnavigate objective hazards. We need to ski at
  an advanced level.
 *** Experienced Winter Camper
  Building a snow cave, choosing a safe campsite, having a dialed winter
  sleeping system (down to about -30°C [-23°F]) are necessary skills.
-* Desirables
+* Prerequisites for being a good partner
 *** Avalanche Training
  I guide groups in all avalanche conditions, adjusting to safe terrain,
  dependent on the group's abilities. I would welcome a role-based group

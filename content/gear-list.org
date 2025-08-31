@@ -1,8 +1,9 @@
-#+TITLE: Gear list
+#+TITLE: Gear List
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS equipment, skills, techniques
 #+OPTIONS: toc:nil
+#+PROPERTY: ORDER 2
 #+LANGUAGE: en
 
 * Gear is the least important pillar
@@ -108,6 +109,3 @@ From inside out, bottom: Pantyhose leggings, Mtntools Vapor Barrier Socks, 2 pai
 | gloves, showa best 282 atlas temres insulated gloves                                    | clothe  |      125 | Sturdy, waterproof and non-breathable at fingers, suitable in rain or at camp.          |
 | nose-cheek cover, bekogear cheeko l                                                     | clothe  |       12 | It worked to keep the nose from freezing. Cycle between this and Cheekito on cold days. |
 | nose-cheek cover, bekogear cheekito l                                                   | clothe  |        9 | It worked to keep the nose from freezing. Quicker to deploy than Cheeko.                |
-|                                                                                         |         |          |                                                                                         |
-|                                                                                         |         |          |                                                                                         |
-

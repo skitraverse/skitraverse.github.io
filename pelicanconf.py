@@ -39,7 +39,7 @@ RELATIVE_URLS = True
 PLUGIN_PATHS = ["pelican-plugins", "."]
 PLUGINS = ["org_reader"]
 
-# Force all content to be articles (not pages) to enable tag processing
+# Force all content to be articles (not pages)
 ARTICLE_PATHS = [""]
 PAGE_PATHS = []
 DEFAULT_METADATA = {
