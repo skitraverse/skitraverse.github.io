@@ -39,8 +39,8 @@
 <section style="background: white; color: #333;">
     <div class="container">
         <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-            <div id="outline-container-org9125c3f" class="outline-2">
-<h2 id="org9125c3f"><span class="section-number-2">1.</span> Expedition style</h2>
+            <div id="outline-container-org960e3ee" class="outline-2">
+<h2 id="org960e3ee"><span class="section-number-2">1.</span> Expedition style</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Let me establish two approaches to a ski traverses longer than a week, as I
@@ -57,8 +57,8 @@ remote places.
 </p>
 </div>
 </div>
-<div id="outline-container-org0597514" class="outline-2">
-<h2 id="org0597514"><span class="section-number-2">2.</span> Alpine style</h2>
+<div id="outline-container-orgdaa3f78" class="outline-2">
+<h2 id="orgdaa3f78"><span class="section-number-2">2.</span> Alpine style</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 I will focus here on the application of alpinism's 'light and fast' style to
@@ -129,8 +129,8 @@ whittle down your kit, and you condition yourself further.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc2a885f" class="outline-2">
-<h2 id="orgc2a885f"><span class="section-number-2">3.</span> My alpine style ski traverses</h2>
+<div id="outline-container-orge146de0" class="outline-2">
+<h2 id="orge146de0"><span class="section-number-2">3.</span> My alpine style ski traverses</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 In my case, my pack can weigh a maximum of about 25kg, including skis, and I
@@ -215,9 +215,9 @@ helpful and good company. Thank you!
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Wrap tables in scrollable container for mobile
+            // Wrap tables in scrollable container for mobile only
             if (window.innerWidth <= 768) {
-                const tables = document.querySelectorAll('table');
+                const tables = document.querySelectorAll('table:not(.table-wrapper table)');
                 tables.forEach(table => {
                     const wrapper = document.createElement('div');
                     wrapper.className = 'table-wrapper';

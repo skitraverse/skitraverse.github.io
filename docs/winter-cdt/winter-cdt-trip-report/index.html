@@ -39,8 +39,8 @@
 <section style="background: white; color: #333;">
     <div class="container">
         <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-            <div id="outline-container-orgf79e111" class="outline-2">
-<h2 id="orgf79e111"><span class="section-number-2">1.</span> Summary</h2>
+            <div id="outline-container-orgb337f90" class="outline-2">
+<h2 id="orgb337f90"><span class="section-number-2">1.</span> Summary</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 I completed the first winter traversal of the Continental Divide of the
@@ -93,8 +93,8 @@ I skied a lot of powder.
 </p>
 </div>
 </div>
-<div id="outline-container-org5d2d216" class="outline-2">
-<h2 id="org5d2d216"><span class="section-number-2">2.</span> Route choice</h2>
+<div id="outline-container-org4c54875" class="outline-2">
+<h2 id="org4c54875"><span class="section-number-2">2.</span> Route choice</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Although inspired by the Continental Divide Trail (CDT), I deviated often from
@@ -105,8 +105,8 @@ trails for faster travel and, sometimes, better scenery.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd95ae8c" class="outline-2">
-<h2 id="orgd95ae8c"><span class="section-number-2">3.</span> Verification</h2>
+<div id="outline-container-orgaada995" class="outline-2">
+<h2 id="orgaada995"><span class="section-number-2">3.</span> Verification</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 I used the Garmin Inreach Messenger. It worked satisfactorily and the
@@ -136,8 +136,8 @@ But CalTopo provides better mapping tools, in my experience. Look:
 </div>
 </div>
 </div>
-<div id="outline-container-org5985100" class="outline-2">
-<h2 id="org5985100"><span class="section-number-2">4.</span> My travel</h2>
+<div id="outline-container-org130355e" class="outline-2">
+<h2 id="org130355e"><span class="section-number-2">4.</span> My travel</h2>
 <div class="outline-text-2" id="text-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -548,9 +548,9 @@ But CalTopo provides better mapping tools, in my experience. Look:
 <td class="org-left">&#xa0;</td>
 <td class="org-right">&#xa0;</td>
 <td class="org-right">&#xa0;</td>
-<td class="org-left">units winter</td>
+<td class="org-left">Vertical gain and distance, in winter</td>
 <td class="org-right">34</td>
-<td class="org-right">← Counting vertical gain and distance, not down</td>
+<td class="org-right">&#xa0;</td>
 <td class="org-right">&#xa0;</td>
 <td class="org-right">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -562,9 +562,9 @@ But CalTopo provides better mapping tools, in my experience. Look:
 <td class="org-left">&#xa0;</td>
 <td class="org-right">&#xa0;</td>
 <td class="org-right">&#xa0;</td>
-<td class="org-left">units spring</td>
+<td class="org-left">In spring, after March 1st</td>
 <td class="org-right">41</td>
-<td class="org-right">← Approximately after March 1st</td>
+<td class="org-right">&#xa0;</td>
 <td class="org-right">&#xa0;</td>
 <td class="org-right">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
@@ -575,8 +575,8 @@ But CalTopo provides better mapping tools, in my experience. Look:
 </table>
 </div>
 </div>
-<div id="outline-container-orgc0ca4ee" class="outline-2">
-<h2 id="orgc0ca4ee"><span class="section-number-2">5.</span> Skipped portions</h2>
+<div id="outline-container-orgfa5ccba" class="outline-2">
+<h2 id="orgfa5ccba"><span class="section-number-2">5.</span> Skipped portions</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Going over a mountain versus maintaining elevation and traversing around usually requires the same amount of effort. I rerouted often, but also skipped portions entirely.  
@@ -666,9 +666,9 @@ There are many reasons people have at most attempted only parts of the CDT in wi
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Wrap tables in scrollable container for mobile
+            // Wrap tables in scrollable container for mobile only
             if (window.innerWidth <= 768) {
-                const tables = document.querySelectorAll('table');
+                const tables = document.querySelectorAll('table:not(.table-wrapper table)');
                 tables.forEach(table => {
                     const wrapper = document.createElement('div');
                     wrapper.className = 'table-wrapper';

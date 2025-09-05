@@ -38,8 +38,8 @@
             
                 <article style="margin: 2rem 0; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
                     <h3><a href="../winter-cdt/winter-cdt-trip-report/" style="text-decoration: none;">Winter CDT Report</a></h3>
-                        <p><div id="outline-container-orgf79e111" class="outline-2">
-<h2 id="orgf79e111"><span class="section-number-2">1.</span> Summary</h2>
+                        <p><div id="outline-container-orgb337f90" class="outline-2">
+<h2 id="orgb337f90"><span class="section-number-2">1.</span> Summary</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 I completed the first winter traversal of the Continental Divide of the
@@ -49,8 +49,8 @@ little after noon. I started skiing December 20th, north …</p></div></div></p>
                 </article>
                 <article style="margin: 2rem 0; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
                     <h3><a href="../winter-cdt/winter-cdt-section-plans/" style="text-decoration: none;">Winter CDT Section Plans</a></h3>
-                        <p><div id="outline-container-orgf450f1c" class="outline-2">
-<h2 id="orgf450f1c"><span class="section-number-2">1.</span> Introduction</h2>
+                        <p><div id="outline-container-org85f1989" class="outline-2">
+<h2 id="org85f1989"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 I list a rough time plan for my northbound ski traverse along the
@@ -59,16 +59,16 @@ and have it reflected here, when possible.
 </p>
 </div>
 </div>
-<div id="outline-container-org63493b0" class="outline-2">
-<h2 id="org63493b0"><span class="section-number-2">2.</span> Route choice</h2>
+<div id="outline-container-org9f8c885" class="outline-2">
+<h2 id="org9f8c885"><span class="section-number-2">2.</span> Route choice</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 I aim to plan a route that will go 95% of the …</p></div></div></p>
                 </article>
                 <article style="margin: 2rem 0; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
                     <h3><a href="../winter-cdt/gear-list/" style="text-decoration: none;">Gear List</a></h3>
-                        <p><div id="outline-container-org09edcb7" class="outline-2">
-<h2 id="org09edcb7"><span class="section-number-2">1.</span> Gear is the least important pillar</h2>
+                        <p><div id="outline-container-org537eba6" class="outline-2">
+<h2 id="org537eba6"><span class="section-number-2">1.</span> Gear is the least important pillar</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Most important of all come the mental, i.e. emotional, technical, and reasoning capabilities. Think emotional, technical, and reasoning courses, mentoring, and personal experience.
@@ -79,8 +79,8 @@ Tightly coupled to the mental capabilities, physical conditioning and the accomp
                 </article>
                 <article style="margin: 2rem 0; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
                     <h3><a href="../winter-cdt/cdt-plan/" style="text-decoration: none;">Planning a ski traverse of the US Continental Divide</a></h3>
-                        <p><div id="outline-container-org282c4d6" class="outline-2">
-<h2 id="org282c4d6"><span class="section-number-2">1.</span> Timing</h2>
+                        <p><div id="outline-container-org27fbf56" class="outline-2">
+<h2 id="org27fbf56"><span class="section-number-2">1.</span> Timing</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Of all things, the timing and sequence of a ski traverse of the US Continental Divide is where flexibility will be necessary.
@@ -151,9 +151,9 @@ but …</p></div></div></p>
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Wrap tables in scrollable container for mobile
+            // Wrap tables in scrollable container for mobile only
             if (window.innerWidth <= 768) {
-                const tables = document.querySelectorAll('table');
+                const tables = document.querySelectorAll('table:not(.table-wrapper table)');
                 tables.forEach(table => {
                     const wrapper = document.createElement('div');
                     wrapper.className = 'table-wrapper';
