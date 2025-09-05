@@ -9,17 +9,17 @@
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
-    <link rel="stylesheet" href="https://skitraverse.com/static/css/site.css">
+    <link rel="stylesheet" href="./static/css/site.css">
     <!-- Pagefind CSS -->
-    <link href="https://skitraverse.com/pagefind/pagefind-ui.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://skitraverse.com/static/img/logo.ico">
+    <link href="./pagefind/pagefind-ui.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./static/img/logo.ico">
 </head>
 <body id="page-top">
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="https://skitraverse.com/" class="sitename">Ski Traverse</a>
-            <a href="https://skitraverse.com/#contact" class="nav-contact">Contact</a>
+            <a href="./" class="sitename">Ski Traverse</a>
+            <a href="./#contact" class="nav-contact">Contact</a>
         </div>
     </nav>
 
@@ -30,7 +30,7 @@
         <div class="container">
     <h2>Authors on Skitraverse</h2>
     <ul>
-            <li><a href="https://skitraverse.com/author/brian-j-oney.html">Brian J. Oney</a> (13)</li>
+            <li><a href="./author/brian-j-oney.html">Brian J. Oney</a> (13)</li>
     </ul>
         </div>
         
@@ -70,25 +70,35 @@
     <footer>
         <div class="container">
             <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="https://skitraverse.com/static/img/logo.svg" alt="Skitraverse" style="max-width: 120px; margin-bottom: 1rem;">
+                <img src="./static/img/logo.svg" alt="Skitraverse" style="max-width: 120px; margin-bottom: 1rem;">
                 <h3>Skitraverse</h3>
                 <p><small>Rüschlikon, Switzerland<br>8803</small></p>
             </div>
             <p>Opening eyes to the beauty of winter landscape, safely</p>
             <p>
-                <a href="https://instagram.com/skitraverse">Instagram</a> |                 <a href="https://skitraverse.com/info/impressum/">Impressum</a> | 
-                <a href="https://skitraverse.com/info/disclaimer/">Disclaimer</a>
+                <a href="https://instagram.com/skitraverse">Instagram</a> |                 <a href="./info/impressum/">Impressum</a> | 
+                <a href="./info/disclaimer/">Disclaimer</a>
             </p>
             <p><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
 
     <!-- Pagefind JS -->
-    <script src="https://skitraverse.com/pagefind/pagefind-ui.js"></script>
+    <script src="./pagefind/pagefind-ui.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
+            // Wrap tables in scrollable container for mobile
+            if (window.innerWidth <= 768) {
+                const tables = document.querySelectorAll('table');
+                tables.forEach(table => {
+                    const wrapper = document.createElement('div');
+                    wrapper.className = 'table-wrapper';
+                    table.parentNode.insertBefore(wrapper, table);
+                    wrapper.appendChild(table);
+                });
+            }
         });
     </script>
 </body>

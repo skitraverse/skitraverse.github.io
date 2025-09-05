@@ -9,17 +9,17 @@
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
-    <link rel="stylesheet" href="https://skitraverse.com/static/css/site.css">
+    <link rel="stylesheet" href="../../static/css/site.css">
     <!-- Pagefind CSS -->
-    <link href="https://skitraverse.com/pagefind/pagefind-ui.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://skitraverse.com/static/img/logo.ico">
+    <link href="../../pagefind/pagefind-ui.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../static/img/logo.ico">
 </head>
 <body id="page-top">
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="https://skitraverse.com/" class="sitename">Ski Traverse</a>
-            <a href="https://skitraverse.com/#contact" class="nav-contact">Contact</a>
+            <a href="../../" class="sitename">Ski Traverse</a>
+            <a href="../../#contact" class="nav-contact">Contact</a>
         </div>
     </nav>
 
@@ -39,10 +39,8 @@
 <section style="background: white; color: #333;">
     <div class="container">
         <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-            
-
-<div id="outline-container-orgbc1208b" class="outline-2">
-<h2 id="orgbc1208b"><span class="section-number-2">1.</span> Summary</h2>
+            <div id="outline-container-orgf79e111" class="outline-2">
+<h2 id="orgf79e111"><span class="section-number-2">1.</span> Summary</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 I completed the first winter traversal of the Continental Divide of the
@@ -95,9 +93,8 @@ I skied a lot of powder.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgc0b860a" class="outline-2">
-<h2 id="orgc0b860a"><span class="section-number-2">2.</span> Route choice</h2>
+<div id="outline-container-org5d2d216" class="outline-2">
+<h2 id="org5d2d216"><span class="section-number-2">2.</span> Route choice</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Although inspired by the Continental Divide Trail (CDT), I deviated often from
@@ -108,9 +105,8 @@ trails for faster travel and, sometimes, better scenery.
 </p>
 </div>
 </div>
-
-<div id="outline-container-org2c62096" class="outline-2">
-<h2 id="org2c62096"><span class="section-number-2">3.</span> Verification</h2>
+<div id="outline-container-orgd95ae8c" class="outline-2">
+<h2 id="orgd95ae8c"><span class="section-number-2">3.</span> Verification</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 I used the Garmin Inreach Messenger. It worked satisfactorily and the
@@ -140,10 +136,8 @@ But CalTopo provides better mapping tools, in my experience. Look:
 </div>
 </div>
 </div>
-
-
-<div id="outline-container-orgf1fb4e6" class="outline-2">
-<h2 id="orgf1fb4e6"><span class="section-number-2">4.</span> My travel</h2>
+<div id="outline-container-org5985100" class="outline-2">
+<h2 id="org5985100"><span class="section-number-2">4.</span> My travel</h2>
 <div class="outline-text-2" id="text-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -581,10 +575,8 @@ But CalTopo provides better mapping tools, in my experience. Look:
 </table>
 </div>
 </div>
-
-
-<div id="outline-container-org9a15910" class="outline-2">
-<h2 id="org9a15910"><span class="section-number-2">5.</span> Skipped portions</h2>
+<div id="outline-container-orgc0ca4ee" class="outline-2">
+<h2 id="orgc0ca4ee"><span class="section-number-2">5.</span> Skipped portions</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Going over a mountain versus maintaining elevation and traversing around usually requires the same amount of effort. I rerouted often, but also skipped portions entirely.  
@@ -655,25 +647,35 @@ There are many reasons people have at most attempted only parts of the CDT in wi
     <footer>
         <div class="container">
             <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="https://skitraverse.com/static/img/logo.svg" alt="Skitraverse" style="max-width: 120px; margin-bottom: 1rem;">
+                <img src="../../static/img/logo.svg" alt="Skitraverse" style="max-width: 120px; margin-bottom: 1rem;">
                 <h3>Skitraverse</h3>
                 <p><small>Rüschlikon, Switzerland<br>8803</small></p>
             </div>
             <p>Opening eyes to the beauty of winter landscape, safely</p>
             <p>
-                <a href="https://instagram.com/skitraverse">Instagram</a> |                 <a href="https://skitraverse.com/info/impressum/">Impressum</a> | 
-                <a href="https://skitraverse.com/info/disclaimer/">Disclaimer</a>
+                <a href="https://instagram.com/skitraverse">Instagram</a> |                 <a href="../../info/impressum/">Impressum</a> | 
+                <a href="../../info/disclaimer/">Disclaimer</a>
             </p>
             <p><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
 
     <!-- Pagefind JS -->
-    <script src="https://skitraverse.com/pagefind/pagefind-ui.js"></script>
+    <script src="../../pagefind/pagefind-ui.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
+            // Wrap tables in scrollable container for mobile
+            if (window.innerWidth <= 768) {
+                const tables = document.querySelectorAll('table');
+                tables.forEach(table => {
+                    const wrapper = document.createElement('div');
+                    wrapper.className = 'table-wrapper';
+                    table.parentNode.insertBefore(wrapper, table);
+                    wrapper.appendChild(table);
+                });
+            }
         });
     </script>
 </body>
