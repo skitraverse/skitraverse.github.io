@@ -39,8 +39,8 @@
 <section style="background: white; color: #333;">
     <div class="container">
         <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-            <div id="outline-container-org01a70e1" class="outline-2">
-<h2 id="org01a70e1"><span class="section-number-2">1.</span> The Book</h2>
+            <div id="outline-container-orgda982fd" class="outline-2">
+<h2 id="orgda982fd"><span class="section-number-2">1.</span> The Book</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <img src="../../img/book-cover.jpg" alt="img/book-cover.jpg" style="max-width: 100%; height: auto; display: block; margin: 1rem auto;" />
@@ -55,8 +55,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org38fa3a2" class="outline-2">
-<h2 id="org38fa3a2"><span class="section-number-2">2.</span> Staying up to date</h2>
+<div id="outline-container-org1172ce1" class="outline-2">
+<h2 id="org1172ce1"><span class="section-number-2">2.</span> Staying up to date</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 The below form will subscribe you to the mailing list that I manage with Mailchimp. Write me if you wish that I just write you directly. Otherwise, return to this page for updates.
@@ -89,8 +89,8 @@ The below form will subscribe you to the mailing list that I manage with Mailchi
 </div>
 </div>
 </div>
-<div id="outline-container-org7902d6a" class="outline-2">
-<h2 id="org7902d6a"><span class="section-number-2">3.</span> Book timeline</h2>
+<div id="outline-container-orge0033ac" class="outline-2">
+<h2 id="orge0033ac"><span class="section-number-2">3.</span> Book timeline</h2>
 <div class="outline-text-2" id="text-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -134,8 +134,8 @@ The below form will subscribe you to the mailing list that I manage with Mailchi
 </table>
 </div>
 </div>
-<div id="outline-container-orgadddd13" class="outline-2">
-<h2 id="orgadddd13"><span class="section-number-2">4.</span> But why a book?</h2>
+<div id="outline-container-org0f0d67b" class="outline-2">
+<h2 id="org0f0d67b"><span class="section-number-2">4.</span> But why a book?</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 I have written this book for those who helped me along the way, and for my
@@ -219,9 +219,9 @@ be leaving the house. I write the book for her as well.
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Wrap tables in scrollable container for mobile
+            // Wrap tables in scrollable container for mobile only
             if (window.innerWidth <= 768) {
-                const tables = document.querySelectorAll('table');
+                const tables = document.querySelectorAll('table:not(.table-wrapper table)');
                 tables.forEach(table => {
                     const wrapper = document.createElement('div');
                     wrapper.className = 'table-wrapper';

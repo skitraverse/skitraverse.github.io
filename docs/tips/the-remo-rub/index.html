@@ -39,16 +39,16 @@
 <section style="background: white; color: #333;">
     <div class="container">
         <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-            <div id="outline-container-orgc3d4350" class="outline-2">
-<h2 id="orgc3d4350"><span class="section-number-2">1.</span> Problem</h2>
+            <div id="outline-container-orgd53769d" class="outline-2">
+<h2 id="orgd53769d"><span class="section-number-2">1.</span> Problem</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 It's cold, and your skins aren't sticking to the base any more. Maybe you stored them in your jacket. Maybe your walked on sunny, but then shaded aspects. Maybe your skins partly loosened, for whatever reason, then accumulated snow, which transformed to ice.
 </p>
 </div>
 </div>
-<div id="outline-container-org4f35688" class="outline-2">
-<h2 id="org4f35688"><span class="section-number-2">2.</span> The Remo Rub</h2>
+<div id="outline-container-org38795d5" class="outline-2">
+<h2 id="org38795d5"><span class="section-number-2">2.</span> The Remo Rub</h2>
 <div class="outline-text-2" id="text-2">
 <ol class="org-ol">
 <li>Place one end of your ski down in the snow, lean the other on your
@@ -68,8 +68,8 @@ your skins, causing or worsening the problem.
 </p>
 </div>
 </div>
-<div id="outline-container-org43abbcb" class="outline-2">
-<h2 id="org43abbcb"><span class="section-number-2">3.</span> History</h2>
+<div id="outline-container-org0a2ead0" class="outline-2">
+<h2 id="org0a2ead0"><span class="section-number-2">3.</span> History</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 An tour guide apprentice of mine, Remo S., improved on my old method of using a knife blade
@@ -140,9 +140,9 @@ his splitboard's edge.
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Wrap tables in scrollable container for mobile
+            // Wrap tables in scrollable container for mobile only
             if (window.innerWidth <= 768) {
-                const tables = document.querySelectorAll('table');
+                const tables = document.querySelectorAll('table:not(.table-wrapper table)');
                 tables.forEach(table => {
                     const wrapper = document.createElement('div');
                     wrapper.className = 'table-wrapper';

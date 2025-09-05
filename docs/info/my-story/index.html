@@ -39,8 +39,8 @@
 <section style="background: white; color: #333;">
     <div class="container">
         <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-            <div id="outline-container-org88c9b16" class="outline-2">
-<h2 id="org88c9b16"><span class="section-number-2">1.</span> My abbreviated story of snowy adventures</h2>
+            <div id="outline-container-org369e269" class="outline-2">
+<h2 id="org369e269"><span class="section-number-2">1.</span> My abbreviated story of snowy adventures</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Starts as a little kid sledding off the carport roof</li>
@@ -58,8 +58,8 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org693bd3b" class="outline-2">
-<h2 id="org693bd3b"><span class="section-number-2">2.</span> My story&#x2026;</h2>
+<div id="outline-container-orge2359d4" class="outline-2">
+<h2 id="orge2359d4"><span class="section-number-2">2.</span> My story&#x2026;</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 &#x2026; is still being written.
@@ -131,9 +131,9 @@ I wish to write it mainly in the snow while meaningfully contributing to mitigat
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
-            // Wrap tables in scrollable container for mobile
+            // Wrap tables in scrollable container for mobile only
             if (window.innerWidth <= 768) {
-                const tables = document.querySelectorAll('table');
+                const tables = document.querySelectorAll('table:not(.table-wrapper table)');
                 tables.forEach(table => {
                     const wrapper = document.createElement('div');
                     wrapper.className = 'table-wrapper';
