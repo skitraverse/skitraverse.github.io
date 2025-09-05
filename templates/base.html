@@ -74,6 +74,16 @@
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });
             
+            // Wrap tables in scrollable container for mobile
+            if (window.innerWidth <= 768) {
+                const tables = document.querySelectorAll('table');
+                tables.forEach(table => {
+                    const wrapper = document.createElement('div');
+                    wrapper.className = 'table-wrapper';
+                    table.parentNode.insertBefore(wrapper, table);
+                    wrapper.appendChild(table);
+                });
+            }
         });
     </script>
 </body>
