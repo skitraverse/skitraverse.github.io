@@ -470,6 +470,12 @@ table td:nth-child(9) { /* Notes column */
         padding: 0.4rem 0.3rem !important;
         white-space: nowrap;
     }
+    
+    /* Allow Notes column to wrap on mobile */
+    .table-wrapper table td:nth-child(9) {
+        white-space: normal;
+        word-wrap: break-word;
+    }
 }
 
 /* Mobile responsive fixes */
