@@ -18,7 +18,6 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Instagram", "https://instagram.com/skitraverse"),
 )
 
 # Social widget
@@ -116,6 +115,9 @@ CONTACT_MESSAGE = "Contact"
 # Header image
 HEADER_PIC = "img/logo.jpg"
 HEADER_PIC_ALT = "Skitraverse Logo"
+
+# Landing page image caption
+LANDING_PAGE_IMAGE_CAPTION = "Anyone up for climbing Parkview Mountain?"
 
 # Make all these available to templates
 TEMPLATE_DEBUG = True

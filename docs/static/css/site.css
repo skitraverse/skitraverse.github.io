@@ -263,13 +263,24 @@ footer {
     color: #ffffff !important;
     padding: 4rem 0 !important;
     text-align: center !important;
-    margin-top: 0 !important;
+    margin: 0 !important;
     clear: both;
     position: relative;
     z-index: 1;
-    width: 100vw !important;
-    margin-left: calc(-50vw + 50%) !important;
-    margin-right: calc(-50vw + 50%) !important;
+    width: 100% !important;
+}
+
+footer .container {
+    max-width: none !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    padding: 0 2rem !important;
+}
+
+footer .container > * {
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 footer * {
     color: #ffffff !important;
@@ -570,6 +581,7 @@ table td:nth-child(9) { /* Notes column */
         padding-left: 1rem !important;
         padding-right: 1rem !important;
         box-sizing: border-box !important;
+        text-align: center !important;
     }
     
     /* Reduce header padding on mobile */

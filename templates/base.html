@@ -47,24 +47,18 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.svg" alt="{{ SITENAME }}" style="max-width: 120px; margin-bottom: 1rem;">
-                <h3>{{ SITENAME }}</h3>
-                <p><small>{{ LOCATION | safe }}</small></p>
+        <div class="container" style="text-align: center; width: 100%; margin: 0 auto;">
+            <div style="margin-bottom: 1rem; text-align: center;">
+                <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/logo.svg" alt="{{ SITENAME }}" style="max-width: 80px; margin-bottom: 0.5rem;">
+                <h4 style="margin: 0.5rem 0; text-align: center;">{{ SITENAME }}</h4>
+                <p style="margin: 0.25rem 0; text-align: center;"><small>{{ LOCATION | safe }}</small></p>
             </div>
-            <p>Opening eyes to the beauty of winter landscape, safely</p>
-            <p>
-                {% if LINKS %}
-                {% for name, link in LINKS %}
-                <a href="{{ link }}">{{ name }}</a>{% if not loop.last %} | {% endif %}
-                {% endfor %}
-                {% if LINKS %} | {% endif %}
-                {% endif %}
+            <p style="margin: 0.5rem 0; text-align: center;">Opening eyes to the beauty of winter landscape, safely</p>
+            <p style="margin: 0.5rem 0; text-align: center;">
                 <a href="{{ SITEURL }}/info/impressum/">Impressum</a> | 
                 <a href="{{ SITEURL }}/info/disclaimer/">Disclaimer</a>
             </p>
-            <p><small>Copyright &copy; {{ AUTHOR }} 2025</small></p>
+            <p style="margin: 0.25rem 0; text-align: center;"><small>Copyright &copy; {{ AUTHOR }} 2025</small></p>
         </div>
     </footer>
 
