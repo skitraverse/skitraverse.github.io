@@ -2,8 +2,8 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS report, CDT
+#+PROPERTY: SUMMARY Complete trip report of the first winter Continental Divide ski traverse - 194 days, 3,500km on skis, detailed statistics and route verification.
 #+LANGUAGE: en
-
 #+OPTIONS: ^:nil toc:nil
 
 

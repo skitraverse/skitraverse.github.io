@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: tips
 #+PROPERTY: TAGS skills
+#+PROPERTY: SUMMARY Field technique for fixing iced-up climbing skins in cold conditions - a simple backcountry ski touring trick that saves your day.
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 

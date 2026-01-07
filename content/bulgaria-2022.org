@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: tips
 #+PROPERTY: TAGS international, report, planning
+#+PROPERTY: SUMMARY Winter ski traverse of Bulgaria's Pirin and Rila Mountains - trip report, conditions, terrain overview, and planning tips for Eastern European ski expeditions.
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 

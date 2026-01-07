@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS planning, CDT
+#+PROPERTY: SUMMARY Section-by-section route plans for winter Continental Divide ski traverse with timing, distance, and terrain details for each segment.
 #+LANGUAGE: en
 #+OPTIONS: ^:nil toc:nil
 

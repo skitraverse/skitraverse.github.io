@@ -3,9 +3,60 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if article and article.summary %}
+    <meta name="description" content="{{ article.summary|striptags }}">
+    {% elif page and page.summary %}
+    <meta name="description" content="{{ page.summary|striptags }}">
+    {% else %}
     <meta name="description" content="{{ DESCRIPTION }}">
+    {% endif %}
     <meta name="author" content="{{ AUTHOR }}">
-    <title>{{ page.title if page else SITENAME }}</title>
+
+    {% if article %}
+    <title>{{ article.title }} | {{ SITENAME }}</title>
+    <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
+    {% elif page %}
+    <title>{{ page.title }} | {{ SITENAME }}</title>
+    <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+    {% else %}
+    <title>{{ SITENAME }} - Winter Ski Traverse Adventures</title>
+    <link rel="canonical" href="{{ SITEURL }}/">
+    {% endif %}
+
+    <!-- OpenGraph tags -->
+    <meta property="og:site_name" content="{{ SITENAME }}">
+    {% if article %}
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ article.title }}">
+    <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}">
+    <meta property="og:description" content="{{ article.summary|striptags if article.summary else DESCRIPTION }}">
+    {% elif page %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}">
+    <meta property="og:description" content="{{ page.summary|striptags if page.summary else DESCRIPTION }}">
+    {% else %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ SITENAME }}">
+    <meta property="og:url" content="{{ SITEURL }}/">
+    <meta property="og:description" content="{{ DESCRIPTION }}">
+    {% endif %}
+    <meta property="og:image" content="{{ SITEURL }}/img/book-cover.jpg">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    {% if article %}
+    <meta name="twitter:title" content="{{ article.title }}">
+    <meta name="twitter:description" content="{{ article.summary|striptags if article.summary else DESCRIPTION }}">
+    {% elif page %}
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.summary|striptags if page.summary else DESCRIPTION }}">
+    {% else %}
+    <meta name="twitter:title" content="{{ SITENAME }}">
+    <meta name="twitter:description" content="{{ DESCRIPTION }}">
+    {% endif %}
+    <meta name="twitter:image" content="{{ SITEURL }}/img/book-cover.jpg">
+
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
