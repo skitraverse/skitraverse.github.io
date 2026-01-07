@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS equipment, skills, techniques
+#+PROPERTY: SUMMARY Complete gear list and equipment philosophy for long-distance winter ski expeditions - prioritizing mental preparation over gear optimization.
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 

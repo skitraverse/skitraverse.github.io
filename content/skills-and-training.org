@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: tips
 #+PROPERTY: TAGS safety, skills
+#+PROPERTY: SUMMARY Essential skills and training requirements for winter ski traverses - wilderness first aid, avalanche safety, navigation, and physical conditioning.
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 

@@ -1,23 +1,91 @@
-#+TITLE: Winter CDT Book
-#+AUTHOR: Brian J. Oney  
+#+TITLE: A Wild Calling
+#+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt-book
 #+PROPERTY: TAGS book, CDT, featured
+#+PROPERTY: SUMMARY First winter ski traverse of the Continental Divide Trail - 194 days, 2,200 miles through the Rocky Mountains from Mexico to Canada.
 #+LANGUAGE: en
 #+OPTIONS: ^:nil toc:nil
 
-
-* The Book
+* A Wild Calling
 
 [[pelican:img/book-cover.jpg]]
 
-- ~300 pages
-- ~200 color photographs
-- ~20 color maps
-- Arriving before Christmas 2025
-- Want a peek? Come to a reading. See [[pelican:book-reading-schedule.org][schedule September 2025]]
+*The firsthand account of the first winter ski traverse of the Continental Divide Trail*
+
+From November 21st, 2022 to June 3rd, 2023, I completed what no one had done before: a winter traversal of the Continental Divide through the Rocky Mountains, from the Mexican border to Canada. This is the story of 194 days in the wilderness, 2,200 miles on skis, and one person's attempt to answer a wild calling.
+
+** What's Inside
+
+- ~200 pages of narrative and reflection
+- ~180 color photographs from the trail
+- ~20 detailed route maps
+- Real accounts of decision-making in extreme conditions
+
+** Get Your Copy
+
+Order now through Lulu:
+- [[https://www.lulu.com/shop/brian-johannes-oney/a-wild-calling/hardcover/product-kvjeww5.html][Hardcover Edition]]
+- [[https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html][E-book Edition]]
+
+** The Journey
+
+On November 21st, 2022, I stood at Crazy Cook Monument on the New Mexico-Mexico border with a simple goal: traverse the Continental Divide in winter. What followed were 194 days that tested every limit I thought I had.
+
+The first month I hiked through New Mexico's high desert, waiting for snow. By December 20th, near Ghost Ranch, I strapped on skis and didn't take them off for the next four months. Each day meant 8-12 hours of movement, climbing 1,500-2,000 meters (5,000-6,500 feet) vertical, carrying everything I needed to survive.
+
+The winter of 2022-2023 was a transition year from La Niña to El Niño - one of the snowiest and coldest on record for the Rocky Mountain West. Wyoming experienced its snowiest winter on record in multiple locations. I was thankful for plenty of snow to ski on, though constant storms and deep powder slowed progress considerably.
+
+The southern Wind River Range in late January brought the coldest conditions of the traverse. An arctic front blasted the Centennial Mountains in mid-February with reports of -25°F (-30°C) and 30mph winds. I postponed Colorado's high peaks and the northern Winds until late spring, unwilling to gamble against unpredictable avalanche conditions.
+
+On April 15th, 2023, I reached the Canadian border at Waterton with my partner Lukas S. But I wasn't finished. I returned south to complete what I'd skipped: the Wind River high country, then Colorado's technical terrain. On June 3rd, 2023, around 7:30pm, I finished at Devil's Thumb Trailhead near Fraser, Colorado.
+
+In total: 194 days covering 5,000 kilometers, with 3,500 kilometers (2,200 miles) traveled on skis. I suffered no frostbite injuries, no major traumas, and was not caught in an avalanche - though I intentionally triggered one.
+
+** Why This Book Matters
+
+I didn't write this for glory or record books. I wrote it for the people who helped me along the way - the trail angels, the friends who resupplied me, my family who supported a crazy idea. I wrote it for wilderness lovers who don't fear insignificance but embrace it. And for anyone who has ever wondered: /What if I just tried?/
+
+[[pelican:winter-cdt-trip-report.org][Read the full trip report]] | [[pelican:my-story.org][About the author]]
+
+** Frequently Asked Questions
+
+*** What makes this the "first" winter traverse?
+This was the first continuous winter ski traverse of the Continental Divide from Mexico to Canada. While sections have been skied before, no one had previously completed the entire route during a single winter season, carrying full winter camping gear and food for multi-week sections.
+
+*** How dangerous was it?
+Extremely. Avalanche risk, hypothermia, frostbite, and complete isolation were constant companions. I spent weeks without seeing another person. The book doesn't shy away from the close calls and poor decisions that nearly ended the journey.
+
+*** What experience did you have before this?
+I hold Swiss Alpine Club backcountry and alpine ski guide certifications (Tourenleiter I & II). I've completed multi-week traverses in the Alps and Bulgaria. But nothing fully prepares you for 194 consecutive days in winter conditions. [[pelican:my-story.org][See my full background]].
+
+*** Is this book just for extreme athletes?
+No. While the physical challenge is real, the book is fundamentally about decision-making, solitude, fear, and what happens when you strip away everything comfortable. It's for anyone who appreciates honest storytelling about pushing boundaries.
+
+*** When will it be available?
+The hardcover and e-book are available now through Lulu. Supporter Edition copies printed in September 2025 are already distributed. A book promotion tour is scheduled for September 12-30, 2025.
+
+*** What format should I get?
+The hardcover includes 180 full-color photographs and 20 detailed maps that are best experienced in print. The e-book is available for those who prefer digital or want immediate access.
+
+*** Where can I buy it?
+Order directly through Lulu (links above) or contact me directly for signed copies during the promotion tour.
+
+** About the Author
+
+*Brian J. Oney* is a Swiss-certified alpine ski guide who has spent over a decade exploring winter mountain environments. His credentials include:
+
+- Swiss Alpine Club Backcountry Ski Guide (Tourenleiter I, 2017)
+- Swiss Alpine Club Alpine Ski Guide (Tourenleiter II, 2021)
+- First winter ski traverse of Bulgaria's Pirin and Rila Mountains (2022)
+- First winter ski traverse of the Continental Divide (2022-2023)
+
+Before attempting the Continental Divide, Brian completed extensive alpine training in Switzerland, including multi-week hut-to-hut traverses and high-altitude winter ascents.
+
+[[pelican:my-story.org][Read Brian's full story]]
 
 * Staying up to date
-The below form will subscribe you to the mailing list that I manage with Mailchimp. Write me if you wish that I just write you directly. Otherwise, return to this page for updates.
+
+Subscribe below to receive updates about the book, upcoming talks, and future expeditions.
 
 #+BEGIN_EXPORT html
 <div id="mc_embed_shell">
@@ -28,7 +96,7 @@ The below form will subscribe you to the mailing list that I manage with Mailchi
     <form action="https://skitraverse.us21.list-manage.com/subscribe/post?u=44892d7b308264ad62d66094e&amp;id=efc0949fda&amp;f_id=00e4efe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
         <div id="mc_embed_signup_scroll"><h5>Subscribe to receive updates</h5>
             <div class="mc-field-group"><label for="mce-EMAIL">Email Address:  </label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-        <div id="mce-responses" class="clear foot">
+        <div class="mce-responses" class="clear foot">
             <div class="response" id="mce-error-response" style="display: none;"></div>
             <div class="response" id="mce-success-response" style="display: none;"></div>
         </div>
@@ -47,26 +115,153 @@ The below form will subscribe you to the mailing list that I manage with Mailchi
 </div>
 #+END_EXPORT
 
-* Book timeline
-|      2024-06-30 | 1st draft scribbled.        |
-|      2024-12-01 | 3rd draft complete.         |
-|      2025-09-03 | Supporter Edition printing. |
+** Book Timeline
+
+|      2024-06-30 | 1st draft scribbled         |
+|      2024-12-01 | 3rd draft complete          |
+|      2025-09-03 | Supporter Edition printing  |
 | 2025-09-12---30 | Book promotion tour         |
-|      2025-11-26 | Books ready for print       |
-|      2025-12-12 | Books begin arriving        |
+|      2025-12-14 | Books ready for print       |
 
-* But why a book?
+** Related Reading
 
-I have written this book for those who helped me along the way, and for my
-family and friends. I also write it for lovers of the wilderness, who do not
-fear the feeling of insignificance but appreciate it. Some I may even inspire to
-attempt some similarly epic ski traverse. Also, for those adventurers who like a
-good story and appreciate an example of someone going ahead with their crazy
-idea and succeeding, I write this book for you.
+- [[pelican:winter-cdt-trip-report.org][Complete trip report with detailed statistics]]
+- [[pelican:cdt-plan.org][Original expedition planning]]
+- [[pelican:winter-cdt-section-plans.org][Section-by-section route plans]]
+- [[pelican:gear-list.org][Gear list and equipment choices]]
 
-The book will have prose interlaced with photos of people and remote places of
-the US Rocky Mountains. I will do my absolute best to not disappoint you.
+#+BEGIN_EXPORT html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "A Wild Calling: My Winter Ski Traverse of the Continental Divide",
+  "author": {
+    "@type": "Person",
+    "name": "Brian J. Oney",
+    "url": "https://skitraverse.com",
+    "jobTitle": "Alpine Ski Guide",
+    "alumniOf": "Swiss Alpine Club",
+    "knowsAbout": ["Alpine Skiing", "Winter Mountaineering", "Backcountry Navigation", "Avalanche Safety"]
+  },
+  "datePublished": "2025-12-14",
+  "description": "First-hand account of the first winter ski traverse of the Continental Divide Trail - 194 days, 2,200 miles, solo through the Rocky Mountains from New Mexico to Canada.",
+  "numberOfPages": 200,
+  "inLanguage": "en",
+  "bookFormat": "https://schema.org/Hardcover",
+  "isbn": "",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lulu Press"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.lulu.com/shop/brian-johannes-oney/a-wild-calling/hardcover/product-kvjeww5.html",
+      "seller": {
+        "@type": "Organization",
+        "name": "Lulu Press"
+      },
+      "itemCondition": "https://schema.org/NewCondition",
+      "description": "Hardcover edition"
+    },
+    {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html",
+      "seller": {
+        "@type": "Organization",
+        "name": "Lulu Press"
+      },
+      "itemCondition": "https://schema.org/NewCondition",
+      "description": "E-book edition"
+    }
+  ],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Continental Divide Trail"
+    },
+    {
+      "@type": "Thing",
+      "name": "Winter Mountaineering"
+    },
+    {
+      "@type": "Thing",
+      "name": "Ski Touring"
+    }
+  ],
+  "keywords": "Continental Divide Trail, winter ski traverse, CDT, backcountry skiing, winter mountaineering, Rocky Mountains, solo expedition, alpine skiing"
+}
+</script>
 
-Though very partial, my wife likes my writing style, and, while reading some of the
-book, warns me that I won't be going on any such adventures anymore, or even
-be leaving the house. I write the book for her as well.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes this the first winter traverse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This was the first continuous winter ski traverse of the Continental Divide from Mexico to Canada. While sections have been skied before, no one had previously completed the entire route during a single winter season, carrying full winter camping gear and food for multi-week sections."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How dangerous was it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extremely dangerous. Avalanche risk, hypothermia, frostbite, and complete isolation were constant companions. The author spent weeks without seeing another person. The book doesn't shy away from the close calls and poor decisions that nearly ended the journey."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What experience did the author have before this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brian J. Oney holds Swiss Alpine Club backcountry and alpine ski guide certifications (Tourenleiter I & II). He has completed multi-week traverses in the Alps and Bulgaria. However, nothing fully prepares someone for 194 consecutive days in winter conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this book just for extreme athletes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. While the physical challenge is real, the book is fundamentally about decision-making, solitude, fear, and what happens when you strip away everything comfortable. It's for anyone who appreciates honest storytelling about pushing boundaries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When will the book be available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The hardcover and e-book are available now through Lulu. Supporter Edition copies printed in September 2025 are already distributed. A book promotion tour is scheduled for September 12-30, 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What format should I get?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The hardcover includes 180 full-color photographs and 20 detailed maps that are best experienced in print. The e-book is available for those who prefer digital or want immediate access."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy the book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Order directly through Lulu or contact the author directly for signed copies during the promotion tour."
+      }
+    }
+  ]
+}
+</script>
+#+END_EXPORT

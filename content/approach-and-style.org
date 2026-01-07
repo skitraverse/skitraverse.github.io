@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: tips
 #+PROPERTY: TAGS techniques, safety, philosophy
+#+PROPERTY: SUMMARY Expedition philosophy for long-distance ski traverses - comparing classical sled expeditions vs thru-hiker style, prioritizing safety and flexibility.
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 

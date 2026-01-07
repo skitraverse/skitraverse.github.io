@@ -92,5 +92,8 @@ github: publish
 	git commit -m "$(GITHUB_PAGES_COMMIT_MESSAGE)"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
+test-seo: html
+	@echo "Running SEO validation tests..."
+	@python3 test_seo.py
 
-.PHONY: venv html help clean regenerate serve serve-global devserver devserver-global publish github
+.PHONY: venv html help clean regenerate serve serve-global devserver devserver-global publish github test-seo

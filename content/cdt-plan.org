@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt
 #+PROPERTY: TAGS planning, CDT
+#+PROPERTY: SUMMARY Planning guide for a winter Continental Divide ski traverse - timing, route strategy, approach philosophy, and logistics for a 2,200-mile winter expedition.
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 

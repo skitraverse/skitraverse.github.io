@@ -6,7 +6,7 @@
         <div class="star-divider">
             <span class="star">❄</span>
         </div>
-        <h2>Book: A Wild Calling</h2>
+        <h1>A Wild Calling</h1>
         <h3>A firsthand account of the first ski traverse of the US Continental Divide</h3>
         <h4>by Brian J. Oney</h3>
         {% set featured_articles = [] %}
@@ -19,6 +19,8 @@
             {% for article in featured_articles|reverse %}
             <a href="{{ SITEURL }}/{{ article.url }}" role="button">{{ article.title }}</a>
             {% endfor %}
+            <a href="https://www.lulu.com/shop/brian-j-oney/a-wild-calling/hardcover/product-kvjeww5.html" role="button">Hardcover from Lulu</a>
+            <a href="https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html" role="button">E-book from Lulu</a>
         </div>
         <div style="text-align: center; margin: 2rem 0;">
             <img src="{{ SITEURL }}/img/landing-page.jpg" alt="Mountain landscape" style="max-width: 100%; height: auto; border-radius: 8px;">
