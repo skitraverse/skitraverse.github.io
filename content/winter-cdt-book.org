@@ -24,8 +24,14 @@ From November 21st, 2022 to June 3rd, 2023, I completed what no one had done bef
 ** Get Your Copy
 
 Order now through Lulu:
-- [[https://www.lulu.com/shop/brian-johannes-oney/a-wild-calling/hardcover/product-kvjeww5.html][Hardcover Edition]]
-- [[https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html][E-book Edition]]
+
+#+BEGIN_EXPORT html
+<a href="https://www.lulu.com/shop/brian-j-oney/a-wild-calling/hardcover/product-kvjeww5.html" role="button">Hardcover from Lulu</a>
+<a href="https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html" role="button">E-book from Lulu</a>
+<br>
+<br>
+#+END_EXPORT
+
 
 ** The Journey
 
@@ -76,7 +82,7 @@ Order directly through Lulu (links above) or contact me directly for signed copi
 
 - Swiss Alpine Club Backcountry Ski Guide (Tourenleiter I, 2017)
 - Swiss Alpine Club Alpine Ski Guide (Tourenleiter II, 2021)
-- First winter ski traverse of Bulgaria's Pirin and Rila Mountains (2022)
+- Winter ski traverse of Bulgaria's Pirin and Rila Mountains (2022)
 - First winter ski traverse of the Continental Divide (2022-2023)
 
 Before attempting the Continental Divide, Brian completed extensive alpine training in Switzerland, including multi-week hut-to-hut traverses and high-altitude winter ascents.
@@ -117,11 +123,12 @@ Subscribe below to receive updates about the book, upcoming talks, and future ex
 
 ** Book Timeline
 
-|      2024-06-30 | 1st draft scribbled         |
-|      2024-12-01 | 3rd draft complete          |
-|      2025-09-03 | Supporter Edition printing  |
-| 2025-09-12---30 | Book promotion tour         |
-|      2025-12-14 | Books ready for print       |
+|      2023-06-30 | 1st draft started             |
+|      2024-12-01 | 3rd draft complete            |
+|      2025-09-03 | Supporter Edition printing    |
+| 2025-09-12---30 | Book promotion tour           |
+|      2025-12-14 | Book ready for print          |
+|      2025-12-21 | E-Book ready for distribution |
 
 ** Related Reading
 
@@ -157,7 +164,7 @@ Subscribe below to receive updates about the book, upcoming talks, and future ex
   "offers": [
     {
       "@type": "Offer",
-      "price": "0.00",
+      "price": "50.00",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "url": "https://www.lulu.com/shop/brian-johannes-oney/a-wild-calling/hardcover/product-kvjeww5.html",
@@ -170,7 +177,7 @@ Subscribe below to receive updates about the book, upcoming talks, and future ex
     },
     {
       "@type": "Offer",
-      "price": "0.00",
+      "price": "20.00",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html",
