@@ -1,0 +1,110 @@
+#+TITLE: Ski traverses in Japan
+#+AUTHOR: Brian J. Oney
+#+CATEGORY: tips
+#+PROPERTY: TAGS international, report, planning, Japan
+#+PROPERTY: SUMMARY Winter ski touring in Hokkaido Japan - trip report, accurate Japanese GSI map data, slope angle classes for avalanche safety, and backcountry infrastructure guide for planning ski traverses in Japanese mountains.
+#+OPTIONS: toc:nil
+#+LANGUAGE: en
+
+In January 2025, I attempted a winter ski traverse across Hokkaido, Japan's northernmost island. While the expedition didn't go as planned due to equipment failure, the experience revealed critical information for anyone planning backcountry ski touring in Japan. This guide covers the most important resource for Japanese mountain travel: accurate topographic and slope angle data from the Geospatial Information Authority (GSI) of Japan, essential for avalanche safety and route planning.
+
+* Summary from 2025 Trip in Hokkaido
+  - Mid-January to early February
+  - Wind blows hard above treeline.
+  - Due to the wind, good conditions in the Alpine are rare.
+  - Most terrain is gentle.
+  - Local map data is readily available.
+  - The hut infrastructure and hut culture is poor, requires local membership in most cases.
+  - Helicopter rescue is possible.
+  - Wildlife sticks to lower elevations.
+  - The website [[https://hokkaidowilds.org/][Hokkaido Wilds]] is great. Rob Thomson maintains a multitude of information on backcountry skiing.
+  - Buses, trains, and hitchhiking work well.
+  - Enter into domains can be eased by using bus+lift ticket combinations, but book in advance.
+
+
+* Most important: Japanese Map Data
+Of the US-based mapping options, CalTopo also offers the most accurate maps for Japan.
+But they are still lacking now at the beginning of 2026.
+*If you take anything from this page, take the following information.*
+
+The Geospatial Information Authority (GSI) of Japan maintains a website list of the tiling services they provide. Those
+https://maps.gsi.go.jp/development/ichiran.html
+
+** Standard Map Data
+The tiling service of the standard map of Japan and its infrastructure along with topographic lines, placenames (in Japanese) can be accessed from the following URL template.
+
+#+begin_src
+https://cyberjapandata.gsi.go.jp/xyz/std/{Z}/{X}/{Y}.png
+#+end_src
+
+Legend information: https://cyberjapandata.gsi.go.jp/legend/std_2500_legend.pdf
+** Slope angle classes
+*Maps of slope angle classes must be accurate, to enable safe winter backcountry travel.*
+From my limited winter exploits in Japan, I have some 'ground-truth' experience.
+With that, I would only trust the GSI's slope angle classes.
+The slope angle class URL template follows.
+#+begin_src
+https://cyberjapandata.gsi.go.jp/xyz/slopezone1map/{z}/{x}/{y}.png
+#+end_src
+
+They offer a PDF with descriptions of their slope angle colors and the slope angle classification.
+Legend information: https://cyberjapandata.gsi.go.jp/legend/attention_slopezone1map.pdf
+
+Their use of colors assumes a continual increase in steepness.
+
+Slope angle class legend:
+- 0–30°: White/uncolored
+- 30–35°: Orange
+- 35–45°: Red (most dangerous)
+- 45–55°: Orange
+- 55–60°: Yellow
+- >60°: White/uncolored
+
+Although these classifications are much more coarse than those of CalTopo, the data is much more accurate. Get used to parsing the unintuitive color scale.
+
+The maximum zoom level for their slope angle class tiling service is 15.
+In Hokkaido, this corresponds roughly to pixels sized 3m by 4m (x by y).
+That suffices.
+
+I personally found the slopes to be a bit steeper than shown on the map. If conditions are dangerous, or you are alone, as I was, any orange pixels should cause you concern.
+
+** Adding the Japanese slope angle maps to CalTopo
+1. ~+~
+2. ~Custom Source~
+3. ~Type:~ Tile
+4. ~Max Zoom:~ 15
+5. ~URL Template:~ ~https://cyberjapandata.gsi.go.jp/xyz/slopezone1map/{Z}/{X}/{Y}.png~
+6. ~Overlay:~ Yes (for transparency)
+
+** Adding the Japanese topographic maps to CalTopo
+1. Tap: ~+~
+2. Choose: ~Custom Source~
+3. ~Type:~ Tile
+4. ~Max Zoom:~ 18
+5. ~URL Template:~ ~https://cyberjapandata.gsi.go.jp/xyz/std/{Z}/{X}/{Y}.png~
+6. ~Overlay:~ No
+
+** Source
+Rob's page https://hokkaidowilds.org/android-iphone-apps-displaying-japan-topographical-maps-english put me on track to find this information. Thanks Rob!
+
+* Gear
+Shugakuso was very helpful to get me gear. They lacked a Therm-a-rest valve repair kit, so they called all their competition to find one. Their competition also did not have one.
+
+Touring skis are skis, and thus need to be in a sheath or bag to go on public transportation or even private buses.
+The Montbell ski carry bag packs down to a softball-sized wad of nylon, weighs little, costs little, and will fit 112mm-wide, 189cm-long skis with poles.
+
+* Backcountry Infrastructure
+Rob's page https://hokkaidowilds.org/huts is very informative.
+Most huts are for members only.
+I could not figure out how to stay at a hut without potentially breaking some rule.
+Not once did I sleep at a hut.
+
+I attempted a traverse from Zenibako to Shiraoi, via Haruka-dake, Asari-dake, Yoichi-dake, Sapporo-dake, Ninaru-dake, Higashi-dake. Because of a failed sleeping pad, I did not quite make it to Asari-dake and exited via Sapporo Kokusai Ski area, after three days of travel.
+Along that route, there were many snowmobile tracks.
+You would not likely be alone.
+
+I initially considered the Daisetzusan National Park Traverse, but in January the winds are very strong above treeline.
+Thus, the skiing would have been terrible.
+See photographic proof here: https://www.yamareco.com/modules/yamareco/detail-2172952.html
+April or May might offer better conditions.
+Along that route, the many unserviced huts should provide shelter. See Rob's site for any updates.

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Winter ski touring in Hokkaido Japan - trip report, accurate Japanese GSI map data, slope angle classes for avalanche safety, and backcountry infrastructure guide for planning ski traverses in Japanese mountains.">
+    <meta name="author" content="Brian J. Oney">
+
+    <title>Ski traverses in Japan | Skitraverse</title>
+    <link rel="canonical" href="../../tips/japan-2025/">
+
+    <!-- OpenGraph tags -->
+    <meta property="og:site_name" content="Skitraverse">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ski traverses in Japan">
+    <meta property="og:url" content="../../tips/japan-2025/">
+    <meta property="og:description" content="Winter ski touring in Hokkaido Japan - trip report, accurate Japanese GSI map data, slope angle classes for avalanche safety, and backcountry infrastructure guide for planning ski traverses in Japanese mountains.">
+    <meta property="og:image" content="../../img/book-cover.jpg">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ski traverses in Japan">
+    <meta name="twitter:description" content="Winter ski touring in Hokkaido Japan - trip report, accurate Japanese GSI map data, slope angle classes for avalanche safety, and backcountry infrastructure guide for planning ski traverses in Japanese mountains.">
+    <meta name="twitter:image" content="../../img/book-cover.jpg">
+
+    <!-- PicoCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- Site styles -->
+    <link rel="stylesheet" href="../../static/css/site.css">
+    <!-- Pagefind CSS -->
+    <link href="../../pagefind/pagefind-ui.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../static/img/logo.ico">
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="../../" class="sitename">Ski Traverse</a>
+            <a href="../../#contact" class="nav-contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header>
+        <div class="container">
+            <h1>Ski traverses in Japan</h1>
+            <div class="star-divider">
+                <span class="star">❄</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <div class="container">
+<section class="article-content">
+    <div class="container">
+        <div class="article-body">
+            <p>
+In January 2025, I attempted a winter ski traverse across Hokkaido, Japan's northernmost island. While the expedition didn't go as planned due to equipment failure, the experience revealed critical information for anyone planning backcountry ski touring in Japan. This guide covers the most important resource for Japanese mountain travel: accurate topographic and slope angle data from the Geospatial Information Authority (GSI) of Japan, essential for avalanche safety and route planning.
+</p>
+<div id="outline-container-org74e11c4" class="outline-2">
+<h2 id="org74e11c4"><span class="section-number-2">1.</span> Summary from 2025 Trip in Hokkaido</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Mid-January to early February</li>
+<li>Wind blows hard above treeline.</li>
+<li>Due to the wind, good conditions in the Alpine are rare.</li>
+<li>Most terrain is gentle.</li>
+<li>Local map data is readily available.</li>
+<li>The hut infrastructure and hut culture is poor, requires local membership in most cases.</li>
+<li>Helicopter rescue is possible.</li>
+<li>Wildlife sticks to lower elevations.</li>
+<li>The website <a href="https://hokkaidowilds.org/">Hokkaido Wilds</a> is great. Rob Thomson maintains a multitude of information on backcountry skiing.</li>
+<li>Buses, trains, and hitchhiking work well.</li>
+<li>Enter into domains can be eased by using bus+lift ticket combinations, but book in advance.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org19e5e73" class="outline-2">
+<h2 id="org19e5e73"><span class="section-number-2">2.</span> Most important: Japanese Map Data</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Of the US-based mapping options, CalTopo also offers the most accurate maps for Japan.
+But they are still lacking now at the beginning of 2026.
+<b>If you take anything from this page, take the following information.</b>
+</p>
+
+<p>
+The Geospatial Information Authority (GSI) of Japan maintains a website list of the tiling services they provide. Those
+<a href="https://maps.gsi.go.jp/development/ichiran.html">https://maps.gsi.go.jp/development/ichiran.html</a>
+</p>
+</div>
+<div id="outline-container-orgf709bb9" class="outline-3">
+<h3 id="orgf709bb9"><span class="section-number-3">2.1.</span> Standard Map Data</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+The tiling service of the standard map of Japan and its infrastructure along with topographic lines, placenames (in Japanese) can be accessed from the following URL template.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-nil">https://cyberjapandata.gsi.go.jp/xyz/std/{Z}/{X}/{Y}.png
+</pre>
+</div>
+
+<p>
+Legend information: <a href="https://cyberjapandata.gsi.go.jp/legend/std_2500_legend.pdf">https://cyberjapandata.gsi.go.jp/legend/std_2500_legend.pdf</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgde464cb" class="outline-3">
+<h3 id="orgde464cb"><span class="section-number-3">2.2.</span> Slope angle classes</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<b>Maps of slope angle classes must be accurate, to enable safe winter backcountry travel.</b>
+From my limited winter exploits in Japan, I have some 'ground-truth' experience.
+With that, I would only trust the GSI's slope angle classes.
+The slope angle class URL template follows.
+</p>
+<div class="org-src-container">
+<pre class="src src-nil">https://cyberjapandata.gsi.go.jp/xyz/slopezone1map/{z}/{x}/{y}.png
+</pre>
+</div>
+
+<p>
+They offer a PDF with descriptions of their slope angle colors and the slope angle classification.
+Legend information: <a href="https://cyberjapandata.gsi.go.jp/legend/attention_slopezone1map.pdf">https://cyberjapandata.gsi.go.jp/legend/attention_slopezone1map.pdf</a>
+</p>
+
+<p>
+Their use of colors assumes a continual increase in steepness.
+</p>
+
+<p>
+Slope angle class legend:
+</p>
+<ul class="org-ul">
+<li>0–30°: White/uncolored</li>
+<li>30–35°: Orange</li>
+<li>35–45°: Red (most dangerous)</li>
+<li>45–55°: Orange</li>
+<li>55–60°: Yellow</li>
+<li>&gt;60°: White/uncolored</li>
+</ul>
+
+<p>
+Although these classifications are much more coarse than those of CalTopo, the data is much more accurate. Get used to parsing the unintuitive color scale.
+</p>
+
+<p>
+The maximum zoom level for their slope angle class tiling service is 15.
+In Hokkaido, this corresponds roughly to pixels sized 3m by 4m (x by y).
+That suffices.
+</p>
+
+<p>
+I personally found the slopes to be a bit steeper than shown on the map. If conditions are dangerous, or you are alone, as I was, any orange pixels should cause you concern.
+</p>
+</div>
+</div>
+<div id="outline-container-org3621987" class="outline-3">
+<h3 id="org3621987"><span class="section-number-3">2.3.</span> Adding the Japanese slope angle maps to CalTopo</h3>
+<div class="outline-text-3" id="text-2-3">
+<ol class="org-ol">
+<li><code>+</code></li>
+<li><code>Custom Source</code></li>
+<li><code>Type:</code> Tile</li>
+<li><code>Max Zoom:</code> 15</li>
+<li><code>URL Template:</code> <code>https://cyberjapandata.gsi.go.jp/xyz/slopezone1map/{Z}/{X}/{Y}.png</code></li>
+<li><code>Overlay:</code> Yes (for transparency)</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4128e84" class="outline-3">
+<h3 id="org4128e84"><span class="section-number-3">2.4.</span> Adding the Japanese topographic maps to CalTopo</h3>
+<div class="outline-text-3" id="text-2-4">
+<ol class="org-ol">
+<li>Tap: <code>+</code></li>
+<li>Choose: <code>Custom Source</code></li>
+<li><code>Type:</code> Tile</li>
+<li><code>Max Zoom:</code> 18</li>
+<li><code>URL Template:</code> <code>https://cyberjapandata.gsi.go.jp/xyz/std/{Z}/{X}/{Y}.png</code></li>
+<li><code>Overlay:</code> No</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgca57cac" class="outline-3">
+<h3 id="orgca57cac"><span class="section-number-3">2.5.</span> Source</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Rob's page <a href="https://hokkaidowilds.org/android-iphone-apps-displaying-japan-topographical-maps-english">https://hokkaidowilds.org/android-iphone-apps-displaying-japan-topographical-maps-english</a> put me on track to find this information. Thanks Rob!
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org46412e1" class="outline-2">
+<h2 id="org46412e1"><span class="section-number-2">3.</span> Gear</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Shugakuso was very helpful to get me gear. They lacked a Therm-a-rest valve repair kit, so they called all their competition to find one. Their competition also did not have one.
+</p>
+
+<p>
+Touring skis are skis, and thus need to be in a sheath or bag to go on public transportation or even private buses.
+The Montbell ski carry bag packs down to a softball-sized wad of nylon, weighs little, costs little, and will fit 112mm-wide, 189cm-long skis with poles.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb7ee44c" class="outline-2">
+<h2 id="orgb7ee44c"><span class="section-number-2">4.</span> Backcountry Infrastructure</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Rob's page <a href="https://hokkaidowilds.org/huts">https://hokkaidowilds.org/huts</a> is very informative.
+Most huts are for members only.
+I could not figure out how to stay at a hut without potentially breaking some rule.
+Not once did I sleep at a hut.
+</p>
+
+<p>
+I attempted a traverse from Zenibako to Shiraoi, via Haruka-dake, Asari-dake, Yoichi-dake, Sapporo-dake, Ninaru-dake, Higashi-dake. Because of a failed sleeping pad, I did not quite make it to Asari-dake and exited via Sapporo Kokusai Ski area, after three days of travel.
+Along that route, there were many snowmobile tracks.
+You would not likely be alone.
+</p>
+
+<p>
+I initially considered the Daisetzusan National Park Traverse, but in January the winds are very strong above treeline.
+Thus, the skiing would have been terrible.
+See photographic proof here: <a href="https://www.yamareco.com/modules/yamareco/detail-2172952.html">https://www.yamareco.com/modules/yamareco/detail-2172952.html</a>
+April or May might offer better conditions.
+Along that route, the many unserviced huts should provide shelter. See Rob's site for any updates.
+</p>
+</div>
+</div>
+
+        </div>
+    </div>
+</section>
+        </div>
+        
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="star-divider">
+            <span class="star">❄</span>
+        </div>
+        <h2>Contact</h2>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <span id="email-button-contact"></span>
+            <script> 
+                coded = "zSwy3.Z.v3tk@mBywT.NvB"
+                key = "mVtvcY1pASa7lGnIKfQ94dBUJqNuR2jXyHTb3iDFgOeoW8Cxhr5EZMk6Lz0wsP"
+                shift=coded.length
+                link=""
+                for (i=0; i<coded.length; i++) {
+                    if (key.indexOf(coded.charAt(i))==-1) {
+                        ltr = coded.charAt(i)
+                        link += (ltr)
+                    }
+                    else {     
+                        ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                        link += (key.charAt(ltr))
+                    }
+                }
+                document.getElementById('email-button-contact').innerHTML = "<a href='mailto:"+link+"?subject=RE%3A%20Skitraverse&body=Dear Brian,%0AI want some more info.%0AKind Regards,' role='button'>Email</a>"
+            </script>
+            <a href="https://instagram.com/skitraverse" role="button">Instagram</a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="text-align: center; width: 100%; margin: 0 auto;">
+            <div style="margin-bottom: 1rem; text-align: center;">
+                <img src="../../static/img/logo.svg" alt="Skitraverse" style="max-width: 80px; margin-bottom: 0.5rem;">
+                <h4 style="margin: 0.5rem 0; text-align: center;">Skitraverse</h4>
+                <p style="margin: 0.25rem 0; text-align: center;"><small>Rüschlikon, Switzerland<br>8803</small></p>
+            </div>
+            <p style="margin: 0.5rem 0; text-align: center;">Opening eyes to the beauty of winter landscape, safely</p>
+            <p style="margin: 0.5rem 0; text-align: center;">
+                <a href="../../info/impressum/">Impressum</a> | 
+                <a href="../../info/disclaimer/">Disclaimer</a>
+            </p>
+            <p style="margin: 0.25rem 0; text-align: center;"><small>Copyright &copy; Brian J. Oney 2025</small></p>
+        </div>
+    </footer>
+
+    <!-- Pagefind JS -->
+    <script src="../../pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search-widget", showSubResults: true });
+            
+            // Wrap tables in scrollable container for mobile only
+            if (window.innerWidth <= 768) {
+                const tables = document.querySelectorAll('table:not(.table-wrapper table)');
+                tables.forEach(table => {
+                    const wrapper = document.createElement('div');
+                    wrapper.className = 'table-wrapper';
+                    table.parentNode.insertBefore(wrapper, table);
+                    wrapper.appendChild(table);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
