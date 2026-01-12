@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section style="background: white; color: #333;">
+<section class="article-content">
     <div class="container">
-        <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+        <div class="article-body">
             {{ page.content if page else article.content }}
         </div>
     </div>
