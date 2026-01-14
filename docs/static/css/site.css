@@ -130,38 +130,32 @@ section .container {
     max-width: 600px;
     margin: 0 auto;
 }
-/* Specific section coloring: masthead(dark) -> book(light) -> search(dark) -> contact(light) */
-#book { background: white; color: #333; }
-#search { background: #2c3e50; color: white; }
-#contact { background: white; color: #333; }
+/* All homepage sections have consistent white background */
+#book, #search, #contact {
+    background: white !important;
+    color: #333 !important;
+}
 
-/* Button styling for specific sections */
-/* Light sections (#book, #contact) need visible buttons */
-#book [role="button"], #contact [role="button"] {
+/* Button styling for all homepage sections - consistent dark buttons on white */
+#book [role="button"],
+#search [role="button"],
+#contact [role="button"] {
     color: #2c3e50 !important;
     border-color: #2c3e50 !important;
     background: transparent !important;
 }
-#book [role="button"]:hover, #contact [role="button"]:hover {
+
+#book [role="button"]:hover,
+#search [role="button"]:hover,
+#contact [role="button"]:hover {
     background: #2c3e50 !important;
     color: white !important;
     border-color: #2c3e50 !important;
 }
 
-/* Dark sections (#search) need light buttons */
-#search [role="button"] {
-    color: white !important;
-    border-color: white !important;
-}
-#search [role="button"]:hover {
-    background: white !important;
-    color: #2c3e50 !important;
-    border-color: white !important;
-}
-
-/* Fix specific text color in search section */
-#search h3 {
-    color: white !important;
+/* Fix text colors in search section */
+#search h2, #search h3 {
+    color: #333 !important;
 }
 section h2 { 
     color: inherit; 
@@ -171,18 +165,18 @@ section h2 {
 
 /* Star divider styling */
 .star-divider {
-    margin: var(--pico-spacing) 0; 
-    width: 60px; 
-    margin-left: auto; 
-    margin-right: auto; 
+    margin: 0;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 .star {
     display: block;
     text-align: center;
-    color: inherit; 
+    color: inherit;
     font-size: 2rem;
-    margin: 1rem 0;
+    margin: 0;
 }
 
 /* Button styling */
@@ -316,11 +310,11 @@ footer small {
     color: #ffffff !important;
 }
 
-/* Pagefind search styling for dark section */
+/* Pagefind search styling - light mode */
 #search .pagefind-ui__form input {
     background: white !important;
     color: #333 !important;
-    border: 1px solid white !important;
+    border: 1px solid #ccc !important;
     border-radius: 8px !important;
 }
 #search .pagefind-ui__form {
@@ -340,24 +334,17 @@ footer small {
     color: #333 !important;
 }
 #search .pagefind-ui__message {
-    color: white !important;
+    color: #333 !important;
 }
 #search .pagefind-ui__search-clear {
     color: #333 !important;
 }
 #search .pagefind-ui__drawer {
-    background: rgba(44, 62, 80, 0.95) !important;
-    border: 1px solid white !important;
+    background: white !important;
+    border: 1px solid #ccc !important;
 }
 #search .pagefind-ui__summary {
-    color: white !important;
-}
-#search .pagefind-ui__message {
-    color: white !important;
-    background: rgba(255,255,255,0.1) !important;
-    padding: 1rem !important;
-    border-radius: 8px !important;
-    border: 1px solid rgba(255,255,255,0.3) !important;
+    color: #333 !important;
 }
 #search .pagefind-ui__result {
     background: white !important;
@@ -446,23 +433,75 @@ section div {
         color: #999 !important;
     }
 
-    /* Dark mode button styling */
-    section [role="button"],
-    main [role="button"],
+    /* Dark mode button styling - all buttons site-wide */
+    [role="button"],
     #book [role="button"],
-    #contact [role="button"] {
+    #search [role="button"],
+    #contact [role="button"],
+    main [role="button"] {
         color: #4da6ff !important;
         border-color: #4da6ff !important;
         background: transparent !important;
     }
 
-    section [role="button"]:hover,
-    main [role="button"]:hover,
+    [role="button"]:hover,
     #book [role="button"]:hover,
-    #contact [role="button"]:hover {
+    #search [role="button"]:hover,
+    #contact [role="button"]:hover,
+    main [role="button"]:hover {
         background: #4da6ff !important;
         color: #1a1a1a !important;
         border-color: #4da6ff !important;
+    }
+
+    /* Dark mode for homepage sections */
+    #book, #search, #contact {
+        background: #1a1a1a !important;
+        color: #e0e0e0 !important;
+    }
+
+    #book h1, #book h2, #book h3, #book h4,
+    #search h1, #search h2, #search h3, #search h4,
+    #contact h1, #contact h2, #contact h3, #contact h4 {
+        color: #f0f0f0 !important;
+    }
+
+    /* Dark mode search widget styling */
+    #search .pagefind-ui__form input {
+        background: #2d2d2d !important;
+        color: #e0e0e0 !important;
+        border: 1px solid #444 !important;
+    }
+
+    #search .pagefind-ui__drawer {
+        background: #2d2d2d !important;
+        border: 1px solid #444 !important;
+    }
+
+    #search .pagefind-ui__results * {
+        color: #e0e0e0 !important;
+    }
+
+    #search .pagefind-ui__message,
+    #search .pagefind-ui__summary {
+        color: #e0e0e0 !important;
+    }
+
+    #search .pagefind-ui__search-clear {
+        color: #e0e0e0 !important;
+    }
+
+    #search .pagefind-ui__result {
+        background: #2d2d2d !important;
+        border: 1px solid #444 !important;
+    }
+
+    #search .pagefind-ui__result-title {
+        color: #f0f0f0 !important;
+    }
+
+    #search .pagefind-ui__result-excerpt {
+        color: #999 !important;
     }
 }
 
