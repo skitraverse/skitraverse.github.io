@@ -81,6 +81,7 @@ devserver: venv
 	$(ACTIVATE_VENV) "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b 0.0.0.0
 
 devserver-global: venv
+	@echo "Server will be accessible at: http://$$(ip addr show | grep -oP 'inet \K[\d.]+' | grep -v '127.0.0.1' | head -1):8000"
 	$(ACTIVATE_VENV) "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b 0.0.0.0
 
 publish: venv
