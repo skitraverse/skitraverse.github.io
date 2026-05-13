@@ -2,6 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: info
 #+PROPERTY: TAGS legal, privacy
+#+PROPERTY: SUMMARY Legal disclaimer and data protection information for skitraverse.com.
 #+OPTIONS: toc:nil
 #+LANGUAGE: en
 

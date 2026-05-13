@@ -1,0 +1,132 @@
+#+TITLE: Order the Book: A Wild Calling
+#+AUTHOR: Brian J. Oney
+#+CATEGORY: winter-cdt-book
+#+PROPERTY: TAGS book, CDT, featured
+#+PROPERTY: SUMMARY Order the hardcover memoir of the first winter ski traverse of the Continental Divide Trail — 194 days, 3,000 miles, mostly solo through the Rocky Mountains.
+#+LANGUAGE: en
+#+OPTIONS: ^:nil toc:nil
+#+PROPERTY: TEMPLATE order
+
+#+BEGIN_EXPORT html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "A Wild Calling: My Winter Ski Traverse of the Continental Divide",
+  "author": {
+    "@type": "Person",
+    "name": "Brian J. Oney",
+    "url": "https://skitraverse.com",
+    "jobTitle": "Alpine Ski Guide",
+    "alumniOf": "Swiss Alpine Club",
+    "knowsAbout": ["Alpine Skiing", "Winter Mountaineering", "Backcountry Navigation", "Avalanche Safety"]
+  },
+  "datePublished": "2025-12-14",
+  "description": "First-hand account of the first winter ski traverse of the Continental Divide Trail — 194 days, 3,000 miles, mostly solo through the Rocky Mountains from New Mexico to Canada.",
+  "numberOfPages": 200,
+  "inLanguage": "en",
+  "bookFormat": "https://schema.org/Hardcover",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lulu Press"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "45.00",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://skitraverse.com/winter-cdt-book/order/",
+      "seller": { "@type": "Organization", "name": "Skitraverse" },
+      "itemCondition": "https://schema.org/NewCondition",
+      "description": "Hardcover — EU/CH webshop, invoiced in EUR, printed in Europe"
+    },
+    {
+      "@type": "Offer",
+      "price": "40.00",
+      "priceCurrency": "CHF",
+      "availability": "https://schema.org/InStock",
+      "url": "https://skitraverse.com/winter-cdt-book/order/",
+      "seller": { "@type": "Organization", "name": "Skitraverse" },
+      "itemCondition": "https://schema.org/NewCondition",
+      "description": "Hardcover — EU/CH webshop, invoiced in CHF for Swiss customers"
+    },
+    {
+      "@type": "Offer",
+      "price": "50.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/hardcover/product-kvjeww5.html",
+      "seller": { "@type": "Organization", "name": "Lulu Press" },
+      "itemCondition": "https://schema.org/NewCondition",
+      "description": "Hardcover — Lulu bookstore, USD, printed in North America (US/CA)"
+    },
+    {
+      "@type": "Offer",
+      "price": "20.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html",
+      "seller": { "@type": "Organization", "name": "Lulu Press" },
+      "itemCondition": "https://schema.org/NewCondition",
+      "description": "E-book — Lulu bookstore, USD (US/CA)"
+    }
+  ],
+  "about": [
+    { "@type": "Thing", "name": "Continental Divide Trail" },
+    { "@type": "Thing", "name": "Winter Mountaineering" },
+    { "@type": "Thing", "name": "Ski Touring" }
+  ],
+  "keywords": "Continental Divide Trail, winter ski traverse, CDT, backcountry skiing, winter mountaineering, Rocky Mountains, solo expedition, alpine skiing"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is this the first winter traverse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No one had previously completed the Continental Divide Trail as a continuous ski traverse in a single winter season. Sections had been skied, but the full route in winter conditions with full expedition gear had not been done."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is in the book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "180 full-colour photographs taken during the traverse, 20 detailed route maps, and an honest first-person narrative covering the planning, the daily grind, the avalanche close calls, and what it takes to keep moving for 194 consecutive days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this book only for skiers or mountaineers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The journey is extreme, but the book is about decision-making under uncertainty, solitude, and what happens when you are fully committed. Readers who have never skied find it as gripping as those who have spent years in the mountains."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does ordering work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fill in your name and shipping address, confirm your email, and we send the order to print. You receive an invoice by email and pay within 30 days by bank transfer — no credit card required. Your book ships directly from Lulu Press with tracking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EUR 45.00 for addresses in Europe and worldwide. Swiss customers are invoiced in CHF 40.00. Shipping is covered in the book price."
+      }
+    }
+  ]
+}
+</script>
+#+END_EXPORT

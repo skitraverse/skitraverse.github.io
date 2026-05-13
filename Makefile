@@ -57,6 +57,13 @@ help:
 	@echo '   make devserver-global               regenerate and serve on 0.0.0.0    '
 	@echo '   make github                         upload the web site via gh-pages   '
 	@echo '                                                                          '
+	@echo 'Testing:                                                                  '
+	@echo '   make test                           build site, then run all tests     '
+	@echo '                                       (starts/stops a static file server '
+	@echo '                                        automatically for UI tests)       '
+	@echo '   make test-backend                   run backend + contract tests only  '
+	@echo '                                       (no build or local server needed)  '
+	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
@@ -72,17 +79,16 @@ regenerate: venv
 	$(ACTIVATE_VENV) "$(PELICAN)" -r "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
 serve: venv
-	$(ACTIVATE_VENV) "$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
+	$(ACTIVATE_VENV) "$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b localhost
 
 serve-global: venv
-	$(ACTIVATE_VENV) "$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b $(SERVER)
+	$(ACTIVATE_VENV) "$(PELICAN)" -l "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b localhost
 
-devserver: venv
-	$(ACTIVATE_VENV) "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b 0.0.0.0
+devserve: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b localhost
 
-devserver-global: venv
-	@echo "Server will be accessible at: http://$$(ip addr show | grep -oP 'inet \K[\d.]+' | grep -v '127.0.0.1' | head -1):8000"
-	$(ACTIVATE_VENV) "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b 0.0.0.0
+devserve-global: venv
+	$(ACTIVATE_VENV) "$(PELICAN)" -lr "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS) -b localhost
 
 publish: venv
 	$(ACTIVATE_VENV) "$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(PUBLISHCONF)" $(PELICANOPTS)
@@ -93,8 +99,14 @@ github: publish
 	git commit -m "$(GITHUB_PAGES_COMMIT_MESSAGE)"
 	git push origin $(GITHUB_PAGES_BRANCH)
 
+test: html
+	$(ACTIVATE_VENV) pytest
+
+test-backend: venv
+	$(ACTIVATE_VENV) pytest tests/test_backend.py tests/test_api_contract.py -v
+
 test-seo: html
 	@echo "Running SEO validation tests..."
 	@python3 test_seo.py
 
-.PHONY: venv html help clean regenerate serve serve-global devserver devserver-global publish github test-seo
+.PHONY: venv html help clean regenerate serve serve-global devserver devserver-global publish github test test-backend test-seo

@@ -1,11 +1,12 @@
 AUTHOR = 'Brian J. Oney'
 SITENAME = 'Skitraverse'
-SITEURL = "https://skitraverse.com"
+SITEURL = "http://localhost:8000"
+OUTPUT_PATH = "docs"
 
 PATH = "content"
 DISPLAY_PAGES_ON_MENU = False
 
-TIMEZONE = 'Europe/Rome'
+TIMEZONE = 'Europe/Zurich'
 
 DEFAULT_LANG = 'en'
 
@@ -29,7 +30,7 @@ SOCIAL = (
 DEFAULT_PAGINATION = False
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DEFAULT_METADATA = {
-    'date': '2023-01-01',
+    'date': '2026-01-01',
 }
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -76,7 +77,7 @@ from datetime import datetime
 
 def custom_get_date(date_str, settings=None):
     if not date_str or date_str.strip() == '':
-        return pelican_get_date('2023-01-01')  # Return default date
+        return pelican_get_date('2026-01-01')  # Return default date
     return pelican_get_date(date_str.replace("_", " "))
 
 def process_scheduled(scheduled_str, settings=None):
@@ -101,7 +102,7 @@ THEME = "."
 THEME_STATIC_DIR = "static"
 
 # Site variables
-DESCRIPTION = "Ski traverse stuff" 
+DESCRIPTION = "Firsthand accounts of backcountry ski expeditions — including the first winter ski traverse of the Continental Divide Trail."
 SLOGAN = "Come out and play, in the snow"
 LOCATION = "Rüschlikon, Switzerland<br>8803"
 

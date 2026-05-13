@@ -1,8 +1,8 @@
-#+TITLE: A Wild Calling
+#+TITLE: Book: A Wild Calling
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt-book
 #+PROPERTY: TAGS book, CDT, featured
-#+PROPERTY: SUMMARY First winter ski traverse of the Continental Divide Trail - 194 days, 2,200 miles through the Rocky Mountains from Mexico to Canada.
+#+PROPERTY: SUMMARY First winter ski traverse of the Continental Divide Trail - 194 days, 3,000 miles through the Rocky Mountains from Mexico to Canada.
 #+LANGUAGE: en
 #+OPTIONS: ^:nil toc:nil
 
@@ -12,7 +12,7 @@
 
 *The firsthand account of the first winter ski traverse of the Continental Divide Trail*
 
-From November 21st, 2022 to June 3rd, 2023, I completed what no one had done before: a winter traversal of the Continental Divide through the Rocky Mountains, from the Mexican border to Canada. This is the story of 194 days in the wilderness, 2,200 miles on skis, and one person's attempt to answer a wild calling.
+From November 21st, 2022 to June 3rd, 2023, I completed what no one had done before: a winter traversal of the Continental Divide through the Rocky Mountains, from the Mexican border to Canada. This is the story of 194 days in the wilderness, 2,300 miles on skis, and one person's attempt to answer a wild calling.
 
 ** What's Inside
 
@@ -23,7 +23,12 @@ From November 21st, 2022 to June 3rd, 2023, I completed what no one had done bef
 
 ** Get Your Copy
 
-Order now through Lulu:
+If you are in Switzerland or the EU, order now from my webshop:
+
+[[pelican:order.org][Order book(s) to send to Switzerland and the EU here]]
+
+
+If you are in the USA or Canada, order now through Lulu:
 
 #+BEGIN_EXPORT html
 <a href="https://www.lulu.com/shop/brian-j-oney/a-wild-calling/hardcover/product-kvjeww5.html" role="button">Hardcover from Lulu</a>
@@ -49,7 +54,7 @@ In total: 194 days covering 5,000 kilometers, with 3,500 kilometers (2,200 miles
 
 ** Why This Book Matters
 
-I didn't write this for glory or record books. I wrote it for the people who helped me along the way - the trail angels, the friends who resupplied me, my family who supported a crazy idea. I wrote it for wilderness lovers who don't fear insignificance but embrace it. And for anyone who has ever wondered: /What if I just tried?/
+I didn't write this for glory or record books. I wrote it for the people who helped me along the way - the trail angels, the friends who resupplied me, my family who supported a crazy idea. I wrote it for wilderness lovers who don't fear insignificance but embrace it. And for anyone who has ever wondered: /Why not give it a try?/
 
 [[pelican:winter-cdt-trip-report.org][Read the full trip report]] | [[pelican:my-story.org][About the author]]
 
@@ -94,31 +99,88 @@ Before attempting the Continental Divide, Brian completed extensive alpine train
 Subscribe below to receive updates about the book, upcoming talks, and future expeditions.
 
 #+BEGIN_EXPORT html
-<div id="mc_embed_shell">
-  <style type="text/css">
-        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; max-width: 600px; width: 100%;}
-</style>
-<div id="mc_embed_signup">
-    <form action="https://skitraverse.us21.list-manage.com/subscribe/post?u=44892d7b308264ad62d66094e&amp;id=efc0949fda&amp;f_id=00e4efe6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
-        <div id="mc_embed_signup_scroll"><h5>Subscribe to receive updates</h5>
-            <div class="mc-field-group"><label for="mce-EMAIL">Email Address:  </label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-        <div class="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div>
-    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-        <input type="text" name="b_44892d7b308264ad62d66094e_efc0949fda" tabindex="-1" value="">
+<div style="max-width:600px;">
+  <form id="ml-book-form" novalidate>
+    <input type="text" name="website" style="display:none !important" tabindex="-1" autocomplete="off">
+    <div class="grid">
+      <label for="ml-book-name">Name
+        <input type="text" id="ml-book-name" name="name" required
+               autocomplete="name" autocapitalize="words" enterkeyhint="next"
+               placeholder="Maria Muster">
+      </label>
+      <label for="ml-book-email">Email
+        <input type="email" id="ml-book-email" name="email" required
+               autocomplete="email" autocapitalize="none" autocorrect="off"
+               spellcheck="false" enterkeyhint="done"
+               placeholder="maria@example.com">
+      </label>
     </div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-            </div>
-        </div>
-    </div>
-</form>
+    <altcha-widget id="ml-book-altcha"
+      challengeurl="https://order.skitraverse.com/api/captcha"
+      name="altcha" hidefooter style="margin-bottom:0.5rem;display:block;"></altcha-widget>
+    <button type="submit" id="ml-book-btn" disabled>Subscribe</button>
+  </form>
+  <div id="ml-book-status" role="alert" style="display:none; margin-top:1rem;"></div>
 </div>
-</div>
+<script async defer src="https://cdn.jsdelivr.net/npm/altcha/dist/altcha.min.js" type="module"></script>
+<script>
+(function() {
+  var form   = document.getElementById('ml-book-form');
+  var btn    = document.getElementById('ml-book-btn');
+  var widget = document.getElementById('ml-book-altcha');
+  var status = document.getElementById('ml-book-status');
+  var storedAltcha = '';
+  widget.addEventListener('statechange', function(e) {
+    var payload = (e.detail && e.detail.payload) || widget.value || '';
+    var verified = e.detail ? e.detail.state === 'verified' : !!payload;
+    storedAltcha = verified ? payload : '';
+    refresh();
+  });
+  widget.addEventListener('change', refresh);
+  function valid() {
+    return ['ml-book-name','ml-book-email'].every(function(id) {
+      return document.getElementById(id).value.trim() !== '';
+    }) && !!storedAltcha;
+  }
+  function refresh() { btn.disabled = !valid(); }
+  form.addEventListener('input', refresh);
+  form.addEventListener('change', refresh);
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var altchaPayload = storedAltcha;
+    if (!altchaPayload) { show('error', 'Please wait for the security check.'); return; }
+    btn.disabled = true; btn.textContent = 'Subscribing\u2026';
+    try {
+      var resp = await fetch('https://order.skitraverse.com/api/subscribe', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          website: form.querySelector('[name="website"]').value,
+          altcha:  altchaPayload,
+          name:    document.getElementById('ml-book-name').value.trim(),
+          email:   document.getElementById('ml-book-email').value.trim(),
+        }),
+      });
+      if (resp.ok) {
+        form.style.display = 'none';
+        show('success', '<strong>You\'re on the list!</strong> We\'ll be in touch.');
+      } else {
+        var data = await resp.json().catch(function() { return {}; });
+        show('error', data.error || 'Something went wrong.');
+        btn.disabled = false; btn.textContent = 'Subscribe';
+      }
+    } catch(err) {
+      show('error', 'Could not reach the server. Please try again.');
+      btn.disabled = false; btn.textContent = 'Subscribe';
+    }
+  });
+  function show(type, html) {
+    status.innerHTML = html; status.style.display = '';
+    status.style.padding = '1rem'; status.style.borderRadius = '4px';
+    status.style.background = type === 'success' ? '#d4edda' : '#f8d7da';
+    status.style.color      = type === 'success' ? '#155724' : '#721c24';
+  }
+})();
+</script>
 #+END_EXPORT
 
 ** Book Timeline

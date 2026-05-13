@@ -1,7 +1,8 @@
-#+TITLE:  Datenschutz / Impressum 
+#+TITLE: Datenschutz / Impressum
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: info
 #+PROPERTY: TAGS legal, privacy
+#+PROPERTY: SUMMARY Datenschutzerklärung und Impressum für skitraverse.com.
 #+OPTIONS: toc:nil
 #+LANGUAGE: de
 

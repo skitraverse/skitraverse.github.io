@@ -1,0 +1,576 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="order-section">
+  <div class="container">
+
+      <details style="margin-bottom:2rem;">
+        <summary><strong>How ordering works</strong></summary>
+        <ol style="margin-top:1rem;">
+          <li>Fill in your details and address — the form pre-fills if your browser has saved an address.</li>
+          <li>You receive a confirmation email — click the link to confirm your order.</li>
+          <li>We send your order to print and follow up with payment details.</li>
+          <li>Your book ships directly from Lulu Press with tracking.</li>
+        </ol>
+      </details>
+
+      <form id="order-form" novalidate>
+
+        <!-- Honeypot — must stay empty -->
+        <input type="text" name="website" id="website"
+               style="display:none !important" tabindex="-1" autocomplete="off">
+
+        <fieldset id="variant-fieldset">
+          <legend>Your order</legend>
+          <div class="variant-grid">
+
+            <div><strong>Global edition</strong> <small>(metric)</small></div>
+            <div class="variant-controls">
+              <button type="button" class="qty-btn" data-qty-target="qty_eu" data-qty-delta="-1" aria-label="Remove one Global edition">−</button>
+              <input class="qty-input" type="number" id="qty_eu" name="qty_eu" min="0" max="9" value="1" inputmode="numeric" aria-label="Global edition quantity">
+              <button type="button" class="qty-btn" data-qty-target="qty_eu" data-qty-delta="1" aria-label="Add one Global edition">+</button>
+              <span id="price-eu" class="variant-price">—</span>
+            </div>
+
+            <div><strong>US edition</strong> <small>(imperial)</small></div>
+            <div class="variant-controls">
+              <button type="button" class="qty-btn" data-qty-target="qty_us" data-qty-delta="-1" aria-label="Remove one US edition">−</button>
+              <input class="qty-input" type="number" id="qty_us" name="qty_us" min="0" max="9" value="0" inputmode="numeric" aria-label="US edition quantity">
+              <button type="button" class="qty-btn" data-qty-target="qty_us" data-qty-delta="1" aria-label="Add one US edition">+</button>
+              <span id="price-us" class="variant-price">—</span>
+            </div>
+
+            <div><strong>E-book</strong> <small>(PDF)</small></div>
+            <div class="variant-controls">
+              <button type="button" class="qty-btn" data-qty-target="qty_ebook" data-qty-delta="-1" aria-label="Remove one E-book">−</button>
+              <input class="qty-input" type="number" id="qty_ebook" name="qty_ebook" min="0" max="9" value="0" inputmode="numeric" aria-label="E-book quantity">
+              <button type="button" class="qty-btn" data-qty-target="qty_ebook" data-qty-delta="1" aria-label="Add one E-book">+</button>
+              <span id="price-ebook" class="variant-price">—</span>
+            </div>
+
+            <div><strong>Deutsche Ausgabe, Buch</strong> <small>(Vorbestellung, Lieferung Herbst 2026)</small></div>
+            <div class="variant-controls">
+              <button type="button" class="qty-btn" data-qty-target="qty_de" data-qty-delta="-1" aria-label="Remove one Deutsche Ausgabe Buch">−</button>
+              <input class="qty-input" type="number" id="qty_de" name="qty_de" min="0" max="9" value="0" inputmode="numeric" aria-label="Deutsche Ausgabe Buch quantity">
+              <button type="button" class="qty-btn" data-qty-target="qty_de" data-qty-delta="1" aria-label="Add one Deutsche Ausgabe Buch">+</button>
+              <span id="price-de" class="variant-price">—</span>
+            </div>
+
+            <div><strong>Deutsche Ausgabe, eBook</strong> <small>(Vorbestellung, Zustellung per eMail Herbst 2026)</small></div>
+            <div class="variant-controls">
+              <button type="button" class="qty-btn" data-qty-target="qty_de_ebook" data-qty-delta="-1" aria-label="Remove one Deutsche Ausgabe eBook">−</button>
+              <input class="qty-input" type="number" id="qty_de_ebook" name="qty_de_ebook" min="0" max="9" value="0" inputmode="numeric" aria-label="Deutsche Ausgabe eBook quantity">
+              <button type="button" class="qty-btn" data-qty-target="qty_de_ebook" data-qty-delta="1" aria-label="Add one Deutsche Ausgabe eBook">+</button>
+              <span id="price-de-ebook" class="variant-price">—</span>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your details</legend>
+          <label for="customer_name">Full name
+            <input type="text" id="customer_name" name="customer_name"
+                   required autocomplete="name" placeholder="Maria Muster"
+                   autocapitalize="words" enterkeyhint="next">
+          </label>
+          <label for="customer_email">Email
+            <input type="email" id="customer_email" name="customer_email"
+                   required autocomplete="email" placeholder="maria@example.com"
+                   autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="next">
+          </label>
+        </fieldset>
+
+        <fieldset id="shipping-address-fieldset">
+          <legend>Shipping address</legend>
+
+          <label for="order-country">Country
+            <select id="order-country" name="country" required autocomplete="shipping country">
+              <option value="">— select —</option>
+              <option value="AD">Andorra</option>
+              <option value="AT">Austria</option>
+              <option value="AU">Australia</option>
+              <option value="BE">Belgium</option>
+              <option value="BG">Bulgaria</option>
+              <option value="CA">Canada</option>
+              <option value="CH">Switzerland</option>
+              <option value="CY">Cyprus</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="DE">Germany</option>
+              <option value="DK">Denmark</option>
+              <option value="EE">Estonia</option>
+              <option value="ES">Spain</option>
+              <option value="FI">Finland</option>
+              <option value="FR">France</option>
+              <option value="GB">United Kingdom</option>
+              <option value="GR">Greece</option>
+              <option value="HR">Croatia</option>
+              <option value="HU">Hungary</option>
+              <option value="IE">Ireland</option>
+              <option value="IS">Iceland</option>
+              <option value="IT">Italy</option>
+              <option value="JP">Japan</option>
+              <option value="LI">Liechtenstein</option>
+              <option value="LT">Lithuania</option>
+              <option value="LU">Luxembourg</option>
+              <option value="LV">Latvia</option>
+              <option value="MC">Monaco</option>
+              <option value="MT">Malta</option>
+              <option value="NL">Netherlands</option>
+              <option value="NO">Norway</option>
+              <option value="NZ">New Zealand</option>
+              <option value="PL">Poland</option>
+              <option value="PT">Portugal</option>
+              <option value="RO">Romania</option>
+              <option value="SE">Sweden</option>
+              <option value="SI">Slovenia</option>
+              <option value="SK">Slovakia</option>
+              <option value="SM">San Marino</option>
+              <option value="US">United States</option>
+            </select>
+          </label>
+
+          <p id="price-note"></p>
+
+          <label for="street1">Street address
+            <input type="text" id="street1" name="street1"
+                   required autocomplete="shipping address-line1" placeholder="Bahnhofstrasse 10"
+                   autocapitalize="words" autocorrect="off" enterkeyhint="next">
+          </label>
+          <label for="street2">Address line 2 (optional)
+            <input type="text" id="street2" name="street2" autocomplete="shipping address-line2"
+                   autocapitalize="words" autocorrect="off" enterkeyhint="next">
+          </label>
+
+          <div class="grid">
+            <label for="postcode">Postcode
+              <input type="text" id="postcode" name="postcode"
+                     required autocomplete="shipping postal-code" placeholder="8001"
+                     autocapitalize="none" autocorrect="off" enterkeyhint="next">
+            </label>
+            <label for="city">City
+              <input type="text" id="city" name="city"
+                     required autocomplete="shipping address-level2" placeholder="Zürich"
+                     autocapitalize="words" autocorrect="off" enterkeyhint="next">
+            </label>
+          </div>
+
+          <label for="phone">Phone (optional)
+            <input type="tel" id="phone" name="phone"
+                   autocomplete="shipping tel" placeholder="+41 79 123 45 67"
+                   enterkeyhint="done">
+            <small>Used by the carrier if they need to reach you.</small>
+          </label>
+        </fieldset>
+
+        <!-- Shipping options — fetched from Lulu, hidden until ready -->
+        <div id="shipping-info" style="display:none" aria-live="polite">
+          <h3 style="margin-bottom:0.5rem;">Estimated delivery</h3>
+          <div id="shipping-table"></div>
+        </div>
+
+        <fieldset>
+          <p id="payment-step" style="display:none; margin-bottom:0.75rem;"></p>
+          <label>
+            <input type="checkbox" id="agree" name="agree" required>
+            <span id="agree-label">I agree to the payment terms.</span>
+          </label>
+        </fieldset>
+
+        <altcha-widget id="shared-altcha"
+          challengeurl="{{ SHOP_API_URL | default('https://order.skitraverse.com') }}/api/captcha"
+          name="altcha"
+          hidefooter></altcha-widget>
+
+        <p id="order-total" style="display:none;"></p>
+        <button type="submit" id="submit-btn" disabled>Place order</button>
+
+      </form>
+      <div id="form-status" role="alert" style="display:none; margin-top:1rem;"></div>
+
+  </div>
+</section>
+
+{{ article.content }}
+
+<script async defer src="https://cdn.jsdelivr.net/npm/altcha/dist/altcha.min.js" type="module"></script>
+<script>
+(function () {
+  'use strict';
+
+  const API_BASE   = '{{ SHOP_API_URL | default("https://order.skitraverse.com") }}';
+  const LULU_API   = 'https://api.lulu.com';
+  const POD_EU     = '{{ LULU_POD_PACKAGE_ID_EU | default("0850X1100.FC.STD.CW.080CW444.MXX") }}';
+  const PAGE_COUNT = {{ BOOK_PAGE_COUNT | default(200) }};
+
+  const SEPA_COUNTRIES = new Set([
+    'AD','AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR',
+    'DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT',
+    'MC','NL','NO','PL','PT','RO','SM','SK','SI','ES','SE','CH','GB',
+  ]);
+  const CURRENCY_MAP = { CH:'CHF', US:'USD', CA:'CAD', AU:'AUD', GB:'GBP', JP:'JPY' };
+  function currencyFor(country) { return CURRENCY_MAP[country] ?? 'EUR'; }
+
+  const orderCountry    = document.getElementById('order-country');
+  const priceNote       = document.getElementById('price-note');
+  const shippingDiv     = document.getElementById('shipping-info');
+  const shippingTbl     = document.getElementById('shipping-table');
+  const shippingFieldset = document.getElementById('shipping-address-fieldset');
+  const statusDiv       = document.getElementById('form-status');
+  const submitBtn       = document.getElementById('submit-btn');
+  const orderTotal      = document.getElementById('order-total');
+  const form            = document.getElementById('order-form');
+
+  // ── Prices (fetched once from API) ──────────────────────────────────────────
+  let PRICES = {
+    physical: { CHF: 42.0, EUR: 45.86 },
+    ebook:    { CHF: 20.0, EUR: 21.84 },
+  };
+  fetch(API_BASE + '/api/prices')
+    .then(r => r.ok ? r.json() : null)
+    .then(data => { if (data) PRICES = data; })
+    .catch(() => {});
+
+  function variantPrice(variant, currency) {
+    const tier = variant === 'EBOOK' ? PRICES.ebook : PRICES.physical;
+    return tier[currency] ?? tier['EUR'];
+  }
+
+  function selectedItems() {
+    return {
+      eu:       parseInt(document.getElementById('qty_eu').value)       || 0,
+      us:       parseInt(document.getElementById('qty_us').value)       || 0,
+      ebook:    parseInt(document.getElementById('qty_ebook').value)    || 0,
+      de:       parseInt(document.getElementById('qty_de').value)       || 0,
+      de_ebook: parseInt(document.getElementById('qty_de_ebook').value) || 0,
+    };
+  }
+  function totalQty() {
+    const q = selectedItems();
+    return q.eu + q.us + q.ebook + q.de + q.de_ebook;
+  }
+  // No physical book at all → address form not needed
+  function ebookOnly() { const q = selectedItems(); return q.eu + q.us + q.de === 0; }
+  // EU/US in cart → fetch Lulu shipping; German pre-orders have no Lulu product yet
+  function needsLuluShipping() { const q = selectedItems(); return q.eu + q.us > 0; }
+  function primaryVariant() {
+    const q = selectedItems();
+    if (q.eu > 0) return 'EU';
+    if (q.us > 0) return 'US';
+    if (q.de > 0) return 'EU';   // German physical routed as EU for now
+    return 'EBOOK';
+  }
+
+  function updatePriceDisplay(currency) {
+    document.getElementById('price-eu').textContent       = `${currency}\u202f${variantPrice('EU',    currency).toFixed(2)}`;
+    document.getElementById('price-us').textContent       = `${currency}\u202f${variantPrice('US',    currency).toFixed(2)}`;
+    document.getElementById('price-ebook').textContent    = `${currency}\u202f${variantPrice('EBOOK', currency).toFixed(2)}`;
+    document.getElementById('price-de').textContent       = `${currency}\u202f${variantPrice('EU',    currency).toFixed(2)}`;
+    document.getElementById('price-de-ebook').textContent = `${currency}\u202f${variantPrice('EBOOK', currency).toFixed(2)}`;
+  }
+
+  // ── Qty +/− buttons ─────────────────────────────────────────────────────────
+  form.addEventListener('click', function (e) {
+    const btn = e.target.closest('[data-qty-target]');
+    if (!btn) return;
+    const el = document.getElementById(btn.dataset.qtyTarget);
+    el.value = Math.max(0, Math.min(9, (parseInt(el.value) || 0) + parseInt(btn.dataset.qtyDelta)));
+    el.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+
+  // ── Variant qty listeners ────────────────────────────────────────────────────
+  ['qty_eu','qty_us','qty_ebook','qty_de','qty_de_ebook'].forEach(id =>
+    document.getElementById(id).addEventListener('input', () => {
+      const country = orderCountry.value;
+      if (!country) return;
+      const noPhysical = ebookOnly();
+      shippingFieldset.style.display = noPhysical ? 'none' : '';
+      shippingDiv.style.display      = 'none';
+      ['street1','postcode','city'].forEach(fid => {
+        document.getElementById(fid).required = !noPhysical;
+      });
+      if (needsLuluShipping()) fetchShipping(country);
+      updatePriceNote(country, null);
+    })
+  );
+
+  // ── Form validation ──────────────────────────────────────────────────────────
+  let storedAltcha = '';
+  const altchaEl = document.getElementById('shared-altcha');
+  if (altchaEl) {
+    altchaEl.addEventListener('statechange', function (e) {
+      const payload = e.detail?.payload || altchaEl.value || '';
+      const verified = e.detail ? e.detail.state === 'verified' : !!payload;
+      storedAltcha = verified ? payload : '';
+      refreshSubmitState();
+    });
+    altchaEl.addEventListener('change', refreshSubmitState);
+  }
+
+  function isFormValid() {
+    if (totalQty() === 0) return false;
+    if (!storedAltcha) return false;
+    const required = Array.from(form.querySelectorAll('[required]'))
+      .filter(el => !el.closest('altcha-widget'))
+      .filter(el => el.closest('fieldset')?.style.display !== 'none');
+    return required.every(el => el.type === 'checkbox' ? el.checked : el.value.trim() !== '');
+  }
+
+  function refreshSubmitState() {
+    submitBtn.disabled = !isFormValid();
+  }
+
+  form.addEventListener('input',  refreshSubmitState);
+  form.addEventListener('change', refreshSubmitState);
+
+  function updateSubmitButton(currency, total) {
+    orderTotal.textContent  = `Total: ${currency}\u202f${total}`;
+    orderTotal.style.display = '';
+    submitBtn.textContent   = `Place order — ${currency}\u202f${total}`;
+  }
+
+  function updatePriceNote(country, shipping) {
+    const currency    = currencyFor(country);
+    updatePriceDisplay(currency);
+    const q           = selectedItems();
+    const physUnit    = variantPrice('EU', currency);
+    const ebookUnit   = variantPrice('EBOOK', currency);
+    // Bundle discount: any ebook + any physical book
+    const hasBundle   = (q.ebook + q.de_ebook) > 0 && (q.eu + q.us + q.de) > 0;
+    const ebookEff    = hasBundle ? ebookUnit * 0.85 : ebookUnit;
+    const booksTotal  = (q.eu + q.us + q.de) * physUnit + (q.ebook + q.de_ebook) * ebookEff;
+    const noPhysical  = ebookOnly();       // true = no physical books at all
+    const luluShip    = needsLuluShipping(); // true = EU/US in cart → Lulu shipping applies
+
+    // Reflect bundle discount in ebook price cells
+    const ebookPriceEl = document.getElementById('price-ebook');
+    if (hasBundle) {
+      const discounted = `<del>${currency}\u202f${ebookUnit.toFixed(2)}</del>\u00a0${currency}\u202f${ebookEff.toFixed(2)}`;
+      ebookPriceEl.innerHTML = discounted;
+      document.getElementById('price-de-ebook').innerHTML = discounted;
+    } else {
+      ebookPriceEl.textContent = `${currency}\u202f${ebookUnit.toFixed(2)}`;
+      document.getElementById('price-de-ebook').textContent = `${currency}\u202f${ebookUnit.toFixed(2)}`;
+    }
+
+    const discountNote = hasBundle
+      ? ' <small style="color:var(--pico-ins-color,#2ecc71)">−15% bundle discount</small>' : '';
+
+    if (!shipping || !luluShip) {
+      updateSubmitButton(currency, booksTotal.toFixed(2));
+      priceNote.innerHTML = noPhysical
+        ? `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>.`
+        : luluShip
+          ? `Books: <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>${discountNote} + shipping (see below).`
+          : `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>. Shipping for the German edition will be confirmed on dispatch.`;
+      return;
+    }
+    const shippingEUR   = parseFloat(shipping.cost_excl_tax);
+    const shippingLocal = eurToLocal(shippingEUR, currency) ?? shippingEUR;
+    const shippingCur   = (eurToLocal(shippingEUR, currency) != null) ? currency : (shipping.currency || 'EUR');
+    selectedShippingCost = shippingLocal;
+    const total = (booksTotal + shippingLocal).toFixed(2);
+    priceNote.innerHTML =
+      `<strong>${currency}\u202f${booksTotal.toFixed(2)}</strong> (books${discountNote})`
+      + ` + <strong>${shippingCur}\u202f${shippingLocal.toFixed(2)}</strong> (shipping)`
+      + ` = <strong>${currency}\u202f${total}</strong>.`;
+    updateSubmitButton(currency, total);
+  }
+
+  // ── Country change ───────────────────────────────────────────────────────────
+  orderCountry.addEventListener('change', function () {
+    const country = this.value;
+    if (!country) return;
+
+    const sepa        = SEPA_COUNTRIES.has(country);
+    const paymentStep = document.getElementById('payment-step');
+    paymentStep.innerHTML = sepa
+      ? 'You will receive an invoice — pay within <strong>30 days</strong> by bank transfer.'
+      : 'Pay via <strong>Wise</strong> or credit card — details sent by email after confirmation.';
+    paymentStep.style.display = '';
+    document.getElementById('agree-label').textContent = sepa
+      ? 'I agree to pay the invoice within 30 days by bank transfer.'
+      : 'I agree to pay via Wise or credit card.';
+
+    updatePriceDisplay(currencyFor(country));
+    updatePriceNote(country, null);
+    if (needsLuluShipping()) fetchShipping(country);
+  });
+
+  // Convert an EUR amount to local currency using the ratio embedded in PRICES.
+  function eurToLocal(eurAmount, currency) {
+    if (currency === 'EUR') return eurAmount;
+    const rateEUR   = PRICES.physical['EUR'];
+    const rateLocal = PRICES.physical[currency];
+    if (!rateEUR || !rateLocal) return null;
+    return eurAmount * rateLocal / rateEUR;
+  }
+
+  // ── Shipping options ────────────────────────────────────────────────────────
+  let shippingController     = null;
+  let selectedShippingLevel  = null;
+  let selectedShippingCost   = null; // in local currency, for the submit payload
+
+  async function fetchShipping(country) {
+    if (shippingController) shippingController.abort();
+    shippingController    = new AbortController();
+    selectedShippingLevel = null;
+    selectedShippingCost  = null;
+    shippingDiv.style.display = 'none';
+
+    try {
+      const resp = await fetch(LULU_API + '/shipping-options/', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          currency: 'EUR',
+          line_items: [{ page_count: PAGE_COUNT, pod_package_id: POD_EU, quantity: 1 }],
+          shipping_address: { country },
+        }),
+        signal: shippingController.signal,
+      });
+      if (!resp.ok) return;
+      renderShipping(await resp.json(), country);
+    } catch (e) { /* network/CORS — silent, does not block ordering */ }
+  }
+
+  const LEVEL_LABELS = {
+    MAIL:          'Standard mail',
+    PRIORITY_MAIL: 'Priority mail',
+    GROUND:        'Ground courier',
+    GROUND_HD:     'Ground home delivery',
+    EXPEDITED:     'Expedited',
+    EXPRESS:       'Express',
+  };
+  const LEVEL_ORDER = ['MAIL','PRIORITY_MAIL','GROUND','GROUND_HD','EXPEDITED','EXPRESS'];
+
+  function renderShipping(options, country) {
+    const EXCLUDED_CARRIERS = ['UPS', 'Colissimo'];
+    const active = options
+      .filter(o => o.is_active !== false)
+      .filter(o => !EXCLUDED_CARRIERS.some(c => (o.carrier_service_name || '').includes(c)))
+      .sort((a, b) => LEVEL_ORDER.indexOf(a.level) - LEVEL_ORDER.indexOf(b.level));
+
+    if (!active.length) return;
+
+    selectedShippingLevel = active[0].level;
+    updatePriceNote(country, active[0]);
+
+    const rows = active.map((o, i) => {
+      const label   = LEVEL_LABELS[o.level] || o.level;
+      const carrier = o.carrier_service_name || '';
+      const cost    = parseFloat(o.cost_excl_tax).toFixed(2) + '\u202f' + o.currency;
+      const days    = o.total_days_min + '\u2013' + o.total_days_max + ' days';
+      const checked = i === 0 ? ' checked' : '';
+      return `<label style="display:flex;gap:.6rem;align-items:baseline;padding:.3rem 0;cursor:pointer;">` +
+             `<input type="radio" name="shipping_level" value="${o.level}"${checked}>` +
+             `<span><strong>${label}</strong>${carrier ? ' \u2014 ' + carrier : ''} \u2014 ${cost} \u2014 ${days}</span></label>`;
+    }).join('');
+
+    shippingTbl.innerHTML = rows;
+    shippingDiv.style.display = '';
+
+    shippingTbl.querySelectorAll('input[name="shipping_level"]').forEach(r =>
+      r.addEventListener('change', () => {
+        selectedShippingLevel = r.value;
+        updatePriceNote(country, active.find(o => o.level === r.value));
+      })
+    );
+  }
+
+  // ── Form submission ─────────────────────────────────────────────────────────
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const agree = document.getElementById('agree');
+    if (!agree.checked) {
+      showStatus('error', document.getElementById('agree-label').textContent);
+      return;
+    }
+
+    const altchaPayload = storedAltcha;
+    if (!altchaPayload) {
+      showStatus('error', 'Please wait for the security check to complete.');
+      return;
+    }
+
+    submitBtn.disabled    = true;
+    submitBtn.textContent = 'Sending\u2026';
+    hideStatus();
+
+    const payload = {
+      website:        document.getElementById('website').value,
+      nonce:          crypto.randomUUID(),
+      altcha:         altchaPayload,
+      customer_name:  document.getElementById('customer_name').value.trim(),
+      customer_email: document.getElementById('customer_email').value.trim(),
+      street1:        document.getElementById('street1').value.trim(),
+      street2:        document.getElementById('street2').value.trim() || null,
+      city:           document.getElementById('city').value.trim(),
+      postcode:       document.getElementById('postcode').value.trim(),
+      country:        orderCountry.value,
+      state:          null,
+      phone:          document.getElementById('phone').value.trim() || null,
+      book_variant:   primaryVariant(),
+      shipping_level: selectedShippingLevel,
+      shipping_cost:  selectedShippingCost,
+      qty_de:         selectedItems().de       || null,
+      qty_de_ebook:   selectedItems().de_ebook || null,
+    };
+
+    try {
+      const resp = await fetch(API_BASE + '/api/order', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(payload),
+      });
+
+      if (resp.status === 201) {
+        const data = await resp.json();
+        form.style.display = 'none';
+        showStatus('success',
+          `<strong>Order received!</strong> Your order number is <strong>${data.order_id}</strong>.<br>
+           Please check your email and click the confirmation link within 24 hours.`);
+      } else {
+        const data = await resp.json().catch(() => ({}));
+        showStatus('error', data.message || data.error || `Unexpected error (HTTP ${resp.status}).`);
+        resetAltcha();
+        submitBtn.disabled    = false;
+        submitBtn.textContent = 'Place order';
+      }
+    } catch (err) {
+      console.error('Order submit error:', err);
+      showStatus('error', `Could not reach the server: ${err.message || err}`);
+      resetAltcha();
+      submitBtn.disabled    = false;
+      submitBtn.textContent = 'Place order';
+    }
+  });
+
+  function showStatus(type, html) {
+    statusDiv.innerHTML      = html;
+    statusDiv.style.display  = '';
+    statusDiv.style.padding  = '1rem';
+    statusDiv.style.borderRadius = 'var(--pico-border-radius, 4px)';
+    statusDiv.style.background   = type === 'success'
+      ? 'var(--pico-color-green-100, #d4edda)'
+      : 'var(--pico-color-red-100, #f8d7da)';
+    statusDiv.style.color = type === 'success'
+      ? 'var(--pico-color-green-900, #155724)'
+      : 'var(--pico-color-red-900, #721c24)';
+    statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function hideStatus() {
+    statusDiv.style.display = 'none';
+    statusDiv.innerHTML     = '';
+  }
+
+  function resetAltcha() {
+    storedAltcha = '';
+    document.getElementById('shared-altcha')?.reset();
+  }
+
+})();
+</script>
+{% endblock %}

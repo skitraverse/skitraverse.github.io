@@ -1,0 +1,314 @@
+openapi: 3.0.3
+info:
+  title: Skitraverse Order API
+  description: |-
+    Book order intake, email confirmation, and Lulu webhook handler.
+
+    **Public routes** are called by the static website. **Admin** routes require `Authorization: Bearer <ADMIN_SECRET>`. **Webhook** routes are called by Lulu Press.
+  license:
+    name: ''
+  version: 1.0.0
+paths:
+  /api/admin/process-invoices:
+    post:
+      tags:
+      - admin
+      operationId: post_process_invoices
+      responses:
+        '200':
+          description: Invoices processed
+        '401':
+          description: Missing or invalid Bearer token
+      security:
+      - bearer_token: []
+  /api/captcha:
+    get:
+      tags:
+      - public
+      operationId: get_challenge
+      responses:
+        '200':
+          description: Altcha proof-of-work challenge
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/captcha.Challenge'
+  /api/confirm:
+    get:
+      tags:
+      - public
+      operationId: get_confirm
+      parameters:
+      - name: token
+        in: query
+        description: HMAC-signed confirmation token from the email link
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Order confirmed; owner notified
+        '400':
+          description: Invalid token
+        '410':
+          description: Token already used
+  /api/order:
+    post:
+      tags:
+      - public
+      operationId: post_order
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderForm'
+        required: true
+      responses:
+        '201':
+          description: Order created; confirmation email sent
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResponse'
+        '400':
+          description: Invalid input or failed CAPTCHA
+          content:
+            application/json:
+              schema: {}
+              example:
+                error: book_variant must be EU or US
+        '409':
+          description: Nonce already used (duplicate submit)
+          content:
+            application/json:
+              schema: {}
+              example:
+                error: nonce already used
+  /api/prices:
+    get:
+      tags:
+      - public
+      operationId: get_prices
+      responses:
+        '200':
+          description: Current book prices converted from CHF at compile-time rates
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PricesResponse'
+  /api/subscribe:
+    post:
+      tags:
+      - public
+      operationId: post_subscribe
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubscribeForm'
+        required: true
+      responses:
+        '200':
+          description: Email recorded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SubscribeResponse'
+        '400':
+          description: Invalid input or failed CAPTCHA
+  /api/webhook/lulu:
+    post:
+      tags:
+      - webhooks
+      operationId: post_webhook
+      requestBody:
+        description: ''
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+        required: true
+      responses:
+        '200':
+          description: SHIPPED event processed; customer and owner notified
+        '204':
+          description: Event ignored (not SHIPPED, duplicate, or test event)
+        '400':
+          description: Invalid HMAC signature or malformed JSON
+components:
+  schemas:
+    Challenge:
+      type: object
+      required:
+      - algorithm
+      - challenge
+      - maxnumber
+      - salt
+      - signature
+      properties:
+        algorithm:
+          type: string
+          description: Hash algorithm used for the proof-of-work (always "SHA-256")
+        challenge:
+          type: string
+          description: SHA-256 hex digest the client must find a pre-image for
+        maxnumber:
+          type: integer
+          format: int64
+          description: Upper bound for the brute-force search
+          minimum: 0
+        salt:
+          type: string
+          description: Random salt, contains `?expires=<unix_ts>` for server-side expiry
+        signature:
+          type: string
+          description: HMAC-SHA256 signature of the challenge (server verifies this on submit)
+    OrderForm:
+      type: object
+      required:
+      - nonce
+      - altcha
+      - customer_name
+      - customer_email
+      - street1
+      - city
+      - postcode
+      - country
+      - book_variant
+      properties:
+        altcha:
+          type: string
+          description: Base64-encoded Altcha proof-of-work payload from the widget
+        book_variant:
+          type: string
+          description: 'Print edition: `"EU"` (printed in Europe) or `"US"` (printed in North America)'
+        city:
+          type: string
+        country:
+          type: string
+          description: ISO 3166-1 alpha-2 country code, e.g. `"CH"`, `"DE"`, `"FR"`
+        customer_email:
+          type: string
+          description: Customer email address — confirmation link is sent here
+        customer_name:
+          type: string
+          description: Customer full name
+        nonce:
+          type: string
+          description: Single-use UUID (`crypto.randomUUID()`); duplicate returns 409
+        phone:
+          type: string
+          nullable: true
+        postcode:
+          type: string
+        shipping_cost:
+          type: number
+          format: double
+          description: Shipping cost in the order currency, as quoted to the customer by the frontend
+          nullable: true
+        shipping_level:
+          type: string
+          description: Lulu shipping level, e.g. `"MAIL"`, `"PRIORITY_MAIL"`, `"GROUND"`, `"EXPEDITED"`, `"EXPRESS"`
+          nullable: true
+        state:
+          type: string
+          description: State / province code — required for US, CA, AU
+          nullable: true
+        street1:
+          type: string
+        street2:
+          type: string
+          nullable: true
+        website:
+          type: string
+          description: Honeypot — must be absent or empty; non-empty value returns 400
+          nullable: true
+    OrderResponse:
+      type: object
+      required:
+      - order_id
+      - message
+      properties:
+        message:
+          type: string
+        order_id:
+          type: string
+          description: Generated order ID, e.g. `"SKI-X7K9M2"`
+    PriceSet:
+      type: object
+      required:
+      - CHF
+      - EUR
+      - USD
+      - GBP
+      - AUD
+      - CAD
+      - JPY
+      properties:
+        AUD:
+          type: number
+          format: double
+        CAD:
+          type: number
+          format: double
+        CHF:
+          type: number
+          format: double
+        EUR:
+          type: number
+          format: double
+        GBP:
+          type: number
+          format: double
+        JPY:
+          type: number
+          format: double
+        USD:
+          type: number
+          format: double
+    PricesResponse:
+      type: object
+      required:
+      - physical
+      - ebook
+      properties:
+        ebook:
+          $ref: '#/components/schemas/PriceSet'
+        physical:
+          $ref: '#/components/schemas/PriceSet'
+    SubscribeForm:
+      type: object
+      required:
+      - altcha
+      - name
+      - email
+      properties:
+        altcha:
+          type: string
+          description: Base64-encoded Altcha proof-of-work payload
+        email:
+          type: string
+        name:
+          type: string
+        website:
+          type: string
+          description: Honeypot — must be absent or empty
+          nullable: true
+    SubscribeResponse:
+      type: object
+      required:
+      - message
+      properties:
+        message:
+          type: string
+security:
+- bearer_token: []
+tags:
+- name: public
+  description: Called by the order form in the browser
+- name: admin
+  description: Called by batch-print.sh after Lulu submission
+- name: webhooks
+  description: Called by Lulu Press on print-job status changes
+
