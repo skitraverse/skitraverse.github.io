@@ -223,8 +223,8 @@
 
   // ── Prices (fetched once from API) ──────────────────────────────────────────
   let PRICES = {
-    physical: { CHF: 42.0, EUR: 45.86 },
-    ebook:    { CHF: 20.0, EUR: 21.84 },
+    physical: { CHF: 42.0, EUR: 45.81, USD: 53.86, GBP: 39.65, AUD: 74.48, CAD: 73.75, JPY: 8489.0 },
+    ebook:    { CHF: 20.0, EUR: 21.81, USD: 25.65, GBP: 18.88, AUD: 35.47, CAD: 35.12, JPY: 4042.0 },
   };
   fetch(API_BASE + '/api/prices')
     .then(r => r.ok ? r.json() : null)
@@ -365,9 +365,10 @@
           : `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>. Shipping for the German edition will be confirmed on dispatch.`;
       return;
     }
-    const shippingEUR   = parseFloat(shipping.cost_excl_tax);
-    const shippingLocal = eurToLocal(shippingEUR, currency) ?? shippingEUR;
-    const shippingCur   = (eurToLocal(shippingEUR, currency) != null) ? currency : (shipping.currency || 'EUR');
+    const shippingNative = parseFloat(shipping.cost_excl_tax);
+    const shippingNativeCur = shipping.currency || 'EUR';
+    const shippingLocal  = convertCurrency(shippingNative, shippingNativeCur, currency) ?? shippingNative;
+    const shippingCur    = convertCurrency(shippingNative, shippingNativeCur, currency) != null ? currency : shippingNativeCur;
     selectedShippingCost = shippingLocal;
     const total = (booksTotal + shippingLocal).toFixed(2);
     priceNote.innerHTML =
@@ -397,13 +398,17 @@
     if (needsLuluShipping()) fetchShipping(country);
   });
 
-  // Convert an EUR amount to local currency using the ratio embedded in PRICES.
+  // Convert between any two currencies using the ratios embedded in PRICES.
+  function convertCurrency(amount, from, to) {
+    if (from === to) return amount;
+    const rateFrom = PRICES.physical[from];
+    const rateTo   = PRICES.physical[to];
+    if (!rateFrom || !rateTo) return null;
+    return amount * rateTo / rateFrom;
+  }
+
   function eurToLocal(eurAmount, currency) {
-    if (currency === 'EUR') return eurAmount;
-    const rateEUR   = PRICES.physical['EUR'];
-    const rateLocal = PRICES.physical[currency];
-    if (!rateEUR || !rateLocal) return null;
-    return eurAmount * rateLocal / rateEUR;
+    return convertCurrency(eurAmount, 'EUR', currency);
   }
 
   // ── Shipping options ────────────────────────────────────────────────────────
@@ -456,11 +461,17 @@
     selectedShippingLevel = active[0].level;
     updatePriceNote(country, active[0]);
 
+    const localCurrency = currencyFor(country);
     const rows = active.map((o, i) => {
-      const label   = LEVEL_LABELS[o.level] || o.level;
-      const carrier = o.carrier_service_name || '';
-      const cost    = parseFloat(o.cost_excl_tax).toFixed(2) + '\u202f' + o.currency;
-      const days    = o.total_days_min + '\u2013' + o.total_days_max + ' days';
+      const label      = LEVEL_LABELS[o.level] || o.level;
+      const carrier    = o.carrier_service_name || '';
+      const nativeAmt  = parseFloat(o.cost_excl_tax);
+      const nativeCur  = o.currency || 'EUR';
+      const localAmt   = convertCurrency(nativeAmt, nativeCur, localCurrency);
+      const dispAmt    = localAmt != null ? localAmt : nativeAmt;
+      const dispCur    = localAmt != null ? localCurrency : nativeCur;
+      const cost       = dispAmt.toFixed(2) + '\u202f' + dispCur;
+      const days       = o.total_days_min + '\u2013' + o.total_days_max + ' days';
       const checked = i === 0 ? ' checked' : '';
       return `<label style="display:flex;gap:.6rem;align-items:baseline;padding:.3rem 0;cursor:pointer;">` +
              `<input type="radio" name="shipping_level" value="${o.level}"${checked}>` +
