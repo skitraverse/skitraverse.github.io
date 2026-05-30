@@ -39,7 +39,7 @@
       "price": "45.00",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
-      "url": "https://skitraverse.com/winter-cdt-book/order/",
+      "url": "/winter-cdt-book/order/",
       "seller": { "@type": "Organization", "name": "Skitraverse" },
       "itemCondition": "https://schema.org/NewCondition",
       "description": "Hardcover -- printed on demand by Lulu Press, a certified B-Corp focused on sustainable printing and treating workers well"
@@ -49,10 +49,20 @@
       "price": "40.00",
       "priceCurrency": "CHF",
       "availability": "https://schema.org/InStock",
-      "url": "https://skitraverse.com/winter-cdt-book/order/",
+      "url": "/winter-cdt-book/order/",
       "seller": { "@type": "Organization", "name": "Skitraverse" },
       "itemCondition": "https://schema.org/NewCondition",
       "description": "Hardcover -- printed on demand by Lulu Press, a certified B-Corp focused on sustainable printing and treating workers well"
+    },
+    {
+      "@type": "Offer",
+      "price": "20.00",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "/winter-cdt-book/order/",
+      "seller": { "@type": "Organization", "name": "Skitraverse" },
+      "itemCondition": "https://schema.org/NewCondition",
+      "description": "E-book (epub + PDF)"
     }
   ],
   "about": [

@@ -76,7 +76,7 @@ paths:
             application/json:
               schema: {}
               example:
-                error: book_variant must be EU or US
+                error: 'book_variant must be one of: HARDCOVER, EBOOK, DE, DE_EBOOK'
         '409':
           description: Nonce already used (duplicate submit)
           content:
@@ -182,7 +182,9 @@ components:
           description: Base64-encoded Altcha proof-of-work payload from the widget
         book_variant:
           type: string
-          description: 'Print edition: `"EU"` (printed in Europe) or `"US"` (printed in North America)'
+          description: |-
+            Edition: `"HARDCOVER"`, `"EBOOK"` (epub + PDF), `"DE"` (German hardcover, pre-order),
+            or `"DE_EBOOK"` (German e-book, pre-order)
         city:
           type: string
         country:
