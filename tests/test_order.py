@@ -98,6 +98,7 @@ def test_submit_disabled_until_complete(page: Page):
     page.fill("#street1",  "Bahnhofstrasse 10")
     page.fill("#postcode", "8001")
     page.fill("#city",     "Zürich")
+    page.fill("#phone",    "+41791234567")
     assert page.locator("#submit-btn").is_disabled()
 
     # Altcha must also be solved before the button enables
@@ -191,6 +192,7 @@ def test_submit_order_shows_success(page: Page):
     page.fill("#street1",  "Bahnhofstrasse 10")
     page.fill("#postcode", "8001")
     page.fill("#city",     "Zürich")
+    page.fill("#phone",    "+41791234567")
     page.locator("#agree").wait_for(state="visible", timeout=5000)
     _inject_fake_altcha(page)
     page.check("#agree")
@@ -207,6 +209,8 @@ def test_submit_order_shows_success(page: Page):
     assert body.get('country') == "CH"
     assert body.get('altcha') == 'fakeAltchaPayload'
     assert body.get('nonce'), "nonce missing from payload"
+    assert body.get('phone') == "+41791234567", f"phone missing or wrong: {body.get('phone')}"
+    assert body.get('book_variant') == 'HARDCOVER', f"Expected HARDCOVER, got: {body.get('book_variant')}"
 
 
 def test_submit_order_api_error_shows_message(page: Page):
@@ -223,6 +227,7 @@ def test_submit_order_api_error_shows_message(page: Page):
     page.fill("#street1",  "Unter den Linden 1")
     page.fill("#postcode", "10117")
     page.fill("#city",     "Berlin")
+    page.fill("#phone",    "+49301234567")
     page.locator("#agree").wait_for(state="visible", timeout=5000)
     _inject_fake_altcha(page)
     page.check("#agree")

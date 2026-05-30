@@ -189,9 +189,9 @@
             </label>
           </div>
 
-          <label for="phone">Phone (optional)
+          <label for="phone">Phone
             <input type="tel" id="phone" name="phone"
-                   autocomplete="shipping tel" placeholder="+41 79 123 45 67"
+                   required autocomplete="shipping tel" placeholder="+41 79 123 45 67"
                    enterkeyhint="done">
             <small>Used by the carrier if they need to reach you.</small>
           </label>
@@ -463,6 +463,7 @@
     const q = selectedItems();
     if (q.hardcover > 0) return 'HARDCOVER';
     if (q.de > 0) return 'DE';
+    if (q.de_ebook > 0) return 'DE_EBOOK';
     return 'EBOOK';
   }
 
@@ -725,12 +726,10 @@
       postcode:       document.getElementById('postcode').value.trim(),
       country:        orderCountry.value,
       state:          null,
-      phone:          document.getElementById('phone').value.trim() || null,
+      phone:          document.getElementById('phone').value.trim(),
       book_variant:   primaryVariant(),
       shipping_level: selectedShippingLevel,
       shipping_cost:  selectedShippingCost,
-      qty_de:         selectedItems().de       || null,
-      qty_de_ebook:   selectedItems().de_ebook || null,
     };
 
     try {

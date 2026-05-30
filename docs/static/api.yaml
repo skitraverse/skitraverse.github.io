@@ -171,6 +171,7 @@ components:
       - altcha
       - customer_name
       - customer_email
+      - phone
       - street1
       - city
       - postcode
@@ -201,7 +202,6 @@ components:
           description: Single-use UUID (`crypto.randomUUID()`); duplicate returns 409
         phone:
           type: string
-          nullable: true
         postcode:
           type: string
         shipping_cost:

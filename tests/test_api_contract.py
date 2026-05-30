@@ -13,10 +13,10 @@ import yaml
 
 SPEC_PATH = pathlib.Path(__file__).parent.parent / "static" / "api.yaml"
 
-# Values the frontend radio buttons send for book_variant
-FRONTEND_VARIANTS = {"HARDCOVER", "EBOOK"}
+# Values the frontend sends for book_variant
+FRONTEND_VARIANTS = {"HARDCOVER", "EBOOK", "DE", "DE_EBOOK"}
 # Variants the backend says are valid (from spec description / example error)
-BACKEND_PHYSICAL_VARIANTS = {"HARDCOVER"}
+BACKEND_PHYSICAL_VARIANTS = {"HARDCOVER", "DE"}
 
 
 @pytest.fixture(scope="module")
@@ -45,19 +45,25 @@ def test_order_required_fields(spec):
 
 
 def test_book_variant_values_match_frontend(spec):
-    """HARDCOVER must be valid per the spec description; GLOBAL must not be."""
+    """All frontend variants must appear in the spec's 400 error example; legacy values must not."""
     order_schema = spec["components"]["schemas"]["OrderForm"]
     props = order_schema["properties"]
     assert "book_variant" in props, "book_variant missing from OrderForm properties"
 
-    # The spec's error example says "book_variant must be HARDCOVER, EBOOK, DE, or DE_EBOOK"
     error_example = (spec["paths"]["/api/order"]["post"]
                      ["responses"]["400"]["content"]["application/json"]["example"])
     error_text = error_example.get("error", "")
-    assert "HARDCOVER" in error_text, f"Expected 'HARDCOVER' in 400 error example, got: {error_text}"
-    assert "EBOOK" in error_text, f"Expected 'EBOOK' in 400 error example, got: {error_text}"
-    assert "GLOBAL" not in error_text, \
-        "'GLOBAL' appeared in spec — frontend must not send GLOBAL"
+    for variant in ("HARDCOVER", "EBOOK", "DE", "DE_EBOOK"):
+        assert variant in error_text, f"Expected '{variant}' in 400 error example, got: {error_text}"
+    for legacy in ("EU", "US", "GLOBAL"):
+        assert legacy not in error_text, \
+            f"Legacy variant '{legacy}' appeared in spec — remove it"
+
+
+def test_phone_is_required(spec):
+    """Phone must be listed as required in OrderForm (backend rejects orders without it)."""
+    required = set(spec["components"]["schemas"]["OrderForm"].get("required", []))
+    assert "phone" in required, "phone is not in OrderForm required list"
 
 
 def test_prices_response_shape(spec):
