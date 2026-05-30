@@ -23,19 +23,15 @@ From November 21st, 2022 to June 3rd, 2023, I completed what no one had done bef
 
 ** Get Your Copy
 
-If you are in Switzerland or the EU, order now from my webshop:
-
-[[pelican:order.org][Order book(s) to send to Switzerland and the EU here]]
-
-
-If you are in the USA or Canada, order now through Lulu:
+Order your copy through the Skitraverse webshop:
 
 #+BEGIN_EXPORT html
-<a href="https://www.lulu.com/shop/brian-j-oney/a-wild-calling/hardcover/product-kvjeww5.html" role="button">Hardcover from Lulu</a>
-<a href="https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html" role="button">E-book from Lulu</a>
-<br>
-<br>
+<div style="text-align:center; margin: 1.5rem 0;">
+  <a href="/winter-cdt-book/order/" role="button" style="display:inline-block;">Order A Wild Calling</a>
+</div>
 #+END_EXPORT
+
+All orders print on demand by Lulu Press, a certified [[https://en.wikipedia.org/wiki/B_Corporation_(certification)][B-Corp]] that focuses on sustainable printing and treating their workers well. Books ship with tracking from a printing facility nearest you, wherever you are on our globe.
 
 
 ** The Journey
@@ -79,7 +75,7 @@ The hardcover and e-book are available now. Supporter Edition copies were distri
 The hardcover includes 180 full-color photographs and 20 detailed maps that are best experienced in print. The e-book is available for those who prefer digital or want immediate access.
 
 *** Where can I buy it?
-Order directly through the [[pelican:order.org][Skitraverse webshop]] (Switzerland and EU), through Lulu (USA and Canada), or contact me directly for signed copies. Links are above.
+Order directly through the [[pelican:order.org][Skitraverse webshop]], or contact me directly for signed copies.
 
 ** About the Author
 
@@ -258,7 +254,7 @@ Subscribe below to receive updates about the book, upcoming talks, and future ex
       "name": "Where can I buy the book?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Order directly through the Skitraverse webshop (Switzerland and EU), through Lulu (USA and Canada), or contact the author directly for signed copies."
+        "text": "Order directly through the Skitraverse webshop, or contact the author directly for signed copies."
       }
     },
     {
@@ -282,7 +278,7 @@ Subscribe below to receive updates about the book, upcoming talks, and future ex
       "name": "How does ordering work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fill in your name and shipping address, confirm your email, and we send the order to print. You receive an invoice by email and pay within 30 days by bank transfer -- no credit card required. Your book ships directly from Lulu Press with tracking."
+        "text": "Fill in your name and shipping address, confirm your email, and we send the order to print. You receive an invoice by email and pay within 30 days by bank transfer -- no credit card required. Your book ships directly with tracking."
       }
     },
     {

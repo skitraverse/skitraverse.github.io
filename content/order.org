@@ -16,7 +16,7 @@
   "author": {
     "@type": "Person",
     "name": "Brian J. Oney",
-    "url": "https://skitraverse.com",
+    "url": "/",
     "jobTitle": "Alpine Ski Guide",
     "alumniOf": "Swiss Alpine Club",
     "knowsAbout": ["Alpine Skiing", "Winter Mountaineering", "Backcountry Navigation", "Avalanche Safety"]
@@ -25,12 +25,13 @@
   "description": "First-hand account of the first winter ski traverse of the Continental Divide Trail -- 194 days, 3,000 miles, mostly solo through the Rocky Mountains from New Mexico to Canada.",
   "numberOfPages": 200,
   "inLanguage": "en",
-  "url": "https://skitraverse.com/winter-cdt-book/winter-cdt-book/",
-  "image": "https://skitraverse.com/img/book-cover.jpg",
+  "url": "/winter-cdt-book/winter-cdt-book/",
+  "image": "/img/book-cover.jpg",
   "bookFormat": "https://schema.org/Hardcover",
   "publisher": {
     "@type": "Organization",
-    "name": "Lulu Press"
+    "name": "Lulu Press",
+    "description": "A certified B-Corp focused on sustainable printing and treating workers well"
   },
   "offers": [
     {
@@ -41,7 +42,7 @@
       "url": "https://skitraverse.com/winter-cdt-book/order/",
       "seller": { "@type": "Organization", "name": "Skitraverse" },
       "itemCondition": "https://schema.org/NewCondition",
-      "description": "Hardcover -- EU/CH webshop, invoiced in EUR, printed in Europe"
+      "description": "Hardcover -- printed on demand by Lulu Press, a certified B-Corp focused on sustainable printing and treating workers well"
     },
     {
       "@type": "Offer",
@@ -51,27 +52,7 @@
       "url": "https://skitraverse.com/winter-cdt-book/order/",
       "seller": { "@type": "Organization", "name": "Skitraverse" },
       "itemCondition": "https://schema.org/NewCondition",
-      "description": "Hardcover -- EU/CH webshop, invoiced in CHF for Swiss customers"
-    },
-    {
-      "@type": "Offer",
-      "price": "50.00",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/hardcover/product-kvjeww5.html",
-      "seller": { "@type": "Organization", "name": "Lulu Press" },
-      "itemCondition": "https://schema.org/NewCondition",
-      "description": "Hardcover -- Lulu bookstore, USD, printed in North America (US/CA)"
-    },
-    {
-      "@type": "Offer",
-      "price": "20.00",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html",
-      "seller": { "@type": "Organization", "name": "Lulu Press" },
-      "itemCondition": "https://schema.org/NewCondition",
-      "description": "E-book -- Lulu bookstore, USD (US/CA)"
+      "description": "Hardcover -- printed on demand by Lulu Press, a certified B-Corp focused on sustainable printing and treating workers well"
     }
   ],
   "about": [
@@ -141,7 +122,7 @@
       "name": "Where can I buy the book?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Order directly through the Skitraverse webshop (Switzerland and EU), through Lulu (USA and Canada), or contact the author directly for signed copies."
+        "text": "Order directly through the Skitraverse webshop, or contact the author directly for signed copies."
       }
     },
     {
@@ -165,7 +146,7 @@
       "name": "How does ordering work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fill in your name and shipping address, confirm your email, and we send the order to print. You receive an invoice by email and pay within 30 days by bank transfer -- no credit card required. Your book ships directly from Lulu Press with tracking."
+        "text": "Fill in your name and shipping address, confirm your email, and we send the order to print. You receive an invoice by email and pay within 30 days by bank transfer -- no credit card required. Your book is printed on demand by Lulu Press, a certified B-Corp focused on sustainable printing and treating workers well, and ships directly with tracking."
       }
     },
     {
