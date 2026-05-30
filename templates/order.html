@@ -4,16 +4,6 @@
 <section class="order-section">
   <div class="container">
 
-      <details style="margin-bottom:2rem;">
-        <summary><strong>How ordering works</strong></summary>
-        <ol style="margin-top:1rem;">
-          <li>Fill in your details and address — the form pre-fills if your browser has saved an address.</li>
-          <li>You receive a confirmation email — click the link to confirm your order.</li>
-          <li>We send your order to print and follow up with payment details.</li>
-          <li>Your book ships directly from Lulu Press with tracking.</li>
-        </ol>
-      </details>
-
       <form id="order-form" novalidate>
 
         <!-- Honeypot — must stay empty -->
@@ -21,26 +11,18 @@
                style="display:none !important" tabindex="-1" autocomplete="off">
 
         <fieldset id="variant-fieldset">
-          <legend>Your order</legend>
+          <legend>Please choose what you would like to order</legend>
           <div class="variant-grid">
 
-            <div><strong>Global edition</strong> <small>(metric)</small></div>
+            <div><strong>Hardcover</strong> <small>(printed on demand)</small></div>
             <div class="variant-controls">
-              <button type="button" class="qty-btn" data-qty-target="qty_eu" data-qty-delta="-1" aria-label="Remove one Global edition">−</button>
-              <input class="qty-input" type="number" id="qty_eu" name="qty_eu" min="0" max="9" value="1" inputmode="numeric" aria-label="Global edition quantity">
-              <button type="button" class="qty-btn" data-qty-target="qty_eu" data-qty-delta="1" aria-label="Add one Global edition">+</button>
-              <span id="price-eu" class="variant-price">—</span>
+              <button type="button" class="qty-btn" data-qty-target="qty_hardcover" data-qty-delta="-1" aria-label="Remove one Hardcover">−</button>
+              <input class="qty-input" type="number" id="qty_hardcover" name="qty_hardcover" min="0" max="9" value="1" inputmode="numeric" aria-label="Hardcover quantity">
+              <button type="button" class="qty-btn" data-qty-target="qty_hardcover" data-qty-delta="1" aria-label="Add one Hardcover">+</button>
+              <span id="price-hardcover" class="variant-price">—</span>
             </div>
 
-            <div><strong>US edition</strong> <small>(imperial)</small></div>
-            <div class="variant-controls">
-              <button type="button" class="qty-btn" data-qty-target="qty_us" data-qty-delta="-1" aria-label="Remove one US edition">−</button>
-              <input class="qty-input" type="number" id="qty_us" name="qty_us" min="0" max="9" value="0" inputmode="numeric" aria-label="US edition quantity">
-              <button type="button" class="qty-btn" data-qty-target="qty_us" data-qty-delta="1" aria-label="Add one US edition">+</button>
-              <span id="price-us" class="variant-price">—</span>
-            </div>
-
-            <div><strong>E-book</strong> <small>(PDF)</small></div>
+            <div><strong>E-book</strong> <small>(epub + PDF)</small></div>
             <div class="variant-controls">
               <button type="button" class="qty-btn" data-qty-target="qty_ebook" data-qty-delta="-1" aria-label="Remove one E-book">−</button>
               <input class="qty-input" type="number" id="qty_ebook" name="qty_ebook" min="0" max="9" value="0" inputmode="numeric" aria-label="E-book quantity">
@@ -169,6 +151,17 @@
           <div id="shipping-table"></div>
         </div>
 
+      <details open style="margin-bottom:2rem;">
+        <summary><strong>How ordering works</strong></summary>
+        <ol style="margin-top:1rem;">
+          <li>Having filled in your details and address, agree here to pay within 30 days and place your order.</li>
+          <li>You receive a confirmation email — click the link to confirm your order.</li>
+          <li>We send you payment instructions (IBAN for Europe, Wise for the other shipping destinations).</li>
+          <li>We send your order to print.</li>
+          <li>Your book ships directly from Lulu Press, and we will send you a link to track your order.</li>
+        </ol>
+      </details>
+
         <fieldset>
           <p id="payment-step" style="display:none; margin-bottom:0.75rem;"></p>
           <label>
@@ -238,35 +231,32 @@
 
   function selectedItems() {
     return {
-      eu:       parseInt(document.getElementById('qty_eu').value)       || 0,
-      us:       parseInt(document.getElementById('qty_us').value)       || 0,
-      ebook:    parseInt(document.getElementById('qty_ebook').value)    || 0,
-      de:       parseInt(document.getElementById('qty_de').value)       || 0,
-      de_ebook: parseInt(document.getElementById('qty_de_ebook').value) || 0,
+      hardcover: parseInt(document.getElementById('qty_hardcover').value) || 0,
+      ebook:     parseInt(document.getElementById('qty_ebook').value)    || 0,
+      de:        parseInt(document.getElementById('qty_de').value)       || 0,
+      de_ebook:  parseInt(document.getElementById('qty_de_ebook').value) || 0,
     };
   }
   function totalQty() {
     const q = selectedItems();
-    return q.eu + q.us + q.ebook + q.de + q.de_ebook;
+    return q.hardcover + q.ebook + q.de + q.de_ebook;
   }
   // No physical book at all → address form not needed
-  function ebookOnly() { const q = selectedItems(); return q.eu + q.us + q.de === 0; }
-  // EU/US in cart → fetch Lulu shipping; German pre-orders have no Lulu product yet
-  function needsLuluShipping() { const q = selectedItems(); return q.eu + q.us > 0; }
+  function ebookOnly() { const q = selectedItems(); return q.hardcover + q.de === 0; }
+  // Physical books in cart → fetch Lulu shipping; German pre-orders have no Lulu product yet
+  function needsLuluShipping() { const q = selectedItems(); return q.hardcover > 0; }
   function primaryVariant() {
     const q = selectedItems();
-    if (q.eu > 0) return 'EU';
-    if (q.us > 0) return 'US';
-    if (q.de > 0) return 'EU';   // German physical routed as EU for now
+    if (q.hardcover > 0) return 'HARDCOVER';
+    if (q.de > 0) return 'DE';
     return 'EBOOK';
   }
 
   function updatePriceDisplay(currency) {
-    document.getElementById('price-eu').textContent       = `${currency}\u202f${variantPrice('EU',    currency).toFixed(2)}`;
-    document.getElementById('price-us').textContent       = `${currency}\u202f${variantPrice('US',    currency).toFixed(2)}`;
-    document.getElementById('price-ebook').textContent    = `${currency}\u202f${variantPrice('EBOOK', currency).toFixed(2)}`;
-    document.getElementById('price-de').textContent       = `${currency}\u202f${variantPrice('EU',    currency).toFixed(2)}`;
-    document.getElementById('price-de-ebook').textContent = `${currency}\u202f${variantPrice('EBOOK', currency).toFixed(2)}`;
+    document.getElementById('price-hardcover').textContent = `${currency}\u202f${variantPrice('HARDCOVER', currency).toFixed(2)}`;
+    document.getElementById('price-ebook').textContent     = `${currency}\u202f${variantPrice('EBOOK',     currency).toFixed(2)}`;
+    document.getElementById('price-de').textContent        = `${currency}\u202f${variantPrice('HARDCOVER', currency).toFixed(2)}`;
+    document.getElementById('price-de-ebook').textContent  = `${currency}\u202f${variantPrice('EBOOK',     currency).toFixed(2)}`;
   }
 
   // ── Qty +/− buttons ─────────────────────────────────────────────────────────
@@ -279,7 +269,7 @@
   });
 
   // ── Variant qty listeners ────────────────────────────────────────────────────
-  ['qty_eu','qty_us','qty_ebook','qty_de','qty_de_ebook'].forEach(id =>
+  ['qty_hardcover','qty_ebook','qty_de','qty_de_ebook'].forEach(id =>
     document.getElementById(id).addEventListener('input', () => {
       const country = orderCountry.value;
       if (!country) return;
@@ -333,14 +323,14 @@
     const currency    = currencyFor(country);
     updatePriceDisplay(currency);
     const q           = selectedItems();
-    const physUnit    = variantPrice('EU', currency);
+    const physUnit    = variantPrice('HARDCOVER', currency);
     const ebookUnit   = variantPrice('EBOOK', currency);
     // Bundle discount: any ebook + any physical book
-    const hasBundle   = (q.ebook + q.de_ebook) > 0 && (q.eu + q.us + q.de) > 0;
+    const hasBundle   = (q.ebook + q.de_ebook) > 0 && (q.hardcover + q.de) > 0;
     const ebookEff    = hasBundle ? ebookUnit * 0.85 : ebookUnit;
-    const booksTotal  = (q.eu + q.us + q.de) * physUnit + (q.ebook + q.de_ebook) * ebookEff;
+    const booksTotal  = (q.hardcover + q.de) * physUnit + (q.ebook + q.de_ebook) * ebookEff;
     const noPhysical  = ebookOnly();       // true = no physical books at all
-    const luluShip    = needsLuluShipping(); // true = EU/US in cart → Lulu shipping applies
+    const luluShip    = needsLuluShipping(); // true = hardcover in cart → Lulu shipping applies
 
     // Reflect bundle discount in ebook price cells
     const ebookPriceEl = document.getElementById('price-ebook');
