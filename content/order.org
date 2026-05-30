@@ -2,7 +2,7 @@
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt-book
 #+PROPERTY: TAGS book, CDT, featured
-#+PROPERTY: SUMMARY Order the hardcover memoir of the first winter ski traverse of the Continental Divide Trail — 194 days, 3,000 miles, mostly solo through the Rocky Mountains.
+#+PROPERTY: SUMMARY Order the hardcover memoir of the first winter ski traverse of the Continental Divide Trail -- 194 days, 3,000 miles, mostly solo through the Rocky Mountains.
 #+LANGUAGE: en
 #+OPTIONS: ^:nil toc:nil
 #+PROPERTY: TEMPLATE order
@@ -22,9 +22,11 @@
     "knowsAbout": ["Alpine Skiing", "Winter Mountaineering", "Backcountry Navigation", "Avalanche Safety"]
   },
   "datePublished": "2025-12-14",
-  "description": "First-hand account of the first winter ski traverse of the Continental Divide Trail — 194 days, 3,000 miles, mostly solo through the Rocky Mountains from New Mexico to Canada.",
+  "description": "First-hand account of the first winter ski traverse of the Continental Divide Trail -- 194 days, 3,000 miles, mostly solo through the Rocky Mountains from New Mexico to Canada.",
   "numberOfPages": 200,
   "inLanguage": "en",
+  "url": "https://skitraverse.com/winter-cdt-book/winter-cdt-book/",
+  "image": "https://skitraverse.com/img/book-cover.jpg",
   "bookFormat": "https://schema.org/Hardcover",
   "publisher": {
     "@type": "Organization",
@@ -39,7 +41,7 @@
       "url": "https://skitraverse.com/winter-cdt-book/order/",
       "seller": { "@type": "Organization", "name": "Skitraverse" },
       "itemCondition": "https://schema.org/NewCondition",
-      "description": "Hardcover — EU/CH webshop, invoiced in EUR, printed in Europe"
+      "description": "Hardcover -- EU/CH webshop, invoiced in EUR, printed in Europe"
     },
     {
       "@type": "Offer",
@@ -49,7 +51,7 @@
       "url": "https://skitraverse.com/winter-cdt-book/order/",
       "seller": { "@type": "Organization", "name": "Skitraverse" },
       "itemCondition": "https://schema.org/NewCondition",
-      "description": "Hardcover — EU/CH webshop, invoiced in CHF for Swiss customers"
+      "description": "Hardcover -- EU/CH webshop, invoiced in CHF for Swiss customers"
     },
     {
       "@type": "Offer",
@@ -59,7 +61,7 @@
       "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/hardcover/product-kvjeww5.html",
       "seller": { "@type": "Organization", "name": "Lulu Press" },
       "itemCondition": "https://schema.org/NewCondition",
-      "description": "Hardcover — Lulu bookstore, USD, printed in North America (US/CA)"
+      "description": "Hardcover -- Lulu bookstore, USD, printed in North America (US/CA)"
     },
     {
       "@type": "Offer",
@@ -69,7 +71,7 @@
       "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html",
       "seller": { "@type": "Organization", "name": "Lulu Press" },
       "itemCondition": "https://schema.org/NewCondition",
-      "description": "E-book — Lulu bookstore, USD (US/CA)"
+      "description": "E-book -- Lulu bookstore, USD (US/CA)"
     }
   ],
   "about": [
@@ -88,10 +90,58 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Why is this the first winter traverse?",
+      "name": "What makes this the first winter traverse?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No one had previously completed the Continental Divide Trail as a continuous ski traverse in a single winter season. Sections had been skied, but the full route in winter conditions with full expedition gear had not been done."
+        "text": "This was the first continuous winter ski traverse of the Continental Divide from Mexico to Canada. While sections have been skied before, no one had previously completed the entire route during a single winter season, carrying full winter camping gear and food for multi-week sections."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How dangerous was it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extremely dangerous. Avalanche risk, hypothermia, frostbite, and complete isolation were constant companions. The author spent weeks without seeing another person. The book doesn't shy away from the close calls and poor decisions that nearly ended the journey."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What experience did the author have before this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Brian J. Oney holds Swiss Alpine Club backcountry and alpine ski guide certifications (Tourenleiter I & II). He has completed multi-week traverses in the Alps and Bulgaria. However, nothing fully prepares someone for 194 consecutive days in winter conditions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this book just for extreme athletes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. While the physical challenge is real, the book is fundamentally about decision-making, solitude, fear, and what happens when you strip away everything comfortable. It's for anyone who appreciates honest storytelling about pushing boundaries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When will the book be available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The hardcover and e-book are available now. Supporter Edition copies were distributed in September 2025. A book promotion tour took place September 12-30, 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What format should I get?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The hardcover includes 180 full-color photographs and 20 detailed maps that are best experienced in print. The e-book is available for those who prefer digital or want immediate access."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I buy the book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Order directly through the Skitraverse webshop (Switzerland and EU), through Lulu (USA and Canada), or contact the author directly for signed copies."
       }
     },
     {
@@ -115,7 +165,7 @@
       "name": "How does ordering work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fill in your name and shipping address, confirm your email, and we send the order to print. You receive an invoice by email and pay within 30 days by bank transfer — no credit card required. Your book ships directly from Lulu Press with tracking."
+        "text": "Fill in your name and shipping address, confirm your email, and we send the order to print. You receive an invoice by email and pay within 30 days by bank transfer -- no credit card required. Your book ships directly from Lulu Press with tracking."
       }
     },
     {

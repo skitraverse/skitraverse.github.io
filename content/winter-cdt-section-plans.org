@@ -84,3 +84,5 @@ Update 2023-06-03: *Finished!*
 | units/day spring       |          42 |                ← Approximately after March 15th |                                       |              |      |           |                                                    |                       |          |
 | rest and length buffer |         0.2 |                                                 |                                       |              |      |           |                                                    |                       |          |
 
+[[pelican:winter-cdt-book.org][Read the book: A Wild Calling]] | [[pelican:order.org][Order your copy]]
+

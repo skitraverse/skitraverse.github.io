@@ -127,3 +127,5 @@ If you are interested, please read about my [[./approach-and-style.org][approach
 through [[./skills-and-training.org][skills and abilities for an attempt]], and take time to reflect and
 decide.
 
+[[pelican:winter-cdt-book.org][Read the book: A Wild Calling]] | [[pelican:order.org][Order your copy]]
+

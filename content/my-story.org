@@ -13,7 +13,7 @@ I'm a Swiss-certified alpine ski guide who completed the first winter ski traver
 
 ** The Journey to the Continental Divide
 
-My relationship with snow began predictably enough: as a kid sledding off the carport roof, one cross-country ski outing with the Boy Scouts, and sporadic snowboarding in the '90s. What changed was college, where I joined the Weber State University Snowboard team and discovered that mountains weren't just playgrounds—they were classrooms.
+My relationship with snow began predictably enough: as a kid sledding off the carport roof, one cross-country ski outing with the Boy Scouts, and sporadic snowboarding in the '90s. What changed was college, where I joined the Weber State University Snowboard team and discovered that mountains weren't just playgrounds--they were classrooms.
 
 In 2012, after moving to Switzerland, I started splitboarding in the Alps. The transition from resort riding to backcountry touring opened a new world. By 2015, I was ascending high Alpine peaks in winter and completing multi-day hut-to-hut traverses, learning to read avalanche terrain and weather patterns that could kill you if you got them wrong.
 
@@ -31,7 +31,7 @@ These weren't just pieces of paper. They represented hundreds of days in avalanc
 
 *2020-2021:* Started pushing into multi-week snow camping traverses, carrying everything needed for extended self-supported travel.
 
-*February-March 2022:* Solo ski traverse of Bulgaria's Pirin and Rila Mountains. Multiple routes, complete winter conditions, alone. This was the proving ground—could I handle isolation, route-finding, and decision-making with no backup?
+*February-March 2022:* Solo ski traverse of Bulgaria's Pirin and Rila Mountains. Multiple routes, complete winter conditions, alone. This was the proving ground--could I handle isolation, route-finding, and decision-making with no backup?
 
 *November 2022 - June 2023:* The Continental Divide. Started at the Mexican border on November 21st, 2022. Finished at Devil's Thumb Trailhead, Colorado, on June 3rd, 2023. 194 days. 2,200 miles on skis. Solo except for the Montana-Canada section with my partner Lukas. First winter traverse of the Continental Divide from Mexico to Canada.
 
@@ -52,7 +52,7 @@ The story is still being written. Preferably in the snow.
 - Based in Rüschlikon, Switzerland
 - Available for talks, interviews, and expedition consulting
 
-[[pelican:winter-cdt-book.org][Read about the book]] | [[pelican:winter-cdt-trip-report.org][Full Continental Divide trip report]]
+[[pelican:winter-cdt-book.org][Read about the book]] | [[pelican:order.org][Order A Wild Calling]] | [[pelican:winter-cdt-trip-report.org][Full Continental Divide trip report]]
 
 #+BEGIN_EXPORT html
 <script type="application/ld+json">

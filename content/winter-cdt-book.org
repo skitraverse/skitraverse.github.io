@@ -12,7 +12,7 @@
 
 *The firsthand account of the first winter ski traverse of the Continental Divide Trail*
 
-From November 21st, 2022 to June 3rd, 2023, I completed what no one had done before: a winter traversal of the Continental Divide through the Rocky Mountains, from the Mexican border to Canada. This is the story of 194 days in the wilderness, 2,300 miles on skis, and one person's attempt to answer a wild calling.
+From November 21st, 2022 to June 3rd, 2023, I completed what no one had done before: a winter traversal of the Continental Divide through the Rocky Mountains, from the Mexican border to Canada. This is the story of 194 days in the wilderness, 3,100 miles through the Rockies -- 2,200 on skis and 900 on foot -- and one person's attempt to answer a wild calling.
 
 ** What's Inside
 
@@ -50,7 +50,7 @@ The southern Wind River Range in late January brought the coldest conditions of 
 
 On April 15th, 2023, I reached the Canadian border at Waterton with my partner Lukas S. But I wasn't finished. I returned south to complete what I'd skipped: the Wind River high country, then Colorado's technical terrain. On June 3rd, 2023, around 7:30pm, I finished at Devil's Thumb Trailhead near Fraser, Colorado.
 
-In total: 194 days covering 5,000 kilometers, with 3,500 kilometers (2,200 miles) traveled on skis. I suffered no frostbite injuries, no major traumas, and was not caught in an avalanche - though I intentionally triggered one.
+In total: 194 days covering some 5,000 kilometers, with 3,500 kilometers (2,200 miles) traveled on skis. I suffered no frostbite injuries, no major traumas, and was not caught in an avalanche - though I intentionally triggered one.
 
 ** Why This Book Matters
 
@@ -73,13 +73,13 @@ I hold Swiss Alpine Club backcountry and alpine ski guide certifications (Touren
 No. While the physical challenge is real, the book is fundamentally about decision-making, solitude, fear, and what happens when you strip away everything comfortable. It's for anyone who appreciates honest storytelling about pushing boundaries.
 
 *** When will it be available?
-The hardcover and e-book are available now through Lulu. Supporter Edition copies printed in September 2025 are already distributed. A book promotion tour is scheduled for September 12-30, 2025.
+The hardcover and e-book are available now. Supporter Edition copies were distributed in September 2025. A book promotion tour took place September 12-30, 2025.
 
 *** What format should I get?
 The hardcover includes 180 full-color photographs and 20 detailed maps that are best experienced in print. The e-book is available for those who prefer digital or want immediate access.
 
 *** Where can I buy it?
-Order directly through Lulu (links above) or contact me directly for signed copies during the promotion tour.
+Order directly through the [[pelican:order.org][Skitraverse webshop]] (Switzerland and EU), through Lulu (USA and Canada), or contact me directly for signed copies. Links are above.
 
 ** About the Author
 
@@ -203,75 +203,6 @@ Subscribe below to receive updates about the book, upcoming talks, and future ex
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Book",
-  "name": "A Wild Calling: My Winter Ski Traverse of the Continental Divide",
-  "author": {
-    "@type": "Person",
-    "name": "Brian J. Oney",
-    "url": "https://skitraverse.com",
-    "jobTitle": "Alpine Ski Guide",
-    "alumniOf": "Swiss Alpine Club",
-    "knowsAbout": ["Alpine Skiing", "Winter Mountaineering", "Backcountry Navigation", "Avalanche Safety"]
-  },
-  "datePublished": "2025-12-14",
-  "description": "First-hand account of the first winter ski traverse of the Continental Divide Trail - 194 days, 2,200 miles, solo through the Rocky Mountains from New Mexico to Canada.",
-  "numberOfPages": 200,
-  "inLanguage": "en",
-  "bookFormat": "https://schema.org/Hardcover",
-  "isbn": "",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Lulu Press"
-  },
-  "offers": [
-    {
-      "@type": "Offer",
-      "price": "50.00",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.lulu.com/shop/brian-johannes-oney/a-wild-calling/hardcover/product-kvjeww5.html",
-      "seller": {
-        "@type": "Organization",
-        "name": "Lulu Press"
-      },
-      "itemCondition": "https://schema.org/NewCondition",
-      "description": "Hardcover edition"
-    },
-    {
-      "@type": "Offer",
-      "price": "20.00",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.lulu.com/shop/brian-j-oney/a-wild-calling/ebook/product-m258n9m.html",
-      "seller": {
-        "@type": "Organization",
-        "name": "Lulu Press"
-      },
-      "itemCondition": "https://schema.org/NewCondition",
-      "description": "E-book edition"
-    }
-  ],
-  "about": [
-    {
-      "@type": "Thing",
-      "name": "Continental Divide Trail"
-    },
-    {
-      "@type": "Thing",
-      "name": "Winter Mountaineering"
-    },
-    {
-      "@type": "Thing",
-      "name": "Ski Touring"
-    }
-  ],
-  "keywords": "Continental Divide Trail, winter ski traverse, CDT, backcountry skiing, winter mountaineering, Rocky Mountains, solo expedition, alpine skiing"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
@@ -311,7 +242,7 @@ Subscribe below to receive updates about the book, upcoming talks, and future ex
       "name": "When will the book be available?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The hardcover and e-book are available now through Lulu. Supporter Edition copies printed in September 2025 are already distributed. A book promotion tour is scheduled for September 12-30, 2025."
+        "text": "The hardcover and e-book are available now. Supporter Edition copies were distributed in September 2025. A book promotion tour took place September 12-30, 2025."
       }
     },
     {
@@ -327,7 +258,39 @@ Subscribe below to receive updates about the book, upcoming talks, and future ex
       "name": "Where can I buy the book?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Order directly through Lulu or contact the author directly for signed copies during the promotion tour."
+        "text": "Order directly through the Skitraverse webshop (Switzerland and EU), through Lulu (USA and Canada), or contact the author directly for signed copies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is in the book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "180 full-colour photographs taken during the traverse, 20 detailed route maps, and an honest first-person narrative covering the planning, the daily grind, the avalanche close calls, and what it takes to keep moving for 194 consecutive days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this book only for skiers or mountaineers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The journey is extreme, but the book is about decision-making under uncertainty, solitude, and what happens when you are fully committed. Readers who have never skied find it as gripping as those who have spent years in the mountains."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does ordering work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fill in your name and shipping address, confirm your email, and we send the order to print. You receive an invoice by email and pay within 30 days by bank transfer -- no credit card required. Your book ships directly from Lulu Press with tracking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EUR 45.00 for addresses in Europe and worldwide. Swiss customers are invoiced in CHF 40.00. Shipping is covered in the book price."
       }
     }
   ]

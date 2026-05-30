@@ -33,7 +33,7 @@ days, and rest 2 days. I ate about 1.1kg of food per day. At the beginning of
 a typical 5-day ski traverse, my backpack would weigh about 13kg (30lbs).
 
 I suffered no frostbite injuries, no major traumas, and was not caught in an
-avalanche.  The coldest times were when I was in the southern Wind River Range
+avalanche, though I intentionally triggered one.  The coldest times were when I was in the southern Wind River Range
 in late January 2023 and when an arctic front blew into the Centennial
 Mountains in mid-February 2023. I do not know how cold it was. Some reports during the mid-February storm said -25°F (-30°C) with winds of 30mph (50kmh). It was cold.
 
@@ -130,3 +130,5 @@ Due to avalanche danger, my unwillingness to walk on the side of a road, my unwi
 An overview can be found at https://caltopo.com/m/E0UE6, which contains an import of my GPS-tracks from the Garmin Explore website (blue), and routes of the portions that I skipped (purple).
 
 There are many reasons people have at most attempted only parts of the CDT in wintertime, the most common reason being personal safety. I am the first person to attempt to traverse the entire CDT in wintertime. My example sets the tone for future attempts. Accordingly, in Alpine style, I rerouted almost every day, and postponed critical sections.
+
+[[pelican:winter-cdt-book.org][Read the book: A Wild Calling]] | [[pelican:order.org][Order your copy]]
