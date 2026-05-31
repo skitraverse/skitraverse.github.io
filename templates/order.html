@@ -113,6 +113,7 @@
           </label>
 
           <p id="price-note"></p>
+          <p id="discount-note" style="display:none; margin-top:0; font-size:0.85em; color:var(--pico-ins-color,#2ecc71);"></p>
 
           <label for="street1">Street address
             <input type="text" id="street1" name="street1"
@@ -328,7 +329,7 @@
     const ebookUnit   = variantPrice('EBOOK', currency);
     // Bundle discount: any ebook + any physical book
     const hasBundle   = (q.ebook + q.de_ebook) > 0 && (q.hardcover + q.de) > 0;
-    const ebookEff    = hasBundle ? ebookUnit * 0.85 : ebookUnit;
+    const ebookEff    = hasBundle ? ebookUnit * 0.80 : ebookUnit;
     const booksTotal  = (q.hardcover + q.de) * physUnit + (q.ebook + q.de_ebook) * ebookEff;
     const noPhysical  = ebookOnly();       // true = no physical books at all
     const luluShip    = needsLuluShipping(); // true = hardcover in cart → Lulu shipping applies
@@ -336,7 +337,7 @@
     // Reflect bundle discount in ebook price cells
     const ebookPriceEl = document.getElementById('price-ebook');
     if (hasBundle) {
-      const discounted = `<del>${currency}\u202f${ebookUnit.toFixed(2)}</del>\u00a0${currency}\u202f${ebookEff.toFixed(2)}`;
+      const discounted = `<del style="display:block">${currency}\u202f${ebookUnit.toFixed(2)}</del>${currency}\u202f${ebookEff.toFixed(2)}`;
       ebookPriceEl.innerHTML = discounted;
       document.getElementById('price-de-ebook').innerHTML = discounted;
     } else {
@@ -344,9 +345,13 @@
       document.getElementById('price-de-ebook').textContent = `${currency}\u202f${ebookUnit.toFixed(2)}`;
     }
 
-    const discountNote = hasBundle
-      ? '<br><small style="color:var(--pico-ins-color,#2ecc71)">E-book price reduced by 15 % — bundle discount</small>'
-      : '';
+    const discountEl = document.getElementById('discount-note');
+    if (hasBundle) {
+      discountEl.textContent = 'Includes −20 % e-book bundle discount';
+      discountEl.style.display = '';
+    } else {
+      discountEl.style.display = 'none';
+    }
 
     if (!shipping || !luluShip) {
       selectedBooksTotal = booksTotal;
@@ -354,8 +359,8 @@
       priceNote.innerHTML = noPhysical
         ? `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>.`
         : luluShip
-          ? `Books: <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong> + shipping (see below).${discountNote}`
-          : `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>. Shipping for the German edition will be confirmed on dispatch.${discountNote}`;
+          ? `Books: <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong> + shipping (see below).`
+          : `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>. Shipping for the German edition will be confirmed on dispatch.`;
       return;
     }
     const shippingNative = parseFloat(shipping.cost_excl_tax);
@@ -368,8 +373,7 @@
     priceNote.innerHTML =
       `<strong>${currency}\u202f${booksTotal.toFixed(2)}</strong> (books)`
       + ` + <strong>${shippingCur}\u202f${shippingLocal.toFixed(2)}</strong> (shipping)`
-      + ` = <strong>${currency}\u202f${total}</strong>.`
-      + discountNote;
+      + ` = <strong>${currency}\u202f${total}</strong>.`;
     updateSubmitButton(currency, total);
   }
 
