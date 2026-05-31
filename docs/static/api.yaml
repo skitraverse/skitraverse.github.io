@@ -26,18 +26,20 @@ paths:
       tags:
       - public
       operationId: get_challenge
+      security: []
       responses:
         '200':
           description: Altcha proof-of-work challenge
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/captcha.Challenge'
+                $ref: '#/components/schemas/Challenge'
   /api/confirm:
     get:
       tags:
       - public
       operationId: get_confirm
+      security: []
       parameters:
       - name: token
         in: query
@@ -57,6 +59,7 @@ paths:
       tags:
       - public
       operationId: post_order
+      security: []
       requestBody:
         content:
           application/json:
@@ -76,7 +79,7 @@ paths:
             application/json:
               schema: {}
               example:
-                error: 'book_variant must be one of: HARDCOVER, EBOOK, DE, DE_EBOOK'
+                error: 'line_items[].variant must be one of: HARDCOVER, EBOOK, HARDCOVER_DE, EBOOK_DE'
         '409':
           description: Nonce already used (duplicate submit)
           content:
@@ -89,6 +92,7 @@ paths:
       tags:
       - public
       operationId: get_prices
+      security: []
       responses:
         '200':
           description: Current book prices converted from CHF at compile-time rates
@@ -101,6 +105,7 @@ paths:
       tags:
       - public
       operationId: post_subscribe
+      security: []
       requestBody:
         content:
           application/json:
@@ -164,6 +169,28 @@ components:
         signature:
           type: string
           description: HMAC-SHA256 signature of the challenge (server verifies this on submit)
+    LineItem:
+      type: object
+      description: |-
+        One product in the order. `unit_price` is in the order currency, already
+        reflecting any bundle discount applied by the frontend.
+      required:
+      - variant
+      - qty
+      - unit_price
+      properties:
+        qty:
+          type: integer
+          format: int32
+          description: Quantity ordered (≥ 1)
+          minimum: 1
+        unit_price:
+          type: number
+          format: double
+          description: Unit price in the order currency after any discount
+        variant:
+          type: string
+          description: One of `HARDCOVER`, `EBOOK`, `HARDCOVER_DE`, `EBOOK_DE`
     OrderForm:
       type: object
       required:
@@ -171,26 +198,15 @@ components:
       - altcha
       - customer_name
       - customer_email
-      - phone
       - street1
       - city
       - postcode
       - country
-      - book_variant
+      - line_items
       properties:
         altcha:
           type: string
           description: Base64-encoded Altcha proof-of-work payload from the widget
-        books_total:
-          type: number
-          format: double
-          description: Books subtotal in the order currency (after bundle discount), as quoted to the customer
-          nullable: true
-        book_variant:
-          type: string
-          description: |-
-            Edition: `"HARDCOVER"`, `"EBOOK"` (epub + PDF), `"DE"` (German hardcover, pre-order),
-            or `"DE_EBOOK"` (German e-book, pre-order)
         city:
           type: string
         country:
@@ -202,11 +218,21 @@ components:
         customer_name:
           type: string
           description: Customer full name
+        line_items:
+          type: array
+          items:
+            $ref: '#/components/schemas/LineItem'
+          description: Items in the cart; at least one required
         nonce:
           type: string
           description: Single-use UUID (`crypto.randomUUID()`); duplicate returns 409
+        order_code:
+          type: string
+          description: Bookstore, sales, or charity-drive code; stored for owner review
+          nullable: true
         phone:
           type: string
+          nullable: true
         postcode:
           type: string
         shipping_cost:

@@ -105,6 +105,11 @@
 
         <fieldset>
           <legend>Your details</legend>
+          <label for="order_code">Order code <small>(optional — bookstore, sales, or charity drive)</small>
+            <input type="text" id="order_code" name="order_code"
+                   autocomplete="off" placeholder="e.g. BOOKCLUB2026"
+                   autocapitalize="characters" enterkeyhint="next">
+          </label>
           <label for="customer_name">Full name
             <input type="text" id="customer_name" name="customer_name"
                    required autocomplete="name" placeholder="Maria Muster"
@@ -118,7 +123,7 @@
         </fieldset>
 
         <fieldset id="shipping-address-fieldset">
-          <legend>Shipping address</legend>
+          <legend id="address-legend">Shipping address</legend>
           <label for="street1">Street address
             <input type="text" id="street1" name="street1"
                    required autocomplete="shipping address-line1" placeholder="Bahnhofstrasse 10"
@@ -142,9 +147,15 @@
             </label>
           </div>
 
-          <label for="phone">Phone
+          <label for="state" id="state-label" style="display:none">State / Province
+            <input type="text" id="state" name="state"
+                   autocomplete="shipping address-level1" placeholder="e.g. CO, BC, NSW"
+                   autocapitalize="characters" autocorrect="off" enterkeyhint="next">
+          </label>
+
+          <label for="phone">Phone (optional)
             <input type="tel" id="phone" name="phone"
-                   required autocomplete="shipping tel" placeholder="+41 79 123 45 67"
+                   autocomplete="shipping tel" placeholder="+41 79 123 45 67"
                    enterkeyhint="done">
             <small>Used by the carrier if they need to reach you.</small>
           </label>
@@ -206,6 +217,7 @@
     'DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT',
     'MC','NL','NO','PL','PT','RO','SM','SK','SI','ES','SE','CH','GB',
   ]);
+  const STATE_REQUIRED  = new Set(['US', 'CA', 'AU']);
   const CURRENCY_MAP = { CH:'CHF', US:'USD', CA:'CAD', AU:'AUD', GB:'GBP', JP:'JPY' };
   function currencyFor(country) { return CURRENCY_MAP[country] ?? 'EUR'; }
 
@@ -250,12 +262,18 @@
   function ebookOnly() { const q = selectedItems(); return q.hardcover + q.de === 0; }
   // Physical books in cart → fetch Lulu shipping; German pre-orders have no Lulu product yet
   function needsLuluShipping() { const q = selectedItems(); return q.hardcover > 0; }
-  function primaryVariant() {
-    const q = selectedItems();
-    if (q.hardcover > 0) return 'HARDCOVER';
-    if (q.de > 0) return 'DE';
-    if (q.de_ebook > 0) return 'DE_EBOOK';
-    return 'EBOOK';
+  function buildLineItems() {
+    const q        = selectedItems();
+    const currency = currencyFor(orderCountry.value);
+    const hasBundle = (q.ebook + q.de_ebook) > 0 && (q.hardcover + q.de) > 0;
+    const physUnit  = variantPrice('HARDCOVER', currency);
+    const ebookEff  = hasBundle ? variantPrice('EBOOK', currency) * 0.80 : variantPrice('EBOOK', currency);
+    const items = [];
+    if (q.hardcover > 0) items.push({ variant: 'HARDCOVER',    qty: q.hardcover, unit_price: parseFloat(physUnit.toFixed(2)) });
+    if (q.ebook     > 0) items.push({ variant: 'EBOOK',        qty: q.ebook,     unit_price: parseFloat(ebookEff.toFixed(2)) });
+    if (q.de        > 0) items.push({ variant: 'HARDCOVER_DE', qty: q.de,        unit_price: parseFloat(physUnit.toFixed(2)) });
+    if (q.de_ebook  > 0) items.push({ variant: 'EBOOK_DE',     qty: q.de_ebook,  unit_price: parseFloat(ebookEff.toFixed(2)) });
+    return items;
   }
 
   function updatePriceDisplay(currency) {
@@ -279,12 +297,8 @@
     document.getElementById(id).addEventListener('input', () => {
       const country = orderCountry.value;
       if (!country) return;
-      const noPhysical = ebookOnly();
-      shippingFieldset.style.display = noPhysical ? 'none' : '';
-      shippingDiv.style.display      = 'none';
-      ['street1','postcode','city'].forEach(fid => {
-        document.getElementById(fid).required = !noPhysical;
-      });
+      updateAddressFieldset();
+      shippingDiv.style.display = 'none';
       if (needsLuluShipping()) fetchShipping(country);
       updatePriceNote(country, null);
     })
@@ -358,7 +372,6 @@
     }
 
     if (!shipping || !luluShip) {
-      selectedBooksTotal = booksTotal;
       updateSubmitButton(currency, booksTotal.toFixed(2));
       priceNote.innerHTML = noPhysical
         ? `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>.`
@@ -371,7 +384,6 @@
     const shippingNativeCur = shipping.currency || 'EUR';
     const shippingLocal  = convertCurrency(shippingNative, shippingNativeCur, currency) ?? shippingNative;
     const shippingCur    = convertCurrency(shippingNative, shippingNativeCur, currency) != null ? currency : shippingNativeCur;
-    selectedBooksTotal  = booksTotal;
     selectedShippingCost = shippingLocal;
     const total = (booksTotal + shippingLocal).toFixed(2);
     priceNote.innerHTML =
@@ -381,10 +393,28 @@
     updateSubmitButton(currency, total);
   }
 
+  function updateAddressFieldset() {
+    const ebookOnly = selectedItems().hardcover + selectedItems().de === 0;
+    document.getElementById('address-legend').textContent =
+      ebookOnly ? 'Billing address' : 'Shipping address';
+  }
+
+  function updateStateField(country) {
+    const label = document.getElementById('state-label');
+    const input = document.getElementById('state');
+    const needed = STATE_REQUIRED.has(country);
+    label.style.display = needed ? '' : 'none';
+    input.required = needed;
+    if (!needed) input.value = '';
+  }
+
   // ── Country change ───────────────────────────────────────────────────────────
   orderCountry.addEventListener('change', function () {
     const country = this.value;
     if (!country) return;
+
+    updateStateField(country);
+    updateAddressFieldset();
 
     const sepa        = SEPA_COUNTRIES.has(country);
     const paymentStep = document.getElementById('payment-step');
@@ -417,7 +447,6 @@
   // ── Shipping options ────────────────────────────────────────────────────────
   let shippingController     = null;
   let selectedShippingLevel  = null;
-  let selectedBooksTotal     = null; // books subtotal in local currency, for the submit payload
   let selectedShippingCost   = null; // in local currency, for the submit payload
 
   async function fetchShipping(country) {
@@ -524,10 +553,10 @@
       city:           document.getElementById('city').value.trim(),
       postcode:       document.getElementById('postcode').value.trim(),
       country:        orderCountry.value,
-      state:          null,
-      phone:          document.getElementById('phone').value.trim(),
-      books_total:    selectedBooksTotal,
-      book_variant:   primaryVariant(),
+      state:          document.getElementById('state').value.trim() || null,
+      phone:          document.getElementById('phone').value.trim() || null,
+      line_items:     buildLineItems(),
+      order_code:     document.getElementById('order_code').value.trim() || null,
       shipping_level: selectedShippingLevel,
       shipping_cost:  selectedShippingCost,
     };

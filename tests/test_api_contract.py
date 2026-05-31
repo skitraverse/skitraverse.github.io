@@ -6,17 +6,15 @@ way that breaks the frontend (e.g. renames a variant value, drops a required
 field, changes a response shape), these tests will fail immediately — without
 needing to deploy anything.
 """
-import json
 import pathlib
 import pytest
 import yaml
 
 SPEC_PATH = pathlib.Path(__file__).parent.parent / "static" / "api.yaml"
 
-# Values the frontend sends for book_variant
-FRONTEND_VARIANTS = {"HARDCOVER", "EBOOK", "DE", "DE_EBOOK"}
-# Variants the backend says are valid (from spec description / example error)
-BACKEND_PHYSICAL_VARIANTS = {"HARDCOVER", "DE"}
+# Variant strings the frontend sends inside line_items[].variant
+FRONTEND_VARIANTS = {"HARDCOVER", "EBOOK", "HARDCOVER_DE", "EBOOK_DE"}
+FRONTEND_PHYSICAL_VARIANTS = {"HARDCOVER", "HARDCOVER_DE"}
 
 
 @pytest.fixture(scope="module")
@@ -39,31 +37,47 @@ def test_order_required_fields(spec):
     order_schema = spec["components"]["schemas"]["OrderForm"]
     required = set(order_schema.get("required", []))
     frontend_required = {"nonce", "altcha", "customer_name", "customer_email",
-                         "street1", "city", "postcode", "country", "book_variant"}
+                         "street1", "city", "postcode", "country", "line_items"}
     missing = frontend_required - required
     assert not missing, f"Fields required by frontend but not in spec: {missing}"
 
 
-def test_book_variant_values_match_frontend(spec):
-    """All frontend variants must appear in the spec's 400 error example; legacy values must not."""
-    order_schema = spec["components"]["schemas"]["OrderForm"]
-    props = order_schema["properties"]
-    assert "book_variant" in props, "book_variant missing from OrderForm properties"
+def test_phone_is_optional(spec):
+    """Phone is optional — backend must not reject orders without it."""
+    required = set(spec["components"]["schemas"]["OrderForm"].get("required", []))
+    assert "phone" not in required, "phone must not be required in OrderForm"
+
+
+def test_line_item_schema_exists(spec):
+    assert "LineItem" in spec["components"]["schemas"], "LineItem schema missing"
+
+
+def test_line_item_required_fields(spec):
+    li = spec["components"]["schemas"]["LineItem"]
+    required = set(li.get("required", []))
+    for field in ("variant", "qty", "unit_price"):
+        assert field in required, f"LineItem missing required field: {field}"
+
+
+def test_line_item_variant_values(spec):
+    """All frontend variant strings must appear in the spec's 400 error example."""
+    li = spec["components"]["schemas"]["LineItem"]
+    assert "variant" in li["properties"], "variant missing from LineItem properties"
 
     error_example = (spec["paths"]["/api/order"]["post"]
                      ["responses"]["400"]["content"]["application/json"]["example"])
     error_text = error_example.get("error", "")
-    for variant in ("HARDCOVER", "EBOOK", "DE", "DE_EBOOK"):
-        assert variant in error_text, f"Expected '{variant}' in 400 error example, got: {error_text}"
-    for legacy in ("EU", "US", "GLOBAL"):
+    for variant in FRONTEND_VARIANTS:
+        assert variant in error_text, \
+            f"Expected '{variant}' in 400 error example, got: {error_text}"
+    for legacy in ("book_variant", "DE_EBOOK", " DE,", "GLOBAL"):
         assert legacy not in error_text, \
-            f"Legacy variant '{legacy}' appeared in spec — remove it"
+            f"Legacy value '{legacy}' still in spec error example — remove it"
 
 
-def test_phone_is_required(spec):
-    """Phone must be listed as required in OrderForm (backend rejects orders without it)."""
-    required = set(spec["components"]["schemas"]["OrderForm"].get("required", []))
-    assert "phone" in required, "phone is not in OrderForm required list"
+def test_order_code_documented(spec):
+    props = spec["components"]["schemas"]["OrderForm"]["properties"]
+    assert "order_code" in props, "order_code field missing from OrderForm"
 
 
 def test_prices_response_shape(spec):
@@ -122,5 +136,3 @@ def test_subscribe_response_has_message(spec):
     schema = spec["components"]["schemas"]["SubscribeResponse"]
     assert "message" in schema.get("required", []), "SubscribeResponse must require 'message'"
     assert "order_id" not in schema.get("required", []), "SubscribeResponse must not have order_id"
-
-

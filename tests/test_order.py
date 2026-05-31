@@ -98,7 +98,6 @@ def test_submit_disabled_until_complete(page: Page):
     page.fill("#street1",  "Bahnhofstrasse 10")
     page.fill("#postcode", "8001")
     page.fill("#city",     "Zürich")
-    page.fill("#phone",    "+41791234567")
     assert page.locator("#submit-btn").is_disabled()
 
     # Altcha must also be solved before the button enables
@@ -190,6 +189,70 @@ def test_bundle_discount_layout_narrow_screen(page: Page):
         "<del> and discounted price appear to be on the same line, not stacked"
 
 
+def test_cross_language_bundle_discount(page: Page):
+    """HARDCOVER (EN) + EBOOK_DE triggers the 20 % bundle discount.
+
+    RED: verifies that the cross-language combination — not just same-language
+    pairs — activates the discount both in the UI and in the submitted payload.
+    """
+    submitted = {}
+
+    def handle_order(route: Route):
+        try:
+            submitted['body'] = route.request.post_data_json
+        except Exception:
+            submitted['body'] = {}
+        route.fulfill(
+            status=201,
+            content_type='application/json',
+            body=json.dumps({"order_id": "SKI-XBUNDLE", "message": "Order received"}),
+        )
+
+    page.route("**/api/order", handle_order)
+    page.goto(ORDER_URL)
+
+    # Country first so qty-change events fire price updates
+    page.select_option("#order-country", "CH")
+    # hardcover defaults to qty=1; add one German e-book
+    page.fill("#qty_de_ebook", "1")
+
+    # Discount note must appear and mention 20 %
+    discount_note = page.locator("#discount-note")
+    discount_note.wait_for(state="visible", timeout=5000)
+    assert "20" in discount_note.inner_text(), \
+        f"Expected '20' in discount note for cross-language bundle, got: {discount_note.inner_text()}"
+
+    # #price-de-ebook must show a struck-through list price
+    assert page.locator("#price-de-ebook del").count() > 0, \
+        "<del> missing from #price-de-ebook for HARDCOVER + EBOOK_DE bundle"
+
+    # Fill details and submit
+    page.fill("#customer_name",  "Hans Muster")
+    page.fill("#customer_email", "hans@example.com")
+    page.fill("#street1",  "Hauptgasse 5")
+    page.fill("#postcode", "3011")
+    page.fill("#city",     "Bern")
+    _inject_fake_altcha(page)
+    page.check("#agree")
+    page.click("#submit-btn")
+
+    page.locator("#form-status").wait_for(state="visible", timeout=5000)
+
+    assert submitted.get('body'), "No POST body captured"
+    items = submitted['body'].get('line_items', [])
+    variants = [i['variant'] for i in items]
+    assert 'HARDCOVER' in variants, f"HARDCOVER missing from line_items: {items}"
+    assert 'EBOOK_DE'  in variants, f"EBOOK_DE missing from line_items: {items}"
+
+    ebook_de = next(i for i in items if i['variant'] == 'EBOOK_DE')
+    hardcover = next(i for i in items if i['variant'] == 'HARDCOVER')
+    # CHF list prices: physical=42.0, ebook=20.0 → discounted ebook=16.0
+    assert ebook_de['unit_price'] < hardcover['unit_price'], \
+        f"EBOOK_DE unit_price should be less than HARDCOVER: {ebook_de['unit_price']} vs {hardcover['unit_price']}"
+    assert abs(ebook_de['unit_price'] - 16.0) < 0.02, \
+        f"Expected EBOOK_DE unit_price ~16.00 CHF (20 % off 20.00), got: {ebook_de['unit_price']}"
+
+
 def _inject_fake_altcha(page: Page) -> None:
     """Patch the shared altcha widget so the statechange handler stores a solved payload."""
     page.evaluate("""() => {
@@ -228,7 +291,6 @@ def test_submit_order_shows_success(page: Page):
     page.fill("#street1",  "Bahnhofstrasse 10")
     page.fill("#postcode", "8001")
     page.fill("#city",     "Zürich")
-    page.fill("#phone",    "+41791234567")
     page.locator("#agree").wait_for(state="visible", timeout=5000)
     _inject_fake_altcha(page)
     page.check("#agree")
@@ -245,9 +307,12 @@ def test_submit_order_shows_success(page: Page):
     assert body.get('country') == "CH"
     assert body.get('altcha') == 'fakeAltchaPayload'
     assert body.get('nonce'), "nonce missing from payload"
-    assert body.get('phone') == "+41791234567", f"phone missing or wrong: {body.get('phone')}"
-    assert body.get('book_variant') == 'HARDCOVER', f"Expected HARDCOVER, got: {body.get('book_variant')}"
-    assert body.get('books_total') is not None, "books_total missing from payload"
+    items = body.get('line_items')
+    assert items, "line_items missing from payload"
+    assert any(i['variant'] == 'HARDCOVER' for i in items), \
+        f"Expected HARDCOVER in line_items, got: {items}"
+    assert all(i['qty'] >= 1 for i in items), "all line_items must have qty >= 1"
+    assert all(i['unit_price'] > 0 for i in items), "all line_items must have unit_price > 0"
 
 
 def test_submit_order_api_error_shows_message(page: Page):
@@ -264,7 +329,6 @@ def test_submit_order_api_error_shows_message(page: Page):
     page.fill("#street1",  "Unter den Linden 1")
     page.fill("#postcode", "10117")
     page.fill("#city",     "Berlin")
-    page.fill("#phone",    "+49301234567")
     page.locator("#agree").wait_for(state="visible", timeout=5000)
     _inject_fake_altcha(page)
     page.check("#agree")
