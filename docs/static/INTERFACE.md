@@ -311,14 +311,40 @@ with 400.
 
 These are not called by the browser.
 
-| Route                        | Caller                          | Auth                    |
-|------------------------------|---------------------------------|-------------------------|
-| `POST /api/admin/process-invoices` | `batch-print.sh`        | Bearer `ADMIN_SECRET`   |
-| `POST /api/webhook/lulu`     | Lulu Press (print-job updates)  | HMAC signature in body  |
+| Route                              | Caller                         | Auth                   |
+|------------------------------------|--------------------------------|------------------------|
+| `POST /api/admin/process-invoices` | `batch-print.sh`               | Bearer `ADMIN_SECRET`  |
+| `POST /api/admin/deliver-ebook`    | `scripts/deliver_ebook.py`     | Bearer `ADMIN_SECRET`  |
+| `POST /api/webhook/lulu`           | Lulu Press (print-job updates) | HMAC signature in body |
 
 The webhook accepts `application/octet-stream`. A `SHIPPED` event → customer
 and owner notified. All other events (or duplicates, or test events) → 204 No
 Content.
+
+### `POST /api/admin/deliver-ebook`
+
+Called by the owner (`make deliver-ebook`) after confirming that a customer's
+IBAN payment has arrived. Sends a 30-day signed download link to the customer.
+
+**Request body:**
+
+```json
+{ "order_id": "SKI-XXXXX" }
+```
+
+**Responses:**
+
+| Status | Meaning                                           |
+|--------|---------------------------------------------------|
+| 200    | Download link emailed to customer                 |
+| 400    | Order is not in `EBOOK_INVOICED` status           |
+| 401    | Missing or invalid Bearer token                   |
+| 404    | Order not found                                   |
+| 409    | Ebook already delivered (idempotency guard)       |
+
+The download URL is a 30-day nginx `secure_link` signed URL for
+`/ebooks/a-wild-calling_en.epub`. The file must be present on the VPS
+(`make sync-ebooks` before `make deploy`).
 
 ---
 

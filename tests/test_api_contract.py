@@ -136,3 +136,21 @@ def test_subscribe_response_has_message(spec):
     schema = spec["components"]["schemas"]["SubscribeResponse"]
     assert "message" in schema.get("required", []), "SubscribeResponse must require 'message'"
     assert "order_id" not in schema.get("required", []), "SubscribeResponse must not have order_id"
+
+
+def test_captcha_response_schema_ref_resolves(spec):
+    """The captcha $ref must point to a schema that exists — guards against 'captcha.Challenge' typo."""
+    ref = (spec["paths"]["/api/captcha"]["get"]["responses"]["200"]
+           ["content"]["application/json"]["schema"]["$ref"])
+    schema_name = ref.split("/")[-1]
+    assert schema_name in spec["components"]["schemas"], \
+        f"captcha $ref '{ref}' resolves to '{schema_name}' which is not in components/schemas"
+
+
+def test_deliver_ebook_schema_exists(spec):
+    """DeliverEbookRequest must be defined — guards against a dangling $ref on the admin endpoint."""
+    assert "DeliverEbookRequest" in spec["components"]["schemas"], \
+        "DeliverEbookRequest schema missing from components/schemas"
+    schema = spec["components"]["schemas"]["DeliverEbookRequest"]
+    assert "order_id" in schema.get("required", []), \
+        "DeliverEbookRequest must require 'order_id'"

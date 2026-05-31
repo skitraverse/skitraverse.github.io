@@ -9,6 +9,31 @@ info:
     name: ''
   version: 1.0.0
 paths:
+  /api/admin/deliver-ebook:
+    post:
+      tags:
+      - admin
+      operationId: post_deliver_ebook
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeliverEbookRequest'
+        required: true
+      responses:
+        '200':
+          description: Download link sent to customer
+        '400':
+          description: Order is not in EBOOK_INVOICED status
+        '401':
+          description: Missing or invalid Bearer token
+        '404':
+          description: Order not found
+        '409':
+          description: Ebook already delivered
+      security:
+      - bearer_token: []
   /api/admin/process-invoices:
     post:
       tags:
@@ -26,7 +51,6 @@ paths:
       tags:
       - public
       operationId: get_challenge
-      security: []
       responses:
         '200':
           description: Altcha proof-of-work challenge
@@ -34,12 +58,13 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Challenge'
+      security:
+      - {}
   /api/confirm:
     get:
       tags:
       - public
       operationId: get_confirm
-      security: []
       parameters:
       - name: token
         in: query
@@ -54,12 +79,13 @@ paths:
           description: Invalid token
         '410':
           description: Token already used
+      security:
+      - {}
   /api/order:
     post:
       tags:
       - public
       operationId: post_order
-      security: []
       requestBody:
         content:
           application/json:
@@ -87,12 +113,13 @@ paths:
               schema: {}
               example:
                 error: nonce already used
+      security:
+      - {}
   /api/prices:
     get:
       tags:
       - public
       operationId: get_prices
-      security: []
       responses:
         '200':
           description: Current book prices converted from CHF at compile-time rates
@@ -100,12 +127,13 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PricesResponse'
+      security:
+      - {}
   /api/subscribe:
     post:
       tags:
       - public
       operationId: post_subscribe
-      security: []
       requestBody:
         content:
           application/json:
@@ -121,6 +149,8 @@ paths:
                 $ref: '#/components/schemas/SubscribeResponse'
         '400':
           description: Invalid input or failed CAPTCHA
+      security:
+      - {}
   /api/webhook/lulu:
     post:
       tags:
@@ -141,6 +171,8 @@ paths:
           description: Event ignored (not SHIPPED, duplicate, or test event)
         '400':
           description: Invalid HMAC signature or malformed JSON
+      security:
+      - {}
 components:
   schemas:
     Challenge:
@@ -169,6 +201,13 @@ components:
         signature:
           type: string
           description: HMAC-SHA256 signature of the challenge (server verifies this on submit)
+    DeliverEbookRequest:
+      type: object
+      required:
+      - order_id
+      properties:
+        order_id:
+          type: string
     LineItem:
       type: object
       description: |-
