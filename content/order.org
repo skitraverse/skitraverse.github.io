@@ -1,4 +1,4 @@
-#+TITLE: Order the Book: A Wild Calling
+#+TITLE: Order: A Wild Calling
 #+AUTHOR: Brian J. Oney
 #+CATEGORY: winter-cdt-book
 #+PROPERTY: TAGS book, CDT, featured

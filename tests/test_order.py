@@ -154,6 +154,42 @@ def test_non_sepa_shows_wise_payment_text(page: Page):
     assert "invoice" not in text.lower(), f"'invoice' should not appear for US, got: {text}"
 
 
+def test_bundle_discount_layout_narrow_screen(page: Page):
+    """On a narrow viewport the discount note is a separate block below the price note,
+    and the struck-through price is stacked above the discounted price."""
+    page.set_viewport_size({"width": 375, "height": 812})
+    page.goto(ORDER_URL)
+
+    # Trigger a bundle: hardcover (default qty=1) + e-book
+    page.fill("#qty_ebook", "1")
+    page.select_option("#order-country", "CH")
+
+    discount_note = page.locator("#discount-note")
+    discount_note.wait_for(state="visible", timeout=5000)
+
+    # Discount note must mention 20 %
+    assert "20" in discount_note.inner_text(), \
+        f"Expected '20' in discount note, got: {discount_note.inner_text()}"
+
+    # Price note must not contain a <br> (text flows as a clean sentence)
+    assert page.locator("#price-note br").count() == 0, \
+        "Found <br> inside #price-note — discount note should be a separate element"
+
+    # Discount note sits below price note (separate block, not inline)
+    price_note_box   = page.locator("#price-note").bounding_box()
+    discount_note_box = discount_note.bounding_box()
+    assert discount_note_box["y"] >= price_note_box["y"] + price_note_box["height"], \
+        "Discount note overlaps or sits above the price note — expected a separate block below"
+
+    # Strikethrough price is above the discounted price inside the e-book cell
+    del_box = page.locator("#price-ebook del").bounding_box()
+    cell_box = page.locator("#price-ebook").bounding_box()
+    assert del_box is not None, "<del> element missing from #price-ebook"
+    # del occupies the top portion of the cell; discounted price is below it
+    assert del_box["y"] + del_box["height"] < cell_box["y"] + cell_box["height"], \
+        "<del> and discounted price appear to be on the same line, not stacked"
+
+
 def _inject_fake_altcha(page: Page) -> None:
     """Patch the shared altcha widget so the statechange handler stores a solved payload."""
     page.evaluate("""() => {

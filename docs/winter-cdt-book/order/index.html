@@ -6,44 +6,44 @@
     <meta name="description" content="Order the hardcover memoir of the first winter ski traverse of the Continental Divide Trail -- 194 days, 3,000 miles, mostly solo through the Rocky Mountains.">
     <meta name="author" content="Brian J. Oney">
 
-    <title>Order the Book: A Wild Calling | Skitraverse</title>
-    <link rel="canonical" href="https://skitraverse.com/winter-cdt-book/order/">
+    <title>Order: A Wild Calling | Skitraverse</title>
+    <link rel="canonical" href="../../winter-cdt-book/order/">
 
     <!-- OpenGraph tags -->
     <meta property="og:site_name" content="Skitraverse">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Order the Book: A Wild Calling">
-    <meta property="og:url" content="https://skitraverse.com/winter-cdt-book/order/">
+    <meta property="og:title" content="Order: A Wild Calling">
+    <meta property="og:url" content="../../winter-cdt-book/order/">
     <meta property="og:description" content="Order the hardcover memoir of the first winter ski traverse of the Continental Divide Trail -- 194 days, 3,000 miles, mostly solo through the Rocky Mountains.">
-    <meta property="og:image" content="https://skitraverse.com/img/book-cover.jpg">
+    <meta property="og:image" content="../../img/book-cover.jpg">
 
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Order the Book: A Wild Calling">
+    <meta name="twitter:title" content="Order: A Wild Calling">
     <meta name="twitter:description" content="Order the hardcover memoir of the first winter ski traverse of the Continental Divide Trail -- 194 days, 3,000 miles, mostly solo through the Rocky Mountains.">
-    <meta name="twitter:image" content="https://skitraverse.com/img/book-cover.jpg">
+    <meta name="twitter:image" content="../../img/book-cover.jpg">
 
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
-    <link rel="stylesheet" href="https://skitraverse.com/static/css/site.css">
+    <link rel="stylesheet" href="../../static/css/site.css">
     <!-- Pagefind CSS -->
-    <link href="https://skitraverse.com/pagefind/pagefind-ui.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://skitraverse.com/static/img/logo.ico">
+    <link href="../../pagefind/pagefind-ui.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../static/img/logo.ico">
 </head>
 <body id="page-top">
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="https://skitraverse.com/" class="sitename">Ski Traverse</a>
-            <a href="https://skitraverse.com/#contact" class="nav-contact">Contact</a>
+            <a href="../../" class="sitename">Ski Traverse</a>
+            <a href="../../#contact" class="nav-contact">Contact</a>
         </div>
     </nav>
 
     <!-- Page Header -->
     <header>
         <div class="container">
-            <h1>Order the Book: A Wild Calling</h1>
+            <h1>Order: A Wild Calling</h1>
             <div class="star-divider">
                 <span class="star">❄</span>
             </div>
@@ -62,7 +62,61 @@
         <input type="text" name="website" id="website"
                style="display:none !important" tabindex="-1" autocomplete="off">
 
-        <fieldset id="variant-fieldset">
+        <fieldset>
+          <legend>Where are you ordering from?</legend>
+          <label for="order-country">Country
+            <select id="order-country" name="country" required autocomplete="shipping country">
+              <option value="">— select —</option>
+              <option value="US">United States</option>
+              <option value="CH">Switzerland</option>
+              <option value="DE">Germany</option>
+              <option value="NO">Norway</option>
+              <option value="IT">Italy</option>
+              <option value="BG">Bulgaria</option>
+              <option value="SE">Sweden</option>
+              <option value="AD">Andorra</option>
+              <option value="AT">Austria</option>
+              <option value="AU">Australia</option>
+              <option value="BE">Belgium</option>
+              <option value="CA">Canada</option>
+              <option value="CH">Switzerland</option>
+              <option value="CY">Cyprus</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="DE">Germany</option>
+              <option value="DK">Denmark</option>
+              <option value="EE">Estonia</option>
+              <option value="ES">Spain</option>
+              <option value="FI">Finland</option>
+              <option value="FR">France</option>
+              <option value="GB">United Kingdom</option>
+              <option value="GR">Greece</option>
+              <option value="HR">Croatia</option>
+              <option value="HU">Hungary</option>
+              <option value="IE">Ireland</option>
+              <option value="IS">Iceland</option>
+              <option value="IT">Italy</option>
+              <option value="JP">Japan</option>
+              <option value="LI">Liechtenstein</option>
+              <option value="LT">Lithuania</option>
+              <option value="LU">Luxembourg</option>
+              <option value="LV">Latvia</option>
+              <option value="MC">Monaco</option>
+              <option value="MT">Malta</option>
+              <option value="NL">Netherlands</option>
+              <option value="NZ">New Zealand</option>
+              <option value="PL">Poland</option>
+              <option value="PT">Portugal</option>
+              <option value="RO">Romania</option>
+              <option value="SI">Slovenia</option>
+              <option value="SK">Slovakia</option>
+              <option value="SM">San Marino</option>
+            </select>
+          </label>
+          <p id="price-note"></p>
+          <p id="discount-note" style="display:none; margin-top:0; font-size:0.85em; color:var(--pico-ins-color,#2ecc71);"></p>
+        </fieldset>
+
+                <fieldset id="variant-fieldset">
           <legend>Please choose what you would like to order</legend>
           <div class="variant-grid">
 
@@ -117,56 +171,6 @@
 
         <fieldset id="shipping-address-fieldset">
           <legend>Shipping address</legend>
-
-          <label for="order-country">Country
-            <select id="order-country" name="country" required autocomplete="shipping country">
-              <option value="">— select —</option>
-              <option value="AD">Andorra</option>
-              <option value="AT">Austria</option>
-              <option value="AU">Australia</option>
-              <option value="BE">Belgium</option>
-              <option value="BG">Bulgaria</option>
-              <option value="CA">Canada</option>
-              <option value="CH">Switzerland</option>
-              <option value="CY">Cyprus</option>
-              <option value="CZ">Czech Republic</option>
-              <option value="DE">Germany</option>
-              <option value="DK">Denmark</option>
-              <option value="EE">Estonia</option>
-              <option value="ES">Spain</option>
-              <option value="FI">Finland</option>
-              <option value="FR">France</option>
-              <option value="GB">United Kingdom</option>
-              <option value="GR">Greece</option>
-              <option value="HR">Croatia</option>
-              <option value="HU">Hungary</option>
-              <option value="IE">Ireland</option>
-              <option value="IS">Iceland</option>
-              <option value="IT">Italy</option>
-              <option value="JP">Japan</option>
-              <option value="LI">Liechtenstein</option>
-              <option value="LT">Lithuania</option>
-              <option value="LU">Luxembourg</option>
-              <option value="LV">Latvia</option>
-              <option value="MC">Monaco</option>
-              <option value="MT">Malta</option>
-              <option value="NL">Netherlands</option>
-              <option value="NO">Norway</option>
-              <option value="NZ">New Zealand</option>
-              <option value="PL">Poland</option>
-              <option value="PT">Portugal</option>
-              <option value="RO">Romania</option>
-              <option value="SE">Sweden</option>
-              <option value="SI">Slovenia</option>
-              <option value="SK">Slovakia</option>
-              <option value="SM">San Marino</option>
-              <option value="US">United States</option>
-            </select>
-          </label>
-
-          <p id="price-note"></p>
-          <p id="discount-note" style="display:none; margin-top:0; font-size:0.85em; color:var(--pico-ins-color,#2ecc71);"></p>
-
           <label for="street1">Street address
             <input type="text" id="street1" name="street1"
                    required autocomplete="shipping address-line1" placeholder="Bahnhofstrasse 10"
@@ -835,21 +839,21 @@
     <footer>
         <div class="container" style="text-align: center; width: 100%; margin: 0 auto;">
             <div style="margin-bottom: 1rem; text-align: center;">
-                <img src="https://skitraverse.com/static/img/logo.svg" alt="Skitraverse" style="max-width: 80px; margin-bottom: 0.5rem;">
+                <img src="../../static/img/logo.svg" alt="Skitraverse" style="max-width: 80px; margin-bottom: 0.5rem;">
                 <h4 style="margin: 0.5rem 0; text-align: center;">Skitraverse</h4>
                 <p style="margin: 0.25rem 0; text-align: center;"><small>Rüschlikon, Switzerland<br>8803</small></p>
             </div>
             <p style="margin: 0.5rem 0; text-align: center;">Opening eyes to the beauty of winter landscape, safely</p>
             <p style="margin: 0.5rem 0; text-align: center;">
-                <a href="https://skitraverse.com/info/impressum/">Impressum</a> | 
-                <a href="https://skitraverse.com/info/disclaimer/">Disclaimer</a>
+                <a href="../../info/impressum/">Impressum</a> | 
+                <a href="../../info/disclaimer/">Disclaimer</a>
             </p>
             <p style="margin: 0.25rem 0; text-align: center;"><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
 
     <!-- Pagefind JS -->
-    <script src="https://skitraverse.com/pagefind/pagefind-ui.js"></script>
+    <script src="../../pagefind/pagefind-ui.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });

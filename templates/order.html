@@ -10,7 +10,61 @@
         <input type="text" name="website" id="website"
                style="display:none !important" tabindex="-1" autocomplete="off">
 
-        <fieldset id="variant-fieldset">
+        <fieldset>
+          <legend>Where are you ordering from?</legend>
+          <label for="order-country">Country
+            <select id="order-country" name="country" required autocomplete="shipping country">
+              <option value="">— select —</option>
+              <option value="US">United States</option>
+              <option value="CH">Switzerland</option>
+              <option value="DE">Germany</option>
+              <option value="NO">Norway</option>
+              <option value="IT">Italy</option>
+              <option value="BG">Bulgaria</option>
+              <option value="SE">Sweden</option>
+              <option value="AD">Andorra</option>
+              <option value="AT">Austria</option>
+              <option value="AU">Australia</option>
+              <option value="BE">Belgium</option>
+              <option value="CA">Canada</option>
+              <option value="CH">Switzerland</option>
+              <option value="CY">Cyprus</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="DE">Germany</option>
+              <option value="DK">Denmark</option>
+              <option value="EE">Estonia</option>
+              <option value="ES">Spain</option>
+              <option value="FI">Finland</option>
+              <option value="FR">France</option>
+              <option value="GB">United Kingdom</option>
+              <option value="GR">Greece</option>
+              <option value="HR">Croatia</option>
+              <option value="HU">Hungary</option>
+              <option value="IE">Ireland</option>
+              <option value="IS">Iceland</option>
+              <option value="IT">Italy</option>
+              <option value="JP">Japan</option>
+              <option value="LI">Liechtenstein</option>
+              <option value="LT">Lithuania</option>
+              <option value="LU">Luxembourg</option>
+              <option value="LV">Latvia</option>
+              <option value="MC">Monaco</option>
+              <option value="MT">Malta</option>
+              <option value="NL">Netherlands</option>
+              <option value="NZ">New Zealand</option>
+              <option value="PL">Poland</option>
+              <option value="PT">Portugal</option>
+              <option value="RO">Romania</option>
+              <option value="SI">Slovenia</option>
+              <option value="SK">Slovakia</option>
+              <option value="SM">San Marino</option>
+            </select>
+          </label>
+          <p id="price-note"></p>
+          <p id="discount-note" style="display:none; margin-top:0; font-size:0.85em; color:var(--pico-ins-color,#2ecc71);"></p>
+        </fieldset>
+
+                <fieldset id="variant-fieldset">
           <legend>Please choose what you would like to order</legend>
           <div class="variant-grid">
 
@@ -65,56 +119,6 @@
 
         <fieldset id="shipping-address-fieldset">
           <legend>Shipping address</legend>
-
-          <label for="order-country">Country
-            <select id="order-country" name="country" required autocomplete="shipping country">
-              <option value="">— select —</option>
-              <option value="AD">Andorra</option>
-              <option value="AT">Austria</option>
-              <option value="AU">Australia</option>
-              <option value="BE">Belgium</option>
-              <option value="BG">Bulgaria</option>
-              <option value="CA">Canada</option>
-              <option value="CH">Switzerland</option>
-              <option value="CY">Cyprus</option>
-              <option value="CZ">Czech Republic</option>
-              <option value="DE">Germany</option>
-              <option value="DK">Denmark</option>
-              <option value="EE">Estonia</option>
-              <option value="ES">Spain</option>
-              <option value="FI">Finland</option>
-              <option value="FR">France</option>
-              <option value="GB">United Kingdom</option>
-              <option value="GR">Greece</option>
-              <option value="HR">Croatia</option>
-              <option value="HU">Hungary</option>
-              <option value="IE">Ireland</option>
-              <option value="IS">Iceland</option>
-              <option value="IT">Italy</option>
-              <option value="JP">Japan</option>
-              <option value="LI">Liechtenstein</option>
-              <option value="LT">Lithuania</option>
-              <option value="LU">Luxembourg</option>
-              <option value="LV">Latvia</option>
-              <option value="MC">Monaco</option>
-              <option value="MT">Malta</option>
-              <option value="NL">Netherlands</option>
-              <option value="NO">Norway</option>
-              <option value="NZ">New Zealand</option>
-              <option value="PL">Poland</option>
-              <option value="PT">Portugal</option>
-              <option value="RO">Romania</option>
-              <option value="SE">Sweden</option>
-              <option value="SI">Slovenia</option>
-              <option value="SK">Slovakia</option>
-              <option value="SM">San Marino</option>
-              <option value="US">United States</option>
-            </select>
-          </label>
-
-          <p id="price-note"></p>
-          <p id="discount-note" style="display:none; margin-top:0; font-size:0.85em; color:var(--pico-ins-color,#2ecc71);"></p>
-
           <label for="street1">Street address
             <input type="text" id="street1" name="street1"
                    required autocomplete="shipping address-line1" placeholder="Bahnhofstrasse 10"
