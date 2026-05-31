@@ -276,8 +276,8 @@ MC NL NO PL PT RO SM SK SI ES SE CH GB`):
 - Backend sends IBAN payment instructions by email.
 
 **Non-SEPA** (all others):
-- Customer shown: "You will receive a payment request via Wise Business — details sent by email after confirmation."
-- Backend sends Wise Business payment instructions by email.
+- Customer shown: "You will receive a Wise payment request by email after confirmation."
+- Backend sends a Wise Business payment request by email. Credit card is not offered.
 
 GB is SEPA for this purpose.
 

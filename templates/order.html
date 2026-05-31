@@ -420,11 +420,11 @@
     const paymentStep = document.getElementById('payment-step');
     paymentStep.innerHTML = sepa
       ? 'You will receive an invoice — pay within <strong>30 days</strong> by bank transfer.'
-      : 'Pay via <strong>Wise</strong> or credit card — details sent by email after confirmation.';
+      : 'You will receive a <strong>Wise</strong> payment request by email after confirmation.';
     paymentStep.style.display = '';
     document.getElementById('agree-label').textContent = sepa
       ? 'I agree to pay the invoice within 30 days by bank transfer.'
-      : 'I agree to pay via Wise or credit card.';
+      : 'I agree to pay via Wise.';
 
     updatePriceDisplay(currencyFor(country));
     updatePriceNote(country, null);
