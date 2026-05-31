@@ -345,27 +345,31 @@
     }
 
     const discountNote = hasBundle
-      ? ' <small style="color:var(--pico-ins-color,#2ecc71)">−15% bundle discount</small>' : '';
+      ? '<br><small style="color:var(--pico-ins-color,#2ecc71)">E-book price reduced by 15 % — bundle discount</small>'
+      : '';
 
     if (!shipping || !luluShip) {
+      selectedBooksTotal = booksTotal;
       updateSubmitButton(currency, booksTotal.toFixed(2));
       priceNote.innerHTML = noPhysical
         ? `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>.`
         : luluShip
-          ? `Books: <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>${discountNote} + shipping (see below).`
-          : `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>. Shipping for the German edition will be confirmed on dispatch.`;
+          ? `Books: <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong> + shipping (see below).${discountNote}`
+          : `You will be invoiced <strong>${currency}\u202f${booksTotal.toFixed(2)}</strong>. Shipping for the German edition will be confirmed on dispatch.${discountNote}`;
       return;
     }
     const shippingNative = parseFloat(shipping.cost_excl_tax);
     const shippingNativeCur = shipping.currency || 'EUR';
     const shippingLocal  = convertCurrency(shippingNative, shippingNativeCur, currency) ?? shippingNative;
     const shippingCur    = convertCurrency(shippingNative, shippingNativeCur, currency) != null ? currency : shippingNativeCur;
+    selectedBooksTotal  = booksTotal;
     selectedShippingCost = shippingLocal;
     const total = (booksTotal + shippingLocal).toFixed(2);
     priceNote.innerHTML =
-      `<strong>${currency}\u202f${booksTotal.toFixed(2)}</strong> (books${discountNote})`
+      `<strong>${currency}\u202f${booksTotal.toFixed(2)}</strong> (books)`
       + ` + <strong>${shippingCur}\u202f${shippingLocal.toFixed(2)}</strong> (shipping)`
-      + ` = <strong>${currency}\u202f${total}</strong>.`;
+      + ` = <strong>${currency}\u202f${total}</strong>.`
+      + discountNote;
     updateSubmitButton(currency, total);
   }
 
@@ -405,6 +409,7 @@
   // ── Shipping options ────────────────────────────────────────────────────────
   let shippingController     = null;
   let selectedShippingLevel  = null;
+  let selectedBooksTotal     = null; // books subtotal in local currency, for the submit payload
   let selectedShippingCost   = null; // in local currency, for the submit payload
 
   async function fetchShipping(country) {
@@ -513,6 +518,7 @@
       country:        orderCountry.value,
       state:          null,
       phone:          document.getElementById('phone').value.trim(),
+      books_total:    selectedBooksTotal,
       book_variant:   primaryVariant(),
       shipping_level: selectedShippingLevel,
       shipping_cost:  selectedShippingCost,

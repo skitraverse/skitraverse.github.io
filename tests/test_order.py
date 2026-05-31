@@ -211,6 +211,7 @@ def test_submit_order_shows_success(page: Page):
     assert body.get('nonce'), "nonce missing from payload"
     assert body.get('phone') == "+41791234567", f"phone missing or wrong: {body.get('phone')}"
     assert body.get('book_variant') == 'HARDCOVER', f"Expected HARDCOVER, got: {body.get('book_variant')}"
+    assert body.get('books_total') is not None, "books_total missing from payload"
 
 
 def test_submit_order_api_error_shows_message(page: Page):

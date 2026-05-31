@@ -181,6 +181,11 @@ components:
         altcha:
           type: string
           description: Base64-encoded Altcha proof-of-work payload from the widget
+        books_total:
+          type: number
+          format: double
+          description: Books subtotal in the order currency (after bundle discount), as quoted to the customer
+          nullable: true
         book_variant:
           type: string
           description: |-
