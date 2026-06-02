@@ -7,36 +7,36 @@
     <meta name="author" content="Brian J. Oney">
 
     <title>Skitraverse - Winter Ski Traverse Adventures</title>
-    <link rel="canonical" href="https://skitraverse.com/">
+    <link rel="canonical" href="../">
 
     <!-- OpenGraph tags -->
     <meta property="og:site_name" content="Skitraverse">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Skitraverse">
-    <meta property="og:url" content="https://skitraverse.com/">
+    <meta property="og:url" content="../">
     <meta property="og:description" content="Firsthand accounts of backcountry ski expeditions — including the first winter ski traverse of the Continental Divide Trail.">
-    <meta property="og:image" content="https://skitraverse.com/img/book-cover.jpg">
+    <meta property="og:image" content="../img/book-cover.jpg">
 
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Skitraverse">
     <meta name="twitter:description" content="Firsthand accounts of backcountry ski expeditions — including the first winter ski traverse of the Continental Divide Trail.">
-    <meta name="twitter:image" content="https://skitraverse.com/img/book-cover.jpg">
+    <meta name="twitter:image" content="../img/book-cover.jpg">
 
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <!-- Site styles -->
-    <link rel="stylesheet" href="https://skitraverse.com/static/css/site.css">
+    <link rel="stylesheet" href="../static/css/site.css">
     <!-- Pagefind CSS -->
-    <link href="https://skitraverse.com/pagefind/pagefind-ui.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://skitraverse.com/static/img/logo.ico">
+    <link href="../pagefind/pagefind-ui.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../static/img/logo.ico">
 </head>
 <body id="page-top">
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="https://skitraverse.com/" class="sitename">Ski Traverse</a>
-            <a href="https://skitraverse.com/#contact" class="nav-contact">Contact</a>
+            <a href="../" class="sitename">Ski Traverse</a>
+            <a href="../#contact" class="nav-contact">Contact</a>
         </div>
     </nav>
 
@@ -54,11 +54,11 @@
         <h3>A firsthand account of the first ski traverse of the US Continental Divide</h3>
         <h4>by Brian J. Oney</h4>
         <div class="featured-buttons">
-            <a href="https://skitraverse.com/winter-cdt-book/winter-cdt-book/" role="button">Book: A Wild Calling</a>
-            <a href="https://skitraverse.com/winter-cdt-book/order/" role="button">Order: A Wild Calling</a>
+            <a href="../winter-cdt-book/winter-cdt-book/" role="button">Book: A Wild Calling</a>
+            <a href="../winter-cdt-book/order/" role="button">Order: A Wild Calling</a>
         </div>
         <div style="text-align: center; margin: 2rem 0;">
-            <img src="https://skitraverse.com/img/landing-page.jpg" alt="Mountain landscape" style="max-width: 100%; height: auto; border-radius: 8px;">
+            <img src="../img/landing-page.jpg" alt="Mountain landscape" style="max-width: 100%; height: auto; border-radius: 8px;">
             <p class="image-caption">Anyone up for climbing Parkview Mountain?</p>
         </div>
     </div>
@@ -71,16 +71,101 @@
         </div>
         <h2>Browse site</h2>
         <div class="category-buttons">
-            <a href="https://skitraverse.com/winter-cdt-book/" role="button">winter-cdt-book</a>
-            <a href="https://skitraverse.com/winter-cdt/" role="button">winter-cdt</a>
-            <a href="https://skitraverse.com/tips/" role="button">tips</a>
-            <a href="https://skitraverse.com/info/" role="button">info</a>
+            <a href="../winter-cdt-book/" role="button">winter-cdt-book</a>
+            <a href="../winter-cdt/" role="button">winter-cdt</a>
+            <a href="../tips/" role="button">tips</a>
+            <a href="../info/" role="button">info</a>
         </div>
         <h3>Search site</h3>
         <div id="search-widget"></div>
     </div>
 </section>
-        </div>
+<section id="subscribe">
+  <div class="container">
+    <div class="star-divider"><span class="star">❄</span></div>
+    <h2>Stay up to date</h2>
+    <p>Subscribe to receive updates about the book, upcoming talks, and future expeditions.</p>
+      <form id="ml-book-form" novalidate>
+        <input type="text" name="website" style="display:none !important" tabindex="-1" autocomplete="off">
+        <label for="ml-book-name">Name
+          <input type="text" id="ml-book-name" name="name" required
+                 autocomplete="name" autocapitalize="words" enterkeyhint="next"
+                 placeholder="Maria Muster">
+        </label>
+        <label for="ml-book-email">Email
+          <input type="email" id="ml-book-email" name="email" required
+                 autocomplete="email" autocapitalize="none" autocorrect="off"
+                 spellcheck="false" enterkeyhint="done"
+                 placeholder="maria@example.com">
+        </label>
+        <altcha-widget id="ml-book-altcha"
+          challengeurl="https://order.skitraverse.com/api/captcha"
+          name="altcha" hidefooter style="margin-bottom:0.5rem;display:block;"></altcha-widget>
+        <button type="submit" id="ml-book-btn" disabled>Subscribe</button>
+      </form>
+      <div id="ml-book-status" role="alert" style="display:none; margin-top:1rem;"></div>
+  </div>
+</section>
+<script async defer src="https://cdn.jsdelivr.net/npm/altcha/dist/altcha.min.js" type="module"></script>
+<script>
+(function() {
+  var API_BASE = 'https://order.skitraverse.com';
+  var form   = document.getElementById('ml-book-form');
+  var btn    = document.getElementById('ml-book-btn');
+  var widget = document.getElementById('ml-book-altcha');
+  var status = document.getElementById('ml-book-status');
+  var storedAltcha = '';
+  widget.addEventListener('statechange', function(e) {
+    var payload = (e.detail && e.detail.payload) || widget.value || '';
+    var verified = e.detail ? e.detail.state === 'verified' : !!payload;
+    storedAltcha = verified ? payload : '';
+    refresh();
+  });
+  widget.addEventListener('change', refresh);
+  function valid() {
+    return ['ml-book-name','ml-book-email'].every(function(id) {
+      return document.getElementById(id).value.trim() !== '';
+    }) && !!storedAltcha;
+  }
+  function refresh() { btn.disabled = !valid(); }
+  form.addEventListener('input', refresh);
+  form.addEventListener('change', refresh);
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var altchaPayload = storedAltcha;
+    if (!altchaPayload) { show('error', 'Please wait for the security check.'); return; }
+    btn.disabled = true; btn.textContent = 'Subscribing…';
+    try {
+      var resp = await fetch(API_BASE + '/api/subscribe', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          website: form.querySelector('[name="website"]').value,
+          altcha:  altchaPayload,
+          name:    document.getElementById('ml-book-name').value.trim(),
+          email:   document.getElementById('ml-book-email').value.trim(),
+        }),
+      });
+      if (resp.ok) {
+        form.style.display = 'none';
+        show('success', '<strong>You\'re on the list!</strong> We\'ll be in touch.');
+      } else {
+        var data = await resp.json().catch(function() { return {}; });
+        show('error', data.error || 'Something went wrong.');
+        btn.disabled = false; btn.textContent = 'Subscribe';
+      }
+    } catch(err) {
+      show('error', 'Could not reach the server. Please try again.');
+      btn.disabled = false; btn.textContent = 'Subscribe';
+    }
+  });
+  function show(type, html) {
+    status.innerHTML = html; status.style.display = '';
+    status.style.padding = '1rem'; status.style.borderRadius = '4px';
+    status.style.background = type === 'success' ? '#d4edda' : '#f8d7da';
+    status.style.color      = type === 'success' ? '#155724' : '#721c24';
+  }
+})();
+</script>        </div>
         
 <!-- Contact Section -->
 <section id="contact">
@@ -118,21 +203,21 @@
     <footer>
         <div class="container" style="text-align: center; width: 100%; margin: 0 auto;">
             <div style="margin-bottom: 1rem; text-align: center;">
-                <img src="https://skitraverse.com/static/img/logo.svg" alt="Skitraverse" style="max-width: 80px; margin-bottom: 0.5rem;">
+                <img src="../static/img/logo.svg" alt="Skitraverse" style="max-width: 80px; margin-bottom: 0.5rem;">
                 <h4 style="margin: 0.5rem 0; text-align: center;">Skitraverse</h4>
                 <p style="margin: 0.25rem 0; text-align: center;"><small>Rüschlikon, Switzerland<br>8803</small></p>
             </div>
             <p style="margin: 0.5rem 0; text-align: center;">Opening eyes to the beauty of winter landscape, safely</p>
             <p style="margin: 0.5rem 0; text-align: center;">
-                <a href="https://skitraverse.com/info/impressum/">Impressum</a> | 
-                <a href="https://skitraverse.com/info/disclaimer/">Disclaimer</a>
+                <a href="../info/impressum/">Impressum</a> | 
+                <a href="../info/disclaimer/">Disclaimer</a>
             </p>
             <p style="margin: 0.25rem 0; text-align: center;"><small>Copyright &copy; Brian J. Oney 2025</small></p>
         </div>
     </footer>
 
     <!-- Pagefind JS -->
-    <script src="https://skitraverse.com/pagefind/pagefind-ui.js"></script>
+    <script src="../pagefind/pagefind-ui.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', (event) => {
             new PagefindUI({ element: "#search-widget", showSubResults: true });

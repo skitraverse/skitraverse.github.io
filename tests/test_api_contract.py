@@ -10,7 +10,7 @@ import pathlib
 import pytest
 import yaml
 
-SPEC_PATH = pathlib.Path(__file__).parent.parent / "static" / "api.yaml"
+SPEC_PATH = pathlib.Path(__file__).parent.parent / "static" / "api.yml"
 
 # Variant strings the frontend sends inside line_items[].variant
 FRONTEND_VARIANTS = {"HARDCOVER", "EBOOK", "HARDCOVER_DE", "EBOOK_DE"}
@@ -147,10 +147,21 @@ def test_captcha_response_schema_ref_resolves(spec):
         f"captcha $ref '{ref}' resolves to '{schema_name}' which is not in components/schemas"
 
 
-def test_deliver_ebook_schema_exists(spec):
-    """DeliverEbookRequest must be defined — guards against a dangling $ref on the admin endpoint."""
-    assert "DeliverEbookRequest" in spec["components"]["schemas"], \
-        "DeliverEbookRequest schema missing from components/schemas"
-    schema = spec["components"]["schemas"]["DeliverEbookRequest"]
-    assert "order_id" in schema.get("required", []), \
-        "DeliverEbookRequest must require 'order_id'"
+def test_honeypot_fields_are_write_only(spec):
+    """Both honeypot 'website' fields must be writeOnly so they are never reflected in responses."""
+    order_props = spec["components"]["schemas"]["OrderForm"]["properties"]
+    assert order_props["website"].get("writeOnly") is True, \
+        "OrderForm.website must be writeOnly: true"
+    sub_props = spec["components"]["schemas"]["SubscribeForm"]["properties"]
+    assert sub_props["website"].get("writeOnly") is True, \
+        "SubscribeForm.website must be writeOnly: true"
+
+
+def test_captcha_salt_expiry_documented(spec):
+    """Salt description must mention the ?expires= mechanism — backend expiry is a security control."""
+    salt_desc = (spec["components"]["schemas"]["Challenge"]
+                 ["properties"]["salt"].get("description", ""))
+    assert "expires" in salt_desc, \
+        "Challenge.salt description must document the ?expires= expiry mechanism"
+
+

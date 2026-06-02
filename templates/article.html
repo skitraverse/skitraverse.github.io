@@ -8,4 +8,7 @@
         </div>
     </div>
 </section>
+{% if article is defined and article.category.name != 'info' %}
+{% include 'subscribe.html' %}
+{% endif %}
 {% endblock %}

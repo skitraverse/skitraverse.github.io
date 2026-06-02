@@ -99,6 +99,11 @@ section .container {
     align-items: center;
 }
 
+#subscribe form {
+    width: 100%;
+    max-width: 30rem;
+}
+
 /* Book section button container */
 #book .container > a[role="button"] {
     align-self: center;

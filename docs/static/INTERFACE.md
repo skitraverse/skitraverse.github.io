@@ -2,7 +2,7 @@
 
 This document describes everything a backend engineer needs to know about the
 static website at `skitraverse.com` and its relationship to the API at
-`order.skitraverse.com`. Keep it in sync with `static/api.yaml`, which is the
+`order.skitraverse.com`. Keep it in sync with `static/api.yml`, which is the
 authoritative OpenAPI 3.0.3 contract.
 
 ---
@@ -108,7 +108,7 @@ The frontend surfaces `data.error` or `data.message` directly to the user.
 
 ### 2.4 `POST /api/subscribe`
 
-Called by the mailing-list form on the book page (`content/winter-cdt-book.org`).
+Called by the mailing-list subscribe form rendered by `templates/subscribe.html`.
 No authentication.
 
 **Request body** — schema `SubscribeForm`:
@@ -148,17 +148,17 @@ Linked from the confirmation email. Not called by the order form directly.
 On a 200 response the backend branches by `book_variant`, derived from the
 cart using the priority `HARDCOVER > EBOOK > HARDCOVER_DE > EBOOK_DE` (see §3):
 
-| `book_variant` | Order status       | What happens                                              |
-|----------------|--------------------|-----------------------------------------------------------|
-| `HARDCOVER`    | `ORDERED`          | Owner email sent; hardcover queued for Lulu; invoice sent after owner review |
-| `EBOOK`        | `EBOOK_INVOICED`   | Invoice emailed to customer immediately; full cart amount |
-| `HARDCOVER_DE` | `PRE_ORDER`        | Owner notified; no invoice yet                            |
-| `EBOOK_DE`     | `PRE_ORDER`        | Owner notified; no invoice yet                            |
+| `book_variant` | Order status | What happens                                                        |
+|----------------|--------------|---------------------------------------------------------------------|
+| `HARDCOVER`    | `ORDERED`    | Owner email sent; hardcover queued for Lulu; invoice sent after owner review |
+| `EBOOK`        | `ORDERED`    | Owner email sent; invoice + download link sent after owner review   |
+| `HARDCOVER_DE` | `PRE_ORDER`  | Owner notified; no invoice yet                                      |
+| `EBOOK_DE`     | `PRE_ORDER`  | Owner notified; no invoice yet                                      |
 
 The `EBOOK` branch fires whenever the highest-priority live item is a digital
 one — including cross-edition carts such as `HARDCOVER_DE + EBOOK`. In that
-case the invoice covers the full cart (hardcover pre-order + ebook); the German
-hardcover is delivered when the edition ships.
+case the invoice covers the full cart; the German hardcover is delivered when
+the edition ships.
 
 The frontend does not need to act on this distinction — it simply renders the
 confirmation page returned by the backend.
@@ -198,8 +198,8 @@ any pre-order component is delivered when the edition ships.
 |------------------------------------|---------------------|------------------|-------------------------------------------------|
 | `HARDCOVER` + `EBOOK_DE`           | `HARDCOVER`         | `ORDERED`        | EN ships now; DE e-book sent on release         |
 | `HARDCOVER` + `HARDCOVER_DE`       | `HARDCOVER`         | `ORDERED`        | EN ships now; DE ships on release               |
-| `EBOOK` + `EBOOK_DE`               | `EBOOK`             | `EBOOK_INVOICED` | Invoice covers both; DE e-book sent on release  |
-| `HARDCOVER_DE` + `EBOOK`           | `EBOOK`             | `EBOOK_INVOICED` | Invoice covers both; DE hardcover on release    |
+| `EBOOK` + `EBOOK_DE`               | `EBOOK`             | `ORDERED`        | Invoice + download after owner review; DE e-book sent on release  |
+| `HARDCOVER_DE` + `EBOOK`           | `EBOOK`             | `ORDERED`        | Invoice + download after owner review; DE hardcover on release    |
 | `HARDCOVER` + `EBOOK` + `EBOOK_DE` | `HARDCOVER`         | `ORDERED`        | Full four-item bundle                           |
 
 *"Backend routing key" is derived by the backend from `line_items` using the priority rule above — it is not a field the frontend sends.*
@@ -307,48 +307,7 @@ with 400.
 
 ---
 
-## 10. Admin & webhook routes
-
-These are not called by the browser.
-
-| Route                              | Caller                         | Auth                   |
-|------------------------------------|--------------------------------|------------------------|
-| `POST /api/admin/process-invoices` | `batch-print.sh`               | Bearer `ADMIN_SECRET`  |
-| `POST /api/admin/deliver-ebook`    | `scripts/deliver_ebook.py`     | Bearer `ADMIN_SECRET`  |
-| `POST /api/webhook/lulu`           | Lulu Press (print-job updates) | HMAC signature in body |
-
-The webhook accepts `application/octet-stream`. A `SHIPPED` event → customer
-and owner notified. All other events (or duplicates, or test events) → 204 No
-Content.
-
-### `POST /api/admin/deliver-ebook`
-
-Called by the owner (`make deliver-ebook`) after confirming that a customer's
-IBAN payment has arrived. Sends a 30-day signed download link to the customer.
-
-**Request body:**
-
-```json
-{ "order_id": "SKI-XXXXX" }
-```
-
-**Responses:**
-
-| Status | Meaning                                           |
-|--------|---------------------------------------------------|
-| 200    | Download link emailed to customer                 |
-| 400    | Order is not in `EBOOK_INVOICED` status           |
-| 401    | Missing or invalid Bearer token                   |
-| 404    | Order not found                                   |
-| 409    | Ebook already delivered (idempotency guard)       |
-
-The download URL is a 30-day nginx `secure_link` signed URL for
-`/ebooks/a-wild-calling_en.epub`. The file must be present on the VPS
-(`make sync-ebooks` before `make deploy`).
-
----
-
-## 11. Form validation (frontend-enforced, not a substitute for backend validation)
+## 10. Form validation (frontend-enforced, not a substitute for backend validation)
 
 The submit button is disabled until all of the following are true:
 
@@ -367,7 +326,7 @@ still validate all required fields independently.
 
 ---
 
-## 12. Known gaps
+## 11. Known gaps
 
 ### Non-SEPA invoice flow not yet implemented
 
@@ -380,7 +339,7 @@ send a Wise Business payment request email instead of the standard invoice.
 
 ---
 
-## 13. Pelican build variables
+## 12. Pelican build variables
 
 These Jinja2 variables are available to templates at build time:
 
