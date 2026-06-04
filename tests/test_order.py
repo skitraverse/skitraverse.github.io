@@ -339,3 +339,108 @@ def test_submit_order_api_error_shows_message(page: Page):
     status = page.locator("#form-status")
     status.wait_for(state="visible", timeout=5000)
     assert "book_variant" in status.inner_text() or "HARDCOVER" in status.inner_text()
+
+
+def _inject_fake_subscribe_altcha(page: Page) -> None:
+    """Patch the subscribe altcha widget so its statechange handler stores a payload."""
+    page.evaluate("""() => {
+        const widget = document.getElementById('subscribe-altcha');
+        if (!widget) return;
+        Object.defineProperty(widget, 'value', {
+            get: () => 'fakeSubscribePayload', configurable: true
+        });
+        widget.dispatchEvent(new CustomEvent('statechange', {
+            detail: { state: 'verified', payload: 'fakeSubscribePayload' }
+        }));
+    }""")
+
+
+def test_subscribe_checkbox_present(page: Page):
+    """Order page has an opt-in subscribe checkbox, unchecked by default."""
+    page.goto(ORDER_URL)
+    checkbox = page.locator("#subscribe")
+    checkbox.wait_for(state="attached", timeout=3000)
+    assert not checkbox.is_checked(), "Subscribe checkbox must be unchecked by default"
+
+
+def test_subscribe_fires_when_checked(page: Page):
+    """Ticking the subscribe checkbox causes POST /api/subscribe after a 201 order."""
+    subscribe_body = {}
+
+    def handle_subscribe(route: Route):
+        try:
+            subscribe_body['data'] = route.request.post_data_json
+        except Exception:
+            subscribe_body['data'] = {}
+        route.fulfill(
+            status=200,
+            content_type='application/json',
+            body=json.dumps({"message": "You're on the list!"}),
+        )
+
+    page.route("**/api/order", lambda r: r.fulfill(
+        status=201,
+        content_type='application/json',
+        body=json.dumps({"order_id": "SKI-SUB01", "message": "Order received"}),
+    ))
+    page.route("**/api/subscribe", handle_subscribe)
+    page.goto(ORDER_URL)
+
+    page.fill("#customer_name",  "Maria Muster")
+    page.fill("#customer_email", "maria@example.com")
+    page.select_option("#order-country", "CH")
+    page.fill("#street1",  "Bahnhofstrasse 10")
+    page.fill("#postcode", "8001")
+    page.fill("#city",     "Zürich")
+    _inject_fake_altcha(page)
+    _inject_fake_subscribe_altcha(page)
+    page.check("#subscribe")
+    page.check("#agree")
+    page.click("#submit-btn")
+
+    page.locator("#form-status").wait_for(state="visible", timeout=5000)
+    # Wait for the async subscribe call to complete
+    page.wait_for_function(
+        "() => document.getElementById('form-status').innerText.includes('mailing list')",
+        timeout=5000,
+    )
+
+    assert subscribe_body.get('data'), "POST /api/subscribe was not called"
+    sub = subscribe_body['data']
+    assert sub.get('name')  == "Maria Muster",      f"Wrong name in subscribe payload: {sub}"
+    assert sub.get('email') == "maria@example.com", f"Wrong email in subscribe payload: {sub}"
+    assert sub.get('altcha') == 'fakeSubscribePayload', \
+        f"Wrong altcha in subscribe payload: {sub}"
+    assert sub.get('website') == '', f"Honeypot must be empty string, got: {sub}"
+
+
+def test_subscribe_not_called_when_unchecked(page: Page):
+    """Leaving the subscribe checkbox unticked does not call /api/subscribe."""
+    subscribe_called = {}
+
+    page.route("**/api/order", lambda r: r.fulfill(
+        status=201,
+        content_type='application/json',
+        body=json.dumps({"order_id": "SKI-NOSUB", "message": "Order received"}),
+    ))
+    page.route("**/api/subscribe", lambda r: (
+        subscribe_called.update({"called": True}),
+        r.fulfill(status=200, content_type='application/json',
+                  body=json.dumps({"message": "ok"})),
+    ))
+
+    page.goto(ORDER_URL)
+    page.fill("#customer_name",  "Hans Muster")
+    page.fill("#customer_email", "hans@example.com")
+    page.select_option("#order-country", "CH")
+    page.fill("#street1",  "Hauptgasse 5")
+    page.fill("#postcode", "3011")
+    page.fill("#city",     "Bern")
+    _inject_fake_altcha(page)
+    # subscribe checkbox left unchecked
+    page.check("#agree")
+    page.click("#submit-btn")
+
+    page.locator("#form-status").wait_for(state="visible", timeout=5000)
+    page.wait_for_timeout(500)  # brief wait to confirm no subscribe call fires
+    assert not subscribe_called.get('called'), "/api/subscribe must not be called when checkbox is unticked"

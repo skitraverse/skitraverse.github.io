@@ -184,12 +184,21 @@
             <input type="checkbox" id="agree" name="agree" required>
             <span id="agree-label">I agree to the payment terms.</span>
           </label>
+          <label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            Keep me updated on future books and expeditions.
+          </label>
         </fieldset>
 
         <altcha-widget id="shared-altcha"
           challengeurl="{{ SHOP_API_URL | default('https://order.skitraverse.com') }}/api/captcha"
           name="altcha"
           hidefooter></altcha-widget>
+        <altcha-widget id="subscribe-altcha"
+          challengeurl="{{ SHOP_API_URL | default('https://order.skitraverse.com') }}/api/captcha"
+          name="subscribe_altcha"
+          hidefooter
+          style="display:none"></altcha-widget>
 
         <p id="order-total" style="display:none;"></p>
         <button type="submit" id="submit-btn" disabled>Place order</button>
@@ -315,6 +324,48 @@
       refreshSubmitState();
     });
     altchaEl.addEventListener('change', refreshSubmitState);
+  }
+
+  let storedSubscribeAltcha = '';
+  const subscribeAltchaEl = document.getElementById('subscribe-altcha');
+  if (subscribeAltchaEl) {
+    subscribeAltchaEl.addEventListener('statechange', function (e) {
+      const payload = e.detail?.payload || subscribeAltchaEl.value || '';
+      const verified = e.detail ? e.detail.state === 'verified' : !!payload;
+      storedSubscribeAltcha = verified ? payload : '';
+    });
+  }
+
+  function waitForSubscribeAltcha() {
+    if (storedSubscribeAltcha) return Promise.resolve(storedSubscribeAltcha);
+    return new Promise(function (resolve) {
+      function handler(e) {
+        const payload = e.detail?.payload || subscribeAltchaEl?.value || '';
+        const verified = e.detail ? e.detail.state === 'verified' : !!payload;
+        if (verified && payload) {
+          subscribeAltchaEl.removeEventListener('statechange', handler);
+          resolve(payload);
+        }
+      }
+      subscribeAltchaEl?.addEventListener('statechange', handler);
+    });
+  }
+
+  async function maybeSubscribe(name, email) {
+    const subscribeCheck = document.getElementById('subscribe');
+    if (!subscribeCheck?.checked) return;
+    try {
+      const payload = await waitForSubscribeAltcha();
+      await fetch(API_BASE + '/api/subscribe', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ altcha: payload, name: name, email: email, website: '' }),
+      });
+      const statusEl = document.getElementById('form-status');
+      if (statusEl && statusEl.style.display !== 'none') {
+        statusEl.innerHTML += '<br>You\'re also on the mailing list.';
+      }
+    } catch (_) {}
   }
 
   function isFormValid() {
@@ -574,6 +625,10 @@
         showStatus('success',
           `<strong>Order received!</strong> Your order number is <strong>${data.order_id}</strong>.<br>
            Please check your email and click the confirmation link within 24 hours.`);
+        maybeSubscribe(
+          document.getElementById('customer_name').value.trim(),
+          document.getElementById('customer_email').value.trim()
+        );
       } else {
         const data = await resp.json().catch(() => ({}));
         showStatus('error', data.message || data.error || `Unexpected error (HTTP ${resp.status}).`);
