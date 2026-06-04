@@ -1,3 +1,25 @@
+/* Color tokens — values switch automatically with the OS color scheme */
+:root {
+    --status-success-bg:  #d4edda;
+    --status-success-fg:  #155724;
+    --status-error-bg:    #f8d7da;
+    --status-error-fg:    #721c24;
+    --article-border:     #ddd;
+    --discount-color:     #27ae60;
+    --table-scroll-bg:    white;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --status-success-bg:  #1a3a2a;
+        --status-success-fg:  #75c79a;
+        --status-error-bg:    #3a1a1e;
+        --status-error-fg:    #e07070;
+        --article-border:     #444;
+        --discount-color:     #5ddb8a;
+        --table-scroll-bg:    #1a1a1a;
+    }
+}
+
 /* Prevent horizontal overflow on all devices */
 html, body {
     overflow-x: hidden !important;
@@ -103,21 +125,21 @@ section .container {
 .status-success {
     padding: 1rem;
     border-radius: var(--pico-border-radius, 4px);
-    background: #d4edda;
-    color: #155724;
+    background: var(--status-success-bg);
+    color: var(--status-success-fg);
 }
 .status-error {
     padding: 1rem;
     border-radius: var(--pico-border-radius, 4px);
-    background: #f8d7da;
-    color: #721c24;
+    background: var(--status-error-bg);
+    color: var(--status-error-fg);
 }
 
 /* Category listing */
 .category-article {
     margin: 2rem 0;
     padding: 1.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--article-border);
     border-radius: 8px;
 }
 
@@ -125,7 +147,7 @@ section .container {
 .discount-note {
     margin-top: 0;
     font-size: 0.85em;
-    color: var(--pico-ins-color, #27ae60);
+    color: var(--discount-color);
 }
 
 #subscribe form {
@@ -438,21 +460,6 @@ section div {
 
 /* Dark mode for all sections */
 @media (prefers-color-scheme: dark) {
-    .status-success {
-        background: #1a3a2a;
-        color: #75c79a;
-    }
-    .status-error {
-        background: #3a1a1e;
-        color: #e07070;
-    }
-    .category-article {
-        border-color: #444;
-    }
-    .discount-note {
-        color: #5ddb8a;
-    }
-
     section {
         background: #1a1a1a !important;
         color: #e0e0e0 !important;
@@ -614,43 +621,36 @@ table td:nth-child(9) { /* Notes column */
     max-width: 200px;
 }
 
-/* Make tables break out of content width constraints on desktop */
-@media (min-width: 769px) {
-    table {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-        margin-right: calc(-50vw + 50%);
-        max-width: none;
-    }
+/* Scrollable table wrapper — applied at all viewport widths */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1rem 0;
+    /* Fade hint on the right edge when content overflows */
+    background:
+        linear-gradient(to right, var(--table-scroll-bg) 30%, transparent),
+        linear-gradient(to right, transparent, var(--table-scroll-bg) 70%) 100% 0,
+        linear-gradient(to right, rgba(0,0,0,0.08), transparent) 0 0,
+        linear-gradient(to left,  rgba(0,0,0,0.08), transparent) 100% 0;
+    background-repeat: no-repeat;
+    background-size: 40px 100%, 40px 100%, 12px 100%, 12px 100%;
+    background-attachment: local, local, scroll, scroll;
 }
 
-/* Simple responsive table */
+.table-wrapper table {
+    min-width: max-content;
+    margin: 0;
+}
+
 @media (max-width: 768px) {
-    .table-wrapper {
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        margin: 1rem 0;
-    }
-    
     .table-wrapper table {
-        min-width: 800px;
-        font-size: 0.7rem;
-        white-space: nowrap;
+        font-size: 0.75rem;
     }
-    
+
     .table-wrapper table th,
     .table-wrapper table td {
-        padding: 0.4rem 0.3rem !important;
-        white-space: nowrap;
-    }
-    
-    /* Allow Notes column to wrap on mobile */
-    .table-wrapper table td:nth-child(9) {
-        white-space: normal;
-        word-wrap: break-word;
+        padding: 0.4rem 0.35rem !important;
     }
 }
 
