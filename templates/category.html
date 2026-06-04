@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section style="background: white; color: #333;">
+<section>
     <div class="container">
         <div class="star-divider">
             <span class="star">❄</span>
@@ -10,7 +10,7 @@
             <h2>{{ category.name|title }} Articles</h2>
             
             {% for article in articles|reverse %}
-                <article style="margin: 2rem 0; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
+                <article class="category-article">
                     <h3><a href="{{ SITEURL }}/{{ article.url }}" style="text-decoration: none;">{{ article.title }}</a></h3>
                     {% if article.summary %}
                         <p>{{ article.summary }}</p>

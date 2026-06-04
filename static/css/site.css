@@ -99,6 +99,35 @@ section .container {
     align-items: center;
 }
 
+/* Form status messages (order + subscribe) */
+.status-success {
+    padding: 1rem;
+    border-radius: var(--pico-border-radius, 4px);
+    background: #d4edda;
+    color: #155724;
+}
+.status-error {
+    padding: 1rem;
+    border-radius: var(--pico-border-radius, 4px);
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Category listing */
+.category-article {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Discount note on order form */
+.discount-note {
+    margin-top: 0;
+    font-size: 0.85em;
+    color: var(--pico-ins-color, #27ae60);
+}
+
 #subscribe form {
     width: 100%;
     max-width: 30rem;
@@ -409,6 +438,21 @@ section div {
 
 /* Dark mode for all sections */
 @media (prefers-color-scheme: dark) {
+    .status-success {
+        background: #1a3a2a;
+        color: #75c79a;
+    }
+    .status-error {
+        background: #3a1a1e;
+        color: #e07070;
+    }
+    .category-article {
+        border-color: #444;
+    }
+    .discount-note {
+        color: #5ddb8a;
+    }
+
     section {
         background: #1a1a1a !important;
         color: #e0e0e0 !important;

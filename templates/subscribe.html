@@ -77,10 +77,9 @@
     }
   });
   function show(type, html) {
-    status.innerHTML = html; status.style.display = '';
-    status.style.padding = '1rem'; status.style.borderRadius = '4px';
-    status.style.background = type === 'success' ? '#d4edda' : '#f8d7da';
-    status.style.color      = type === 'success' ? '#155724' : '#721c24';
+    status.innerHTML    = html;
+    status.className    = type === 'success' ? 'status-success' : 'status-error';
+    status.style.display = '';
   }
 })();
 </script>
